@@ -5,6 +5,8 @@ import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import PolynomialOperationsPage
   from "../components/commonMath1/polynomial/PolynomialOperationsPage";
+import RemainderAndFactorizationPage
+  from "../components/commonMath1/polynomial/RemainderAndFactorizationPage";
 
 const curriculum = {
   중1: {
@@ -80,6 +82,32 @@ export default function Home() {
     setSmallUnit(nextSmallUnit);
   }
 
+  function renderPage() {
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "다항식" &&
+      smallUnit === "다항식의 연산"
+    ) {
+      return <PolynomialOperationsPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "다항식" &&
+      smallUnit === "나머지정리와 인수분해"
+    ) {
+      return <RemainderAndFactorizationPage />;
+    }
+
+    return (
+      <ComingSoonPage
+        subject={subject}
+        bigUnit={bigUnit}
+        smallUnit={smallUnit}
+      />
+    );
+  }
+
   return (
     <main className="min-h-screen bg-black text-white">
       <header className="sticky top-0 z-50 border-b border-white/15 bg-black/90 backdrop-blur">
@@ -145,17 +173,7 @@ export default function Home() {
 
       <div className="mx-auto max-w-4xl px-6 py-12">
 
-        {subject === "공통수학1" &&
-          bigUnit === "다항식" &&
-          smallUnit === "다항식의 연산" ? (
-          <PolynomialOperationsPage />
-        ) : (
-          <ComingSoonPage
-            subject={subject}
-            bigUnit={bigUnit}
-            smallUnit={smallUnit}
-          />
-        )}
+        {renderPage()}
 
         <footer className="mt-16 flex items-center justify-between border-t border-white/15 pt-6 text-sm text-gray-400">
           <button className="rounded-lg border border-white/20 px-4 py-2">
