@@ -3419,7 +3419,7 @@ export default function PolynomialOperationsPage() {
         </div>
 
         <div className="mt-8 rounded-xl bg-black/40 p-5">
-          <h3 className="mb-4 text-xl font-bold text-white">심화 예제 1</h3>
+          <h3 className="mb-4 text-xl font-bold text-white">예제 1</h3>
 
           <p className="mb-4 text-gray-300">
             0이 아닌 세 실수 <InlineMath math="a,b,c" />에 대하여
@@ -3472,7 +3472,7 @@ export default function PolynomialOperationsPage() {
         </div>
 
         <div className="mt-8 rounded-xl bg-black/40 p-5">
-          <h3 className="mb-4 text-xl font-bold text-white">심화 예제 2</h3>
+          <h3 className="mb-4 text-xl font-bold text-white">예제 2</h3>
 
           <BlockMath math="x+y+z=4,\quad xy+yz+zx=2,\quad xyz=7" />
 
@@ -3502,7 +3502,7 @@ export default function PolynomialOperationsPage() {
         </div>
 
         <div className="mt-8 rounded-xl bg-black/40 p-5">
-          <h3 className="mb-4 text-xl font-bold text-white">심화 예제 3</h3>
+          <h3 className="mb-4 text-xl font-bold text-white">예제 3</h3>
 
           <BlockMath math="a+b+c=1,\quad a^2+b^2+c^2=3,\quad a^3+b^3+c^3=-2" />
 
@@ -3555,7 +3555,7 @@ export default function PolynomialOperationsPage() {
         </div>
 
         <div className="mt-8 rounded-xl bg-black/40 p-5">
-          <h3 className="mb-4 text-xl font-bold text-white">심화 예제 4</h3>
+          <h3 className="mb-4 text-xl font-bold text-white">예제 4</h3>
 
           <BlockMath math="x+y+z=3,\quad xy+yz+zx=1,\quad xyz=2" />
 
@@ -3612,7 +3612,7 @@ export default function PolynomialOperationsPage() {
         </div>
 
         <div className="mt-8 rounded-xl bg-black/40 p-5">
-          <h3 className="mb-4 text-xl font-bold text-white">심화 예제 5</h3>
+          <h3 className="mb-4 text-xl font-bold text-white">예제 5</h3>
 
           <p className="mb-4 text-gray-300">
             다음 각 식을 인수분해하여라.

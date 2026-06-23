@@ -7,6 +7,8 @@ import PolynomialOperationsPage
   from "../components/commonMath1/polynomial/PolynomialOperationsPage";
 import RemainderAndFactorizationPage
   from "../components/commonMath1/polynomial/RemainderAndFactorizationPage";
+import ComplexNumbersPage
+  from "../components/commonMath1/equation/ComplexNumbersPage";
 
 const curriculum = {
   중1: {
@@ -97,6 +99,14 @@ export default function Home() {
       smallUnit === "나머지정리와 인수분해"
     ) {
       return <RemainderAndFactorizationPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "방정식" &&
+      smallUnit === "복소수"
+    ) {
+      return <ComplexNumbersPage />;
     }
 
     return (

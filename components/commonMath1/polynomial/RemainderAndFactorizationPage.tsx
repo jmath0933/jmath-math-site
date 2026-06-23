@@ -7295,418 +7295,418 @@ export default function RemainderAndFactorizationPage() {
             </section>
 
             <section className="mb-10 rounded-2xl border border-white/30 p-7">
-  <h2 className="mb-6 text-3xl font-bold">
-    1.34 항등식을 이용한 계수
-  </h2>
+                <h2 className="mb-6 text-3xl font-bold">
+                    1.34 항등식을 이용한 계수
+                </h2>
 
-  <p className="leading-8 text-gray-300">
-    항등식은 모든 <InlineMath math="x" />에 대하여 성립하는 식입니다.
-    따라서 적당한 값을 대입하면 필요한 계수의 합을 구할 수 있습니다.
-  </p>
+                <p className="leading-8 text-gray-300">
+                    항등식은 모든 <InlineMath math="x" />에 대하여 성립하는 식입니다.
+                    따라서 적당한 값을 대입하면 필요한 계수의 합을 구할 수 있습니다.
+                </p>
 
-  <div className="mt-8 rounded-xl bg-white/10 p-6">
-    <h3 className="mb-4 text-2xl font-bold">
-      예시 1
-    </h3>
+                <div className="mt-8 rounded-xl bg-white/10 p-6">
+                    <h3 className="mb-4 text-2xl font-bold">
+                        예시 1
+                    </h3>
 
-    <BlockMath math="(x^2-x+1)^3=a_0+a_1x+a_2x^2+a_3x^3+a_4x^4+a_5x^5+a_6x^6" />
+                    <BlockMath math="(x^2-x+1)^3=a_0+a_1x+a_2x^2+a_3x^3+a_4x^4+a_5x^5+a_6x^6" />
 
-    <p className="leading-8 text-gray-300">
-      이 식을 직접 전개하면 모든 계수를 구할 수 있습니다.
-      하지만 계수의 합만 필요하다면 항등식에 값을 대입하면 됩니다.
-    </p>
+                    <p className="leading-8 text-gray-300">
+                        이 식을 직접 전개하면 모든 계수를 구할 수 있습니다.
+                        하지만 계수의 합만 필요하다면 항등식에 값을 대입하면 됩니다.
+                    </p>
 
-    <p className="mt-4">
-      <InlineMath math="x=1" />을 대입하면
-    </p>
+                    <p className="mt-4">
+                        <InlineMath math="x=1" />을 대입하면
+                    </p>
 
-    <BlockMath math="1=a_0+a_1+a_2+a_3+a_4+a_5+a_6" />
+                    <BlockMath math="1=a_0+a_1+a_2+a_3+a_4+a_5+a_6" />
 
-    <p>
-      <InlineMath math="x=-1" />을 대입하면
-    </p>
+                    <p>
+                        <InlineMath math="x=-1" />을 대입하면
+                    </p>
 
-    <BlockMath math="27=a_0-a_1+a_2-a_3+a_4-a_5+a_6" />
+                    <BlockMath math="27=a_0-a_1+a_2-a_3+a_4-a_5+a_6" />
 
-    <p>
-      두 식을 더하면
-    </p>
+                    <p>
+                        두 식을 더하면
+                    </p>
 
-    <BlockMath math="a_0+a_2+a_4+a_6=14" />
+                    <BlockMath math="a_0+a_2+a_4+a_6=14" />
 
-    <p>
-      두 식을 빼면
-    </p>
+                    <p>
+                        두 식을 빼면
+                    </p>
 
-    <BlockMath math="a_1+a_3+a_5=-13" />
-  </div>
+                    <BlockMath math="a_1+a_3+a_5=-13" />
+                </div>
 
-  <div className="mt-8 rounded-xl bg-white/10 p-6">
-    <h3 className="mb-4 text-2xl font-bold">
-      예시 2
-    </h3>
+                <div className="mt-8 rounded-xl bg-white/10 p-6">
+                    <h3 className="mb-4 text-2xl font-bold">
+                        예시 2
+                    </h3>
 
-    <BlockMath math="(x^2-x+1)^3=a_0+a_1(x-1)+a_2(x-1)^2+a_3(x-1)^3+a_4(x-1)^4+a_5(x-1)^5+a_6(x-1)^6" />
+                    <BlockMath math="(x^2-x+1)^3=a_0+a_1(x-1)+a_2(x-1)^2+a_3(x-1)^3+a_4(x-1)^4+a_5(x-1)^5+a_6(x-1)^6" />
 
-    <p>
-      이번에는 <InlineMath math="x-1" />을 기준으로 전개된 항등식입니다.
-    </p>
+                    <p>
+                        이번에는 <InlineMath math="x-1" />을 기준으로 전개된 항등식입니다.
+                    </p>
 
-    <p className="mt-4">
-      <InlineMath math="x=2" />를 대입하면 <InlineMath math="x-1=1" />이므로
-    </p>
+                    <p className="mt-4">
+                        <InlineMath math="x=2" />를 대입하면 <InlineMath math="x-1=1" />이므로
+                    </p>
 
-    <BlockMath math="27=a_0+a_1+a_2+a_3+a_4+a_5+a_6" />
+                    <BlockMath math="27=a_0+a_1+a_2+a_3+a_4+a_5+a_6" />
 
-    <p>
-      <InlineMath math="x=0" />을 대입하면 <InlineMath math="x-1=-1" />이므로
-    </p>
+                    <p>
+                        <InlineMath math="x=0" />을 대입하면 <InlineMath math="x-1=-1" />이므로
+                    </p>
 
-    <BlockMath math="1=a_0-a_1+a_2-a_3+a_4-a_5+a_6" />
+                    <BlockMath math="1=a_0-a_1+a_2-a_3+a_4-a_5+a_6" />
 
-    <p>
-      두 식을 더하면
-    </p>
+                    <p>
+                        두 식을 더하면
+                    </p>
 
-    <BlockMath math="a_0+a_2+a_4+a_6=14" />
+                    <BlockMath math="a_0+a_2+a_4+a_6=14" />
 
-    <p>
-      두 식을 빼면
-    </p>
+                    <p>
+                        두 식을 빼면
+                    </p>
 
-    <BlockMath math="a_1+a_3+a_5=13" />
-  </div>
+                    <BlockMath math="a_1+a_3+a_5=13" />
+                </div>
 
-  <div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">예제 1</h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">예제 1</h3>
 
-  <p className="leading-8 text-gray-300">
-    모든 실수 <InlineMath math="x" />에 대하여
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        모든 실수 <InlineMath math="x" />에 대하여
+                    </p>
 
-  <BlockMath math="x^{10}=a_{10}(x+2)^{10}+a_9(x+2)^9+\cdots+a_1(x+2)+a_0" />
+                    <BlockMath math="x^{10}=a_{10}(x+2)^{10}+a_9(x+2)^9+\cdots+a_1(x+2)+a_0" />
 
-  <p className="leading-8 text-gray-300">
-    이 성립할 때, <InlineMath math="a_1+a_2+\cdots+a_9" />의 값을 구하시오.
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        이 성립할 때, <InlineMath math="a_1+a_2+\cdots+a_9" />의 값을 구하시오.
+                    </p>
 
-  <details className="mt-5 rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p className="font-semibold text-white">
-        1단계 : 전체 합을 만들 값을 대입한다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="font-semibold text-white">
+                                1단계 : 전체 합을 만들 값을 대입한다.
+                            </p>
 
-      <p>
-        <InlineMath math="x=-1" />을 대입하면 <InlineMath math="x+2=1" />이므로
-      </p>
+                            <p>
+                                <InlineMath math="x=-1" />을 대입하면 <InlineMath math="x+2=1" />이므로
+                            </p>
 
-      <BlockMath math="(-1)^{10}=a_{10}+a_9+\cdots+a_1+a_0" />
+                            <BlockMath math="(-1)^{10}=a_{10}+a_9+\cdots+a_1+a_0" />
 
-      <BlockMath math="1=a_0+a_1+\cdots+a_9+a_{10}" />
+                            <BlockMath math="1=a_0+a_1+\cdots+a_9+a_{10}" />
 
-      <p className="font-semibold text-white">
-        2단계 : 양 끝 계수를 구한다.
-      </p>
+                            <p className="font-semibold text-white">
+                                2단계 : 양 끝 계수를 구한다.
+                            </p>
 
-      <p>
-        <InlineMath math="x=-2" />를 대입하면 <InlineMath math="x+2=0" />이므로
-      </p>
+                            <p>
+                                <InlineMath math="x=-2" />를 대입하면 <InlineMath math="x+2=0" />이므로
+                            </p>
 
-      <BlockMath math="(-2)^{10}=a_0" />
+                            <BlockMath math="(-2)^{10}=a_0" />
 
-      <BlockMath math="a_0=1024" />
+                            <BlockMath math="a_0=1024" />
 
-      <p>
-        또한 양변의 최고차항의 계수를 비교하면
-      </p>
+                            <p>
+                                또한 양변의 최고차항의 계수를 비교하면
+                            </p>
 
-      <BlockMath math="a_{10}=1" />
+                            <BlockMath math="a_{10}=1" />
 
-      <p className="font-semibold text-white">
-        3단계 : 필요한 계수의 합을 구한다.
-      </p>
+                            <p className="font-semibold text-white">
+                                3단계 : 필요한 계수의 합을 구한다.
+                            </p>
 
-      <BlockMath math="1=a_0+(a_1+a_2+\cdots+a_9)+a_{10}" />
+                            <BlockMath math="1=a_0+(a_1+a_2+\cdots+a_9)+a_{10}" />
 
-      <BlockMath math="1=1024+(a_1+a_2+\cdots+a_9)+1" />
+                            <BlockMath math="1=1024+(a_1+a_2+\cdots+a_9)+1" />
 
-      <BlockMath math="a_1+a_2+\cdots+a_9=-1024" />
+                            <BlockMath math="a_1+a_2+\cdots+a_9=-1024" />
 
-      <p className="font-semibold text-white">
-        따라서 답은
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은
+                            </p>
 
-      <BlockMath math="\boxed{-1024}" />
+                            <BlockMath math="\boxed{-1024}" />
 
-      <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
-        <h4 className="mb-3 font-bold text-yellow-300">
-          핵심 아이디어
-        </h4>
+                            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-yellow-300">
+                                    핵심 아이디어
+                                </h4>
 
-        <p>
-          모든 계수를 직접 구할 필요는 없습니다.
-          필요한 계수의 합이 나오도록 적절한 값을 대입하면 됩니다.
-        </p>
-      </div>
-    </div>
-  </details>
-</div>
+                                <p>
+                                    모든 계수를 직접 구할 필요는 없습니다.
+                                    필요한 계수의 합이 나오도록 적절한 값을 대입하면 됩니다.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">예제 2</h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">예제 2</h3>
 
-  <p className="leading-8 text-gray-300">
-    모든 실수 <InlineMath math="x" />에 대하여
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        모든 실수 <InlineMath math="x" />에 대하여
+                    </p>
 
-  <BlockMath math="\left(\frac{x}{2}+1\right)^8=a_0+a_1x+a_2x^2+\cdots+a_8x^8" />
+                    <BlockMath math="\left(\frac{x}{2}+1\right)^8=a_0+a_1x+a_2x^2+\cdots+a_8x^8" />
 
-  <p className="leading-8 text-gray-300">
-    이 성립할 때, <InlineMath math="a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />의 값을 구하여라.
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        이 성립할 때, <InlineMath math="a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />의 값을 구하여라.
+                    </p>
 
-  <details className="mt-5 rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p className="font-semibold text-white">
-        1단계 : 구하려는 식을 확인한다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="font-semibold text-white">
+                                1단계 : 구하려는 식을 확인한다.
+                            </p>
 
-      <p>
-        구하려는 식은
-      </p>
+                            <p>
+                                구하려는 식은
+                            </p>
 
-      <BlockMath math="a_0+a_1(-2)+a_2(-2)^2+a_3(-2)^3+\cdots+a_8(-2)^8" />
+                            <BlockMath math="a_0+a_1(-2)+a_2(-2)^2+a_3(-2)^3+\cdots+a_8(-2)^8" />
 
-      <p>
-        입니다.
-      </p>
+                            <p>
+                                입니다.
+                            </p>
 
-      <p>
-        따라서 우변에 <InlineMath math="x=-2" />를 대입한 값입니다.
-      </p>
+                            <p>
+                                따라서 우변에 <InlineMath math="x=-2" />를 대입한 값입니다.
+                            </p>
 
-      <p className="font-semibold text-white">
-        2단계 : 항등식에 <InlineMath math="x=-2" />를 대입한다.
-      </p>
+                            <p className="font-semibold text-white">
+                                2단계 : 항등식에 <InlineMath math="x=-2" />를 대입한다.
+                            </p>
 
-      <BlockMath math="\left(\frac{-2}{2}+1\right)^8=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
+                            <BlockMath math="\left(\frac{-2}{2}+1\right)^8=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
 
-      <BlockMath math="(-1+1)^8=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
+                            <BlockMath math="(-1+1)^8=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
 
-      <BlockMath math="0=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
+                            <BlockMath math="0=a_0-2a_1+4a_2-8a_3+\cdots+256a_8" />
 
-      <p className="font-semibold text-white">
-        따라서 답은
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은
+                            </p>
 
-      <BlockMath math="\boxed{0}" />
+                            <BlockMath math="\boxed{0}" />
 
-      <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
-        <h4 className="mb-3 font-bold text-yellow-300">
-          핵심 아이디어
-        </h4>
+                            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-yellow-300">
+                                    핵심 아이디어
+                                </h4>
 
-        <p>
-          계수 앞의 숫자들이 <InlineMath math="1, -2, 4, -8, \cdots" />
-          이므로 <InlineMath math="x=-2" />를 대입한 형태입니다.
-        </p>
-      </div>
-    </div>
-  </details>
-</div>
+                                <p>
+                                    계수 앞의 숫자들이 <InlineMath math="1, -2, 4, -8, \cdots" />
+                                    이므로 <InlineMath math="x=-2" />를 대입한 형태입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">예제 3</h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">예제 3</h3>
 
-  <p className="leading-8 text-gray-300">
-    모든 실수 <InlineMath math="x" />에 대하여
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        모든 실수 <InlineMath math="x" />에 대하여
+                    </p>
 
-  <BlockMath math="(3x^2-x-1)^5=a_0+a_1x+a_2x^2+\cdots+a_{10}x^{10}" />
+                    <BlockMath math="(3x^2-x-1)^5=a_0+a_1x+a_2x^2+\cdots+a_{10}x^{10}" />
 
-  <p className="leading-8 text-gray-300">
-    이 성립할 때, 다음 식의 값을 구하시오.
-    <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
-    
-  </p>
+                    <p className="leading-8 text-gray-300">
+                        이 성립할 때, 다음 식의 값을 구하시오.
+                        <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
 
-  <details className="mt-5 rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    </p>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p className="font-semibold text-white">
-        1단계 : 구하려는 식을 확인한다.
-      </p>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-      <p>
-        구하려는 식은 홀수차항의 계수에 <InlineMath math="x=\frac13" />을 대입한 부분입니다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="font-semibold text-white">
+                                1단계 : 구하려는 식을 확인한다.
+                            </p>
 
-      <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\cdots+\frac{a_9}{3^9}" />
+                            <p>
+                                구하려는 식은 홀수차항의 계수에 <InlineMath math="x=\frac13" />을 대입한 부분입니다.
+                            </p>
 
-      <p>
-        홀수차항만 남기려면 <InlineMath math="x=\frac13" />과 <InlineMath math="x=-\frac13" />을 대입한 식을 이용합니다.
-      </p>
+                            <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\cdots+\frac{a_9}{3^9}" />
 
-      <p className="font-semibold text-white">
-        2단계 : <InlineMath math="x=\frac13" />을 대입한다.
-      </p>
+                            <p>
+                                홀수차항만 남기려면 <InlineMath math="x=\frac13" />과 <InlineMath math="x=-\frac13" />을 대입한 식을 이용합니다.
+                            </p>
 
-      <BlockMath math="\left(3\left(\frac13\right)^2-\frac13-1\right)^5" />
-      <BlockMath math="=\left(\frac13-\frac13-1\right)^5" />
-      <BlockMath math="=-1" />
+                            <p className="font-semibold text-white">
+                                2단계 : <InlineMath math="x=\frac13" />을 대입한다.
+                            </p>
 
-      <p>
-        따라서
-      </p>
+                            <BlockMath math="\left(3\left(\frac13\right)^2-\frac13-1\right)^5" />
+                            <BlockMath math="=\left(\frac13-\frac13-1\right)^5" />
+                            <BlockMath math="=-1" />
 
-      <BlockMath math="a_0+\frac{a_1}{3}+\frac{a_2}{3^2}+\cdots+\frac{a_{10}}{3^{10}}=-1" />
+                            <p>
+                                따라서
+                            </p>
 
-      <p className="font-semibold text-white">
-        3단계 : <InlineMath math="x=-\frac13" />을 대입한다.
-      </p>
+                            <BlockMath math="a_0+\frac{a_1}{3}+\frac{a_2}{3^2}+\cdots+\frac{a_{10}}{3^{10}}=-1" />
 
-      <BlockMath math="\left(3\left(-\frac13\right)^2+\frac13-1\right)^5" />
-      <BlockMath math="=\left(\frac13+\frac13-1\right)^5" />
-      <BlockMath math="=\left(-\frac13\right)^5=-\frac1{243}" />
+                            <p className="font-semibold text-white">
+                                3단계 : <InlineMath math="x=-\frac13" />을 대입한다.
+                            </p>
 
-      <p>
-        따라서
-      </p>
+                            <BlockMath math="\left(3\left(-\frac13\right)^2+\frac13-1\right)^5" />
+                            <BlockMath math="=\left(\frac13+\frac13-1\right)^5" />
+                            <BlockMath math="=\left(-\frac13\right)^5=-\frac1{243}" />
 
-      <BlockMath math="a_0-\frac{a_1}{3}+\frac{a_2}{3^2}-\frac{a_3}{3^3}+\cdots+\frac{a_{10}}{3^{10}}=-\frac1{243}" />
+                            <p>
+                                따라서
+                            </p>
 
-      <p className="font-semibold text-white">
-        4단계 : 두 식을 뺀다.
-      </p>
+                            <BlockMath math="a_0-\frac{a_1}{3}+\frac{a_2}{3^2}-\frac{a_3}{3^3}+\cdots+\frac{a_{10}}{3^{10}}=-\frac1{243}" />
 
-      <p>
-        두 식을 빼면 홀수차항만 두 배로 남습니다.
-      </p>
+                            <p className="font-semibold text-white">
+                                4단계 : 두 식을 뺀다.
+                            </p>
 
-      <BlockMath math="2\left(\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}\right)" />
-      <BlockMath math="=-1-\left(-\frac1{243}\right)" />
-      <BlockMath math="=-\frac{242}{243}" />
+                            <p>
+                                두 식을 빼면 홀수차항만 두 배로 남습니다.
+                            </p>
 
-      <p>
-        따라서
-      </p>
+                            <BlockMath math="2\left(\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}\right)" />
+                            <BlockMath math="=-1-\left(-\frac1{243}\right)" />
+                            <BlockMath math="=-\frac{242}{243}" />
 
-      <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
-      <BlockMath math="=-\frac{121}{243}" />
+                            <p>
+                                따라서
+                            </p>
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-\frac{121}{243}" />입니다.
-      </p>
-    </div>
-  </details>
-</div>
+                            <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
+                            <BlockMath math="=-\frac{121}{243}" />
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">예제 4</h3>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-\frac{121}{243}" />입니다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
-  <p className="leading-8 text-gray-300">
-    모든 실수 <InlineMath math="x" />에 대하여
-  </p>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">예제 4</h3>
 
-  <BlockMath math="(x^4-x^3-2x^2+3x)^4=a_0+a_1x+a_2x^2+\cdots+a_{16}x^{16}" />
+                    <p className="leading-8 text-gray-300">
+                        모든 실수 <InlineMath math="x" />에 대하여
+                    </p>
 
-  <p className="leading-8 text-gray-300">
-    이 성립할 때,
-    <InlineMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />의 값을 구하시오.
-  </p>
+                    <BlockMath math="(x^4-x^3-2x^2+3x)^4=a_0+a_1x+a_2x^2+\cdots+a_{16}x^{16}" />
 
-  <details className="mt-5 rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <p className="leading-8 text-gray-300">
+                        이 성립할 때,
+                        <InlineMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />의 값을 구하시오.
+                    </p>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p className="font-semibold text-white">
-        1단계 : 구하려는 계수의 구조를 확인한다.
-      </p>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-      <p>
-        주어진 식은
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="font-semibold text-white">
+                                1단계 : 구하려는 계수의 구조를 확인한다.
+                            </p>
 
-      <BlockMath math="(x^4-x^3-2x^2+3x)^4" />
+                            <p>
+                                주어진 식은
+                            </p>
 
-      <p>
-        입니다. 괄호 안의 모든 항에 <InlineMath math="x" />가 들어 있으므로,
-        네 번 곱하면 최소 차수는 <InlineMath math="x^4" />입니다.
-      </p>
+                            <BlockMath math="(x^4-x^3-2x^2+3x)^4" />
 
-      <p>
-        따라서
-      </p>
+                            <p>
+                                입니다. 괄호 안의 모든 항에 <InlineMath math="x" />가 들어 있으므로,
+                                네 번 곱하면 최소 차수는 <InlineMath math="x^4" />입니다.
+                            </p>
 
-      <BlockMath math="a_0=a_1=a_2=a_3=0" />
+                            <p>
+                                따라서
+                            </p>
 
-      <p>
-        입니다.
-      </p>
+                            <BlockMath math="a_0=a_1=a_2=a_3=0" />
 
-      <p className="font-semibold text-white">
-        2단계 : 짝수차항의 계수 합을 구한다.
-      </p>
+                            <p>
+                                입니다.
+                            </p>
 
-      <p>
-        짝수차항의 계수 합은 <InlineMath math="x=1" />과 <InlineMath math="x=-1" />을 대입한 값을 이용합니다.
-      </p>
+                            <p className="font-semibold text-white">
+                                2단계 : 짝수차항의 계수 합을 구한다.
+                            </p>
 
-      <BlockMath math="P(x)=(x^4-x^3-2x^2+3x)^4" />
+                            <p>
+                                짝수차항의 계수 합은 <InlineMath math="x=1" />과 <InlineMath math="x=-1" />을 대입한 값을 이용합니다.
+                            </p>
 
-      <BlockMath math="P(1)=(1-1-2+3)^4=1" />
+                            <BlockMath math="P(x)=(x^4-x^3-2x^2+3x)^4" />
 
-      <BlockMath math="P(-1)=(1+1-2-3)^4=81" />
+                            <BlockMath math="P(1)=(1-1-2+3)^4=1" />
 
-      <p>
-        따라서 짝수차항의 계수 합은
-      </p>
+                            <BlockMath math="P(-1)=(1+1-2-3)^4=81" />
 
-      <BlockMath math="\frac{P(1)+P(-1)}{2}=\frac{1+81}{2}=41" />
+                            <p>
+                                따라서 짝수차항의 계수 합은
+                            </p>
 
-      <p className="font-semibold text-white">
-        3단계 : 필요 없는 항을 뺀다.
-      </p>
+                            <BlockMath math="\frac{P(1)+P(-1)}{2}=\frac{1+81}{2}=41" />
 
-      <p>
-        구하려는 값은 짝수차항 중에서 <InlineMath math="a_6,a_8,\ldots,a_{16}" />의 합입니다.
-        따라서 짝수차항의 계수 합에서 <InlineMath math="a_4" />를 빼면 됩니다.
-      </p>
+                            <p className="font-semibold text-white">
+                                3단계 : 필요 없는 항을 뺀다.
+                            </p>
 
-      <p>
-        최소차항은 <InlineMath math="(3x)^4" />에서 나오므로
-      </p>
+                            <p>
+                                구하려는 값은 짝수차항 중에서 <InlineMath math="a_6,a_8,\ldots,a_{16}" />의 합입니다.
+                                따라서 짝수차항의 계수 합에서 <InlineMath math="a_4" />를 빼면 됩니다.
+                            </p>
 
-      <BlockMath math="a_4=81" />
+                            <p>
+                                최소차항은 <InlineMath math="(3x)^4" />에서 나오므로
+                            </p>
 
-      <p>
-        따라서
-      </p>
+                            <BlockMath math="a_4=81" />
 
-      <BlockMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />
-      <BlockMath math="=0+(41-81)" />
-      <BlockMath math="-40" />
+                            <p>
+                                따라서
+                            </p>
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-40" />입니다.
-      </p>
-    </div>
-  </details>
-</div>
-</section>
+                            <BlockMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />
+                            <BlockMath math="=0+(41-81)" />
+                            <BlockMath math="-40" />
+
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-40" />입니다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </section>
 
 
         </>
