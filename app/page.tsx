@@ -9,6 +9,8 @@ import RemainderAndFactorizationPage
   from "../components/commonMath1/polynomial/RemainderAndFactorizationPage";
 import ComplexNumbersPage
   from "../components/commonMath1/equation/ComplexNumbersPage";
+import QuadraticEquationPage
+  from "../components/commonMath1/equation/QuadraticEquationPage";
 
 const curriculum = {
   중1: {
@@ -107,6 +109,14 @@ export default function Home() {
       smallUnit === "복소수"
     ) {
       return <ComplexNumbersPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "방정식" &&
+      smallUnit === "이차방정식"
+    ) {
+      return <QuadraticEquationPage />;
     }
 
     return (

@@ -604,8 +604,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-5 leading-8 text-gray-300">
-                        복소수 <InlineMath math="0" />은
-                        <InlineMath math="0+0i" />로 생각할 수 있습니다.
+                        복소수 <InlineMath math="0" />은 <InlineMath math="0+0i" />로 생각할 수 있습니다.
                     </p>
 
                     <BlockMath math="a+bi=0" />
@@ -1016,8 +1015,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-5 leading-8 text-gray-300">
-                        복소수 <InlineMath math="z=a+bi" />의 켤레복소수는
-                        <InlineMath math="\overline{z}=a-bi" />입니다.
+                        복소수 <InlineMath math="z=a+bi" />의 켤레복소수는 <InlineMath math="\overline{z}=a-bi" />입니다.
                     </p>
 
                     <BlockMath math="z=a+bi,\quad \overline{z}=a-bi" />
@@ -1137,8 +1135,7 @@ export default function ComplexNumbersPage() {
                     <BlockMath math="\frac{1}{2+i}" />
 
                     <p className="mt-5 leading-8 text-gray-300">
-                        분모 <InlineMath math="2+i" />의 켤레복소수는
-                        <InlineMath math="2-i" />입니다.
+                        분모 <InlineMath math="2+i" />의 켤레복소수는 <InlineMath math="2-i" />입니다.
                     </p>
 
                     <BlockMath math="\frac{1}{2+i}\cdot\frac{2-i}{2-i}" />
@@ -1161,8 +1158,7 @@ export default function ComplexNumbersPage() {
                         <BlockMath math="\frac{1}{a+bi}=\frac{a-bi}{a^2+b^2}" />
 
                         <p className="mt-4 leading-8 text-gray-300">
-                            분모의 복소수에 켤레복소수를 곱하면
-                            <InlineMath math="a^2+b^2" />가 되어 실수가 됩니다.
+                            분모의 복소수에 켤레복소수를 곱하면 <InlineMath math="a^2+b^2" />가 되어 실수가 됩니다.
                         </p>
                     </div>
                 </div>
@@ -1779,9 +1775,9 @@ export default function ComplexNumbersPage() {
                     </p>
 
                     <div className="rounded-xl bg-white/10 p-5">
-                        <BlockMath math="\text{ㄱ.}\quad (z+1)^2" />
-                        <BlockMath math="\text{ㄴ.}\quad (2z+1)(\overline z+1)-z" />
-                        <BlockMath math="\text{ㄷ.}\quad (z^2+z+1)(\overline z+1)+\{(\overline z)^2+\overline z+1\}(z+1)" />
+                        <p>ㄱ. <InlineMath math="(z+1)^2" /></p>
+                        <p>ㄴ. <InlineMath math="(2z+1)(\overline z+1)-z" /></p>
+                        <p>ㄷ. <InlineMath math="(z^2+z+1)(\overline z+1)+\{(\overline z)^2+\overline z+1\}(z+1)" /></p>
                     </div>
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
@@ -2601,7 +2597,7 @@ export default function ComplexNumbersPage() {
 
                 <div className="mt-8 rounded-xl bg-white/10 p-6">
                     <h3 className="mb-4 text-2xl font-bold">
-                        분모에 있는 i의 거듭제곱
+                        분모에 있는 <InlineMath math="i" />의 거듭제곱
                     </h3>
 
                     <p className="leading-8 text-gray-300">
@@ -2768,7 +2764,7 @@ export default function ComplexNumbersPage() {
 
                         <div className="mt-5 space-y-5 text-gray-300">
                             <p>
-                                i의 거듭제곱은 연속된 지수 4개의 합이 0입니다.
+                                <InlineMath math="i" />의 거듭제곱은 연속된 지수 4개의 합이 0입니다.
                             </p>
 
                             <BlockMath math="i+i^2+i^3+i^4=0" />
@@ -3428,8 +3424,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        <InlineMath math="f(x)=x^{2010}+\frac1{x^{2010}}" />일 때,
-                        <InlineMath math="f\left(\frac{1+i}{\sqrt2}\right)+f\left(\frac{1-i}{\sqrt2}\right)" />
+                        <InlineMath math="f(x)=x^{2010}+\frac1{x^{2010}}" />일 때, <InlineMath math="f\left(\frac{1+i}{\sqrt2}\right)+f\left(\frac{1-i}{\sqrt2}\right)" />
                         의 값을 구하여라.
                     </p>
 
@@ -3672,8 +3667,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        함수
-                        <InlineMath math="f(n)=\left(\frac{1+i}{1-i}\right)^n" />
+                        함수 <InlineMath math="f(n)=\left(\frac{1+i}{1-i}\right)^n" />
                         이라 할 때,
                         다음 중 모든 자연수 <InlineMath math="n" />에 대하여
                         성립하는 것은?
@@ -3818,8 +3812,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        음수의 제곱근은 음수만 꺼내는 것이 아니라
-                        <InlineMath math="\sqrt{-1}=i" />를 먼저 분리해야 한다.
+                        음수의 제곱근은 음수만 꺼내는 것이 아니라 <InlineMath math="\sqrt{-1}=i" />를 먼저 분리해야 한다.
                     </p>
 
                     <BlockMath math="\sqrt{-12}" />
@@ -3964,8 +3957,7 @@ export default function ComplexNumbersPage() {
                             <BlockMath math="=\frac{\sqrt3}{i}" />
 
                             <p>
-                                분모의 <InlineMath math="i" />를 없애기 위해
-                                <InlineMath math="i" />를 곱하면
+                                분모의 <InlineMath math="i" />를 없애기 위해 <InlineMath math="i" />를 곱하면
                             </p>
 
                             <BlockMath math="\frac{\sqrt3}{i}" />
@@ -4042,8 +4034,7 @@ export default function ComplexNumbersPage() {
                     <BlockMath math="-\sqrt6" />
 
                     <p className="mt-5 leading-8 text-gray-300">
-                        따라서 음수끼리의 제곱근을 곱할 때
-                        <InlineMath math="\sqrt a\sqrt b=\sqrt{ab}" />를 그대로 쓰면 안 됩니다.
+                        따라서 음수끼리의 제곱근을 곱할 때 <InlineMath math="\sqrt a\sqrt b=\sqrt{ab}" />를 그대로 쓰면 안 됩니다.
                     </p>
 
                     <div className="mt-5 rounded-xl border border-red-500/30 bg-red-500/5 p-5">
@@ -4065,14 +4056,11 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        앞에서는
-                        <InlineMath math="a<0,\ b<0" />이면
-                        <InlineMath math="\sqrt a\sqrt b=-\sqrt{ab}" />가 된다고 했습니다.
+                        앞에서는 <InlineMath math="a<0,\ b<0" />이면 <InlineMath math="\sqrt a\sqrt b=-\sqrt{ab}" />가 된다고 했습니다.
                     </p>
 
                     <p className="mt-4 leading-8 text-gray-300">
-                        하지만 식
-                        <InlineMath math="\sqrt a\sqrt b=-\sqrt{ab}" />
+                        하지만 식 <InlineMath math="\sqrt a\sqrt b=-\sqrt{ab}" />
                         이 주어지고 범위를 구하는 경우에는 0도 포함해야 합니다.
                     </p>
 
@@ -4107,8 +4095,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-5 leading-8 text-gray-300">
-                        분모가 음수의 제곱근일 때도 먼저
-                        <InlineMath math="i" />를 이용하여 바꿔 계산합니다.
+                        분모가 음수의 제곱근일 때도 먼저 <InlineMath math="i" />를 이용하여 바꿔 계산합니다.
                     </p>
 
                     <BlockMath math="\frac{\sqrt2}{\sqrt{-3}}" />
@@ -4131,8 +4118,7 @@ export default function ComplexNumbersPage() {
                         <BlockMath math="a\ge0,\ b<0\quad\Longrightarrow\quad \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />
 
                         <p className="mt-4 leading-8 text-gray-300">
-                            단, 분모는 0이 될 수 없으므로
-                            <InlineMath math="b=0" />은 포함되지 않습니다.
+                            단, 분모는 0이 될 수 없으므로 <InlineMath math="b=0" />은 포함되지 않습니다.
                         </p>
                     </div>
                 </div>
@@ -4644,8 +4630,7 @@ export default function ComplexNumbersPage() {
                             <BlockMath math="a\ge0,\quad b<0" />
 
                             <p>
-                                이어야 합니다. 분모는 0이 될 수 없으므로
-                                <InlineMath math="b<0" />입니다.
+                                이어야 합니다. 분모는 0이 될 수 없으므로 <InlineMath math="b<0" />입니다.
                             </p>
 
                             <BlockMath math="3-x\ge0,\quad -2-x<0" />
