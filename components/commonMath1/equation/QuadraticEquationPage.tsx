@@ -5720,1011 +5720,1011 @@ export default function QuadraticEquationPage() {
             </section>
 
             <section className="mb-10 rounded-2xl border border-white/30 p-7">
-  <h2 className="mb-2 text-3xl font-bold">
-    2.20 이차방정식의 근의 판별
-  </h2>
-
-  <p className="leading-8 text-gray-300">
-    모든 이차방정식은 해를 구할 수 있습니다.
-    인수분해가 되면 인수분해로 풀고, 인수분해가 되지 않으면 근의 공식을 이용하면 됩니다.
-  </p>
-
-  <p className="mt-4 leading-8 text-gray-300">
-    하지만 문제에 따라서는 구체적인 해보다
-    <strong> 근의 형태</strong>만 알고 싶은 경우가 있습니다.
-    예를 들어 서로 다른 두 실근을 가지는지, 중근을 가지는지,
-    허근을 가지는지만 알고 싶을 수 있습니다.
-  </p>
-
-  <p className="mt-4 leading-8 text-gray-300">
-    이처럼 근을 직접 구하지 않고 근의 형태를 판별하는 방법을
-    <strong> 판별식</strong>이라고 합니다.
-  </p>
-
-  <div className="mt-8 rounded-xl bg-white/10 p-6">
-    <h3 className="mb-4 text-2xl font-bold">
-      판별식은 근의 공식에서 나온다
-    </h3>
-
-    <p className="leading-8 text-gray-300">
-      실계수 이차방정식
-    </p>
-
-    <BlockMath math="ax^2+bx+c=0\quad(a\ne0)" />
-
-    <p className="leading-8 text-gray-300">
-      의 근의 공식은
-    </p>
-
-    <BlockMath math="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
-
-    <p className="leading-8 text-gray-300">
-      입니다.
-      여기서 근의 형태를 결정하는 부분은
-    </p>
-
-    <BlockMath math="\sqrt{b^2-4ac}" />
-
-    <p className="leading-8 text-gray-300">
-      입니다. 따라서
-    </p>
-
-    <BlockMath math="D=b^2-4ac" />
-
-    <p className="leading-8 text-gray-300">
-      를 판별식이라고 합니다.
-    </p>
-
-    <p className="mt-4 leading-8 text-gray-300">
-      일차항의 계수가 짝수인 경우 <InlineMath math="b=2b'" />라고 두면
-    </p>
-
-    <BlockMath math="x=\frac{-b'\pm\sqrt{b'^2-ac}}{a}" />
-
-    <p className="leading-8 text-gray-300">
-      를 사용할 수 있으므로
-    </p>
-
-    <BlockMath math="\frac{D}{4}=b'^2-ac" />
-
-    <p className="leading-8 text-gray-300">
-      로 판별해도 됩니다.
-    </p>
-  </div>
-
-  <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
-    <h3 className="mb-4 text-xl font-bold text-yellow-300">
-      실계수 이차방정식의 근의 판별
-    </h3>
-
-    <div className="overflow-x-auto">
-      <table className="w-full min-w-[520px] border-collapse text-center text-gray-300">
-        <thead>
-          <tr className="border-b border-white/20">
-            <th className="p-3">판별식</th>
-            <th className="p-3">근의 형태</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="border-b border-white/10">
-            <td className="p-3">
-              <InlineMath math="D>0" />
-            </td>
-            <td className="p-3">서로 다른 두 실근</td>
-          </tr>
-          <tr className="border-b border-white/10">
-            <td className="p-3">
-              <InlineMath math="D=0" />
-            </td>
-            <td className="p-3">중근, 즉 중복된 두 실근</td>
-          </tr>
-          <tr>
-            <td className="p-3">
-              <InlineMath math="D<0" />
-            </td>
-            <td className="p-3">서로 다른 두 허근</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div className="mt-8 rounded-xl bg-white/10 p-6">
-    <h3 className="mb-4 text-2xl font-bold">
-      왜 판별식으로 구분할 수 있을까?
-    </h3>
-
-    <p className="leading-8 text-gray-300">
-      근의 공식에서 <InlineMath math="\sqrt{D}" /> 부분을 보면 됩니다.
-    </p>
-
-    <p className="mt-4 leading-8 text-gray-300">
-      <InlineMath math="D>0" />이면 <InlineMath math="\sqrt D" />가 양의 실수이므로 <InlineMath math="+\sqrt D" />와 <InlineMath math="-\sqrt D" />가 서로 달라집니다.
-      따라서 서로 다른 두 실근을 가집니다.
-    </p>
-
-    <p className="mt-4 leading-8 text-gray-300">
-      <InlineMath math="D=0" />이면 <InlineMath math="\sqrt D=0" />이므로
-      두 근이 같아집니다.
-      따라서 중근을 가집니다.
-    </p>
-
-    <p className="mt-4 leading-8 text-gray-300">
-      <InlineMath math="D<0" />이면 <InlineMath math="\sqrt D" />가 허수가 됩니다.
-      따라서 실근을 갖지 않고 서로 다른 두 허근을 가집니다.
-    </p>
-  </div>
+                <h2 className="mb-2 text-3xl font-bold">
+                    2.20 이차방정식의 근의 판별
+                </h2>
+
+                <p className="leading-8 text-gray-300">
+                    모든 이차방정식은 해를 구할 수 있습니다.
+                    인수분해가 되면 인수분해로 풀고, 인수분해가 되지 않으면 근의 공식을 이용하면 됩니다.
+                </p>
+
+                <p className="mt-4 leading-8 text-gray-300">
+                    하지만 문제에 따라서는 구체적인 해보다
+                    <strong> 근의 형태</strong>만 알고 싶은 경우가 있습니다.
+                    예를 들어 서로 다른 두 실근을 가지는지, 중근을 가지는지,
+                    허근을 가지는지만 알고 싶을 수 있습니다.
+                </p>
+
+                <p className="mt-4 leading-8 text-gray-300">
+                    이처럼 근을 직접 구하지 않고 근의 형태를 판별하는 방법을
+                    <strong> 판별식</strong>이라고 합니다.
+                </p>
+
+                <div className="mt-8 rounded-xl bg-white/10 p-6">
+                    <h3 className="mb-4 text-2xl font-bold">
+                        판별식은 근의 공식에서 나온다
+                    </h3>
+
+                    <p className="leading-8 text-gray-300">
+                        실계수 이차방정식
+                    </p>
+
+                    <BlockMath math="ax^2+bx+c=0\quad(a\ne0)" />
+
+                    <p className="leading-8 text-gray-300">
+                        의 근의 공식은
+                    </p>
+
+                    <BlockMath math="x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+
+                    <p className="leading-8 text-gray-300">
+                        입니다.
+                        여기서 근의 형태를 결정하는 부분은
+                    </p>
+
+                    <BlockMath math="\sqrt{b^2-4ac}" />
+
+                    <p className="leading-8 text-gray-300">
+                        입니다. 따라서
+                    </p>
+
+                    <BlockMath math="D=b^2-4ac" />
+
+                    <p className="leading-8 text-gray-300">
+                        를 판별식이라고 합니다.
+                    </p>
+
+                    <p className="mt-4 leading-8 text-gray-300">
+                        일차항의 계수가 짝수인 경우 <InlineMath math="b=2b'" />라고 두면
+                    </p>
+
+                    <BlockMath math="x=\frac{-b'\pm\sqrt{b'^2-ac}}{a}" />
+
+                    <p className="leading-8 text-gray-300">
+                        를 사용할 수 있으므로
+                    </p>
+
+                    <BlockMath math="\frac{D}{4}=b'^2-ac" />
+
+                    <p className="leading-8 text-gray-300">
+                        로 판별해도 됩니다.
+                    </p>
+                </div>
+
+                <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-yellow-300">
+                        실계수 이차방정식의 근의 판별
+                    </h3>
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full min-w-[520px] border-collapse text-center text-gray-300">
+                            <thead>
+                                <tr className="border-b border-white/20">
+                                    <th className="p-3">판별식</th>
+                                    <th className="p-3">근의 형태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-b border-white/10">
+                                    <td className="p-3">
+                                        <InlineMath math="D>0" />
+                                    </td>
+                                    <td className="p-3">서로 다른 두 실근</td>
+                                </tr>
+                                <tr className="border-b border-white/10">
+                                    <td className="p-3">
+                                        <InlineMath math="D=0" />
+                                    </td>
+                                    <td className="p-3">중근, 즉 중복된 두 실근</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-3">
+                                        <InlineMath math="D<0" />
+                                    </td>
+                                    <td className="p-3">서로 다른 두 허근</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div className="mt-8 rounded-xl bg-white/10 p-6">
+                    <h3 className="mb-4 text-2xl font-bold">
+                        왜 판별식으로 구분할 수 있을까?
+                    </h3>
+
+                    <p className="leading-8 text-gray-300">
+                        근의 공식에서 <InlineMath math="\sqrt{D}" /> 부분을 보면 됩니다.
+                    </p>
+
+                    <p className="mt-4 leading-8 text-gray-300">
+                        <InlineMath math="D>0" />이면 <InlineMath math="\sqrt D" />가 양의 실수이므로 <InlineMath math="+\sqrt D" />와 <InlineMath math="-\sqrt D" />가 서로 달라집니다.
+                        따라서 서로 다른 두 실근을 가집니다.
+                    </p>
+
+                    <p className="mt-4 leading-8 text-gray-300">
+                        <InlineMath math="D=0" />이면 <InlineMath math="\sqrt D=0" />이므로
+                        두 근이 같아집니다.
+                        따라서 중근을 가집니다.
+                    </p>
+
+                    <p className="mt-4 leading-8 text-gray-300">
+                        <InlineMath math="D<0" />이면 <InlineMath math="\sqrt D" />가 허수가 됩니다.
+                        따라서 실근을 갖지 않고 서로 다른 두 허근을 가집니다.
+                    </p>
+                </div>
 
-  <div className="mt-8 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
-    <h3 className="mb-4 text-xl font-bold text-purple-300">
-      허수계수 이차방정식에서는 주의
-    </h3>
+                <div className="mt-8 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-purple-300">
+                        허수계수 이차방정식에서는 주의
+                    </h3>
 
-    <p className="leading-8 text-gray-300">
-      판별식으로 근의 종류를 판별하는 방법은
-      <strong> 실계수 이차방정식</strong>에서 사용하는 방법입니다.
-    </p>
+                    <p className="leading-8 text-gray-300">
+                        판별식으로 근의 종류를 판별하는 방법은
+                        <strong> 실계수 이차방정식</strong>에서 사용하는 방법입니다.
+                    </p>
 
-    <p className="mt-4 leading-8 text-gray-300">
-      계수에 허수가 포함되면 <InlineMath math="D=b^2-4ac" /> 자체가 복소수가 될 수 있습니다.
-      복소수에는 일반적으로 <InlineMath math="D>0" />, <InlineMath math="D<0" />와 같은 대소 비교를 할 수 없으므로
-      위의 판별 방법을 그대로 사용할 수 없습니다.
-    </p>
+                    <p className="mt-4 leading-8 text-gray-300">
+                        계수에 허수가 포함되면 <InlineMath math="D=b^2-4ac" /> 자체가 복소수가 될 수 있습니다.
+                        복소수에는 일반적으로 <InlineMath math="D>0" />, <InlineMath math="D<0" />와 같은 대소 비교를 할 수 없으므로
+                        위의 판별 방법을 그대로 사용할 수 없습니다.
+                    </p>
 
-    <p className="mt-4 leading-8 text-gray-300">
-      허수계수 이차방정식에서 실근을 갖는지 확인해야 한다면,
-      실근을 <InlineMath math="\alpha" />라고 두고 방정식에 대입한 뒤
-      복소수의 상등을 이용하여 풀어야 합니다.
-    </p>
+                    <p className="mt-4 leading-8 text-gray-300">
+                        허수계수 이차방정식에서 실근을 갖는지 확인해야 한다면,
+                        실근을 <InlineMath math="\alpha" />라고 두고 방정식에 대입한 뒤
+                        복소수의 상등을 이용하여 풀어야 합니다.
+                    </p>
 
-    <p className="mt-4 leading-8 text-gray-300">
-      다만 두 근이 같은지 판단할 때는
-      허수계수 이차방정식에서도 <InlineMath math="D=0" />을 사용할 수 있습니다.
-    </p>
-  </div>
+                    <p className="mt-4 leading-8 text-gray-300">
+                        다만 두 근이 같은지 판단할 때는
+                        허수계수 이차방정식에서도 <InlineMath math="D=0" />을 사용할 수 있습니다.
+                    </p>
+                </div>
 
-  <div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 1
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 1
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2+6x+11-a=0" />
+                    <BlockMath math="x^2+6x+11-a=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 중근을 갖기 위한 상수 <InlineMath math="a" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 중근을 갖기 위한 상수 <InlineMath math="a" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>중근을 가지므로 판별식은 0이다.</p>
+                            <p>중근을 가지므로 판별식은 0이다.</p>
 
-      <BlockMath math="D=6^2-4(1)(11-a)=0" />
+                            <BlockMath math="D=6^2-4(1)(11-a)=0" />
 
-      <BlockMath math="36-44+4a=0" />
+                            <BlockMath math="36-44+4a=0" />
 
-      <BlockMath math="4a=8" />
+                            <BlockMath math="4a=8" />
 
-      <BlockMath math="a=2" />
+                            <BlockMath math="a=2" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="2" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="2" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 2
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 2
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2+(m+1)x+m+4=0" />
+                    <BlockMath math="x^2+(m+1)x+m+4=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 중근을 갖도록 하는 자연수 <InlineMath math="m" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 중근을 갖도록 하는 자연수 <InlineMath math="m" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>중근을 가지므로</p>
+                            <p>중근을 가지므로</p>
 
-      <BlockMath math="D=(m+1)^2-4(m+4)=0" />
+                            <BlockMath math="D=(m+1)^2-4(m+4)=0" />
 
-      <BlockMath math="m^2-2m-15=0" />
+                            <BlockMath math="m^2-2m-15=0" />
 
-      <BlockMath math="(m-5)(m+3)=0" />
+                            <BlockMath math="(m-5)(m+3)=0" />
 
-      <p>자연수이므로</p>
+                            <p>자연수이므로</p>
 
-      <BlockMath math="m=5" />
+                            <BlockMath math="m=5" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="5" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="5" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 3
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 3
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2+2x-(a+b)=0" />
+                    <BlockMath math="x^2+2x-(a+b)=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 중근을 가질 때,
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 중근을 가질 때,
+                    </p>
 
-  <BlockMath math="a^3+b^3-3ab" />
+                    <BlockMath math="a^3+b^3-3ab" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>중근을 가지므로</p>
+                            <p>중근을 가지므로</p>
 
-      <BlockMath math="D=2^2-4(1)(-(a+b))=0" />
+                            <BlockMath math="D=2^2-4(1)(-(a+b))=0" />
 
-      <BlockMath math="4+4(a+b)=0" />
+                            <BlockMath math="4+4(a+b)=0" />
 
-      <BlockMath math="a+b=-1" />
+                            <BlockMath math="a+b=-1" />
 
-      <p>항등식</p>
+                            <p>항등식</p>
 
-      <BlockMath math="a^3+b^3=(a+b)^3-3ab(a+b)" />
+                            <BlockMath math="a^3+b^3=(a+b)^3-3ab(a+b)" />
 
-      <p>을 이용하면</p>
+                            <p>을 이용하면</p>
 
-      <BlockMath math="a^3+b^3-3ab=(a+b)^3-3ab(a+b)-3ab" />
+                            <BlockMath math="a^3+b^3-3ab=(a+b)^3-3ab(a+b)-3ab" />
 
-      <BlockMath math="=(a+b)^3-3ab(a+b+1)" />
+                            <BlockMath math="=(a+b)^3-3ab(a+b+1)" />
 
-      <p><InlineMath math="a+b=-1" />이므로</p>
+                            <p><InlineMath math="a+b=-1" />이므로</p>
 
-      <BlockMath math="=(-1)^3=-1" />
+                            <BlockMath math="=(-1)^3=-1" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-1" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-1" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 4
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 4
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2-2(k-a)x+k^2+a^2-b+1=0" />
+                    <BlockMath math="x^2-2(k-a)x+k^2+a^2-b+1=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 <InlineMath math="k" />의 값에 관계없이 항상 중근을 가질 때,
-    두 실수 <InlineMath math="a,b" />에 대하여 <InlineMath math="a+b" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 <InlineMath math="k" />의 값에 관계없이 항상 중근을 가질 때,
+                        두 실수 <InlineMath math="a,b" />에 대하여 <InlineMath math="a+b" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>항상 중근을 가지므로 판별식은 항상 0이다.</p>
+                            <p>항상 중근을 가지므로 판별식은 항상 0이다.</p>
 
-      <BlockMath math="D=\{-2(k-a)\}^2-4(k^2+a^2-b+1)=0" />
+                            <BlockMath math="D=\{-2(k-a)\}^2-4(k^2+a^2-b+1)=0" />
 
-      <BlockMath math="4(k-a)^2-4(k^2+a^2-b+1)=0" />
+                            <BlockMath math="4(k-a)^2-4(k^2+a^2-b+1)=0" />
 
-      <BlockMath math="(k-a)^2-(k^2+a^2-b+1)=0" />
+                            <BlockMath math="(k-a)^2-(k^2+a^2-b+1)=0" />
 
-      <BlockMath math="k^2-2ak+a^2-k^2-a^2+b-1=0" />
+                            <BlockMath math="k^2-2ak+a^2-k^2-a^2+b-1=0" />
 
-      <BlockMath math="-2ak+b-1=0" />
+                            <BlockMath math="-2ak+b-1=0" />
 
-      <p>
-        이 식이 모든 <InlineMath math="k" />에 대하여 성립해야 하므로
-      </p>
+                            <p>
+                                이 식이 모든 <InlineMath math="k" />에 대하여 성립해야 하므로
+                            </p>
 
-      <BlockMath math="-2a=0,\qquad b-1=0" />
+                            <BlockMath math="-2a=0,\qquad b-1=0" />
 
-      <BlockMath math="a=0,\qquad b=1" />
+                            <BlockMath math="a=0,\qquad b=1" />
 
-      <BlockMath math="a+b=1" />
+                            <BlockMath math="a+b=1" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="1" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="1" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 5
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 5
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2+2x+m-1=0" />
+                    <BlockMath math="x^2+2x+m-1=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 서로 다른 두 실근을 갖도록 하는 <InlineMath math="m" />의 범위를 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 서로 다른 두 실근을 갖도록 하는 <InlineMath math="m" />의 범위를 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>서로 다른 두 실근을 가지므로</p>
+                            <p>서로 다른 두 실근을 가지므로</p>
 
-      <BlockMath math="D>0" />
+                            <BlockMath math="D>0" />
 
-      <BlockMath math="2^2-4(m-1)>0" />
+                            <BlockMath math="2^2-4(m-1)>0" />
 
-      <BlockMath math="8-4m>0" />
+                            <BlockMath math="8-4m>0" />
 
-      <BlockMath math="m<2" />
+                            <BlockMath math="m<2" />
 
-      <p className="font-semibold text-white">
-        따라서 <InlineMath math="m<2" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 <InlineMath math="m<2" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 6
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 6
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="3x^2-6x+k=0" />
+                    <BlockMath math="3x^2-6x+k=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 두 실근을 갖도록 하는 <InlineMath math="k" />의 범위를 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 두 실근을 갖도록 하는 <InlineMath math="k" />의 범위를 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>두 실근을 가지므로</p>
+                            <p>두 실근을 가지므로</p>
 
-      <BlockMath math="D\ge0" />
+                            <BlockMath math="D\ge0" />
 
-      <BlockMath math="{(-6)}^2-4(3)k\ge0" />
+                            <BlockMath math="{(-6)}^2-4(3)k\ge0" />
 
-      <BlockMath math="36-12k\ge0" />
+                            <BlockMath math="36-12k\ge0" />
 
-      <BlockMath math="k\le3" />
+                            <BlockMath math="k\le3" />
 
-      <p className="font-semibold text-white">
-        따라서 <InlineMath math="k\le3" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 <InlineMath math="k\le3" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 7
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 7
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="x^2+ax+b=0" />
+                    <BlockMath math="x^2+ax+b=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 서로 다른 두 실근을 가질 때,
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 서로 다른 두 실근을 가질 때,
+                    </p>
 
-  <BlockMath math="x^2+(a-2c)x+b-ac=0" />
+                    <BlockMath math="x^2+(a-2c)x+b-ac=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    의 근을 판별한 것으로 옳은 것을 고르시오.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        의 근을 판별한 것으로 옳은 것을 고르시오.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>처음 이차방정식이 서로 다른 두 실근을 가지므로</p>
+                            <p>처음 이차방정식이 서로 다른 두 실근을 가지므로</p>
 
-      <BlockMath math="a^2-4b>0" />
+                            <BlockMath math="a^2-4b>0" />
 
-      <p>새로운 이차방정식의 판별식은</p>
+                            <p>새로운 이차방정식의 판별식은</p>
 
-      <BlockMath math="D=(a-2c)^2-4(b-ac)" />
+                            <BlockMath math="D=(a-2c)^2-4(b-ac)" />
 
-      <BlockMath math="=a^2-4ac+4c^2-4b+4ac" />
+                            <BlockMath math="=a^2-4ac+4c^2-4b+4ac" />
 
-      <BlockMath math="=a^2-4b+4c^2" />
+                            <BlockMath math="=a^2-4b+4c^2" />
 
-      <BlockMath math="=(a^2-4b)+4c^2" />
+                            <BlockMath math="=(a^2-4b)+4c^2" />
 
-      <p>
-        <InlineMath math="a^2-4b>0" />이고 <InlineMath math="4c^2\ge0" />이므로
-      </p>
+                            <p>
+                                <InlineMath math="a^2-4b>0" />이고 <InlineMath math="4c^2\ge0" />이므로
+                            </p>
 
-      <BlockMath math="D>0" />
+                            <BlockMath math="D>0" />
 
-      <p>따라서 새로운 이차방정식도 항상 서로 다른 두 실근을 가진다.</p>
+                            <p>따라서 새로운 이차방정식도 항상 서로 다른 두 실근을 가진다.</p>
 
-      <p className="font-semibold text-white">
-        따라서 정답은 항상 서로 다른 두 실근을 가진다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 정답은 항상 서로 다른 두 실근을 가진다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 8
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 8
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식
+                    </p>
 
-  <BlockMath math="\{1+(a+b)^2\}x^2-2(1-a-b)x+2=0" />
+                    <BlockMath math="\{1+(a+b)^2\}x^2-2(1-a-b)x+2=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 실근을 가질 때,
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 실근을 가질 때,
+                    </p>
 
-  <BlockMath math="a^3+b^3-3ab" />
+                    <BlockMath math="a^3+b^3-3ab" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    의 값을 구하여라. <span className="text-sm text-gray-400">(단, <InlineMath math="a,b" />는 실수)</span>
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        의 값을 구하여라. <span className="text-sm text-gray-400">(단, <InlineMath math="a,b" />는 실수)</span>
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-4 text-gray-300">
+                        <div className="mt-5 space-y-4 text-gray-300">
 
-      <p>
-        <InlineMath math="s=a+b" />라고 두면
-      </p>
+                            <p>
+                                <InlineMath math="s=a+b" />라고 두면
+                            </p>
 
-      <BlockMath math="(1+s^2)x^2-2(1-s)x+2=0" />
+                            <BlockMath math="(1+s^2)x^2-2(1-s)x+2=0" />
 
-      <p>
-        실근을 가지므로
-      </p>
+                            <p>
+                                실근을 가지므로
+                            </p>
 
-      <BlockMath math="D\ge0" />
+                            <BlockMath math="D\ge0" />
 
-      <BlockMath math="\{-2(1-s)\}^2-4(1+s^2)\cdot2\ge0" />
+                            <BlockMath math="\{-2(1-s)\}^2-4(1+s^2)\cdot2\ge0" />
 
-      <BlockMath math="4(1-s)^2-8(1+s^2)\ge0" />
+                            <BlockMath math="4(1-s)^2-8(1+s^2)\ge0" />
 
-      <BlockMath math="(1-s)^2-2(1+s^2)\ge0" />
+                            <BlockMath math="(1-s)^2-2(1+s^2)\ge0" />
 
-      <BlockMath math="-s^2-2s-1\ge0" />
+                            <BlockMath math="-s^2-2s-1\ge0" />
 
-      <BlockMath math="-(s+1)^2\ge0" />
+                            <BlockMath math="-(s+1)^2\ge0" />
 
-      <p>
-        제곱은 항상 0 이상이므로
-      </p>
+                            <p>
+                                제곱은 항상 0 이상이므로
+                            </p>
 
-      <BlockMath math="s+1=0" />
+                            <BlockMath math="s+1=0" />
 
-      <BlockMath math="a+b=-1" />
+                            <BlockMath math="a+b=-1" />
 
-      <p>
-        항등식
-      </p>
+                            <p>
+                                항등식
+                            </p>
 
-      <BlockMath math="a^3+b^3=(a+b)^3-3ab(a+b)" />
+                            <BlockMath math="a^3+b^3=(a+b)^3-3ab(a+b)" />
 
-      <p>
-        을 이용하면
-      </p>
+                            <p>
+                                을 이용하면
+                            </p>
 
-      <BlockMath math="a^3+b^3-3ab=(a+b)^3-3ab(a+b+1)" />
+                            <BlockMath math="a^3+b^3-3ab=(a+b)^3-3ab(a+b+1)" />
 
-      <p>
-        <InlineMath math="a+b=-1" />이므로
-      </p>
+                            <p>
+                                <InlineMath math="a+b=-1" />이므로
+                            </p>
 
-      <BlockMath math="=(-1)^3=-1" />
+                            <BlockMath math="=(-1)^3=-1" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-1" />이다.
-      </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-1" />이다.
+                            </p>
 
-    </div>
-  </details>
-</div>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 9
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 9
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    <InlineMath math="x,\ y" />에 대한 이차식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        <InlineMath math="x,\ y" />에 대한 이차식
+                    </p>
 
-  <BlockMath math="2x^2+xy-y^2-x+2y+k" />
+                    <BlockMath math="2x^2+xy-y^2-x+2y+k" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    가 <InlineMath math="x,\ y" />의 두 일차식의 곱으로
-    인수분해되는 <InlineMath math="k" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        가 <InlineMath math="x,\ y" />의 두 일차식의 곱으로
+                        인수분해되는 <InlineMath math="k" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-8 text-gray-300">
-      <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-        <h4 className="mb-3 font-bold text-blue-300">
-          풀이 1 : 구조를 보고 인수분해
-        </h4>
+                        <div className="mt-5 space-y-8 text-gray-300">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-blue-300">
+                                    풀이 1 : 구조를 보고 인수분해
+                                </h4>
 
-        <p>
-          먼저 이차항 부분을 보면
-        </p>
+                                <p>
+                                    먼저 이차항 부분을 보면
+                                </p>
 
-        <BlockMath math="2x^2+xy-y^2" />
+                                <BlockMath math="2x^2+xy-y^2" />
 
-        <p>
-          는 다음과 같이 인수분해된다.
-        </p>
+                                <p>
+                                    는 다음과 같이 인수분해된다.
+                                </p>
 
-        <BlockMath math="2x^2+xy-y^2=(2x-y)(x+y)" />
+                                <BlockMath math="2x^2+xy-y^2=(2x-y)(x+y)" />
 
-        <p>
-          따라서 전체 식이 두 일차식의 곱으로 인수분해된다면
-          다음 꼴로 둘 수 있다.
-        </p>
+                                <p>
+                                    따라서 전체 식이 두 일차식의 곱으로 인수분해된다면
+                                    다음 꼴로 둘 수 있다.
+                                </p>
 
-        <BlockMath math="(2x-y+A)(x+y+B)" />
+                                <BlockMath math="(2x-y+A)(x+y+B)" />
 
-        <p>
-          이를 전개하면
-        </p>
+                                <p>
+                                    이를 전개하면
+                                </p>
 
-        <BlockMath math="(2x-y+A)(x+y+B)" />
+                                <BlockMath math="(2x-y+A)(x+y+B)" />
 
-        <BlockMath math="=2x^2+xy-y^2+(2B+A)x+(A-B)y+AB" />
+                                <BlockMath math="=2x^2+xy-y^2+(2B+A)x+(A-B)y+AB" />
 
-        <p>
-          주어진 식
-        </p>
+                                <p>
+                                    주어진 식
+                                </p>
 
-        <BlockMath math="2x^2+xy-y^2-x+2y+k" />
+                                <BlockMath math="2x^2+xy-y^2-x+2y+k" />
 
-        <p>
-          와 계수를 비교하면
-        </p>
+                                <p>
+                                    와 계수를 비교하면
+                                </p>
 
-        <BlockMath math="2B+A=-1" />
+                                <BlockMath math="2B+A=-1" />
 
-        <BlockMath math="A-B=2" />
+                                <BlockMath math="A-B=2" />
 
-        <BlockMath math="AB=k" />
+                                <BlockMath math="AB=k" />
 
-        <p>
-          앞의 두 식을 풀면
-        </p>
+                                <p>
+                                    앞의 두 식을 풀면
+                                </p>
 
-        <BlockMath math="A=1,\quad B=-1" />
+                                <BlockMath math="A=1,\quad B=-1" />
 
-        <p>
-          따라서
-        </p>
+                                <p>
+                                    따라서
+                                </p>
 
-        <BlockMath math="k=AB=1\cdot(-1)=-1" />
+                                <BlockMath math="k=AB=1\cdot(-1)=-1" />
 
-        <p>
-          실제로
-        </p>
+                                <p>
+                                    실제로
+                                </p>
 
-        <BlockMath math="2x^2+xy-y^2-x+2y-1=(2x-y+1)(x+y-1)" />
-      </div>
+                                <BlockMath math="2x^2+xy-y^2-x+2y-1=(2x-y+1)(x+y-1)" />
+                            </div>
 
-      <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
-        <h4 className="mb-3 font-bold text-green-300">
-          풀이 2 : 판별식의 판별식 이용
-        </h4>
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-green-300">
+                                    풀이 2 : 판별식의 판별식 이용
+                                </h4>
 
-        <p>
-          주어진 식을 <InlineMath math="x" />에 대한 이차식으로 정리하면
-        </p>
+                                <p>
+                                    주어진 식을 <InlineMath math="x" />에 대한 이차식으로 정리하면
+                                </p>
 
-        <BlockMath math="2x^2+(y-1)x+(-y^2+2y+k)" />
+                                <BlockMath math="2x^2+(y-1)x+(-y^2+2y+k)" />
 
-        <p>
-          이 식이 두 일차식의 곱으로 인수분해되려면,
-          <InlineMath math="x" />에 대한 판별식이
-          <InlineMath math="y" />에 대한 완전제곱식이 되어야 한다.
-        </p>
+                                <p>
+                                    이 식이 두 일차식의 곱으로 인수분해되려면,
+                                    <InlineMath math="x" />에 대한 판별식이
+                                    <InlineMath math="y" />에 대한 완전제곱식이 되어야 한다.
+                                </p>
 
-        <p>
-          <InlineMath math="x" />에 대한 판별식은
-        </p>
+                                <p>
+                                    <InlineMath math="x" />에 대한 판별식은
+                                </p>
 
-        <BlockMath math="D_x=(y-1)^2-4\cdot2(-y^2+2y+k)" />
+                                <BlockMath math="D_x=(y-1)^2-4\cdot2(-y^2+2y+k)" />
 
-        <BlockMath math="=y^2-2y+1+8y^2-16y-8k" />
+                                <BlockMath math="=y^2-2y+1+8y^2-16y-8k" />
 
-        <BlockMath math="=9y^2-18y+1-8k" />
+                                <BlockMath math="=9y^2-18y+1-8k" />
 
-        <p>
-          이것이 <InlineMath math="y" />에 대한 완전제곱식이 되려면,
-          다시 판별식이 <InlineMath math="0" />이어야 한다.
-        </p>
+                                <p>
+                                    이것이 <InlineMath math="y" />에 대한 완전제곱식이 되려면,
+                                    다시 판별식이 <InlineMath math="0" />이어야 한다.
+                                </p>
 
-        <BlockMath math="D_y=(-18)^2-4\cdot9(1-8k)=0" />
+                                <BlockMath math="D_y=(-18)^2-4\cdot9(1-8k)=0" />
 
-        <BlockMath math="324-36+288k=0" />
+                                <BlockMath math="324-36+288k=0" />
 
-        <BlockMath math="288+288k=0" />
+                                <BlockMath math="288+288k=0" />
 
-        <BlockMath math="k=-1" />
-      </div>
+                                <BlockMath math="k=-1" />
+                            </div>
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-1" />이다.
-      </p>
-    </div>
-  </details>
-</div>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-1" />이다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 10
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 10
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    <InlineMath math="x" />에 대한 이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        <InlineMath math="x" />에 대한 이차방정식
+                    </p>
 
-  <BlockMath math="x^2+3(1+i)x+(p+3i)=0" />
+                    <BlockMath math="x^2+3(1+i)x+(p+3i)=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 실근을 가질 때, 실수 <InlineMath math="p" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 실근을 가질 때, 실수 <InlineMath math="p" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p>
-        허수계수 이차방정식에서는 판별식으로 실근 여부를 판단하지 않는다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p>
+                                허수계수 이차방정식에서는 판별식으로 실근 여부를 판단하지 않는다.
+                            </p>
 
-      <p>
-        실근을 <InlineMath math="\alpha" />라 두고 대입한다.
-      </p>
+                            <p>
+                                실근을 <InlineMath math="\alpha" />라 두고 대입한다.
+                            </p>
 
-      <BlockMath math="\alpha^2+3(1+i)\alpha+(p+3i)=0" />
+                            <BlockMath math="\alpha^2+3(1+i)\alpha+(p+3i)=0" />
 
-      <BlockMath math="\alpha^2+3\alpha+p+(3\alpha+3)i=0" />
+                            <BlockMath math="\alpha^2+3\alpha+p+(3\alpha+3)i=0" />
 
-      <p>
-        복소수가 <InlineMath math="0" />이 되려면 실수부와 허수부가 모두 <InlineMath math="0" />이어야 한다.
-      </p>
+                            <p>
+                                복소수가 <InlineMath math="0" />이 되려면 실수부와 허수부가 모두 <InlineMath math="0" />이어야 한다.
+                            </p>
 
-      <BlockMath math="3\alpha+3=0" />
+                            <BlockMath math="3\alpha+3=0" />
 
-      <BlockMath math="\alpha=-1" />
+                            <BlockMath math="\alpha=-1" />
 
-      <p>
-        실수부에 대입하면
-      </p>
+                            <p>
+                                실수부에 대입하면
+                            </p>
 
-      <BlockMath math="\alpha^2+3\alpha+p=0" />
+                            <BlockMath math="\alpha^2+3\alpha+p=0" />
 
-      <BlockMath math="1-3+p=0" />
+                            <BlockMath math="1-3+p=0" />
 
-      <BlockMath math="p=2" />
+                            <BlockMath math="p=2" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="2" />이다.
-      </p>
-    </div>
-  </details>
-</div>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="2" />이다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 11
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 11
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    <InlineMath math="x" />에 대한 이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        <InlineMath math="x" />에 대한 이차방정식
+                    </p>
 
-  <BlockMath math="x^2+(k-3+i)x-3(k+2)-2i=0" />
+                    <BlockMath math="x^2+(k-3+i)x-3(k+2)-2i=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 실근을 가질 때, 실수 <InlineMath math="k" />의 값을 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 실근을 가질 때, 실수 <InlineMath math="k" />의 값을 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p>
-        실근을 <InlineMath math="\alpha" />라 두고 대입한다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p>
+                                실근을 <InlineMath math="\alpha" />라 두고 대입한다.
+                            </p>
 
-      <BlockMath math="\alpha^2+(k-3+i)\alpha-3(k+2)-2i=0" />
+                            <BlockMath math="\alpha^2+(k-3+i)\alpha-3(k+2)-2i=0" />
 
-      <BlockMath math="\alpha^2+(k-3)\alpha-3(k+2)+(\alpha-2)i=0" />
+                            <BlockMath math="\alpha^2+(k-3)\alpha-3(k+2)+(\alpha-2)i=0" />
 
-      <p>
-        허수부가 <InlineMath math="0" />이어야 하므로
-      </p>
+                            <p>
+                                허수부가 <InlineMath math="0" />이어야 하므로
+                            </p>
 
-      <BlockMath math="\alpha-2=0" />
+                            <BlockMath math="\alpha-2=0" />
 
-      <BlockMath math="\alpha=2" />
+                            <BlockMath math="\alpha=2" />
 
-      <p>
-        실수부에 대입하면
-      </p>
+                            <p>
+                                실수부에 대입하면
+                            </p>
 
-      <BlockMath math="\alpha^2+(k-3)\alpha-3(k+2)=0" />
+                            <BlockMath math="\alpha^2+(k-3)\alpha-3(k+2)=0" />
 
-      <BlockMath math="4+2(k-3)-3(k+2)=0" />
+                            <BlockMath math="4+2(k-3)-3(k+2)=0" />
 
-      <BlockMath math="4+2k-6-3k-6=0" />
+                            <BlockMath math="4+2k-6-3k-6=0" />
 
-      <BlockMath math="-k-8=0" />
+                            <BlockMath math="-k-8=0" />
 
-      <BlockMath math="k=-8" />
+                            <BlockMath math="k=-8" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-8" />이다.
-      </p>
-    </div>
-  </details>
-</div>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-8" />이다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-  <h3 className="mb-4 text-xl font-bold text-white">
-    예제 12
-  </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 12
+                    </h3>
 
-  <p className="mb-4 leading-8 text-gray-300">
-    <InlineMath math="p\ge0" />이고, <InlineMath math="x" />에 대한 이차방정식
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        <InlineMath math="p\ge0" />이고, <InlineMath math="x" />에 대한 이차방정식
+                    </p>
 
-  <BlockMath math="(1+pi)x^2+(1-i)x-2+i=0" />
+                    <BlockMath math="(1+pi)x^2+(1-i)x-2+i=0" />
 
-  <p className="mb-4 leading-8 text-gray-300">
-    이 한 실근 <InlineMath math="\alpha" />와 한 허근 <InlineMath math="\beta" />를 가질 때, <InlineMath math="\beta" />를 구하여라.
-  </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이 한 실근 <InlineMath math="\alpha" />와 한 허근 <InlineMath math="\beta" />를 가질 때, <InlineMath math="\beta" />를 구하여라.
+                    </p>
 
-  <details className="rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-      풀이 보기
-    </summary>
+                    <details className="rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-      <p>
-        실근을 <InlineMath math="\alpha" />라 두고 대입한다.
-      </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p>
+                                실근을 <InlineMath math="\alpha" />라 두고 대입한다.
+                            </p>
 
-      <BlockMath math="(1+pi)\alpha^2+(1-i)\alpha-2+i=0" />
+                            <BlockMath math="(1+pi)\alpha^2+(1-i)\alpha-2+i=0" />
 
-      <BlockMath math="\alpha^2+\alpha-2+(p\alpha^2-\alpha+1)i=0" />
+                            <BlockMath math="\alpha^2+\alpha-2+(p\alpha^2-\alpha+1)i=0" />
 
-      <p>
-        실수부와 허수부가 모두 <InlineMath math="0" />이어야 하므로
-      </p>
+                            <p>
+                                실수부와 허수부가 모두 <InlineMath math="0" />이어야 하므로
+                            </p>
 
-      <BlockMath math="\alpha^2+\alpha-2=0" />
+                            <BlockMath math="\alpha^2+\alpha-2=0" />
 
-      <BlockMath math="p\alpha^2-\alpha+1=0" />
+                            <BlockMath math="p\alpha^2-\alpha+1=0" />
 
-      <p>
-        먼저
-      </p>
+                            <p>
+                                먼저
+                            </p>
 
-      <BlockMath math="\alpha^2+\alpha-2=0" />
+                            <BlockMath math="\alpha^2+\alpha-2=0" />
 
-      <BlockMath math="(\alpha-1)(\alpha+2)=0" />
+                            <BlockMath math="(\alpha-1)(\alpha+2)=0" />
 
-      <BlockMath math="\alpha=1,\quad -2" />
+                            <BlockMath math="\alpha=1,\quad -2" />
 
-      <p>
-        <InlineMath math="\alpha=1" />이면
-      </p>
+                            <p>
+                                <InlineMath math="\alpha=1" />이면
+                            </p>
 
-      <BlockMath math="p-1+1=0" />
+                            <BlockMath math="p-1+1=0" />
 
-      <BlockMath math="p=0" />
+                            <BlockMath math="p=0" />
 
-      <p>
-        <InlineMath math="\alpha=-2" />이면
-      </p>
+                            <p>
+                                <InlineMath math="\alpha=-2" />이면
+                            </p>
 
-      <BlockMath math="4p+2+1=0" />
+                            <BlockMath math="4p+2+1=0" />
 
-      <BlockMath math="p=-\frac34" />
+                            <BlockMath math="p=-\frac34" />
 
-      <p>
-        그런데 <InlineMath math="p\ge0" />이므로
-      </p>
+                            <p>
+                                그런데 <InlineMath math="p\ge0" />이므로
+                            </p>
 
-      <BlockMath math="p=0,\qquad \alpha=1" />
+                            <BlockMath math="p=0,\qquad \alpha=1" />
 
-      <p>
-        따라서 원래 방정식은
-      </p>
+                            <p>
+                                따라서 원래 방정식은
+                            </p>
 
-      <BlockMath math="x^2+(1-i)x-2+i=0" />
+                            <BlockMath math="x^2+(1-i)x-2+i=0" />
 
-      <p>
-        한 근이 <InlineMath math="1" />이고 다른 근이 <InlineMath math="\beta" />이므로 근과 계수와의 관계에 의해
-      </p>
+                            <p>
+                                한 근이 <InlineMath math="1" />이고 다른 근이 <InlineMath math="\beta" />이므로 근과 계수와의 관계에 의해
+                            </p>
 
-      <BlockMath math="1\cdot\beta=-2+i" />
+                            <BlockMath math="1\cdot\beta=-2+i" />
 
-      <BlockMath math="\beta=-2+i" />
+                            <BlockMath math="\beta=-2+i" />
 
-      <p className="font-semibold text-white">
-        따라서 답은 <InlineMath math="-2+i" />이다.
-      </p>
-    </div>
-  </details>
-</div>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="-2+i" />이다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
 
-  <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
-  <h3 className="mb-4 text-xl font-bold text-yellow-300">
-    핵심 정리
-  </h3>
+                <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-yellow-300">
+                        핵심 정리
+                    </h3>
 
-  <BlockMath math="D=b^2-4ac" />
+                    <BlockMath math="D=b^2-4ac" />
 
-  <div className="mt-5 space-y-3 text-gray-300">
-    <p>
-      <InlineMath math="D>0" /> :
-      서로 다른 두 실근
-    </p>
+                    <div className="mt-5 space-y-3 text-gray-300">
+                        <p>
+                            <InlineMath math="D>0" /> :
+                            서로 다른 두 실근
+                        </p>
 
-    <p>
-      <InlineMath math="D=0" /> :
-      중근(중복된 두 실근)
-    </p>
+                        <p>
+                            <InlineMath math="D=0" /> :
+                            중근(중복된 두 실근)
+                        </p>
 
-    <p>
-      <InlineMath math="D<0" /> :
-      서로 다른 두 허근
-    </p>
-  </div>
+                        <p>
+                            <InlineMath math="D<0" /> :
+                            서로 다른 두 허근
+                        </p>
+                    </div>
 
-  <div className="mt-6 rounded-lg bg-black/30 p-4">
-    <p className="font-semibold text-yellow-300">
-      자주 사용하는 조건
-    </p>
+                    <div className="mt-6 rounded-lg bg-black/30 p-4">
+                        <p className="font-semibold text-yellow-300">
+                            자주 사용하는 조건
+                        </p>
 
-    <div className="mt-3 space-y-2 text-gray-300">
-      <p>
-        두 실근 ⇒ <InlineMath math="D\ge0" />
-      </p>
+                        <div className="mt-3 space-y-2 text-gray-300">
+                            <p>
+                                두 실근 ⇒ <InlineMath math="D\ge0" />
+                            </p>
 
-      <p>
-        서로 다른 두 실근 ⇒ <InlineMath math="D>0" />
-      </p>
+                            <p>
+                                서로 다른 두 실근 ⇒ <InlineMath math="D>0" />
+                            </p>
 
-      <p>
-        중근 ⇒ <InlineMath math="D=0" />
-      </p>
+                            <p>
+                                중근 ⇒ <InlineMath math="D=0" />
+                            </p>
 
-      <p>
-        허근 ⇒ <InlineMath math="D<0" />
-      </p>
-    </div>
-  </div>
-   <p className="mt-5 leading-8 text-gray-300">
-    <strong>두 실근</strong>은 중근을 포함하는 표현이고,
-    <strong>서로 다른 두 실근</strong>은 중근을 제외한 표현이다.
-    문제에서 사용하는 용어를 정확히 구분해야 한다.
-  </p>
+                            <p>
+                                허근 ⇒ <InlineMath math="D<0" />
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mt-5 leading-8 text-gray-300">
+                        <strong>두 실근</strong>은 중근을 포함하는 표현이고,
+                        <strong>서로 다른 두 실근</strong>은 중근을 제외한 표현이다.
+                        문제에서 사용하는 용어를 정확히 구분해야 한다.
+                    </p>
 
-  <div className="mt-6 rounded-lg bg-black/30 p-4">
-    <p className="font-semibold text-yellow-300">
-      계산 팁
-    </p>
+                    <div className="mt-6 rounded-lg bg-black/30 p-4">
+                        <p className="font-semibold text-yellow-300">
+                            계산 팁
+                        </p>
 
-    <p className="mt-3 leading-8 text-gray-300">
-      일차항의 계수가 짝수이면
-    </p>
+                        <p className="mt-3 leading-8 text-gray-300">
+                            일차항의 계수가 짝수이면
+                        </p>
 
-    <BlockMath math="ax^2+2b'x+c=0" />
+                        <BlockMath math="ax^2+2b'x+c=0" />
 
-    <p className="leading-8 text-gray-300">
-      의 형태로 놓고
-    </p>
+                        <p className="leading-8 text-gray-300">
+                            의 형태로 놓고
+                        </p>
 
-    <BlockMath math="\frac{D}{4}=b'^2-ac" />
+                        <BlockMath math="\frac{D}{4}=b'^2-ac" />
 
-    <p className="leading-8 text-gray-300">
-      를 사용하면 계산이 훨씬 간단해집니다.
-    </p>
+                        <p className="leading-8 text-gray-300">
+                            를 사용하면 계산이 훨씬 간단해집니다.
+                        </p>
 
-    <p className="mt-3 leading-8 text-gray-300">
-      따라서 문제를 풀 때는 먼저 일차항의 계수가 짝수인지 확인한 뒤, <InlineMath math="D" />와 <InlineMath math="\frac{D}{4}" /> 중 계산하기 편한 것을 선택하면 됩니다.
-    </p>
-  </div>
-</div>
+                        <p className="mt-3 leading-8 text-gray-300">
+                            따라서 문제를 풀 때는 먼저 일차항의 계수가 짝수인지 확인한 뒤, <InlineMath math="D" />와 <InlineMath math="\frac{D}{4}" /> 중 계산하기 편한 것을 선택하면 됩니다.
+                        </p>
+                    </div>
+                </div>
 
- 
 
-</section>
+
+            </section>
 
         </>
     )

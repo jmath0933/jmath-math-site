@@ -11,6 +11,8 @@ import ComplexNumbersPage
   from "../components/commonMath1/equation/ComplexNumbersPage";
 import QuadraticEquationPage
   from "../components/commonMath1/equation/QuadraticEquationPage";
+import QuadraticEquationAndFunctionPage
+  from "../components/commonMath1/equation/QuadraticEquationAndFunctionPage";
 
 const curriculum = {
   중1: {
@@ -117,6 +119,14 @@ export default function Home() {
       smallUnit === "이차방정식"
     ) {
       return <QuadraticEquationPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "방정식" &&
+      smallUnit === "이차방정식과 이차함수"
+    ) {
+      return <QuadraticEquationAndFunctionPage />;
     }
 
     return (
