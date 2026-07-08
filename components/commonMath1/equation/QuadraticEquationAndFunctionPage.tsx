@@ -5076,8 +5076,7 @@ export default function QuadraticEquationAndFunctionPage() {
                                 </p>
 
                                 <p className="leading-8 text-gray-300">
-                                    꼭짓점의 <InlineMath math="x" />좌표가
-                                    <InlineMath math="2" />이므로,
+                                    꼭짓점의 <InlineMath math="x" />좌표가 <InlineMath math="2" />이므로,
                                     원래 식에 <InlineMath math="x=2" />를 대입합니다.
                                 </p>
 
@@ -9206,11 +9205,11 @@ export default function QuadraticEquationAndFunctionPage() {
                             </p>
 
                             <BlockMath math="\begin{aligned}
-                \text{이익}
-                &=\text{판매금액}-\text{비용} \\
-                &=x\left(11-\frac{x}{100}\right)-\left(1000+x+\frac{x^2}{400}\right) \\
-                &=-\frac{x^2}{80}+10x-1000
-                \end{aligned}" />
+                                \text{이익}
+                                &=\text{판매금액}-\text{비용} \\
+                                &=x\left(11-\frac{x}{100}\right)-\left(1000+x+\frac{x^2}{400}\right) \\
+                                &=-\frac{x^2}{80}+10x-1000
+                                \end{aligned}" />
 
                             <p>
                                 아래로 볼록인 이차함수이므로 꼭짓점에서 최댓값을 갖습니다.
@@ -9410,211 +9409,207 @@ export default function QuadraticEquationAndFunctionPage() {
                 </div>
 
                 {/* 예제 5 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 5
-    </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 5
+                    </h3>
 
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-        <p className="leading-8 text-gray-300">
-            한 변의 길이가 <InlineMath math="1" />인 정사각형 <InlineMath math="ABCD" />의 변 <InlineMath math="AB,BC,CD,DA" /> 위에 각각 점 <InlineMath math="P,Q,R,S" />가 있다.
-        </p>
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <p className="leading-8 text-gray-300">
+                            한 변의 길이가 <InlineMath math="1" />인 정사각형 <InlineMath math="ABCD" />의 변 <InlineMath math="AB,BC,CD,DA" /> 위에 각각 점 <InlineMath math="P,Q,R,S" />가 있다.
+                        </p>
 
-        <BlockMath math="\overline{AP}=a,\quad \overline{BQ}=b,\quad \overline{CR}=c,\quad \overline{DS}=d" />
+                        <BlockMath math="\overline{AP}=a,\quad \overline{BQ}=b,\quad \overline{CR}=c,\quad \overline{DS}=d" />
 
-        <p className="leading-8 text-gray-300">
-            이고 <InlineMath math="a+b+c+d=1" />일 때,
-            사각형 <InlineMath math="PQRS" />의 넓이의 최댓값과 최솟값을 구하여라.
-        </p>
-    </div>
+                        <p className="leading-8 text-gray-300">
+                            이고 <InlineMath math="a+b+c+d=1" />일 때,
+                            사각형 <InlineMath math="PQRS" />의 넓이의 최댓값과 최솟값을 구하여라.
+                        </p>
+                    </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
-            <p>
-                정사각형의 넓이에서 네 모서리의 삼각형 넓이를 빼면
-                사각형 <InlineMath math="PQRS" />의 넓이를 구할 수 있습니다.
-            </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p>
+                                정사각형의 넓이에서 네 모서리의 삼각형 넓이를 빼면
+                                사각형 <InlineMath math="PQRS" />의 넓이를 구할 수 있습니다.
+                            </p>
 
-            <BlockMath math="\begin{aligned}
-                [PQRS]
-                &=1-\frac12a(1-b)-\frac12b(1-c)-\frac12c(1-d)-\frac12d(1-a)
-                \end{aligned}" />
+                            <BlockMath math="\begin{aligned}
+                                [PQRS]
+                                &=1-\frac12a(1-b)-\frac12b(1-c)-\frac12c(1-d)-\frac12d(1-a)
+                                \end{aligned}" />
 
-            <p>
-                정리하면
-            </p>
+                            <p>
+                                정리하면
+                            </p>
 
-            <BlockMath math="[PQRS]=1-\frac12(a+b+c+d)+\frac12(ab+bc+cd+da)" />
+                            <BlockMath math="[PQRS]=1-\frac12(a+b+c+d)+\frac12(ab+bc+cd+da)" />
 
-            <p>
-                그런데 <InlineMath math="a+b+c+d=1" />이므로
-            </p>
+                            <p>
+                                그런데 <InlineMath math="a+b+c+d=1" />이므로
+                            </p>
 
-            <BlockMath math="[PQRS]=\frac12+\frac12(ab+bc+cd+da)" />
+                            <BlockMath math="[PQRS]=\frac12+\frac12(ab+bc+cd+da)" />
 
-            <p>
-                여기서
-            </p>
+                            <p>
+                                여기서
+                            </p>
 
-            <BlockMath math="ab+bc+cd+da=(a+c)(b+d)" />
+                            <BlockMath math="ab+bc+cd+da=(a+c)(b+d)" />
 
-            <p>
-                입니다. <InlineMath math="a+c=t" />라고 두면 <InlineMath math="b+d=1-t" />이므로
-            </p>
+                            <p>
+                                입니다. <InlineMath math="a+c=t" />라고 두면 <InlineMath math="b+d=1-t" />이므로
+                            </p>
 
-            <BlockMath math="[PQRS]=\frac12+\frac12t(1-t)" />
+                            <BlockMath math="[PQRS]=\frac12+\frac12t(1-t)" />
 
-            <p>
-                <InlineMath math="0\le t\le1" />에서 <InlineMath math="t(1-t)" />의 최댓값은 <InlineMath math="\frac14" />, 최솟값은 <InlineMath math="0" />입니다.
-            </p>
+                            <p>
+                                <InlineMath math="0\le t\le1" />에서 <InlineMath math="t(1-t)" />의 최댓값은 <InlineMath math="\frac14" />, 최솟값은 <InlineMath math="0" />입니다.
+                            </p>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-4">
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-4">
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath math="\text{최댓값}=\frac12+\frac12\cdot\frac14=\frac58" />
+                                <BlockMath math="\text{최댓값}=\frac12+\frac12\cdot\frac14=\frac58" />
 
-                <BlockMath math="\text{최솟값}=\frac12" />
-            </div>
-        </div>
-    </details>
-</div>
+                                <BlockMath math="\text{최솟값}=\frac12" />
+                            </div>
+                        </div>
+                    </details>
+                </div>
 
-{/* 예제 6 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 6
-    </h3>
+                {/* 예제 6 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 6
+                    </h3>
 
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.6fr_1fr]">
-            <div className="flex flex-col justify-center">
-                <p className="leading-8 text-gray-300">
-                    그림과 같이 한 변의 길이가 <InlineMath math="2" />인 정사각형 <InlineMath math="ABCD" />의 세 변 <InlineMath math="AB,BC,CD" /> 위에 각각 점 <InlineMath math="P,Q,R" />가 있다. 
-                    <br/><InlineMath math="6\overline{AP}=3\overline{BQ}=2\overline{CR}" />
-                    일 때, 삼각형 <InlineMath math="PQR" />의 넓이의 최솟값을 구하여라.
-                </p>
-            </div>
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.6fr_1fr]">
+                            <div className="flex flex-col justify-center">
+                                <p className="leading-8 text-gray-300">
+                                    그림과 같이 한 변의 길이가 <InlineMath math="2" />인 정사각형 <InlineMath math="ABCD" />의 세 변 <InlineMath math="AB,BC,CD" /> 위에 각각 점 <InlineMath math="P,Q,R" />가 있다.
+                                    <br /><InlineMath math="6\overline{AP}=3\overline{BQ}=2\overline{CR}" />
+                                    일 때, 삼각형 <InlineMath math="PQR" />의 넓이의 최솟값을 구하여라.
+                                </p>
+                            </div>
 
-            <div className="flex items-center justify-center rounded-xl border border-white/10 bg-white p-4">
-                <img
-                    src="/images/2.35_6.png"
-                    alt="정사각형과 삼각형 PQR"
-                    className="w-full max-w-sm"
-                />
-            </div>
-        </div>
-    </div>
+                            <div className="flex items-center justify-center rounded-xl border border-white/10 bg-white p-4">
+                                <img
+                                    src="/images/2.35_6.png"
+                                    alt="정사각형과 삼각형 PQR"
+                                    className="w-full max-w-sm"
+                                />
+                            </div>
+                        </div>
+                    </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-        풀이 보기
-    </summary>
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-5 text-gray-300">
-        <p>
-            공통된 값을 <InlineMath math="t" />라고 두면
-        </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
+                            <p>
+                                공통된 값을 <InlineMath math="t" />라고 두면
+                            </p>
 
-        <BlockMath math="6\overline{AP}=3\overline{BQ}=2\overline{CR}=t" />
+                            <BlockMath math="6\overline{AP}=3\overline{BQ}=2\overline{CR}=t" />
 
-        <p>
-            따라서
-        </p>
+                            <p>
+                                따라서
+                            </p>
 
-        <BlockMath math="\overline{AP}=\frac{t}{6},\qquad \overline{BQ}=\frac{t}{3},\qquad \overline{CR}=\frac{t}{2}" />
+                            <BlockMath math="\overline{AP}=\frac{t}{6},\qquad \overline{BQ}=\frac{t}{3},\qquad \overline{CR}=\frac{t}{2}" />
 
-        <p>
-            정사각형의 한 변의 길이가 <InlineMath math="2" />이므로 <InlineMath math="0\le t\le4" />입니다.
-        </p>
+                            <p>
+                                정사각형의 한 변의 길이가 <InlineMath math="2" />이므로 <InlineMath math="0\le t\le4" />입니다.
+                            </p>
 
-        <hr className="border-white/10" />
+                            <hr className="border-white/10" />
 
-        <p>
-            삼각형 <InlineMath math="PQR" />의 넓이는
-            사다리꼴 <InlineMath math="PBCR" />의 넓이에서
-            두 삼각형 <InlineMath math="PBQ" />, <InlineMath math="RCQ" />의 넓이를 빼서 구합니다.
-        </p>
+                            <p>
+                                삼각형 <InlineMath math="PQR" />의 넓이는
+                                사다리꼴 <InlineMath math="PBCR" />의 넓이에서
+                                두 삼각형 <InlineMath math="PBQ" />, <InlineMath math="RCQ" />의 넓이를 빼서 구합니다.
+                            </p>
 
-        <BlockMath math="[PQR]=[PBCR]-[PBQ]-[RCQ]" />
+                            <BlockMath math="[PQR]=[PBCR]-[PBQ]-[RCQ]" />
 
-        <p>
-            먼저
-        </p>
+                            <p>
+                                먼저
+                            </p>
 
-        <BlockMath math="\overline{PB}=2-\frac{t}{6},\qquad \overline{RC}=\frac{t}{2},\qquad \overline{BC}=2" />
+                            <BlockMath math="\overline{PB}=2-\frac{t}{6},\qquad \overline{RC}=\frac{t}{2},\qquad \overline{BC}=2" />
 
-        <p>
-            이므로 사다리꼴 <InlineMath math="PBCR" />의 넓이는
-        </p>
+                            <p>
+                                이므로 사다리꼴 <InlineMath math="PBCR" />의 넓이는
+                            </p>
 
-        <BlockMath math="[PBCR]=\frac12\left(2-\frac{t}{6}+\frac{t}{2}\right)\cdot2" />
+                            <BlockMath math="[PBCR]=\frac12\left(2-\frac{t}{6}+\frac{t}{2}\right)\cdot2" />
 
-        <BlockMath math="=2+\frac{t}{3}" />
+                            <BlockMath math="=2+\frac{t}{3}" />
 
-        <p>
-            또
-        </p>
+                            <p>
+                                또
+                            </p>
 
-        <BlockMath math="[PBQ]=\frac12\left(2-\frac{t}{6}\right)\cdot\frac{t}{3}" />
+                            <BlockMath math="[PBQ]=\frac12\left(2-\frac{t}{6}\right)\cdot\frac{t}{3}" />
 
-        <BlockMath math="=\frac{t}{3}-\frac{t^2}{36}" />
+                            <BlockMath math="=\frac{t}{3}-\frac{t^2}{36}" />
 
-        <BlockMath math="[RCQ]=\frac12\cdot\frac{t}{2}\left(2-\frac{t}{3}\right)" />
+                            <BlockMath math="[RCQ]=\frac12\cdot\frac{t}{2}\left(2-\frac{t}{3}\right)" />
 
-        <BlockMath math="=\frac{t}{2}-\frac{t^2}{12}" />
+                            <BlockMath math="=\frac{t}{2}-\frac{t^2}{12}" />
 
-        <p>
-            따라서
-        </p>
+                            <p>
+                                따라서
+                            </p>
 
-        <BlockMath math="\begin{aligned}
-[PQR]
-&=2+\frac{t}{3}
--\left(\frac{t}{3}-\frac{t^2}{36}\right)
--\left(\frac{t}{2}-\frac{t^2}{12}\right)\\
-&=\frac{t^2}{9}-\frac{t}{2}+2
-\end{aligned}" />
+                            <BlockMath math="\begin{aligned}
+                                [PQR]
+                                &=2+\frac{t}{3}
+                                -\left(\frac{t}{3}-\frac{t^2}{36}\right)
+                                -\left(\frac{t}{2}-\frac{t^2}{12}\right)\\
+                                &=\frac{t^2}{9}-\frac{t}{2}+2
+                                \end{aligned}" />
 
-        <p>
-            이제 <InlineMath math="0\le t\le4" />에서
-            이 이차함수의 최솟값을 구합니다.
-        </p>
+                            <p>
+                                이제 <InlineMath math="0\le t\le4" />에서
+                                이 이차함수의 최솟값을 구합니다.
+                            </p>
 
-        <p>
-            꼭짓점의 <InlineMath math="t" />좌표는
-        </p>
+                            <p>
+                                꼭짓점의 <InlineMath math="t" />좌표는
+                            </p>
 
-        <BlockMath math="t=\frac{\frac12}{2\cdot\frac19}=\frac94" />
+                            <BlockMath math="t=\frac{\frac12}{2\cdot\frac19}=\frac94" />
 
-        <p>
-            이 값은 <InlineMath math="0\le t\le4" />에 포함됩니다.
-        </p>
+                            <p>
+                                이 값은 <InlineMath math="0\le t\le4" />에 포함됩니다.
+                            </p>
 
-        <BlockMath math="[PQR]_{\min}=\frac19\left(\frac94\right)^2-\frac12\cdot\frac94+2" />
+                            <BlockMath math="[PQR]_{\min}=\frac19\left(\frac94\right)^2-\frac12\cdot\frac94+2" />
 
-        <BlockMath math="=\frac{23}{16}" />
+                            <BlockMath math="=\frac{23}{16}" />
 
-        <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-4">
-            <p className="font-bold text-green-300">
-                따라서
-            </p>
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-4">
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-            <BlockMath math="\boxed{\frac{23}{16}}" />
-        </div>
-    </div>
-</details>
-</div>
+                                <BlockMath math="\boxed{\frac{23}{16}}" />
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </section>
-
-
-
-
         </>
     )
 };

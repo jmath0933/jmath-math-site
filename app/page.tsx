@@ -13,6 +13,10 @@ import QuadraticEquationPage
   from "../components/commonMath1/equation/QuadraticEquationPage";
 import QuadraticEquationAndFunctionPage
   from "../components/commonMath1/equation/QuadraticEquationAndFunctionPage";
+import VariousEquationsPage
+  from "../components/commonMath1/equation/VariousEquationsPage";
+import InequalityPropertiesPage
+  from "../components/commonMath1/inequality/InequalityPropertiesPage";
 
 const curriculum = {
   중1: {
@@ -27,8 +31,8 @@ const curriculum = {
   공통수학1: {
     다항식: ["다항식의 연산", "나머지정리와 인수분해"],
     방정식: ["복소수", "이차방정식", "이차방정식과 이차함수", "여러 가지 방정식",],
-    부등식: ["부등식의 성질", "일차부등식", "이차부등식"],
-    "순열과 조합": ["순열", "조합"],
+    부등식: ["부등식의 성질", "일차부등식", "이차부등식", "여러 가지 부등식"],
+    "순열과 조합": ["경우의 수", "순열", "조합"],
     행렬: ["행렬의 뜻", "행렬의 연산"],
   },
   공통수학2: {
@@ -127,6 +131,22 @@ export default function Home() {
       smallUnit === "이차방정식과 이차함수"
     ) {
       return <QuadraticEquationAndFunctionPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "방정식" &&
+      smallUnit === "여러 가지 방정식"
+    ) {
+      return <VariousEquationsPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "부등식" &&
+      smallUnit === "부등식의 성질"
+    ) {
+      return <InequalityPropertiesPage />;
     }
 
     return (

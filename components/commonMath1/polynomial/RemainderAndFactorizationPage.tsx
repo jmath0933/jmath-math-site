@@ -538,8 +538,8 @@ export default function RemainderAndFactorizationPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        일반적으로 미정계수가 n개라면
-                        이를 결정하기 위해서는 서로 독립인 식이 n개 필요합니다.
+                        일반적으로 미정계수가 <InlineMath math="n" />개라면
+                        이를 결정하기 위해서는 서로 독립인 식이 <InlineMath math="n" />개 필요합니다.
                     </p>
 
                     <BlockMath math="ax+b=2x+3" />
@@ -772,8 +772,7 @@ export default function RemainderAndFactorizationPage() {
                                 </p>
 
                                 <p>
-                                    보통은 양변에 분모의 최소공배수
-                                    <InlineMath math="x(x+1)(x+2)" />를 곱하여 다항식 항등식으로 만듭니다.
+                                    보통은 양변에 분모의 최소공배수 <InlineMath math="x(x+1)(x+2)" />를 곱하여 다항식 항등식으로 만듭니다.
                                 </p>
 
                                 <BlockMath math="a(x+1)(x+2)+bx(x+2)+cx(x+1)=4" />
@@ -826,10 +825,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                오른쪽 식에는
-                                <InlineMath math="(x-1)" />,
-                                <InlineMath math="(x-2)" />,
-                                <InlineMath math="(x-3)" />
+                                오른쪽 식에는 <InlineMath math="(x-1)" />, <InlineMath math="(x-2)" />, <InlineMath math="(x-3)" />
                                 이 보이므로 이들을 0으로 만드는 값을 대입합니다.
                             </p>
 
@@ -967,10 +963,9 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 6</h3>
 
                     <p className="leading-8 text-gray-300">
-                        다음 식이 <InlineMath math="x,\;y" />값에 관계없이 항상 일정한 값을 갖도록
-                        <InlineMath math="a,\;b" />의 값을 구하여라.
-                        <BlockMath math="\frac{4x+ay+b}{x+y+1}" />
+                        다음 식이 <InlineMath math="x,\;y" />값에 관계없이 항상 일정한 값을 갖도록 <InlineMath math="a,\;b" />의 값을 구하여라.
                     </p>
+                    <BlockMath math="\frac{4x+ay+b}{x+y+1}" />
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
                         <summary className="cursor-pointer font-semibold text-yellow-300">
@@ -1108,8 +1103,7 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 7</h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x+y=1" />을 만족하는 모든 실수
-                        <InlineMath math="x,\;y" />에 대하여
+                        <InlineMath math="x+y=1" />을 만족하는 모든 실수 <InlineMath math="x,\;y" />에 대하여
                     </p>
 
                     <BlockMath math="ax^2+bxy+cy^2=1" />
@@ -1130,8 +1124,7 @@ export default function RemainderAndFactorizationPage() {
                             </h4>
 
                             <p>
-                                조건
-                                <InlineMath math="x+y=1" />
+                                조건 <InlineMath math="x+y=1" />
                                 에서
                             </p>
 
@@ -1215,14 +1208,12 @@ export default function RemainderAndFactorizationPage() {
                             </h4>
 
                             <p>
-                                미정계수는
-                                <InlineMath math="a,\;b,\;c" />
+                                미정계수는 <InlineMath math="a,\;b,\;c" />
                                 의 3개이므로 식 3개를 만들면 된다.
                             </p>
 
                             <p>
-                                조건
-                                <InlineMath math="x+y=1" />
+                                조건 <InlineMath math="x+y=1" />
                                 을 만족하는 수를 대입한다.
                             </p>
 
@@ -1260,8 +1251,7 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 8</h3>
 
                     <p className="leading-8 text-gray-300">
-                        모든 실수 <InlineMath math="x" />에 대하여 아래의 식이 항상 성립할 때,
-                        <InlineMath math="p_1+p_2+\cdots+p_{10}" />을 구하여라.
+                        모든 실수 <InlineMath math="x" />에 대하여 아래의 식이 항상 성립할 때, <InlineMath math="p_1+p_2+\cdots+p_{10}" />을 구하여라.
                     </p>
 
                     <BlockMath math="\frac{1}{(x-10)(x-9)\cdots(x-1)}=\frac{p_1}{x-1}+\frac{p_2}{x-2}+\cdots+\frac{p_{10}}{x-10}" />
@@ -1278,21 +1268,18 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                대신 각 분모를 없애는 값을 대입하여
-                                <InlineMath math="p_1,\;p_2,\;\cdots,\;p_{10}" />의 관계를 봅니다.
+                                대신 각 분모를 없애는 값을 대입하여 <InlineMath math="p_1,\;p_2,\;\cdots,\;p_{10}" />의 관계를 봅니다.
                             </p>
 
                             <p>
-                                먼저 <InlineMath math="p_1" />을 구하려면 양변에
-                                <InlineMath math="x-1" />을 곱하고 <InlineMath math="x=1" />을 대입합니다.
+                                먼저 <InlineMath math="p_1" />을 구하려면 양변에 <InlineMath math="x-1" />을 곱하고 <InlineMath math="x=1" />을 대입합니다.
                             </p>
 
                             <BlockMath math="p_1=\frac{1}{(1-10)(1-9)\cdots(1-2)}" />
                             <BlockMath math="p_1=\frac{1}{(-9)(-8)\cdots(-1)}=-\frac{1}{9!}" />
 
                             <p>
-                                이번에는 <InlineMath math="p_{10}" />을 구하려면 양변에
-                                <InlineMath math="x-10" />을 곱하고 <InlineMath math="x=10" />을 대입합니다.
+                                이번에는 <InlineMath math="p_{10}" />을 구하려면 양변에 <InlineMath math="x-10" />을 곱하고 <InlineMath math="x=10" />을 대입합니다.
                             </p>
 
                             <BlockMath math="p_{10}=\frac{1}{(10-9)(10-8)\cdots(10-1)}" />
@@ -1447,15 +1434,11 @@ export default function RemainderAndFactorizationPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        다항식
-                        <InlineMath math="f(x)" />
-                        를
-                        <InlineMath math="g(x)" />
-                        로 나눈 몫이
-                        <InlineMath math="Q(x)" />
+                        다항식 <InlineMath math="f(x)" />
+                        를 <InlineMath math="g(x)" />
+                        로 나눈 몫이 <InlineMath math="Q(x)" />
                         이고,
-                        나머지가
-                        <InlineMath math="R(x)" />
+                        나머지가 <InlineMath math="R(x)" />
                         라고 하면
                     </p>
 
@@ -1497,7 +1480,7 @@ export default function RemainderAndFactorizationPage() {
                         다시 나눌 수 있으므로 나눗셈이 끝난 것이 아닙니다.
                     </p>
 
-                    <BlockMath math="\text{R(x)의 차수 < g(x)의 차수}" />
+                    <BlockMath math="R(x)\text{의 차수} < g(x)\text{의 차수}" />
 
                     <p className="leading-8 text-gray-300">
                         따라서 나머지의 차수는 항상 나누는 식의 차수보다 낮아야 합니다.
@@ -1661,8 +1644,7 @@ export default function RemainderAndFactorizationPage() {
                                 </h4>
 
                                 <p className="leading-8 text-gray-300">
-                                    <InlineMath math="x^2=2" />를 만족하는 값은 <InlineMath math="x=\sqrt{2}" />,
-                                    <InlineMath math="x=-\sqrt{2}" />입니다.
+                                    <InlineMath math="x^2=2" />를 만족하는 값은 <InlineMath math="x=\sqrt{2}" />, <InlineMath math="x=-\sqrt{2}" />입니다.
                                 </p>
 
                                 <p className="mt-3 leading-8 text-gray-300">
@@ -1856,8 +1838,7 @@ export default function RemainderAndFactorizationPage() {
                     <BlockMath math="f(3)=R" />
 
                     <p className="leading-8 text-gray-300">
-                        따라서 <InlineMath math="x-3" />으로 나눈 나머지는
-                        <InlineMath math="f(3)" />입니다.
+                        따라서 <InlineMath math="x-3" />으로 나눈 나머지는 <InlineMath math="f(3)" />입니다.
                     </p>
                 </div>
 
@@ -1867,9 +1848,8 @@ export default function RemainderAndFactorizationPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        나머지정리는 이미 증명이 끝난 정리입니다.
-                        문제를 풀 때마다
-                        <InlineMath math="f(x)=(x-a)Q(x)+R" />
+                        나머지정리는 이미 증명이 끝난 정리입니다.<br />
+                        문제를 풀 때마다 <InlineMath math="f(x)=(x-a)Q(x)+R" />
                         를 다시 쓸 필요는 없습니다.
                     </p>
 
@@ -1883,8 +1863,7 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 1</h3>
 
                     <p className="leading-8 text-gray-300">
-                        다항식 <InlineMath math="f(x)" />를 일차식
-                        <InlineMath math="ax+b" />로 나누었을 때,
+                        다항식 <InlineMath math="f(x)" />를 일차식 <InlineMath math="ax+b" />로 나누었을 때,
                         나머지로 옳은 것은?
                     </p>
 
@@ -1903,8 +1882,7 @@ export default function RemainderAndFactorizationPage() {
 
                         <div className="mt-5 space-y-5 text-gray-300">
                             <p>
-                                나머지정리는 일차식이 <InlineMath math="0" />이 되게 하는
-                                <InlineMath math="x" />의 값을 대입하는 것입니다.
+                                나머지정리는 일차식이 <InlineMath math="0" />이 되게 하는 <InlineMath math="x" />의 값을 대입하는 것입니다.
                             </p>
 
                             <p>
@@ -2407,9 +2385,7 @@ export default function RemainderAndFactorizationPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        다음은
-                        <InlineMath math="2x^3+3x^2-4x+1" />을
-                        <InlineMath math="x-2" />로 나누는 계산입니다.
+                        다음은 <InlineMath math="2x^3+3x^2-4x+1" />을 <InlineMath math="x-2" />로 나누는 계산입니다.
                     </p>
 
                     <div className="mt-6 overflow-hidden rounded-xl bg-white p-3">
@@ -2449,7 +2425,7 @@ export default function RemainderAndFactorizationPage() {
 
                     <p className="mt-3 leading-8 text-gray-300">
                         나머지만 구하는 문제에서는 조립제법보다
-                        나머지정리로 직접 대입하는 것이 더 간단한 경우도 많습니다.
+                        나머지정리로 직접 대입하는 것이 더 간단한 경우도 많습니다.<br />
                         조립제법은 몫과 나머지를 함께 구해야 할 때 특히 유용합니다.
                     </p>
                 </div>
@@ -2481,8 +2457,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                나머지정리에 의해
-                                <InlineMath math="x=a" />를 대입한 값을 구하면 됩니다.
+                                나머지정리에 의해 <InlineMath math="x=a" />를 대입한 값을 구하면 됩니다.
                             </p>
 
                             <BlockMath math="x^2f(x)\rightarrow a^2f(a)" />
@@ -2593,8 +2568,7 @@ export default function RemainderAndFactorizationPage() {
                         </h3>
 
                         <p className="leading-8 text-gray-300">
-                            조립제법의 왼쪽 숫자
-                            <InlineMath math="-1" />은
+                            조립제법의 왼쪽 숫자 <InlineMath math="-1" />은
                             일차식이 <InlineMath math="0" />이 되는 값만 알려 줍니다.
                         </p>
 
@@ -2612,9 +2586,7 @@ export default function RemainderAndFactorizationPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        다음 세 일차식은 모두
-                        <InlineMath math="x=-1" />일 때
-                        <InlineMath math="0" />이 됩니다.
+                        다음 세 일차식은 모두 <InlineMath math="x=-1" />일 때 <InlineMath math="0" />이 됩니다.
                     </p>
 
                     <BlockMath math="x+1" />
@@ -2671,8 +2643,7 @@ export default function RemainderAndFactorizationPage() {
 
                     <p className="mt-5 leading-8 text-gray-300">
                         나누는 식과 몫을 곱하면
-                        모두 같은 나누어지는 식
-                        <InlineMath math="x^3+2x^2+3x+4" />
+                        모두 같은 나누어지는 식 <InlineMath math="x^3+2x^2+3x+4" />
                         이 만들어집니다.
                     </p>
                 </div>
@@ -2860,10 +2831,8 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 1</h3>
 
                     <p className="leading-8 text-gray-300">
-                        등식
-                        <InlineMath math="x^3+2x^2-4=a(x-1)^3+b(x-1)^2+c(x-1)+d" />
-                        이 <InlineMath math="x" />에 관한 항등식이 될 때,
-                        <InlineMath math="a+b+c-d" />의 값을 구하여라.
+                        등식 <InlineMath math="x^3+2x^2-4=a(x-1)^3+b(x-1)^2+c(x-1)+d" />
+                        이 <InlineMath math="x" />에 관한 항등식이 될 때, <br /><InlineMath math="a+b+c-d" />의 값을 구하여라.
                     </p>
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
@@ -2877,8 +2846,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                주어진 식을 <InlineMath math="x-1" />을 기준으로 정리해야 하므로,
-                                <InlineMath math="x=1" />을 기준으로 연조립제법을 사용합니다.
+                                주어진 식을 <InlineMath math="x-1" />을 기준으로 정리해야 하므로, <InlineMath math="x=1" />을 기준으로 연조립제법을 사용합니다.
                             </p>
 
                             <BlockMath
@@ -3129,8 +3097,7 @@ export default function RemainderAndFactorizationPage() {
                             <p className="font-semibold text-white">풀이 1 : 수치대입</p>
 
                             <p>
-                                <InlineMath math="x=1" />을 대입하면
-                                <InlineMath math="c" />만 남습니다.
+                                <InlineMath math="x=1" />을 대입하면 <InlineMath math="c" />만 남습니다.
                             </p>
 
                             <BlockMath math="1^3-1^2+1=c" />
@@ -3341,8 +3308,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                하지만 정수의 나머지는 <InlineMath math="0" />보다 크거나 같아야 합니다.
-                                <InlineMath math="-1" />은 나머지로 쓸 수 없으므로
+                                하지만 정수의 나머지는 <InlineMath math="0" />보다 크거나 같아야 합니다. <InlineMath math="-1" />은 나머지로 쓸 수 없으므로
                             </p>
 
                             <BlockMath math="-1+124=123" />
@@ -3399,17 +3365,13 @@ export default function RemainderAndFactorizationPage() {
                     <BlockMath math="17=5\cdot3+2" />
 
                     <p className="leading-8 text-gray-300">
-                        여기서 나누는 수 <InlineMath math="5" />를
-                        <InlineMath math="0" />으로 바꾸면 나머지
-                        <InlineMath math="2" />만 남습니다.
+                        여기서 나누는 수 <InlineMath math="5" />를 <InlineMath math="0" />으로 바꾸면 나머지 <InlineMath math="2" />만 남습니다.
                     </p>
 
                     <BlockMath math="31=11\cdot2+9" />
 
                     <p className="leading-8 text-gray-300">
-                        마찬가지로 나누는 수 <InlineMath math="11" />을
-                        <InlineMath math="0" />으로 바꾸면 나머지
-                        <InlineMath math="9" />만 남습니다.
+                        마찬가지로 나누는 수 <InlineMath math="11" />을 <InlineMath math="0" />으로 바꾸면 나머지 <InlineMath math="9" />만 남습니다.
                     </p>
                 </div>
 
@@ -3417,13 +3379,11 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-2xl font-bold">예시 1</h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x^3+2x^2+3x+4" />를
-                        <InlineMath math="x-1" />로 나눈 나머지를 구합니다.
+                        <InlineMath math="x^3+2x^2+3x+4" />를 <InlineMath math="x-1" />로 나눈 나머지를 구합니다.
                     </p>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x-1=0" />이므로
-                        <InlineMath math="x=1" />을 대입합니다.
+                        <InlineMath math="x-1=0" />이므로 <InlineMath math="x=1" />을 대입합니다.
                     </p>
 
                     <BlockMath math="1^3+2\cdot1^2+3\cdot1+4=10" />
@@ -3437,8 +3397,7 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-2xl font-bold">예시 2</h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x^3+2x^2+3x+4" />를
-                        <InlineMath math="x^2-x-1" />로 나눈 나머지를 구합니다.
+                        <InlineMath math="x^3+2x^2+3x+4" />를 <InlineMath math="x^2-x-1" />로 나눈 나머지를 구합니다.
                     </p>
 
                     <BlockMath math="x^2-x-1=0" />
@@ -3468,8 +3427,7 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-2xl font-bold">예시 3</h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x^3+2x^2+3x+4" />를
-                        <InlineMath math="x^3-x" />로 나눈 나머지를 구합니다.
+                        <InlineMath math="x^3+2x^2+3x+4" />를 <InlineMath math="x^3-x" />로 나눈 나머지를 구합니다.
                     </p>
 
                     <BlockMath math="x^3-x=0" />
@@ -3633,18 +3591,15 @@ export default function RemainderAndFactorizationPage() {
                                 </p>
 
                                 <p>
-                                    최고차항이
-                                    <InlineMath math="x^3" />
-                                    이므로 몫은
-                                    <InlineMath math="x+k" />
+                                    최고차항이 <InlineMath math="x^3" />
+                                    이므로 몫은 <InlineMath math="x+k" />
                                     의 형태입니다.
                                 </p>
 
                                 <BlockMath math="x^3+ax^2+bx+3=(x^2+x+1)(x+k)" />
 
                                 <p>
-                                    상수항이
-                                    <InlineMath math="3" />
+                                    상수항이 <InlineMath math="3" />
                                     이므로
                                 </p>
 
@@ -4095,7 +4050,7 @@ export default function RemainderAndFactorizationPage() {
 
                     <p className="leading-8 text-gray-300">
                         다항식 <InlineMath math="f(x)" />를 <InlineMath math="x-1" />로 나눌 때의 나머지가 <InlineMath math="3" />이고, <InlineMath math="x+3" />으로 나눌 때의 나머지가 <InlineMath math="-1" />이다.
-                        이 다항식을 <InlineMath math="(x-1)(x+3)" />으로 나눌 때의 나머지를 <InlineMath math="R(x)" />라 할 때, <InlineMath math="R(2)" />의 값을 구하여라.
+                        <br />이 다항식을 <InlineMath math="(x-1)(x+3)" />으로 나눌 때의 나머지를 <InlineMath math="R(x)" />라 할 때, <InlineMath math="R(2)" />의 값을 구하여라.
                     </p>
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
@@ -4440,8 +4395,7 @@ export default function RemainderAndFactorizationPage() {
                                 </p>
 
                                 <p className="mt-3 leading-8 text-gray-300">
-                                    <InlineMath math="(x-2)(x-3)" />으로 나눈 나머지를 구하려면
-                                    <InlineMath math="f(2)" />와 <InlineMath math="f(3)" />이 필요합니다.
+                                    <InlineMath math="(x-2)(x-3)" />으로 나눈 나머지를 구하려면 <InlineMath math="f(2)" />와 <InlineMath math="f(3)" />이 필요합니다.
                                     주어진 조건에서 그 두 값을 찾아내는 것이 핵심입니다.
                                 </p>
                             </div>
@@ -4861,8 +4815,7 @@ export default function RemainderAndFactorizationPage() {
                                 <BlockMath math="=(-a+b)x+(-a+c)" />
 
                                 <p>
-                                    이것이
-                                    <InlineMath math="3x+4" />
+                                    이것이 <InlineMath math="3x+4" />
                                     와 같아야 하므로
                                 </p>
 
@@ -5047,8 +5000,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                먼저
-                                <InlineMath math="x^3-1" />을 인수분해하면
+                                먼저 <InlineMath math="x^3-1" />을 인수분해하면
                             </p>
 
                             <BlockMath math="x^3-1=(x-1)(x^2+x+1)" />
@@ -6185,15 +6137,13 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 3</h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="x" />에 대한 삼차식
-                        <InlineMath math="f(x)" />에 대하여
+                        <InlineMath math="x" />에 대한 삼차식 <InlineMath math="f(x)" />에 대하여
                     </p>
 
                     <BlockMath math="f(1)=1,\quad f(2)=-1,\quad f(3)=1,\quad f(4)=13" />
 
                     <p className="leading-8 text-gray-300">
-                        일 때,
-                        <InlineMath math="f(5)" />의 값을 구하여라.
+                        일 때, <InlineMath math="f(5)" />의 값을 구하여라.
                     </p>
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
@@ -6208,8 +6158,7 @@ export default function RemainderAndFactorizationPage() {
                             </p>
 
                             <p>
-                                <InlineMath math="f(1)=1" />,
-                                <InlineMath math="f(3)=1" /> 이므로
+                                <InlineMath math="f(1)=1" />, <InlineMath math="f(3)=1" /> 이므로
                             </p>
 
                             <BlockMath math="f(x)=(x-1)(x-3)(ax+b)+1" />
@@ -7345,9 +7294,9 @@ export default function RemainderAndFactorizationPage() {
                     <h3 className="mb-4 text-2xl font-bold">
                         예시 2
                     </h3>
-
-                    <BlockMath math="(x^2-x+1)^3=a_0+a_1(x-1)+a_2(x-1)^2+a_3(x-1)^3+a_4(x-1)^4+a_5(x-1)^5+a_6(x-1)^6" />
-
+                    <div className="text-[0.95rem]">
+                        <BlockMath math="(x^2-x+1)^3=a_0+a_1(x-1)+a_2(x-1)^2+a_3(x-1)^3+a_4(x-1)^4+a_5(x-1)^5+a_6(x-1)^6" />
+                    </div><br />
                     <p>
                         이번에는 <InlineMath math="x-1" />을 기준으로 전개된 항등식입니다.
                     </p>
@@ -7534,9 +7483,8 @@ export default function RemainderAndFactorizationPage() {
 
                     <p className="leading-8 text-gray-300">
                         이 성립할 때, 다음 식의 값을 구하시오.
-                        <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
-
                     </p>
+                    <BlockMath math="\frac{a_1}{3}+\frac{a_3}{3^3}+\frac{a_5}{3^5}+\frac{a_7}{3^7}+\frac{a_9}{3^9}" />
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">
                         <summary className="cursor-pointer font-semibold text-yellow-300">
@@ -7622,8 +7570,7 @@ export default function RemainderAndFactorizationPage() {
                     <BlockMath math="(x^4-x^3-2x^2+3x)^4=a_0+a_1x+a_2x^2+\cdots+a_{16}x^{16}" />
 
                     <p className="leading-8 text-gray-300">
-                        이 성립할 때,
-                        <InlineMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />의 값을 구하시오.
+                        이 성립할 때, <InlineMath math="a_3+a_6+a_8+a_{10}+a_{12}+a_{14}+a_{16}" />의 값을 구하시오.
                     </p>
 
                     <details className="mt-5 rounded-xl border border-white/15 p-5">

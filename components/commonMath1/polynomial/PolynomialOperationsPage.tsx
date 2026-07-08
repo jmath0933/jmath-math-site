@@ -1,6 +1,226 @@
 "use client";
 
-import { InlineMath, BlockMath } from "react-katex";
+import { useEffect, useState } from "react";
+import { BlockMath, InlineMath } from "react-katex";
+
+type Step = 0 | 1 | 2 | 3;
+type Phase = "raw" | "simplified";
+
+function LikeTermsAnimation() {
+  const [step, setStep] = useState<Step>(0);
+  const [phase, setPhase] = useState<Phase>("raw");
+
+  const expressions = [
+    String.raw`3x^2+5x+7-(2x^2+3yx-5)+(2x^2-3x+5)`,
+
+    String.raw`\color{#fde047}{3}\color{#ffffff}x^2\color{#6b7280}{+5x+7}\color{#fde047}-({2}\color{#ffffff}x^2\color{#6b7280}{+3yx-5\color{#fde047})+(}\color{#fde047}{2}\color{#ffffff}x^2\color{#6b7280}{-3x+5\color{#fde047})}`,
+
+    String.raw`\color{#6b7280}{3x^2+}\color{#ef4444}{5}\color{#ffffff}x\color{#6b7280}{+7}\color{#ef4444}{-}\color{#6b7280}{\color{#ef4444}(\color{#6b7280}2x^2}\color{#ef4444}{+3y}\color{#ffffff}x\color{#6b7280}{-5\color{#ef4444}{)+(}\color{#6b7280}2x^2}\color{#ef4444}{-3}\color{#ffffff}x\color{#6b7280}{+5\color{#ef4444})}`,
+
+    String.raw`\color{#6b7280}{3x^2+5x+}\color{#60a5fa}{7}\color{#60a5fa}{-(}\color{#6b7280}{2x^2+3yx}\color{#60a5fa}{-5})+(\color{#6b7280}{2x^2-3x}\color{#60a5fa}{+5}{)}`,
+  ] as const;
+
+  const resultMath =
+    step === 0
+      ? ""
+      : step === 1
+        ? phase === "raw"
+          ? String.raw`(3-2+2)x^2`
+          : String.raw`3x^2`
+        : step === 2
+          ? phase === "raw"
+            ? String.raw`3x^2+(5-3y-3)x`
+            : String.raw`3x^2+(2-3y)x`
+            : phase === "raw"
+            ? String.raw`3x^2+(2-3y)x+(7+5+5)`
+            : String.raw`3x^2+(2-3y)x+17`;
+
+  useEffect(() => {
+    if (step === 0) return;
+
+    setPhase("raw");
+
+    const simplifyTimer = setTimeout(() => {
+    setPhase("simplified");
+}, 4000);
+
+// simplified 상태를 900ms 정도 보여줌
+const nextTimer = setTimeout(() => {
+    setStep((prev) => (prev < 3 ? ((prev + 1) as Step) : prev));
+}, 6000);
+
+    return () => {
+      clearTimeout(simplifyTimer);
+      clearTimeout(nextTimer);
+    };
+  }, [step]);
+
+  const start = () => {
+    setStep(1);
+    setPhase("raw");
+  };
+
+  const reset = () => {
+    setStep(0);
+    setPhase("raw");
+  };
+
+  return (
+    <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-6">
+      <h3 className="mb-6 text-2xl font-bold text-white">
+        동류항 계산 애니메이션으로 보기
+      </h3>
+
+      <div className="rounded-xl bg-white/10 p-6 text-center text-2xl">
+        <BlockMath math={expressions[step] ?? expressions[0]} />
+      </div>
+
+      <div className="mt-5 flex gap-3">
+        <button
+          onClick={start}
+          className="rounded-lg bg-blue-600 px-4 py-2 font-bold text-white"
+        >
+          계산 과정 보기
+        </button>
+
+        <button
+          onClick={reset}
+          className="rounded-lg bg-white/10 px-4 py-2 font-bold text-white"
+        >
+          다시 보기
+        </button>
+      </div>
+
+      <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-6">
+        <div className="flex items-center justify-center gap-4 text-3xl">
+          <span className="text-white">=</span>
+
+          <div className="min-w-[360px] text-center">
+            {step === 0 ? (
+              <span className="text-gray-500">
+                계산 과정이 여기에 나타납니다.
+              </span>
+            ) : (
+              <span
+                key={`${step}-${phase}`}
+                className="inline-block animate-[write_1s_ease-out]"
+              >
+                <BlockMath math={resultMath} />
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes write {
+          from {
+            opacity: 0;
+            transform: translateY(6px);
+            filter: blur(2px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+function PowerFractionAnimation() {
+  const [step, setStep] = useState<Step>(0);
+
+  useEffect(() => {
+    if (step === 0) return;
+
+    const timer = setTimeout(() => {
+      setStep((prev) => (prev < 3 ? ((prev + 1) as Step) : prev));
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [step]);
+
+  const start = () => setStep(1);
+  const reset = () => setStep(0);
+
+  const expressions: Record<Step, string> = {
+    0: String.raw`\color{#ffffff}\left(-\frac{2x^2}{3y^3}\right)^3`,
+    1: String.raw`\color{#fde047}\left(\color{#fde047}{-}\color{#6b7280}{\frac{2x^2}{3y^3}}\color{#fde047}\right)^{\color{#fde047}{3}}`,
+    2: String.raw`\color{#60a5fa}\left(\color{#6b7280}{-}\color{#60a5fa}{\frac{2}{3}}\color{#6b7280}{\frac{x^2}{y^3}}\color{#60a5fa}\right)^{\color{#60a5fa}{3}}`,
+    3: String.raw`\color{#c084fc}\left(\color{#6b7280}{-\frac{2}{3}}\color{#c084fc}{\frac{x^2}{y^3}}\right)^{\color{#c084fc}{3}}`,
+  };
+
+  return (
+    <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-6">
+      <h3 className="mb-6 text-2xl font-bold text-white">
+        거듭제곱 계산 애니메이션으로 보기
+      </h3>
+
+      <div className="mt-5 flex gap-3">
+        <button
+          onClick={start}
+          className="rounded-lg bg-blue-600 px-4 py-2 font-bold text-white"
+        >
+          계산 과정 보기
+        </button>
+
+        <button
+          onClick={reset}
+          className="rounded-lg bg-white/10 px-4 py-2 font-bold text-white"
+        >
+          다시 보기
+        </button>
+      </div>
+
+      <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 text-3xl">
+          <div className="min-w-[280px] text-center transition-all duration-300">
+            <BlockMath math={expressions[step]} />
+          </div>
+
+          <span className="text-white">=</span>
+
+          <div className="flex min-w-[260px] items-center justify-center gap-3 text-3xl">
+            {step >= 1 && (
+              <span className="animate-[write_0.35s_ease-out] text-yellow-300">
+                <InlineMath math="-" />
+              </span>
+            )}
+
+            {step >= 2 && (
+              <span className="animate-[write_0.35s_ease-out] text-blue-300">
+                <InlineMath math="\frac{8}{27}" />
+              </span>
+            )}
+
+            {step >= 3 && (
+              <span className="animate-[write_0.35s_ease-out] text-purple-300">
+                <InlineMath math="\frac{x^6}{y^9}" />
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+
+      <style jsx>{`
+                @keyframes write {
+                    from {
+                        opacity: 0;
+                        transform: translateY(6px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `}</style>
+    </div>
+  );
+}
 
 export default function PolynomialOperationsPage() {
   return (
@@ -284,7 +504,7 @@ export default function PolynomialOperationsPage() {
 
         <div className="rounded-xl bg-white/10 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제
+            예시
           </h3>
 
           <BlockMath math="5xy^2 + 2x^3 - 3x^2y + 7" />
@@ -323,7 +543,6 @@ export default function PolynomialOperationsPage() {
 
             <BlockMath math="7 + 2x^3 - 3x^2y + 5xy^2" />
           </div>
-
         </div>
 
         <div className="mt-8 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
@@ -386,7 +605,7 @@ export default function PolynomialOperationsPage() {
 
         <div className="mt-8 rounded-xl border border-white/20 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 1
+            예시 1
           </h3>
 
           <BlockMath math="(-2x^2)(3x^3)" />
@@ -430,7 +649,7 @@ export default function PolynomialOperationsPage() {
 
         <div className="mt-8 rounded-xl border border-white/20 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 2
+            예시 2
           </h3>
 
           <BlockMath math="\left(-\frac{2x^2}{3y^3}\right)^3" />
@@ -473,7 +692,7 @@ export default function PolynomialOperationsPage() {
 
           </div>
         </div>
-
+        <PowerFractionAnimation />
         <div className="mt-8 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
           <h3 className="mb-4 text-xl font-bold text-blue-300">
             정리
@@ -715,7 +934,7 @@ export default function PolynomialOperationsPage() {
 
         <div className="mt-8 rounded-xl bg-white/10 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 1 : 숫자 계수의 계산
+            예시 1 : 숫자 계수의 계산
           </h3>
 
           <BlockMath math="(3x^2+5x+7)+(2x^2-3x+1)" />
@@ -732,27 +951,27 @@ export default function PolynomialOperationsPage() {
 
         <div className="mt-8 rounded-xl bg-white/10 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 2 : 문자 계수의 계산
+            예시 2 : 문자 계수의 계산
           </h3>
 
-          <BlockMath math="(3x^2+5x+7)-(x^2+3yx-5)+(2x^2-zx+5)" />
+          <BlockMath math="(3x^2+5x+7)-(2x^2+3yx-5)+(2x^2-3x+5)" />
 
           <p className="mt-4 leading-8 text-gray-300">
-            이 식을 <InlineMath math="x" />에 대하여 보면,
-            <InlineMath math="3yx" />는 <InlineMath math="(3y)x" />이고,
-            <InlineMath math="zx" />는 <InlineMath math="zx" />입니다.
+            이 식을 <InlineMath math="x" />에 대하여 보면, <InlineMath math="3yx" />는 <InlineMath math="(3y)x" />입니다.
             따라서 <InlineMath math="x" />항의 계수에는 문자도 포함될 수 있습니다.
           </p>
 
           <div className="mt-5 space-y-3">
-            <BlockMath math="(3-1+2)x^2+(5-3y-z)x+(7+5+5)" />
-            <BlockMath math="=4x^2+(5-3y-z)x+17" />
+            <BlockMath math="(3-2+2)x^2+(5-3y-3)x+(7+5+5)" />
+            <BlockMath math="=3x^2+(2-3y)x+17" />
           </div>
         </div>
 
+        <LikeTermsAnimation />
+
         <div className="mt-8 rounded-xl bg-white/10 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 3 : 필요한 항만 보면서 계산하기
+            예시 3 : 필요한 항만 보면서 계산하기
           </h3>
 
           <BlockMath math="(2x^2+x+1)-(5-3x-x^2+3x^3)" />
@@ -801,7 +1020,7 @@ export default function PolynomialOperationsPage() {
 
         <div className="mt-8 rounded-xl bg-white/10 p-6">
           <h3 className="mb-4 text-2xl font-bold">
-            예제 4 : 괄호를 모두 풀지 않고 계산하기
+            예시 4 : 괄호를 모두 풀지 않고 계산하기
           </h3>
 
           <p className="mb-4 leading-8 text-gray-300">
@@ -818,38 +1037,32 @@ export default function PolynomialOperationsPage() {
             <ul className="space-y-3 text-gray-300">
               <li>
                 <InlineMath math="4x^3" /> :
-                중괄호와 대괄호의 영향을 받아
-                <InlineMath math="+4x^3" />가 됩니다.
+                중괄호와 대괄호의 영향을 받아 <InlineMath math="+4x^3" />가 됩니다.
               </li>
 
               <li>
                 첫 번째 <InlineMath math="-x^2" /> :
-                대괄호의 영향을 받아
-                <InlineMath math="-x^2" />가 됩니다.
+                대괄호의 영향을 받아 <InlineMath math="-x^2" />가 됩니다.
               </li>
 
               <li>
                 중괄호 안의 <InlineMath math="+x^2" /> :
-                중괄호와 대괄호의 영향을 받아
-                <InlineMath math="+x^2" />가 됩니다.
+                중괄호와 대괄호의 영향을 받아 <InlineMath math="+x^2" />가 됩니다.
               </li>
 
               <li>
                 <InlineMath math="+2x" /> :
-                중괄호와 대괄호의 영향을 받아
-                <InlineMath math="+2x" />가 됩니다.
+                중괄호와 대괄호의 영향을 받아 <InlineMath math="+2x" />가 됩니다.
               </li>
 
               <li>
                 <InlineMath math="-6" /> :
-                중괄호와 대괄호의 영향을 받아
-                <InlineMath math="-6" />이 됩니다.
+                중괄호와 대괄호의 영향을 받아 <InlineMath math="-6" />이 됩니다.
               </li>
 
               <li>
                 <InlineMath math="-4x" /> :
-                대괄호의 영향을 받아
-                <InlineMath math="+4x" />가 됩니다.
+                대괄호의 영향을 받아 <InlineMath math="+4x" />가 됩니다.
               </li>
 
               <li>
@@ -899,8 +1112,7 @@ export default function PolynomialOperationsPage() {
             <BlockMath math="A=3x^2-x+5,\quad B=x^2-2x-3" />
 
             <p>
-              <InlineMath math="A-B" />를 구할 때, 이차항의 계수만 먼저 보면
-              <InlineMath math="3-1=2" />입니다.
+              <InlineMath math="A-B" />를 구할 때, 이차항의 계수만 먼저 보면 <InlineMath math="3-1=2" />입니다.
             </p>
 
             <p>
@@ -1133,8 +1345,7 @@ export default function PolynomialOperationsPage() {
                   </p>
 
                   <p>
-                    세제곱의 합을 구하려면 <InlineMath math="x+y" />와
-                    <InlineMath math="xy" />가 필요합니다.
+                    세제곱의 합을 구하려면 <InlineMath math="x+y" />와 <InlineMath math="xy" />가 필요합니다.
                     따라서 먼저 <InlineMath math="xy" />를 구합니다.
                   </p>
 
@@ -1144,8 +1355,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="xy=2" />
 
                   <p>
-                    이제 <InlineMath math="x+y=5" />,
-                    <InlineMath math="xy=2" />를 알게 되었습니다.
+                    이제 <InlineMath math="x+y=5" />, <InlineMath math="xy=2" />를 알게 되었습니다.
                   </p>
 
                   <BlockMath math="x^3+y^3=(x+y)^3-3xy(x+y)" />
@@ -1312,8 +1522,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="x+y=5,\quad x^3+y^3=65" />
 
               <p className="mb-4 text-gray-300">
-                일 때,
-                <InlineMath math="x^3-y^3" />
+                일 때, <InlineMath math="x^3-y^3" />
                 의 값을 구하여라.
                 (단, <InlineMath math="x>y" />)
               </p>
@@ -1327,23 +1536,20 @@ export default function PolynomialOperationsPage() {
 
                   <p>
                     구하려는 대상은 세제곱의 차입니다.
-                    하지만 현재 차에 대한 정보가 없으므로 먼저
-                    <InlineMath math="x-y" />
+                    하지만 현재 차에 대한 정보가 없으므로 먼저 <InlineMath math="x-y" />
                     를 구해야 합니다.
                   </p>
 
                   <p>
                     합과 차는 제곱으로 연결됩니다.
-                    따라서 차를 구하려면 먼저
-                    <InlineMath math="xy" />
+                    따라서 차를 구하려면 먼저 <InlineMath math="xy" />
                     를 알아야 합니다.
                   </p>
 
                   <BlockMath math="(x+y)^2=(x-y)^2+4xy" />
 
                   <p>
-                    주어진 조건에 세제곱의 합이 있으므로 이를 이용하여
-                    <InlineMath math="xy" />
+                    주어진 조건에 세제곱의 합이 있으므로 이를 이용하여 <InlineMath math="xy" />
                     를 구합니다.
                   </p>
 
@@ -1390,8 +1596,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=63" />
 
                   <p className="font-semibold text-white">
-                    따라서 답은
-                    <InlineMath math="63" />
+                    따라서 답은 <InlineMath math="63" />
                     입니다.
                   </p>
 
@@ -1444,8 +1649,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=63" />
 
                   <p className="font-semibold text-white">
-                    따라서 답은
-                    <InlineMath math="63" />
+                    따라서 답은 <InlineMath math="63" />
                     입니다.
                   </p>
 
@@ -1550,8 +1754,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="m=ax+by,\quad n=bx+ay" />
 
               <p className="mb-4 text-gray-300">
-                일 때,
-                <InlineMath math="m^3+n^3" />
+                일 때, <InlineMath math="m^3+n^3" />
                 의 값을 구하여라.
               </p>
 
@@ -1569,10 +1772,8 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="m^3+n^3=(m+n)^3-3mn(m+n)" />
 
                   <p>
-                    따라서 먼저
-                    <InlineMath math="m+n" />
-                    과
-                    <InlineMath math="mn" />
+                    따라서 먼저 <InlineMath math="m+n" />
+                    과 <InlineMath math="mn" />
                     을 구합니다.
                   </p>
 
@@ -1597,8 +1798,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=ab(x^2+y^2)+(a^2+b^2)xy" />
 
                   <p>
-                    먼저
-                    <InlineMath math="a^2+b^2" />
+                    먼저 <InlineMath math="a^2+b^2" />
                     를 구합니다.
                   </p>
 
@@ -1609,8 +1809,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=2" />
 
                   <p>
-                    다음으로
-                    <InlineMath math="x^2+y^2" />
+                    다음으로 <InlineMath math="x^2+y^2" />
                     를 구합니다.
                   </p>
 
@@ -1641,8 +1840,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=-2" />
 
                   <p className="font-semibold text-white">
-                    따라서 답은
-                    <InlineMath math="-2" />
+                    따라서 답은 <InlineMath math="-2" />
                     입니다.
                   </p>
 
@@ -1693,8 +1891,7 @@ export default function PolynomialOperationsPage() {
                   <BlockMath math="=-2" />
 
                   <p className="font-semibold text-white">
-                    따라서 답은
-                    <InlineMath math="-2" />
+                    따라서 답은 <InlineMath math="-2" />
                     입니다.
                   </p>
 
@@ -1778,8 +1975,7 @@ export default function PolynomialOperationsPage() {
           </h3>
 
           <p className="mb-5 leading-8 text-gray-300">
-            <InlineMath math="(a+b+c+d)^2" />는
-            <InlineMath math="(a+b+c+d)(a+b+c+d)" />입니다.
+            <InlineMath math="(a+b+c+d)^2" />는 <InlineMath math="(a+b+c+d)(a+b+c+d)" />입니다.
             이를 표로 나타내면 다음과 같습니다.
           </p>
 
@@ -1871,9 +2067,7 @@ export default function PolynomialOperationsPage() {
           </h3>
 
           <p className="mb-5 leading-8 text-gray-300">
-            <InlineMath math="(a+b+c)^2" />에서는
-            <InlineMath math="a^2,b^2,c^2" />가 한 번씩 나오고,
-            <InlineMath math="ab,bc,ca" />가 두 번씩 나옵니다.
+            <InlineMath math="(a+b+c)^2" />에서는 <InlineMath math="a^2,b^2,c^2" />가 한 번씩 나오고, <InlineMath math="ab,bc,ca" />가 두 번씩 나옵니다.
           </p>
 
           <BlockMath math="(a+b+c)^2" />
@@ -1944,15 +2138,14 @@ export default function PolynomialOperationsPage() {
 
             <div className="rounded-xl border border-white/15 p-5">
               <h4 className="mb-3 text-lg font-bold text-white">
-                예제
+                예제 1
               </h4>
 
               <BlockMath math="x+y+z=6" />
               <BlockMath math="xy+yz+zx=11" />
 
               <p className="mt-3">
-                일 때,
-                <InlineMath math="x^2+y^2+z^2" />
+                일 때, <InlineMath math="x^2+y^2+z^2" />
                 의 값을 구하여라.
               </p>
 
@@ -2007,8 +2200,7 @@ export default function PolynomialOperationsPage() {
               </p>
 
               <p className="leading-8">
-                이 묶음은 이후에 배우는 세제곱의 합, 대칭식,
-                <InlineMath math="x+y+z,\;xy+yz+zx,\;xyz" />
+                이 묶음은 이후에 배우는 세제곱의 합, 대칭식, <InlineMath math="x+y+z,\;xy+yz+zx,\;xyz" />
                 와도 연결됩니다.
               </p>
 
@@ -2304,8 +2496,7 @@ export default function PolynomialOperationsPage() {
 
             <div className="mt-5 space-y-5 text-gray-300">
               <p>
-                주어진 조건
-                <InlineMath math="a^2+b^2+c^2=ab+bc+ca" />
+                주어진 조건 <InlineMath math="a^2+b^2+c^2=ab+bc+ca" />
                 는 세 수가 모두 같다는 뜻입니다.
               </p>
 
@@ -2414,18 +2605,13 @@ export default function PolynomialOperationsPage() {
           <BlockMath math="=a^3+b^3+c^3-3abc" />
 
           <p className="mt-5 leading-8 text-gray-300">
-            좌변에는
-            <InlineMath math="a+b+c" />,
-            <InlineMath math="a^2+b^2+c^2" />,
-            <InlineMath math="ab+bc+ca" />
+            좌변에는 <InlineMath math="a+b+c" />, <InlineMath math="a^2+b^2+c^2" />, <InlineMath math="ab+bc+ca" />
             가 들어 있습니다.
           </p>
 
           <p className="mt-4 leading-8 text-gray-300">
-            우변에는
-            <InlineMath math="a^3+b^3+c^3" />
-            와
-            <InlineMath math="abc" />
+            우변에는 <InlineMath math="a^3+b^3+c^3" />
+            와 <InlineMath math="abc" />
             가 들어 있습니다.
           </p>
         </div>
@@ -2478,22 +2664,17 @@ export default function PolynomialOperationsPage() {
           </div>
 
           <p className="mt-5 leading-8 text-gray-300">
-            그런데 1.9에서
-            <InlineMath math="a^2+b^2+c^2-ab-bc-ca=0" />
-            은
-            <InlineMath math="a=b=c" />
+            그런데 1.9에서 <InlineMath math="a^2+b^2+c^2-ab-bc-ca=0" />
+            은 <InlineMath math="a=b=c" />
             와 동치임을 배웠습니다.
           </p>
 
           <BlockMath math="a^3+b^3+c^3=3abc" />
 
           <p className="mt-5 leading-8 text-gray-300">
-            따라서
-            <InlineMath math="a^3+b^3+c^3=3abc" />
-            는
-            <InlineMath math="a+b+c=0" />
-            이거나
-            <InlineMath math="a=b=c" />
+            따라서 <InlineMath math="a^3+b^3+c^3=3abc" />
+            는 <InlineMath math="a+b+c=0" />
+            이거나 <InlineMath math="a=b=c" />
             일 때 성립합니다.
           </p>
         </div>
@@ -2535,8 +2716,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)" />
 
               <p>
-                먼저
-                <InlineMath math="a^2+b^2+c^2" />
+                먼저 <InlineMath math="a^2+b^2+c^2" />
                 를 구하기 위해 합을 제곱합니다.
               </p>
 
@@ -2582,8 +2762,7 @@ export default function PolynomialOperationsPage() {
 
             <div className="mt-5 space-y-5 text-gray-300">
               <p>
-                주어진 조건
-                <InlineMath math="a^2+b^2+c^2=ab+bc+ca" />
+                주어진 조건 <InlineMath math="a^2+b^2+c^2=ab+bc+ca" />
                 는 세 수가 모두 같다는 뜻입니다. 1.9에서 배운 결과를 사용합니다.
               </p>
 
@@ -2654,8 +2833,7 @@ export default function PolynomialOperationsPage() {
           <BlockMath math="a+b+c=0" />
 
           <p className="mb-4 text-gray-300">
-            일 때,
-            <InlineMath math="\frac{a^3+b^3+c^3}{abc}" />
+            일 때, <InlineMath math="\frac{a^3+b^3+c^3}{abc}" />
             의 값을 구하여라.
           </p>
 
@@ -2714,8 +2892,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="(a+b+c)(a^2+b^2+c^2-ab-bc-ca)=0" />
 
               <p>
-                삼각형의 세 변의 길이는 양수이므로
-                <InlineMath math="a+b+c=0" />
+                삼각형의 세 변의 길이는 양수이므로 <InlineMath math="a+b+c=0" />
                 은 될 수 없습니다.
               </p>
 
@@ -2742,16 +2919,14 @@ export default function PolynomialOperationsPage() {
           <h3 className="mb-4 text-xl font-bold text-white">예제 6</h3>
 
           <p className="mb-4 text-gray-300">
-            0이 아닌 서로 다른 세 실수
-            <InlineMath math="a,b,c" />
+            0이 아닌 서로 다른 세 실수 <InlineMath math="a,b,c" />
             에 대하여
           </p>
 
           <BlockMath math="a^3+b^3+c^3-3abc=0" />
 
           <p className="mb-4 text-gray-300">
-            이 성립할 때,
-            <InlineMath math="\frac{(a+b)(b+c)(c+a)}{abc}" />
+            이 성립할 때, <InlineMath math="\frac{(a+b)(b+c)(c+a)}{abc}" />
             의 값을 구하여라.
           </p>
 
@@ -2769,10 +2944,8 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)" />
 
               <p>
-                그런데
-                <InlineMath math="a,b,c" />
-                는 서로 다른 세 실수이므로
-                <InlineMath math="a=b=c" />
+                그런데 <InlineMath math="a,b,c" />
+                는 서로 다른 세 실수이므로 <InlineMath math="a=b=c" />
                 는 될 수 없습니다.
               </p>
 
@@ -2811,10 +2984,8 @@ export default function PolynomialOperationsPage() {
           <h3 className="mb-4 text-xl font-bold text-white">예제 7</h3>
 
           <p className="mb-4 text-gray-300">
-            0이 아닌 세 수의 합이 0이고, 역수의 합이
-            <InlineMath math="\frac32" />
-            이며, 제곱의 합이
-            <InlineMath math="10" />
+            0이 아닌 세 수의 합이 0이고, 역수의 합이 <InlineMath math="\frac32" />
+            이며, 제곱의 합이 <InlineMath math="10" />
             일 때, 세 수의 세제곱의 합을 구하여라.
           </p>
 
@@ -2825,16 +2996,14 @@ export default function PolynomialOperationsPage() {
 
             <div className="mt-5 space-y-5 text-gray-300">
               <p>
-                세 수를
-                <InlineMath math="a,b,c" />
+                세 수를 <InlineMath math="a,b,c" />
                 라고 합니다.
               </p>
 
               <BlockMath math="a+b+c=0" />
 
               <p>
-                구하려는 대상은
-                <InlineMath math="a^3+b^3+c^3" />
+                구하려는 대상은 <InlineMath math="a^3+b^3+c^3" />
                 입니다.
               </p>
 
@@ -2845,8 +3014,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="a^3+b^3+c^3=3abc" />
 
               <p>
-                따라서
-                <InlineMath math="abc" />
+                따라서 <InlineMath math="abc" />
                 를 구하면 됩니다.
               </p>
 
@@ -2859,8 +3027,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="\frac{ab+bc+ca}{abc}=\frac32" />
 
               <p>
-                이제
-                <InlineMath math="ab+bc+ca" />
+                이제 <InlineMath math="ab+bc+ca" />
                 를 구합니다.
               </p>
 
@@ -3237,8 +3404,7 @@ export default function PolynomialOperationsPage() {
           </div>
 
           <p className="mt-5 leading-8 text-gray-300">
-            이번에는 계수가
-            <InlineMath math="1,\;2,\;2,\;2,\;1" />
+            이번에는 계수가 <InlineMath math="1,\;2,\;2,\;2,\;1" />
             의 구조로 만들어집니다.
           </p>
         </div>
@@ -3516,10 +3682,7 @@ export default function PolynomialOperationsPage() {
             <div className="mt-5 space-y-5 text-gray-300">
               <p>
                 구하려는 대상은 두 수의 합의 곱입니다.
-                따라서
-                <InlineMath math="a+b+c" />,
-                <InlineMath math="ab+bc+ca" />,
-                <InlineMath math="abc" />
+                따라서 <InlineMath math="a+b+c" />, <InlineMath math="ab+bc+ca" />, <InlineMath math="abc" />
                 를 찾아야 합니다.
               </p>
 
@@ -3754,8 +3917,7 @@ export default function PolynomialOperationsPage() {
           <BlockMath math="(\triangle+\square)(\triangle-\square)=\triangle^2-\square^2" />
 
           <p className="mt-5 leading-8 text-gray-300">
-            여기서 <InlineMath math="\triangle" />은 두 식에서 부호가 같은 부분이고,
-            <InlineMath math="\square" />은 부호만 다른 부분입니다.
+            여기서 <InlineMath math="\triangle" />은 두 식에서 부호가 같은 부분이고, <InlineMath math="\square" />은 부호만 다른 부분입니다.
           </p>
 
           <p className="mt-4 leading-8 text-gray-300">
@@ -4025,8 +4187,7 @@ export default function PolynomialOperationsPage() {
           </div>
 
           <p className="mt-5 leading-8 text-gray-300">
-            예를 들어 <InlineMath math="144" />는 단순한 숫자가 아니라
-            <InlineMath math="1,\;4,\;4" />의 구조로 볼 수 있습니다.
+            예를 들어 <InlineMath math="144" />는 단순한 숫자가 아니라 <InlineMath math="1,\;4,\;4" />의 구조로 볼 수 있습니다.
             이는 다음 완전제곱식의 계수 구조와 같습니다.
           </p>
 
@@ -4257,8 +4418,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="a^4+2a^2b^2+b^4=(a^2+b^2)^2" />
 
               <p>
-                원래 식에는 <InlineMath math="a^2b^2" />만 있으므로,
-                <InlineMath math="a^2b^2" />를 하나 더 더하고 다시 빼 줍니다.
+                원래 식에는 <InlineMath math="a^2b^2" />만 있으므로, <InlineMath math="a^2b^2" />를 하나 더 더하고 다시 빼 줍니다.
               </p>
 
               <BlockMath math="a^4+a^2b^2+b^4" />
@@ -4274,8 +4434,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(a^2-ab+b^2)(a^2+ab+b^2)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(a^2-ab+b^2)(a^2+ab+b^2)" />
+                따라서 답은 <InlineMath math="(a^2-ab+b^2)(a^2+ab+b^2)" />
                 입니다.
               </p>
             </div>
@@ -4428,8 +4587,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="X=a^2+5a" />
 
               <p>
-                주어진 조건
-                <InlineMath math="a^2+5a-1=0" />
+                주어진 조건 <InlineMath math="a^2+5a-1=0" />
                 에서
               </p>
 
@@ -4551,8 +4709,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(x+3)(x-2)(x^2+x-8)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(x+3)(x-2)(x^2+x-8)" />
+                따라서 답은 <InlineMath math="(x+3)(x-2)(x^2+x-8)" />
                 입니다.
               </p>
             </div>
@@ -4563,8 +4720,7 @@ export default function PolynomialOperationsPage() {
           <h3 className="mb-4 text-xl font-bold text-white">예제 4</h3>
 
           <p className="mb-4 text-gray-300">
-            다항식
-            <InlineMath math="(x+1)(x+2)(x+3)(x+4)+k" />
+            다항식 <InlineMath math="(x+1)(x+2)(x+3)(x+4)+k" />
             가 완전제곱식이 되도록 하는 상수 <InlineMath math="k" />의 값을 구하여라.
           </p>
 
@@ -4713,8 +4869,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(x^2-5x+12)(x^2-10x+12)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(x^2-5x+12)(x^2-10x+12)" />
+                따라서 답은 <InlineMath math="(x^2-5x+12)(x^2-10x+12)" />
                 입니다.
               </p>
             </div>
@@ -4844,17 +4999,14 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="-2y^2-5y+3=(-2y+1)(y+3)" />
 
               <p>
-                세 부분의 인수분해를 비교하면
-                <InlineMath math="x-2y+1" />과
-                <InlineMath math="x+y+3" />이 보입니다.
+                세 부분의 인수분해를 비교하면 <InlineMath math="x-2y+1" />과 <InlineMath math="x+y+3" />이 보입니다.
               </p>
 
               <BlockMath math="x^2-xy-2y^2+4x-5y+3" />
               <BlockMath math="=(x-2y+1)(x+y+3)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(x-2y+1)(x+y+3)" />
+                따라서 답은 <InlineMath math="(x-2y+1)(x+y+3)" />
                 입니다.
               </p>
             </div>
@@ -4984,8 +5136,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(x^2+4x+1)(x^2-3x+1)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(x^2+4x+1)(x^2-3x+1)" />
+                따라서 답은 <InlineMath math="(x^2+4x+1)(x^2-3x+1)" />
                 입니다.
               </p>
             </div>
@@ -5024,8 +5175,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(x^2+4x-1)(x^2-3x-1)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(x^2+4x-1)(x^2-3x-1)" />
+                따라서 답은 <InlineMath math="(x^2+4x-1)(x^2-3x-1)" />
                 입니다.
               </p>
             </div>
@@ -5038,8 +5188,7 @@ export default function PolynomialOperationsPage() {
           </h3>
 
           <p className="leading-8 text-gray-300">
-            일반적으로 상반식은 <InlineMath math="x^2" />으로 나누어
-            <InlineMath math="x+\frac1x" />를 치환하여 풀 수도 있습니다.
+            일반적으로 상반식은 <InlineMath math="x^2" />으로 나누어 <InlineMath math="x+\frac1x" />를 치환하여 풀 수도 있습니다.
           </p>
 
           <BlockMath math="x^4+x^3-10x^2+x+1" />
@@ -5155,8 +5304,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(y-z)(x-y)(x+y)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="(y-z)(x-y)(x+y)" />
+                따라서 답은 <InlineMath math="(y-z)(x-y)(x+y)" />
                 입니다.
               </p>
             </div>
@@ -5209,8 +5357,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(b-c)(a-b)(a-c)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="-(a-b)(b-c)(c-a)" />
+                따라서 답은 <InlineMath math="-(a-b)(b-c)(c-a)" />
                 입니다.
               </p>
             </div>
@@ -5252,8 +5399,7 @@ export default function PolynomialOperationsPage() {
               <BlockMath math="=(b-c)(a-b)(a-c)" />
 
               <p className="font-semibold text-white">
-                따라서 답은
-                <InlineMath math="-(a-b)(b-c)(c-a)" />
+                따라서 답은 <InlineMath math="-(a-b)(b-c)(c-a)" />
                 입니다.
               </p>
             </div>
