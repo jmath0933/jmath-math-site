@@ -1266,7 +1266,7 @@ export default function PolynomialOperationsPage() {
 
         <details className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
           <summary className="cursor-pointer text-lg font-semibold text-yellow-300">
-            심화 : 3개 중 2개를 알려주고 1개를 찾습니다
+            주요유형 : 3개 중 2개를 알려주고 1개를 찾습니다
           </summary>
 
           <div className="mt-5 space-y-8 leading-8 text-gray-300">
@@ -1320,7 +1320,7 @@ export default function PolynomialOperationsPage() {
 
           <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
             <h3 className="mb-4 text-xl font-bold text-yellow-300">
-              심화 예제 : 3개 중 2개를 이용하여 나머지 1개를 찾습니다
+              예제 : 3개 중 2개를 이용하여 나머지 1개를 찾습니다
             </h3>
 
             <div className="rounded-xl bg-black/40 p-5">
@@ -1983,16 +1983,16 @@ export default function PolynomialOperationsPage() {
             <table className="w-full min-w-[520px] border-collapse text-center text-gray-200">
               <thead>
                 <tr>
-                  <th className="border border-white/30 p-3">×</th>
-                  <th className="border border-white/30 p-3">a</th>
-                  <th className="border border-white/30 p-3">b</th>
-                  <th className="border border-white/30 p-3">c</th>
-                  <th className="border border-white/30 p-3">d</th>
+                  <th className="border border-white/30 p-3"><InlineMath math="\times" /></th>
+                  <th className="border border-white/30 p-3"><InlineMath math="a" /></th>
+                  <th className="border border-white/30 p-3"><InlineMath math="b" /></th>
+                  <th className="border border-white/30 p-3"><InlineMath math="c" /></th>
+                  <th className="border border-white/30 p-3"><InlineMath math="d" /></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th className="border border-white/30 p-3">a</th>
+                  <th className="border border-white/30 p-3"><InlineMath math="a" /></th>
                   <td className="border border-white/30 p-3">
                     <InlineMath math="a^2" />
                   </td>
@@ -2007,7 +2007,7 @@ export default function PolynomialOperationsPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="border border-white/30 p-3">b</th>
+                  <th className="border border-white/30 p-3"><InlineMath math="b" /></th>
                   <td className="border border-white/30 p-3">
                     <InlineMath math="ab" />
                   </td>
@@ -2022,7 +2022,7 @@ export default function PolynomialOperationsPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="border border-white/30 p-3">c</th>
+                  <th className="border border-white/30 p-3"><InlineMath math="c" /></th>
                   <td className="border border-white/30 p-3">
                     <InlineMath math="ac" />
                   </td>
@@ -2037,7 +2037,7 @@ export default function PolynomialOperationsPage() {
                   </td>
                 </tr>
                 <tr>
-                  <th className="border border-white/30 p-3">d</th>
+                  <th className="border border-white/30 p-3"><InlineMath math="d" /></th>
                   <td className="border border-white/30 p-3">
                     <InlineMath math="ad" />
                   </td>

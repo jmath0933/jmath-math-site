@@ -5006,7 +5006,7 @@ export default function QuadraticEquationAndFunctionPage() {
                             </h3>
 
                             <p className="leading-8 text-gray-300">
-                                이차함수의 그래프가 x축과 두 점에서 만날 때,
+                                이차함수의 그래프가 <InlineMath math="x" />축과 두 점에서 만날 때,
                                 두 근을 <InlineMath math="\alpha,\beta" />라고 하면
                                 꼭짓점의 <InlineMath math="x" />좌표는 두 근의 중점입니다.
                             </p>

@@ -1766,13 +1766,18 @@ export default function QuadraticEquationPage() {
                                 <BlockMath math="x=2\pm\sqrt{13}" />
 
                                 <p>
-                                    구간 <InlineMath math="-1\le x<0" />을 만족하는 것은
+                                    두 근을 구간과 비교하면
                                 </p>
 
-                                <BlockMath math="x=2-\sqrt{13}" />
+                                <BlockMath math="2-\sqrt{13}<-1,\qquad 2+\sqrt{13}>0" />
 
                                 <p>
-                                    입니다.
+                                    두 근 모두 구간 <InlineMath math="-1\le x<0" />
+                                    을 만족하지 않습니다.
+                                </p>
+
+                                <p className="font-semibold text-white">
+                                    따라서 이 구간에서는 해가 없습니다.
                                 </p>
                             </div>
 
@@ -1808,10 +1813,11 @@ export default function QuadraticEquationPage() {
                                 따라서 전체 해는
                             </p>
 
-                            <BlockMath math="x=-\sqrt5,\quad 2-\sqrt{13},\quad 3" />
+                            <BlockMath math="x=-\sqrt5,\quad 3" />
 
                             <p className="font-semibold text-white">
-                                따라서 해는 <InlineMath math="-\sqrt5,\ 2-\sqrt{13},\ 3" />입니다.
+                                따라서 해는 <InlineMath math="-\sqrt5,\ 3" />
+                                입니다.
                             </p>
                         </div>
                     </details>
@@ -5682,196 +5688,196 @@ export default function QuadraticEquationPage() {
 
                 <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 6
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 6
+                    </h3>
 
-    <p className="mb-4 leading-8 text-gray-300">
-        이차방정식 <InlineMath math="f(x+1)=0" />
-        의 두 근을 <InlineMath math="\alpha,\ \beta" />
-        라 하면 <InlineMath math="\alpha+\beta=3,\ \alpha\beta=5" />
-        이다.<br/>
-        이때 이차방정식 <InlineMath math="f(x-2)=0" />
-        의 두 근의 곱을 구하여라.
-    </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        이차방정식 <InlineMath math="f(x+1)=0" />
+                        의 두 근을 <InlineMath math="\alpha,\ \beta" />
+                        라 하면 <InlineMath math="\alpha+\beta=3,\ \alpha\beta=5" />
+                        이다.<br />
+                        이때 이차방정식 <InlineMath math="f(x-2)=0" />
+                        의 두 근의 곱을 구하여라.
+                    </p>
 
-    <details className="rounded-xl border border-white/15 p-5">
+                    <details className="rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-8 text-gray-300">
+                        <div className="mt-5 space-y-8 text-gray-300">
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <h4 className="mb-3 font-bold text-blue-300">
-                    풀이 : 근의 변형 이용하기
-                </h4>
+                                <h4 className="mb-3 font-bold text-blue-300">
+                                    풀이 : 근의 변형 이용하기
+                                </h4>
 
-                <p>
-                    <InlineMath math="f(x+1)=0" />의 두 근이 <InlineMath math="\alpha,\ \beta" />이므로
-                </p>
+                                <p>
+                                    <InlineMath math="f(x+1)=0" />의 두 근이 <InlineMath math="\alpha,\ \beta" />이므로
+                                </p>
 
-                <BlockMath math="f(\alpha+1)=0,\qquad f(\beta+1)=0" />
+                                <BlockMath math="f(\alpha+1)=0,\qquad f(\beta+1)=0" />
 
-                <p>
-                    입니다.
-                </p>
+                                <p>
+                                    입니다.
+                                </p>
 
-                <p>
-                    이제 <InlineMath math="f(x-2)=0" />
-                    의 두 근을 <InlineMath math="\alpha',\ \beta'" />
-                    라 하면
-                </p>
+                                <p>
+                                    이제 <InlineMath math="f(x-2)=0" />
+                                    의 두 근을 <InlineMath math="\alpha',\ \beta'" />
+                                    라 하면
+                                </p>
 
-                <BlockMath math="\alpha'-2=\alpha+1" />
+                                <BlockMath math="\alpha'-2=\alpha+1" />
 
-                <BlockMath math="\beta'-2=\beta+1" />
+                                <BlockMath math="\beta'-2=\beta+1" />
 
-                <p>
-                    이므로
-                </p>
+                                <p>
+                                    이므로
+                                </p>
 
-                <BlockMath math="\alpha'=\alpha+3,\qquad \beta'=\beta+3" />
+                                <BlockMath math="\alpha'=\alpha+3,\qquad \beta'=\beta+3" />
 
-            </div>
+                            </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <h4 className="mb-3 font-bold text-green-300">
-                    두 근의 곱 구하기
-                </h4>
+                                <h4 className="mb-3 font-bold text-green-300">
+                                    두 근의 곱 구하기
+                                </h4>
 
-                <BlockMath math="\alpha'\beta'=(\alpha+3)(\beta+3)" />
+                                <BlockMath math="\alpha'\beta'=(\alpha+3)(\beta+3)" />
 
-                <BlockMath math="=\alpha\beta+3(\alpha+\beta)+9" />
+                                <BlockMath math="=\alpha\beta+3(\alpha+\beta)+9" />
 
-                <BlockMath math="=5+3\times3+9" />
+                                <BlockMath math="=5+3\times3+9" />
 
-                <BlockMath math="=23" />
+                                <BlockMath math="=23" />
 
-            </div>
+                            </div>
 
-            <p className="font-semibold text-white">
-                따라서 답은 <InlineMath math="23" />입니다.
-            </p>
+                            <p className="font-semibold text-white">
+                                따라서 답은 <InlineMath math="23" />입니다.
+                            </p>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 7
-    </h3>
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 7
+                    </h3>
 
-    <p className="mb-4 leading-8 text-gray-300">
-        <InlineMath math="x" />에 대한 이차방정식 <InlineMath math="ax^2+bx+c=0" />
-        의 두 근을 <InlineMath math="\alpha,\ \beta" />
-        라 할 때, 다음 중 <InlineMath math="x" />에 대한 이차방정식
-    </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        <InlineMath math="x" />에 대한 이차방정식 <InlineMath math="ax^2+bx+c=0" />
+                        의 두 근을 <InlineMath math="\alpha,\ \beta" />
+                        라 할 때, 다음 중 <InlineMath math="x" />에 대한 이차방정식
+                    </p>
 
-    <BlockMath math="c(x-1)^2+b(x-1)+a=0" />
+                    <BlockMath math="c(x-1)^2+b(x-1)+a=0" />
 
-    <p className="mb-4 leading-8 text-gray-300">
-        의 근인 것은?
-    </p>
+                    <p className="mb-4 leading-8 text-gray-300">
+                        의 근인 것은?
+                    </p>
 
-    <div className="space-y-3 rounded-xl border border-white/15 p-5 text-gray-300">
-        <p>① <InlineMath math="\alpha+\beta-2" /></p>
-        <p>② <InlineMath math="\alpha-1" /></p>
-        <p>③ <InlineMath math="\beta+1" /></p>
-        <p>④ <InlineMath math="\frac1\alpha-1" /></p>
-        <p>⑤ <InlineMath math="\frac1\beta+1" /></p>
-    </div>
+                    <div className="space-y-3 rounded-xl border border-white/15 p-5 text-gray-300">
+                        <p>① <InlineMath math="\alpha+\beta-2" /></p>
+                        <p>② <InlineMath math="\alpha-1" /></p>
+                        <p>③ <InlineMath math="\beta+1" /></p>
+                        <p>④ <InlineMath math="\frac1\alpha-1" /></p>
+                        <p>⑤ <InlineMath math="\frac1\beta+1" /></p>
+                    </div>
 
-    <details className="mt-6 rounded-xl border border-white/15 p-5">
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                    <details className="mt-6 rounded-xl border border-white/15 p-5">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-8 text-gray-300">
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-                <h4 className="mb-3 font-bold text-blue-300">
-                    풀이 : 근의 역수 이용하기
-                </h4>
+                        <div className="mt-5 space-y-8 text-gray-300">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-blue-300">
+                                    풀이 : 근의 역수 이용하기
+                                </h4>
 
-                <p>
-                    주어진 방정식 <InlineMath math="ax^2+bx+c=0" />
-                    의 두 근이 <InlineMath math="\alpha,\ \beta" />
-                    이므로
-                </p>
+                                <p>
+                                    주어진 방정식 <InlineMath math="ax^2+bx+c=0" />
+                                    의 두 근이 <InlineMath math="\alpha,\ \beta" />
+                                    이므로
+                                </p>
 
-                <BlockMath math="a\alpha^2+b\alpha+c=0" />
+                                <BlockMath math="a\alpha^2+b\alpha+c=0" />
 
-                <BlockMath math="a\beta^2+b\beta+c=0" />
+                                <BlockMath math="a\beta^2+b\beta+c=0" />
 
-                <p>
-                    입니다.
-                </p>
+                                <p>
+                                    입니다.
+                                </p>
 
-                <p>
-                    이제 각 식을 각각 <InlineMath math="\alpha^2,\ \beta^2" />
-                    으로 나누면
-                </p>
+                                <p>
+                                    이제 각 식을 각각 <InlineMath math="\alpha^2,\ \beta^2" />
+                                    으로 나누면
+                                </p>
 
-                <BlockMath math="a+\frac{b}{\alpha}+\frac{c}{\alpha^2}=0" />
+                                <BlockMath math="a+\frac{b}{\alpha}+\frac{c}{\alpha^2}=0" />
 
-                <BlockMath math="a+\frac{b}{\beta}+\frac{c}{\beta^2}=0" />
+                                <BlockMath math="a+\frac{b}{\beta}+\frac{c}{\beta^2}=0" />
 
-                <p>
-                    이므로 <InlineMath math="cy^2+by+a=0" />
-                    의 두 근은
-                </p>
+                                <p>
+                                    이므로 <InlineMath math="cy^2+by+a=0" />
+                                    의 두 근은
+                                </p>
 
-                <BlockMath math="y=\frac1\alpha,\qquad \frac1\beta" />
+                                <BlockMath math="y=\frac1\alpha,\qquad \frac1\beta" />
 
-                <p>
-                    입니다.
-                </p>
-            </div>
+                                <p>
+                                    입니다.
+                                </p>
+                            </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
-                <h4 className="mb-3 font-bold text-green-300">
-                    주어진 방정식에 적용하기
-                </h4>
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <h4 className="mb-3 font-bold text-green-300">
+                                    주어진 방정식에 적용하기
+                                </h4>
 
-                <p>
-                    주어진 방정식에서
-                </p>
+                                <p>
+                                    주어진 방정식에서
+                                </p>
 
-                <BlockMath math="y=x-1" />
+                                <BlockMath math="y=x-1" />
 
-                <p>
-                    라고 놓으면
-                </p>
+                                <p>
+                                    라고 놓으면
+                                </p>
 
-                <BlockMath math="cy^2+by+a=0" />
+                                <BlockMath math="cy^2+by+a=0" />
 
-                <p>
-                    입니다.
-                    따라서
-                </p>
+                                <p>
+                                    입니다.
+                                    따라서
+                                </p>
 
-                <BlockMath math="x-1=\frac1\alpha \quad\text{또는}\quad x-1=\frac1\beta" />
+                                <BlockMath math="x-1=\frac1\alpha \quad\text{또는}\quad x-1=\frac1\beta" />
 
-                <p>
-                    이므로
-                </p>
+                                <p>
+                                    이므로
+                                </p>
 
-                <BlockMath math="x=\frac1\alpha+1 \quad\text{또는}\quad x=\frac1\beta+1" />
-            </div>
+                                <BlockMath math="x=\frac1\alpha+1 \quad\text{또는}\quad x=\frac1\beta+1" />
+                            </div>
 
-            <p className="font-semibold text-white">
-                따라서 정답은 ⑤ <InlineMath math="\displaystyle \frac1\beta+1" />
-                입니다.
-            </p>
-        </div>
-    </details>
-</div>
+                            <p className="font-semibold text-white">
+                                따라서 정답은 ⑤ <InlineMath math="\displaystyle \frac1\beta+1" />
+                                입니다.
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
                 <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
                     <h3 className="mb-4 text-xl font-bold text-yellow-300">
