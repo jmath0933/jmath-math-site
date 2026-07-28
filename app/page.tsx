@@ -23,6 +23,10 @@ import QuadraticInequalityPage
   from "../components/commonMath1/inequality/QuadraticInequalityPage";
 import CountingPage
   from "../components/commonMath1/counting/CountingPage";
+import PermutationPage
+  from "../components/commonMath1/counting/PermutationPage";
+import CombinationPage
+  from "../components/commonMath1/counting/CombinationPage";
 
 const curriculum = {
   중1: {
@@ -177,6 +181,22 @@ export default function Home() {
       smallUnit === "경우의 수"
     ) {
       return <CountingPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "순열과 조합" &&
+      smallUnit === "순열"
+    ) {
+      return <PermutationPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "순열과 조합" &&
+      smallUnit === "조합"
+    ) {
+      return <CombinationPage />;
     }
 
     return (
