@@ -27,7 +27,8 @@ import PermutationPage
   from "../components/commonMath1/counting/PermutationPage";
 import CombinationPage
   from "../components/commonMath1/counting/CombinationPage";
-
+import MatrixPage
+  from "../components/commonMath1/matrix/MatrixPage";
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -43,7 +44,7 @@ const curriculum = {
     방정식: ["복소수", "이차방정식", "이차방정식과 이차함수", "여러 가지 방정식",],
     부등식: ["부등식의 성질", "일차부등식", "이차부등식"],
     "순열과 조합": ["경우의 수", "순열", "조합"],
-    행렬: ["행렬의 뜻", "행렬의 연산"],
+    행렬: ["행렬의 뜻과 연산"],
   },
   공통수학2: {
     "준비 중": ["준비 중"],
@@ -197,6 +198,14 @@ export default function Home() {
       smallUnit === "조합"
     ) {
       return <CombinationPage />;
+    }
+
+    if (
+      subject === "공통수학1" &&
+      bigUnit === "행렬" &&
+      smallUnit === "행렬의 뜻과 연산"
+    ) {
+      return <MatrixPage />;
     }
 
     return (

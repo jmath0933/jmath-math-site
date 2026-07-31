@@ -12725,28 +12725,28 @@ export default function CombinationPage() {
                                 className="w-full max-w-3xl rounded-xl bg-white"
                             />
 
-                            </div>
+                        </div>
 
-                            <p className="leading-8 text-gray-300">
-                                (1) 대진표를 작성하는 방법의 수
-                            </p>
+                        <p className="leading-8 text-gray-300">
+                            (1) 대진표를 작성하는 방법의 수
+                        </p>
 
-                            <p className="mt-2 leading-8 text-gray-300">
-                                (2) <InlineMath math="1" />회전에서는 같은 학년끼리
-                                경기하도록 대진표를 작성하는 방법의 수
-                            </p>
+                        <p className="mt-2 leading-8 text-gray-300">
+                            (2) <InlineMath math="1" />회전에서는 같은 학년끼리
+                            경기하도록 대진표를 작성하는 방법의 수
+                        </p>
 
-                            <p className="mt-2 leading-8 text-gray-400">
-                                단, <InlineMath math="2" />회전과{" "}
-                                <InlineMath math="3" />회전은 학년에 관계없이 경기하며,
-                                대진표의 좌우 위치만 바뀐 경우는 같은 것으로 본다.
-                            </p>
+                        <p className="mt-2 leading-8 text-gray-400">
+                            단, <InlineMath math="2" />회전과{" "}
+                            <InlineMath math="3" />회전은 학년에 관계없이 경기하며,
+                            대진표의 좌우 위치만 바뀐 경우는 같은 것으로 본다.
+                        </p>
 
 
 
-                            
 
-                        
+
+
 
                     </div>
 
@@ -13131,111 +13131,111 @@ export default function CombinationPage() {
                 </div>
 
                 {/* 예제 2 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 2
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 2
+                    </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                    {/* 문제 */}
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-   <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+                        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1.2fr_0.8fr]">
 
 
-        <p className="leading-8 text-gray-300">
-            운동 경기의 대전 방식 중 승자 진출전에서는 경기를 할 때마다
-            진 팀은 제외하고, 이긴 팀끼리 겨루어 마지막에 남은 두 팀이
-            우승을 가린다.
-            서로 다른 여섯 팀{" "}
-            <InlineMath math="\mathrm{A,\ B,\ C,\ D,\ E,\ F}" />가
-            그림과 같은 승자 진출전으로 경기할 때,
-            서로 다른 대진표의 개수를 구하여라.
-        </p>
-        <img
-                src="/images/4.22_2.png"
-                alt="한쪽에는 네 팀, 다른 쪽에는 두 팀이 배치되는 여섯 팀 토너먼트 대진표"
-                className="w-full max-w-3xl rounded-xl bg-white"
-            />
-        <p className="mt-3 leading-8 text-gray-400">
-            단, 대진표의 좌우 위치만 바뀐 경우는 같은 대진표로 본다.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                운동 경기의 대전 방식 중 승자 진출전에서는 경기를 할 때마다
+                                진 팀은 제외하고, 이긴 팀끼리 겨루어 마지막에 남은 두 팀이
+                                우승을 가린다.
+                                서로 다른 여섯 팀{" "}
+                                <InlineMath math="\mathrm{A,\ B,\ C,\ D,\ E,\ F}" />가
+                                그림과 같은 승자 진출전으로 경기할 때,
+                                서로 다른 대진표의 개수를 구하여라.
+                            </p>
+                            <img
+                                src="/images/4.22_2.png"
+                                alt="한쪽에는 네 팀, 다른 쪽에는 두 팀이 배치되는 여섯 팀 토너먼트 대진표"
+                                className="w-full max-w-3xl rounded-xl bg-white"
+                            />
+                            <p className="mt-3 leading-8 text-gray-400">
+                                단, 대진표의 좌우 위치만 바뀐 경우는 같은 대진표로 본다.
+                            </p>
 
-            
 
-        </div>
 
-    </div>
+                        </div>
 
-    {/* 풀이 */}
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                    </div>
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                    {/* 풀이 */}
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <div className="mt-5 space-y-8 text-gray-300">
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-            <p className="leading-8">
-                이 대진표는 결승전의 한쪽 진영에{" "}
-                <InlineMath math="4" />팀이 들어가고,
-                다른 쪽 진영에 <InlineMath math="2" />팀이 들어가는 구조입니다.
-            </p>
+                        <div className="mt-5 space-y-8 text-gray-300">
 
-            <p className="leading-8">
-                두 진영의 구조가 서로 다르므로 결승전의 양쪽을 바꾼 것은
-                같은 구조 안에서의 대칭으로 볼 수 없습니다.
-            </p>
+                            <p className="leading-8">
+                                이 대진표는 결승전의 한쪽 진영에{" "}
+                                <InlineMath math="4" />팀이 들어가고,
+                                다른 쪽 진영에 <InlineMath math="2" />팀이 들어가는 구조입니다.
+                            </p>
 
-            {/* 방법 1 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <p className="leading-8">
+                                두 진영의 구조가 서로 다르므로 결승전의 양쪽을 바꾼 것은
+                                같은 구조 안에서의 대칭으로 볼 수 없습니다.
+                            </p>
 
-                <h4 className="text-lg font-bold text-blue-300">
-                    방법 1. 결승전부터 조 나누기
-                </h4>
+                            {/* 방법 1 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mt-4 leading-8 text-gray-300">
-                    먼저 여섯 팀 중에서{" "}
-                    <InlineMath math="4" />팀이 들어갈 진영을 선택합니다.
-                </p>
+                                <h4 className="text-lg font-bold text-blue-300">
+                                    방법 1. 결승전부터 조 나누기
+                                </h4>
 
-                <BlockMath math={String.raw`{}_6C_4`} />
+                                <p className="mt-4 leading-8 text-gray-300">
+                                    먼저 여섯 팀 중에서{" "}
+                                    <InlineMath math="4" />팀이 들어갈 진영을 선택합니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    나머지 <InlineMath math="2" />팀은 자동으로
-                    반대쪽 진영의 한 경기를 이룹니다.
-                </p>
+                                <BlockMath math={String.raw`{}_6C_4`} />
 
-                <p className="leading-8 text-gray-300">
-                    선택한 <InlineMath math="4" />팀은{" "}
-                    <InlineMath math="2" />팀씩 두 경기로 나눕니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    나머지 <InlineMath math="2" />팀은 자동으로
+                                    반대쪽 진영의 한 경기를 이룹니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <p className="leading-8 text-gray-300">
+                                    선택한 <InlineMath math="4" />팀은{" "}
+                                    <InlineMath math="2" />팀씩 두 경기로 나눕니다.
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
                         \frac{{}_4C_2\times{}_2C_2}{2!}
                     `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    두 경기의 좌우 위치만 바꾼 경우는 같으므로{" "}
-                    <InlineMath math="2!" />로 나눕니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    두 경기의 좌우 위치만 바꾼 경우는 같으므로{" "}
+                                    <InlineMath math="2!" />로 나눕니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    따라서 대진표의 수는
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    따라서 대진표의 수는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         {}_6C_4
                         \times
                         \frac{{}_4C_2\times{}_2C_2}{2!}
                     `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         \begin{aligned}
                         {}_6C_4
                         \times
@@ -13244,104 +13244,104 @@ export default function CombinationPage() {
                         &=45
                         \end{aligned}
                     `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-            {/* 방법 2 */}
-            <div className="rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
+                            {/* 방법 2 */}
+                            <div className="rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
 
-                <h4 className="text-lg font-bold text-purple-300">
-                    방법 2. 전체 자리바꿈에서 대칭 제거
-                </h4>
+                                <h4 className="text-lg font-bold text-purple-300">
+                                    방법 2. 전체 자리바꿈에서 대칭 제거
+                                </h4>
 
-                <p className="mt-4 leading-8 text-gray-300">
-                    서로 다른 여섯 팀을 대진표의 여섯 자리에 배열하는 방법은
-                </p>
+                                <p className="mt-4 leading-8 text-gray-300">
+                                    서로 다른 여섯 팀을 대진표의 여섯 자리에 배열하는 방법은
+                                </p>
 
-                <BlockMath math="6!" />
+                                <BlockMath math="6!" />
 
-                <p className="leading-8 text-gray-300">
-                    가지입니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    가지입니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    이제 좌우를 바꾸어도 같은 대진표가 되는 대칭을 찾습니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    이제 좌우를 바꾸어도 같은 대진표가 되는 대칭을 찾습니다.
+                                </p>
 
-                <div className="mt-5 overflow-x-auto">
+                                <div className="mt-5 overflow-x-auto">
 
-                    <table className="w-full min-w-[620px] border-collapse text-center text-gray-300">
+                                    <table className="w-full min-w-[620px] border-collapse text-center text-gray-300">
 
-                        <thead>
-                            <tr className="border-b border-white/15">
+                                        <thead>
+                                            <tr className="border-b border-white/15">
 
-                                <th className="p-3 font-semibold text-white">
-                                    대칭
-                                </th>
+                                                <th className="p-3 font-semibold text-white">
+                                                    대칭
+                                                </th>
 
-                                <th className="p-3 font-semibold text-white">
-                                    중복
-                                </th>
+                                                <th className="p-3 font-semibold text-white">
+                                                    중복
+                                                </th>
 
-                            </tr>
-                        </thead>
+                                            </tr>
+                                        </thead>
 
-                        <tbody>
+                                        <tbody>
 
-                            <tr className="border-b border-white/10">
+                                            <tr className="border-b border-white/10">
 
-                                <td className="p-3">
-                                    첫 경기 세 곳에서 두 팀의 좌우 교환
-                                </td>
+                                                <td className="p-3">
+                                                    첫 경기 세 곳에서 두 팀의 좌우 교환
+                                                </td>
 
-                                <td className="p-3">
-                                    <InlineMath math="2^3" />
-                                </td>
+                                                <td className="p-3">
+                                                    <InlineMath math="2^3" />
+                                                </td>
 
-                            </tr>
+                                            </tr>
 
-                            <tr>
+                                            <tr>
 
-                                <td className="p-3">
-                                    네 팀 진영에서 두 경기의 좌우 교환
-                                </td>
+                                                <td className="p-3">
+                                                    네 팀 진영에서 두 경기의 좌우 교환
+                                                </td>
 
-                                <td className="p-3">
-                                    <InlineMath math="2" />
-                                </td>
+                                                <td className="p-3">
+                                                    <InlineMath math="2" />
+                                                </td>
 
-                            </tr>
+                                            </tr>
 
-                        </tbody>
+                                        </tbody>
 
-                    </table>
+                                    </table>
 
-                </div>
+                                </div>
 
-                <p className="mt-5 leading-8 text-gray-300">
-                    따라서 대칭으로 생기는 전체 중복은
-                </p>
+                                <p className="mt-5 leading-8 text-gray-300">
+                                    따라서 대칭으로 생기는 전체 중복은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         2^3\times2=2^4
                     `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    결승전의 양쪽 진영은 각각{" "}
-                    <InlineMath math="4" />팀과{" "}
-                    <InlineMath math="2" />팀으로 구조가 다르므로,
-                    결승전에서 양쪽 진영을 바꾸는 대칭은 없습니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    결승전의 양쪽 진영은 각각{" "}
+                                    <InlineMath math="4" />팀과{" "}
+                                    <InlineMath math="2" />팀으로 구조가 다르므로,
+                                    결승전에서 양쪽 진영을 바꾸는 대칭은 없습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         \begin{aligned}
                         \frac{6!}{2^4}
                         &=
@@ -13349,31 +13349,31 @@ export default function CombinationPage() {
                         &=45
                         \end{aligned}
                     `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-            {/* 비교 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                            {/* 비교 */}
+                            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="font-semibold text-yellow-300">
-                    두 풀이의 비교
-                </p>
+                                <p className="font-semibold text-yellow-300">
+                                    두 풀이의 비교
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    조 나누기에서는 먼저{" "}
-                    <InlineMath math="4" />팀 진영과{" "}
-                    <InlineMath math="2" />팀 진영을 구별한 뒤,
-                    네 팀을 두 경기로 나눕니다.
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    조 나누기에서는 먼저{" "}
+                                    <InlineMath math="4" />팀 진영과{" "}
+                                    <InlineMath math="2" />팀 진영을 구별한 뒤,
+                                    네 팀을 두 경기로 나눕니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    대칭을 이용한 풀이에서는 여섯 팀을 모두 배열한 뒤,
-                    실제로 같은 대진표를 만드는 좌우 교환만 제거합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    대칭을 이용한 풀이에서는 여섯 팀을 모두 배열한 뒤,
+                                    실제로 같은 대진표를 만드는 좌우 교환만 제거합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         {}_6C_4
                         \times
                         \frac{{}_4C_2\times{}_2C_2}{2!}
@@ -13382,262 +13382,262 @@ export default function CombinationPage() {
                         =
                         45
                     `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 핵심 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="font-semibold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="font-semibold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    결승전의 두 진영에 들어가는 팀의 수가{" "}
-                    <InlineMath math="4" />팀과{" "}
-                    <InlineMath math="2" />팀으로 서로 다릅니다.
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    결승전의 두 진영에 들어가는 팀의 수가{" "}
+                                    <InlineMath math="4" />팀과{" "}
+                                    <InlineMath math="2" />팀으로 서로 다릅니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    따라서 두 진영은 서로 구별되며,
-                    결승전의 양쪽 진영을 바꾸는 것에 대해
-                    추가로 <InlineMath math="2" />로 나누지 않습니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    따라서 두 진영은 서로 구별되며,
+                                    결승전의 양쪽 진영을 바꾸는 것에 대해
+                                    추가로 <InlineMath math="2" />로 나누지 않습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         \boxed{
                         \text{구조가 다른 두 진영은 서로 구별된다}
                         }
                     `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-            {/* 정답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            {/* 정답 */}
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서 서로 다른 대진표의 개수는
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서 서로 다른 대진표의 개수는
+                                </p>
 
-                <BlockMath math="45" />
+                                <BlockMath math="45" />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 3 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 3 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 3
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 3
+                    </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                    {/* 문제 */}
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1.35fr_0.65fr]">
+                        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1.35fr_0.65fr]">
 
-            <div>
+                            <div>
 
-                <p className="leading-8 text-gray-300">
-                    다음 그림과 같은 비상 연락망에 서로 다른{" "}
-                    <InlineMath math="20" />명의 이름을 채워 넣으려고 한다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    다음 그림과 같은 비상 연락망에 서로 다른{" "}
+                                    <InlineMath math="20" />명의 이름을 채워 넣으려고 한다.
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    연결 상태가 같으면 같은 경우로 볼 때,
-                    비상 연락망의 종류는
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    연결 상태가 같으면 같은 경우로 볼 때,
+                                    비상 연락망의 종류는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         20!\times\frac{1}{n}
                     `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    개이다. 이때 자연수{" "}
-                    <InlineMath math="n" />의 값을 구하여라.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    개이다. 이때 자연수{" "}
+                                    <InlineMath math="n" />의 값을 구하여라.
+                                </p>
 
-            </div>
+                            </div>
 
-            <img
-                src="/images/4.22_3.png"
-                alt="여섯 곳의 좌우 대칭이 표시된 20명 비상 연락망"
-                className="mx-auto w-full max-w-md rounded-xl bg-white"
-            />
+                            <img
+                                src="/images/4.22_3.png"
+                                alt="여섯 곳의 좌우 대칭이 표시된 20명 비상 연락망"
+                                className="mx-auto w-full max-w-md rounded-xl bg-white"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-    {/* 풀이 */}
-<details className="mt-5 rounded-xl border border-white/15 p-5">
+                    {/* 풀이 */}
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-    <summary className="cursor-pointer font-semibold text-yellow-300">
-        풀이 보기
-    </summary>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-    <div className="mt-5 space-y-8 text-gray-300">
+                        <div className="mt-5 space-y-8 text-gray-300">
 
-        <p className="leading-8">
-            서로 다른 <InlineMath math="20" />명의 이름을{" "}
-            <InlineMath math="20" />개의 자리에 배열하는 방법은
-        </p>
+                            <p className="leading-8">
+                                서로 다른 <InlineMath math="20" />명의 이름을{" "}
+                                <InlineMath math="20" />개의 자리에 배열하는 방법은
+                            </p>
 
-        <BlockMath math="20!" />
+                            <BlockMath math="20!" />
 
-        <p className="leading-8">
-            가지입니다.
-        </p>
+                            <p className="leading-8">
+                                가지입니다.
+                            </p>
 
-        <p className="leading-8">
-            연결 상태가 같은 경우는 하나로 보므로,
-            먼저 좌우를 서로 바꾸어도 같은 연락망이 되는
-            대칭을 찾아봅니다.
-        </p>
+                            <p className="leading-8">
+                                연결 상태가 같은 경우는 하나로 보므로,
+                                먼저 좌우를 서로 바꾸어도 같은 연락망이 되는
+                                대칭을 찾아봅니다.
+                            </p>
 
-        {/* 풀이 그림 */}
+                            {/* 풀이 그림 */}
 
-        <div className="flex justify-center">
+                            <div className="flex justify-center">
 
-            <img
-                src="/images/4.22_4.png"
-                alt="비상 연락망의 대칭 구조"
-                className="w-full max-w-xl rounded-xl border border-white/10 bg-white"
-            />
+                                <img
+                                    src="/images/4.22_4.png"
+                                    alt="비상 연락망의 대칭 구조"
+                                    className="w-full max-w-xl rounded-xl border border-white/10 bg-white"
+                                />
 
-        </div>
+                            </div>
 
-        {/* 파란색 */}
+                            {/* 파란색 */}
 
-        <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-            <h4 className="text-lg font-bold text-blue-300">
-                1. 파란색 부분의 대칭
-            </h4>
+                                <h4 className="text-lg font-bold text-blue-300">
+                                    1. 파란색 부분의 대칭
+                                </h4>
 
-            <p className="mt-4 leading-8 text-gray-300">
-                파란색으로 표시한 부분에서는
-                좌우를 바꾸어도 연결 구조가 같습니다.
-            </p>
+                                <p className="mt-4 leading-8 text-gray-300">
+                                    파란색으로 표시한 부분에서는
+                                    좌우를 바꾸어도 연결 구조가 같습니다.
+                                </p>
 
-            <ul className="mt-3 list-disc space-y-2 pl-6">
+                                <ul className="mt-3 list-disc space-y-2 pl-6">
 
-                <li>왼쪽 가지 내부</li>
+                                    <li>왼쪽 가지 내부</li>
 
-                <li>가운데 가지 내부</li>
+                                    <li>가운데 가지 내부</li>
 
-                <li>두 파란색 가지 전체</li>
+                                    <li>두 파란색 가지 전체</li>
 
-            </ul>
+                                </ul>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2\times2\times2=2^3
                 `}
-            />
+                                />
 
-        </div>
+                            </div>
 
-        {/* 빨간색 */}
+                            {/* 빨간색 */}
 
-        <div className="rounded-xl border border-red-500/30 bg-red-500/5 p-5">
+                            <div className="rounded-xl border border-red-500/30 bg-red-500/5 p-5">
 
-            <h4 className="text-lg font-bold text-red-300">
-                2. 빨간색 부분의 대칭
-            </h4>
+                                <h4 className="text-lg font-bold text-red-300">
+                                    2. 빨간색 부분의 대칭
+                                </h4>
 
-            <p className="mt-4 leading-8 text-gray-300">
-                빨간색 부분도 같은 구조이므로
-                좌우를 바꾸어도 같은 연락망입니다.
-            </p>
+                                <p className="mt-4 leading-8 text-gray-300">
+                                    빨간색 부분도 같은 구조이므로
+                                    좌우를 바꾸어도 같은 연락망입니다.
+                                </p>
 
-            <ul className="mt-3 list-disc space-y-2 pl-6">
+                                <ul className="mt-3 list-disc space-y-2 pl-6">
 
-                <li>첫 번째 빨간 가지 내부</li>
+                                    <li>첫 번째 빨간 가지 내부</li>
 
-                <li>두 번째 빨간 가지 내부</li>
+                                    <li>두 번째 빨간 가지 내부</li>
 
-                <li>두 빨간 가지 전체</li>
+                                    <li>두 빨간 가지 전체</li>
 
-            </ul>
+                                </ul>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2\times2\times2=2^3
                 `}
-            />
+                                />
 
-        </div>
+                            </div>
 
-        {/* 전체 */}
+                            {/* 전체 */}
 
-        <div className="rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
+                            <div className="rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
 
-            <h4 className="text-lg font-bold text-purple-300">
-                3. 전체 대칭의 수
-            </h4>
+                                <h4 className="text-lg font-bold text-purple-300">
+                                    3. 전체 대칭의 수
+                                </h4>
 
-            <p className="mt-4 leading-8 text-gray-300">
-                파란색 부분과 빨간색 부분의 대칭은
-                서로 독립적으로 일어나므로
-                곱의 법칙을 적용합니다.
-            </p>
+                                <p className="mt-4 leading-8 text-gray-300">
+                                    파란색 부분과 빨간색 부분의 대칭은
+                                    서로 독립적으로 일어나므로
+                                    곱의 법칙을 적용합니다.
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2^3\times2^3=2^6
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2^6=64
                 `}
-            />
+                                />
 
-        </div>
+                            </div>
 
-        {/* 마무리 */}
+                            {/* 마무리 */}
 
-        <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-            <p className="font-bold text-green-300">
-                따라서 비상 연락망의 종류는
-            </p>
+                                <p className="font-bold text-green-300">
+                                    따라서 비상 연락망의 종류는
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     \frac{20!}{2^6}
                 `}
-            />
+                                />
 
-            <p className="leading-8 text-gray-300">
-                문제의 식과 비교하면
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    문제의 식과 비교하면
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     n=64
                 `}
-            />
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-</details>
+                    </details>
 
-</div>
+                </div>
 
                 {/* 핵심 정리 */}
                 <div className="mt-8 rounded-xl border border-green-500/30 bg-green-500/5 p-5">
