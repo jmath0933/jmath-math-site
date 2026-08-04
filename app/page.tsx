@@ -29,6 +29,10 @@ import CombinationPage
   from "../components/commonMath1/counting/CombinationPage";
 import MatrixPage
   from "../components/commonMath1/matrix/MatrixPage";
+import CoordinatePlanePage
+  from "../components/commonMath2/coordinateGeometry/CoordinatePlanePage";
+import LineEquationPage
+  from "../components/commonMath2/coordinateGeometry/LineEquationPage";
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -208,6 +212,22 @@ export default function Home() {
       smallUnit === "행렬의 뜻과 연산"
     ) {
       return <MatrixPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "도형의 방정식" &&
+      smallUnit === "평면좌표"
+    ) {
+      return <CoordinatePlanePage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "도형의 방정식" &&
+      smallUnit === "직선의 방정식"
+    ) {
+      return <LineEquationPage />;
     }
 
     return (
