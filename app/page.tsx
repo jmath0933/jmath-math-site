@@ -33,6 +33,8 @@ import CoordinatePlanePage
   from "../components/commonMath2/coordinateGeometry/CoordinatePlanePage";
 import LineEquationPage
   from "../components/commonMath2/coordinateGeometry/LineEquationPage";
+import CircleEquationPage
+  from "../components/commonMath2/coordinateGeometry/CircleEquationPage";
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -228,6 +230,14 @@ export default function Home() {
       smallUnit === "직선의 방정식"
     ) {
       return <LineEquationPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "도형의 방정식" &&
+      smallUnit === "원의 방정식"
+    ) {
+      return <CircleEquationPage />;
     }
 
     return (
