@@ -17438,260 +17438,260 @@ export default function LineEquationPage() {
             {/* 1.15 점과 직선 사이의 거리와 평행한 두 직선 사이의 거리 */}
             <section className="mt-10 rounded-2xl border border-white/15 bg-black/40 p-6">
 
-    {/* 제목 */}
+                {/* 제목 */}
 
-        <h2 className="text-3xl font-bold text-white">
-            1.15 점과 직선 사이의 거리와 평행한 두 직선 사이의 거리
-        </h2>
+                <h2 className="text-3xl font-bold text-white">
+                    1.15 점과 직선 사이의 거리와 평행한 두 직선 사이의 거리
+                </h2>
 
-        <p className="mt-5 leading-8 text-gray-300">
-            점과 직선 사이의 거리는
-            <strong className="text-yellow-300"> 공식을 암기하여 바로 사용</strong>합니다.
-            평행한 두 직선 사이의 거리도 같은 공식을 이용하여 간단하게 구할 수 있습니다.
-        </p>
+                <p className="mt-5 leading-8 text-gray-300">
+                    점과 직선 사이의 거리는
+                    <strong className="text-yellow-300"> 공식을 암기하여 바로 사용</strong>합니다.
+                    평행한 두 직선 사이의 거리도 같은 공식을 이용하여 간단하게 구할 수 있습니다.
+                </p>
 
 
 
-<div className="mt-8 space-y-6">
-    {/* 1. 점과 직선 사이의 거리 */}
-    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                <div className="mt-8 space-y-6">
+                    {/* 1. 점과 직선 사이의 거리 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-white">
-            1. 점과 직선 사이의 거리
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-white">
+                            1. 점과 직선 사이의 거리
+                        </h3>
 
-        <p className="leading-8 text-gray-300">
-            점 <InlineMath math="(\alpha,\beta)" />와 직선
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            점 <InlineMath math="(\alpha,\beta)" />와 직선
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 ax+by+c=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            사이의 거리를 <InlineMath math="d" />라 하면
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            사이의 거리를 <InlineMath math="d" />라 하면
+                        </p>
 
-        <div className="mt-5 rounded-xl border border-sky-500/30 bg-sky-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-sky-500/30 bg-sky-500/5 p-5">
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \boxed{
                     d=
                     \frac{|a\alpha+b\beta+c|}
                     {\sqrt{a^2+b^2}}
                     }
                 `}
-            />
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    {/* 2. 실전 작성법 */}
-    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 2. 실전 작성법 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-white">
-            2. 점과 직선 사이의 거리 — 실전 작성법
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-white">
+                            2. 점과 직선 사이의 거리 — 실전 작성법
+                        </h3>
 
-        <p className="leading-8 text-gray-300">
-            공식을 문자로 외우는 것과 함께,
-            실제 문제에서는 다음과 같이 생각하면 빠르게 식을 작성할 수 있습니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            공식을 문자로 외우는 것과 함께,
+                            실제 문제에서는 다음과 같이 생각하면 빠르게 식을 작성할 수 있습니다.
+                        </p>
 
-        <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-            <p className="text-center text-lg font-semibold text-yellow-200">
-                직선의 식을 그대로 옮겨 쓰면서 점을 대입
-            </p>
+                            <p className="text-center text-lg font-semibold text-yellow-200">
+                                직선의 식을 그대로 옮겨 쓰면서 점을 대입
+                            </p>
 
-            <div className="my-3 text-center text-2xl text-gray-400">
-                ↓
-            </div>
+                            <div className="my-3 text-center text-2xl text-gray-400">
+                                ↓
+                            </div>
 
-            <p className="text-center text-lg font-semibold text-yellow-200">
-                절댓값
-            </p>
+                            <p className="text-center text-lg font-semibold text-yellow-200">
+                                절댓값
+                            </p>
 
-            <div className="my-3 text-center text-2xl text-gray-400">
-                ↓
-            </div>
+                            <div className="my-3 text-center text-2xl text-gray-400">
+                                ↓
+                            </div>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \sqrt{
                     (x\text{계수})^2+
                     (y\text{계수})^2
                     }
                     \text{로 나눈다}
                 `}
-            />
+                            />
 
-        </div>
+                        </div>
 
-        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
 
-            <p className="mb-4 font-bold text-white">
-                절댓값 처리
-            </p>
+                            <p className="mb-4 font-bold text-white">
+                                절댓값 처리
+                            </p>
 
-            <div className="space-y-3 text-gray-300">
+                            <div className="space-y-3 text-gray-300">
 
-                <p className="leading-8">
-                    ① 양수인 경우 → <strong className="text-emerald-300">그대로 처리</strong>
-                </p>
+                                <p className="leading-8">
+                                    ① 양수인 경우 → <strong className="text-emerald-300">그대로 처리</strong>
+                                </p>
 
-                <p className="leading-8">
-                    ② 음수인 경우 → 부호를 바꾸어
-                    <strong className="text-emerald-300"> 양수로 처리</strong>
-                </p>
+                                <p className="leading-8">
+                                    ② 음수인 경우 → 부호를 바꾸어
+                                    <strong className="text-emerald-300"> 양수로 처리</strong>
+                                </p>
 
-                <p className="leading-8">
-                    ③ 양수인지 음수인지 알 수 없는 경우 →
-                    <strong className="text-yellow-300"> 절댓값 기호를 그대로 사용</strong>
-                </p>
+                                <p className="leading-8">
+                                    ③ 양수인지 음수인지 알 수 없는 경우 →
+                                    <strong className="text-yellow-300"> 절댓값 기호를 그대로 사용</strong>
+                                </p>
 
-            </div>
+                            </div>
 
-            <div className="mt-5 grid gap-4 md:grid-cols-3">
+                            <div className="mt-5 grid gap-4 md:grid-cols-3">
 
-                <div className="rounded-lg bg-black/30 p-4">
-                    <BlockMath math="|7|=7" />
-                </div>
+                                <div className="rounded-lg bg-black/30 p-4">
+                                    <BlockMath math="|7|=7" />
+                                </div>
 
-                <div className="rounded-lg bg-black/30 p-4">
-                    <BlockMath math="|-7|=7" />
-                </div>
+                                <div className="rounded-lg bg-black/30 p-4">
+                                    <BlockMath math="|-7|=7" />
+                                </div>
 
-                <div className="rounded-lg bg-black/30 p-4">
-                    <BlockMath math="|a-3|" />
-                </div>
+                                <div className="rounded-lg bg-black/30 p-4">
+                                    <BlockMath math="|a-3|" />
+                                </div>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-        <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
 
-            <p className="font-bold text-emerald-300">
-                핵심
-            </p>
+                            <p className="font-bold text-emerald-300">
+                                핵심
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                점과 직선 사이의 거리는
-                <strong className="text-white"> 공식을 암기해서 풉니다.</strong>
-                증명은 공식이 만들어지는 원리를 이해하기 위한 것입니다.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                점과 직선 사이의 거리는
+                                <strong className="text-white"> 공식을 암기해서 풉니다.</strong>
+                                증명은 공식이 만들어지는 원리를 이해하기 위한 것입니다.
+                            </p>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    {/* 3. 점과 직선 사이의 거리 증명 */}
-    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 3. 점과 직선 사이의 거리 증명 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-white">
-            3. 점과 직선 사이의 거리 공식은 왜 성립할까?
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-white">
+                            3. 점과 직선 사이의 거리 공식은 왜 성립할까?
+                        </h3>
 
-        <div className="grid gap-8 lg:grid-cols-[400px_1fr]">
+                        <div className="grid gap-8 lg:grid-cols-[400px_1fr]">
 
-            {/* 이미지 */}
-            <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-4">
+                            {/* 이미지 */}
+                            <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-4">
 
-                <img
-                    src="/images/commonMath2/1.15.png"
-                    alt="점과 직선 사이의 거리 공식의 증명"
-                    className="mx-auto w-full rounded-lg max-w-[390px]"
-                />
+                                <img
+                                    src="/images/commonMath2/1.15.png"
+                                    alt="점과 직선 사이의 거리 공식의 증명"
+                                    className="mx-auto w-full rounded-lg max-w-[390px]"
+                                />
 
-            </div>
+                            </div>
 
-            {/* 설명 */}
-            <div className="space-y-5 text-gray-300">
+                            {/* 설명 */}
+                            <div className="space-y-5 text-gray-300">
 
-                <p className="leading-8">
-                    직선{" "}
-                    <InlineMath math="ax+by+c=0" />의 기울기는{" "}
-                    <InlineMath math="-\dfrac{a}{b}" />이므로,
-                    그림의 작은 직각삼각형의 가로와 세로의 길이를 각각{" "}
-                    <InlineMath math="|b|,\ |a|" />로 볼 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    직선{" "}
+                                    <InlineMath math="ax+by+c=0" />의 기울기는{" "}
+                                    <InlineMath math="-\dfrac{a}{b}" />이므로,
+                                    그림의 작은 직각삼각형의 가로와 세로의 길이를 각각{" "}
+                                    <InlineMath math="|b|,\ |a|" />로 볼 수 있습니다.
+                                </p>
 
-                <p className="leading-8">
-                    따라서 피타고라스의 정리에 의해 빗변의 길이는
-                </p>
+                                <p className="leading-8">
+                                    따라서 피타고라스의 정리에 의해 빗변의 길이는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         \sqrt{a^2+b^2}
                     `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    이제 점 <InlineMath math="(\alpha,\beta)" />에서
-                    세로로 올라가 직선과 만나는 점을 생각합니다.
-                    이 점의 <InlineMath math="x" />좌표는{" "}
-                    <InlineMath math="\alpha" />이므로
-                </p>
+                                <p className="leading-8">
+                                    이제 점 <InlineMath math="(\alpha,\beta)" />에서
+                                    세로로 올라가 직선과 만나는 점을 생각합니다.
+                                    이 점의 <InlineMath math="x" />좌표는{" "}
+                                    <InlineMath math="\alpha" />이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         a\alpha+by+c=0
                     `}
-                />
+                                />
 
-                <p className="leading-8">
-                    에서
-                </p>
+                                <p className="leading-8">
+                                    에서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         y=-\frac{a\alpha+c}{b}
                     `}
-                />
+                                />
 
-                
 
-            </div>
 
-        </div>
+                            </div>
 
-        {/* 증명 이어서 */}
-        <div className="mt-6 rounded-xl border border-white/10 bg-black/20 p-5">
+                        </div>
 
-        <p className="leading-8">
-                    이므로 직선 위의 점은
-                </p>
+                        {/* 증명 이어서 */}
+                        <div className="mt-6 rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                이므로 직선 위의 점은
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
                         \left(
                         \alpha,
                         -\frac{a\alpha+c}{b}
                         \right)
                     `}
-                />
+                            />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
-            <p className="leading-8 text-gray-300">
-                따라서 그림의 파란 선분의 길이는
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                따라서 그림의 파란 선분의 길이는
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \left|
                     \beta-
                     \left(
@@ -17705,18 +17705,18 @@ export default function LineEquationPage() {
                     =
                     \frac{|a\alpha+b\beta+c|}{|b|}
                 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                입니다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                입니다.
+                            </p>
 
-            <p className="mt-4 leading-8 text-gray-300">
-                그림의 두 직각삼각형은 닮음이므로
-            </p>
+                            <p className="mt-4 leading-8 text-gray-300">
+                                그림의 두 직각삼각형은 닮음이므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \frac{
                     d
                     }{
@@ -17726,43 +17726,43 @@ export default function LineEquationPage() {
                     \frac{|b|}
                     {\sqrt{a^2+b^2}}
                 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                따라서
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                따라서
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     d
                     =
                     \frac{|a\alpha+b\beta+c|}
                     {\sqrt{a^2+b^2}}
                 `}
-            />
+                            />
 
-            <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
+                            <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         \boxed{
                         d=
                         \frac{|a\alpha+b\beta+c|}
                         {\sqrt{a^2+b^2}}
                         }
                     `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-            <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                            <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-            <p className="text-center text-lg font-semibold text-yellow-200">
-                점과 직선 사이의 거리
-            </p>
+                                <p className="text-center text-lg font-semibold text-yellow-200">
+                                    점과 직선 사이의 거리
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     =
                     \frac{
                     |\text{직선에 점을 대입한 값}|
@@ -17773,64 +17773,64 @@ export default function LineEquationPage() {
                     }
                     }
                 `}
-            />
+                                />
 
-        </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    {/* 4. 평행한 두 직선 사이의 거리 */}
-    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 4. 평행한 두 직선 사이의 거리 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-white">
-            4. 평행한 두 직선 사이의 거리
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-white">
+                            4. 평행한 두 직선 사이의 거리
+                        </h3>
 
-        <p className="leading-8 text-gray-300">
-            서로 평행한 두 직선
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            서로 평행한 두 직선
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 ax+by+c=0
             `}
-        />
+                        />
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 ax+by+c'=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            사이의 거리를 <InlineMath math="d" />라 하면
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            사이의 거리를 <InlineMath math="d" />라 하면
+                        </p>
 
-        <div className="mt-5 rounded-xl border border-sky-500/30 bg-sky-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-sky-500/30 bg-sky-500/5 p-5">
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \boxed{
                     d=
                     \frac{|c-c'|}
                     {\sqrt{a^2+b^2}}
                     }
                 `}
-            />
+                            />
 
-        </div>
+                        </div>
 
-        <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-            <p className="text-center text-lg font-semibold text-yellow-200">
-                평행한 두 직선 사이의 거리
-            </p>
+                            <p className="text-center text-lg font-semibold text-yellow-200">
+                                평행한 두 직선 사이의 거리
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     =
                     \frac{
                     |\text{상수항의 차}|
@@ -17841,113 +17841,113 @@ export default function LineEquationPage() {
                     }
                     }
                 `}
-            />
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    {/* 5. 주의 */}
-    <div className="rounded-xl border border-rose-500/30 bg-rose-500/5 p-6">
+                    {/* 5. 주의 */}
+                    <div className="rounded-xl border border-rose-500/30 bg-rose-500/5 p-6">
 
-        <h3 className="mb-4 text-2xl font-bold text-rose-300">
-            5. 상수항을 빼기 전에 계수를 먼저 맞춘다
-        </h3>
+                        <h3 className="mb-4 text-2xl font-bold text-rose-300">
+                            5. 상수항을 빼기 전에 계수를 먼저 맞춘다
+                        </h3>
 
-        <p className="leading-8 text-gray-300">
-            평행한 두 직선의 거리 공식은
-            두 직선의 <InlineMath math="x,\ y" />의 계수가
-            서로 같을 때 바로 사용할 수 있습니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            평행한 두 직선의 거리 공식은
+                            두 직선의 <InlineMath math="x,\ y" />의 계수가
+                            서로 같을 때 바로 사용할 수 있습니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            예를 들어
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            예를 들어
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 2x+4y+3=0
             `}
-        />
+                        />
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 x+2y-5=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            에서는 바로 상수항 <InlineMath math="3" />과{" "}
-            <InlineMath math="-5" />를 빼면 안 됩니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            에서는 바로 상수항 <InlineMath math="3" />과{" "}
+                            <InlineMath math="-5" />를 빼면 안 됩니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            두 번째 식을 <InlineMath math="2" />배하여
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            두 번째 식을 <InlineMath math="2" />배하여
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 2x+4y-10=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            으로 만든 뒤 상수항을 비교합니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            으로 만든 뒤 상수항을 비교합니다.
+                        </p>
 
-        <div className="mt-5 rounded-lg bg-black/20 p-4">
+                        <div className="mt-5 rounded-lg bg-black/20 p-4">
 
-            <p className="text-center font-bold text-rose-200">
-                x계수와 y계수를 똑같이 맞춘 뒤 상수항의 차를 구한다.
-            </p>
+                            <p className="text-center font-bold text-rose-200">
+                                x계수와 y계수를 똑같이 맞춘 뒤 상수항의 차를 구한다.
+                            </p>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    {/* 6. 평행한 두 직선 사이의 거리 증명 */}
-    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 6. 평행한 두 직선 사이의 거리 증명 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-white">
-            6. 평행한 두 직선 사이의 거리 공식은 왜 성립할까?
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-white">
+                            6. 평행한 두 직선 사이의 거리 공식은 왜 성립할까?
+                        </h3>
 
-        <p className="leading-8 text-gray-300">
-            서로 평행한 두 직선
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            서로 평행한 두 직선
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 ax+by+c=0,
                 \qquad
                 ax+by+c'=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            을 생각합니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            을 생각합니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            첫 번째 직선{" "}
-            <InlineMath math="ax+by+c=0" /> 위의 한 점을{" "}
-            <InlineMath math="(\alpha,\beta)" />라고 하겠습니다.
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            첫 번째 직선{" "}
+                            <InlineMath math="ax+by+c=0" /> 위의 한 점을{" "}
+                            <InlineMath math="(\alpha,\beta)" />라고 하겠습니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            두 직선은 서로 평행하므로,
-            이 점에서 두 번째 직선까지의 거리가
-            곧 두 평행한 직선 사이의 거리입니다.
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            두 직선은 서로 평행하므로,
+                            이 점에서 두 번째 직선까지의 거리가
+                            곧 두 평행한 직선 사이의 거리입니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            점과 직선 사이의 거리 공식을 사용하면
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            점과 직선 사이의 거리 공식을 사용하면
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 d
                 =
                 \frac{
@@ -17956,44 +17956,44 @@ export default function LineEquationPage() {
                 \sqrt{a^2+b^2}
                 }
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            입니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            입니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            그런데 점 <InlineMath math="(\alpha,\beta)" />는
-            첫 번째 직선{" "}
-            <InlineMath math="ax+by+c=0" /> 위의 점이므로
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            그런데 점 <InlineMath math="(\alpha,\beta)" />는
+                            첫 번째 직선{" "}
+                            <InlineMath math="ax+by+c=0" /> 위의 점이므로
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 a\alpha+b\beta+c=0
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            따라서
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            따라서
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 a\alpha+b\beta=-c
             `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            입니다.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            입니다.
+                        </p>
 
-        <p className="mt-4 leading-8 text-gray-300">
-            이를 거리 공식에 대입하면
-        </p>
+                        <p className="mt-4 leading-8 text-gray-300">
+                            이를 거리 공식에 대입하면
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 d
                 =
                 \frac{
@@ -18002,10 +18002,10 @@ export default function LineEquationPage() {
                 \sqrt{a^2+b^2}
                 }
             `}
-        />
+                        />
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
                 d
                 =
                 \frac{
@@ -18014,269 +18014,269 @@ export default function LineEquationPage() {
                 \sqrt{a^2+b^2}
                 }
             `}
-        />
+                        />
 
-        <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
                     \boxed{
                     d=
                     \frac{|c-c'|}
                     {\sqrt{a^2+b^2}}
                     }
                 `}
-            />
+                            />
 
-        </div>
+                        </div>
 
-        <p className="mt-5 leading-8 text-gray-300">
-            즉 평행한 두 직선 사이의 거리 공식은
-            <strong className="text-emerald-300">
-                {" "}점과 직선 사이의 거리 공식을 그대로 이용한 결과
-            </strong>
-            입니다.
-        </p>
+                        <p className="mt-5 leading-8 text-gray-300">
+                            즉 평행한 두 직선 사이의 거리 공식은
+                            <strong className="text-emerald-300">
+                                {" "}점과 직선 사이의 거리 공식을 그대로 이용한 결과
+                            </strong>
+                            입니다.
+                        </p>
 
-    </div>
+                    </div>
 
-    {/* 예제 1 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 1 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 1
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 1
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 점 <InlineMath math="A(2,-4)" />에서
-                두 점 <InlineMath math="(-2,0),\ (2,4)" />를 지나는
-                직선 <InlineMath math="l" /> 위를 움직이는 점{" "}
-                <InlineMath math="P" />에 대하여
-                선분 <InlineMath math="\overline{AP}" />의 최솟값을 구하시오.
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    오른쪽 그림과 같이 점 <InlineMath math="A(2,-4)" />에서
+                                    두 점 <InlineMath math="(-2,0),\ (2,4)" />를 지나는
+                                    직선 <InlineMath math="l" /> 위를 움직이는 점{" "}
+                                    <InlineMath math="P" />에 대하여
+                                    선분 <InlineMath math="\overline{AP}" />의 최솟값을 구하시오.
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_1.png"
-                alt="점 A와 직선 l 사이의 거리"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_1.png"
+                                    alt="점 A와 직선 l 사이의 거리"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                점 <InlineMath math="P" />가 직선 <InlineMath math="l" /> 위를
-                움직일 때 <InlineMath math="AP" />가 가장 짧아지는 경우는
-                점 <InlineMath math="A" />에서 직선 <InlineMath math="l" />에
-                내린 수선의 발이 <InlineMath math="P" />가 될 때입니다.
-            </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P" />가 직선 <InlineMath math="l" /> 위를
+                                    움직일 때 <InlineMath math="AP" />가 가장 짧아지는 경우는
+                                    점 <InlineMath math="A" />에서 직선 <InlineMath math="l" />에
+                                    내린 수선의 발이 <InlineMath math="P" />가 될 때입니다.
+                                </p>
 
-            <p className="leading-8">
-                따라서 <InlineMath math="\overline{AP}" />의 최솟값은
-                점 <InlineMath math="A" />와 직선 <InlineMath math="l" /> 사이의 거리입니다.
-            </p>
+                                <p className="leading-8">
+                                    따라서 <InlineMath math="\overline{AP}" />의 최솟값은
+                                    점 <InlineMath math="A" />와 직선 <InlineMath math="l" /> 사이의 거리입니다.
+                                </p>
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    직선 <InlineMath math="l" />의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        직선 <InlineMath math="l" />의 방정식
+                                    </p>
 
-                <p className="leading-8">
-                    두 점 <InlineMath math="(-2,0)" />,{" "}
-                    <InlineMath math="(2,4)" />를 지나는 직선의 기울기는
-                </p>
+                                    <p className="leading-8">
+                                        두 점 <InlineMath math="(-2,0)" />,{" "}
+                                        <InlineMath math="(2,4)" />를 지나는 직선의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{4-0}{2-(-2)}
                         =
                         1
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=x+2
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x-y+2=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점과 직선 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        점과 직선 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(2,-4)" />와
-                    직선 <InlineMath math="x-y+2=0" /> 사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A(2,-4)" />와
+                                        직선 <InlineMath math="x-y+2=0" /> 사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{|2-(-4)+2|}
                         {\sqrt{1^2+(-1)^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{8}{\sqrt2}
                         =
                         4\sqrt2
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{4\sqrt2}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    점이 직선 위를 움직일 때 한 점에서 그 점까지의 거리의 최솟값은
-                    그 점과 직선 사이의 거리입니다.
-                    따라서 먼저 직선의 방정식을 구한 뒤
-                    점과 직선 사이의 거리 공식을 바로 사용하면 됩니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        점이 직선 위를 움직일 때 한 점에서 그 점까지의 거리의 최솟값은
+                                        그 점과 직선 사이의 거리입니다.
+                                        따라서 먼저 직선의 방정식을 구한 뒤
+                                        점과 직선 사이의 거리 공식을 바로 사용하면 됩니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{최솟값}
                         \rightarrow
                         \text{수선의 길이}
                         \rightarrow
                         \text{점과 직선 사이의 거리 공식}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 2 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 2 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 2
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 2
+                        </h3>
 
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            세 점{" "}
-            <InlineMath math="A(2,7),\ B(2,1),\ C(5,4)" />
-            를 꼭짓점으로 하는 삼각형{" "}
-            <InlineMath math="ABC" />
-            의 무게중심을 지나고
-            직선 <InlineMath math="AC" />에 평행한 직선을{" "}
-            <InlineMath math="l" />이라 할 때,
-            점 <InlineMath math="C" />에서 직선{" "}
-            <InlineMath math="l" />까지의 거리를 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                세 점{" "}
+                                <InlineMath math="A(2,7),\ B(2,1),\ C(5,4)" />
+                                를 꼭짓점으로 하는 삼각형{" "}
+                                <InlineMath math="ABC" />
+                                의 무게중심을 지나고
+                                직선 <InlineMath math="AC" />에 평행한 직선을{" "}
+                                <InlineMath math="l" />이라 할 때,
+                                점 <InlineMath math="C" />에서 직선{" "}
+                                <InlineMath math="l" />까지의 거리를 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                먼저 직선 <InlineMath math="AC" />의 방정식을 구합니다.
-            </p>
+                                <p className="leading-8">
+                                    먼저 직선 <InlineMath math="AC" />의 방정식을 구합니다.
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     \frac{4-7}{5-2}
                     =
                     -1
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                따라서
-            </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     y-7=-(x-2)
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     x+y-9=0
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                삼각형의 무게중심은
-            </p>
+                                <p className="leading-8">
+                                    삼각형의 무게중심은
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     \left(
                     \frac{2+2+5}{3},
                     \frac{7+1+4}{3}
@@ -18284,244 +18284,244 @@ export default function LineEquationPage() {
                     =
                     (3,4)
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                이므로,
-                직선 <InlineMath math="l" />은
-                점 <InlineMath math="(3,4)" />를 지나고
-                직선 <InlineMath math="AC" />와 평행합니다.
-            </p>
+                                <p className="leading-8">
+                                    이므로,
+                                    직선 <InlineMath math="l" />은
+                                    점 <InlineMath math="(3,4)" />를 지나고
+                                    직선 <InlineMath math="AC" />와 평행합니다.
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     x+y-7=0
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    평행한 두 직선 사이의 거리
-                </p>
+                                    <p className="mb-3 font-bold text-white">
+                                        평행한 두 직선 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    직선{" "}
-                    <InlineMath math="x+y-9=0" />과{" "}
-                    <InlineMath math="x+y-7=0" /> 사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        직선{" "}
+                                        <InlineMath math="x+y-9=0" />과{" "}
+                                        <InlineMath math="x+y-7=0" /> 사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{|(-9)-(-7)|}
                         {\sqrt{1^2+1^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{2}{\sqrt2}
                         =
                         \sqrt2
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{\sqrt2}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="C" />는 직선{" "}
-                    <InlineMath math="AC" /> 위의 점입니다.
-                    따라서 점 <InlineMath math="C" />에서
-                    직선 <InlineMath math="l" />까지의 거리는
-                    <strong> 직선 <InlineMath math="AC" />와 직선 <InlineMath math="l" /> 사이의 거리</strong>와 같습니다.
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="C" />는 직선{" "}
+                                        <InlineMath math="AC" /> 위의 점입니다.
+                                        따라서 점 <InlineMath math="C" />에서
+                                        직선 <InlineMath math="l" />까지의 거리는
+                                        <strong> 직선 <InlineMath math="AC" />와 직선 <InlineMath math="l" /> 사이의 거리</strong>와 같습니다.
+                                    </p>
 
-                <p className="mt-3 leading-8">
-                    즉, 점과 직선 사이의 거리 공식을 사용할 수도 있지만,
-                    이 문제에서는
-                    <strong className="text-yellow-300">
-                        {" "}평행한 두 직선 사이의 거리 공식
-                    </strong>
-                    을 이용하는 것이 가장 간단합니다.
-                </p>
+                                    <p className="mt-3 leading-8">
+                                        즉, 점과 직선 사이의 거리 공식을 사용할 수도 있지만,
+                                        이 문제에서는
+                                        <strong className="text-yellow-300">
+                                            {" "}평행한 두 직선 사이의 거리 공식
+                                        </strong>
+                                        을 이용하는 것이 가장 간단합니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 3 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 3 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 3
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 3
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 좌표평면 위의 점{" "}
-                <InlineMath math="A(-8,0)" />과 원점{" "}
-                <InlineMath math="O" />에서 직선{" "}
-                <InlineMath math="3x+y-6=0" />에 내린 수선의 발을
-                각각 <InlineMath math="B,\ C" />라 할 때,
-                사다리꼴 <InlineMath math="OABC" />의 넓이를 구하시오.
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    오른쪽 그림과 같이 좌표평면 위의 점{" "}
+                                    <InlineMath math="A(-8,0)" />과 원점{" "}
+                                    <InlineMath math="O" />에서 직선{" "}
+                                    <InlineMath math="3x+y-6=0" />에 내린 수선의 발을
+                                    각각 <InlineMath math="B,\ C" />라 할 때,
+                                    사다리꼴 <InlineMath math="OABC" />의 넓이를 구하시오.
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_3.png"
-                alt="점 A와 원점 O에서 직선에 내린 수선과 사다리꼴 OABC"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_3.png"
+                                    alt="점 A와 원점 O에서 직선에 내린 수선과 사다리꼴 OABC"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                선분 <InlineMath math="AB" />와{" "}
-                <InlineMath math="OC" />는 모두 직선{" "}
-                <InlineMath math="3x+y-6=0" />에 수직이므로
-                서로 평행합니다.
-            </p>
+                                <p className="leading-8">
+                                    선분 <InlineMath math="AB" />와{" "}
+                                    <InlineMath math="OC" />는 모두 직선{" "}
+                                    <InlineMath math="3x+y-6=0" />에 수직이므로
+                                    서로 평행합니다.
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     AB\parallel OC
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                따라서 사각형 <InlineMath math="OABC" />는{" "}
-                <InlineMath math="AB,\ OC" />를 평행한 두 변으로 하는
-                사다리꼴입니다.
-            </p>
+                                <p className="leading-8">
+                                    따라서 사각형 <InlineMath math="OABC" />는{" "}
+                                    <InlineMath math="AB,\ OC" />를 평행한 두 변으로 하는
+                                    사다리꼴입니다.
+                                </p>
 
-            {/* AB */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* AB */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① <InlineMath math="AB" />의 길이
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① <InlineMath math="AB" />의 길이
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(-8,0)" />과
-                    직선 <InlineMath math="3x+y-6=0" /> 사이의 거리이므로
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A(-8,0)" />과
+                                        직선 <InlineMath math="3x+y-6=0" /> 사이의 거리이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB
                         =
                         \frac{|3(-8)+0-6|}
                         {\sqrt{3^2+1^2}}
                 `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{30}{\sqrt{10}}
                         =
                         3\sqrt{10}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* OC */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* OC */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② <InlineMath math="OC" />의 길이
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② <InlineMath math="OC" />의 길이
+                                    </p>
 
-                <p className="leading-8">
-                    원점 <InlineMath math="O(0,0)" />과
-                    직선 <InlineMath math="3x+y-6=0" /> 사이의 거리이므로
-                </p>
+                                    <p className="leading-8">
+                                        원점 <InlineMath math="O(0,0)" />과
+                                        직선 <InlineMath math="3x+y-6=0" /> 사이의 거리이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         OC
                         =
                         \frac{|3(0)+0-6|}
                         {\sqrt{3^2+1^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{6}{\sqrt{10}}
                         =
                         \frac{3\sqrt{10}}{5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* BC */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* BC */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 사다리꼴의 높이 <InlineMath math="BC" />
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 사다리꼴의 높이 <InlineMath math="BC" />
+                                    </p>
 
-                <p className="leading-8">
-                    <InlineMath math="B,\ C" />는 같은 직선 위에 있고,{" "}
-                    <InlineMath math="AB,\ OC" />는 그 직선에 수직이므로{" "}
-                    <InlineMath math="BC" />는 사다리꼴의 높이입니다.
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="B,\ C" />는 같은 직선 위에 있고,{" "}
+                                        <InlineMath math="AB,\ OC" />는 그 직선에 수직이므로{" "}
+                                        <InlineMath math="BC" />는 사다리꼴의 높이입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    두 평행한 변의 길이의 차는
-                </p>
+                                    <p className="leading-8">
+                                        두 평행한 변의 길이의 차는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB-OC
                         =
                         3\sqrt{10}
@@ -18530,15 +18530,15 @@ export default function LineEquationPage() {
                         =
                         \frac{12\sqrt{10}}5
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이고 <InlineMath math="AO=8" />이므로
-                    피타고라스의 정리에 의하여
-                </p>
+                                    <p className="leading-8">
+                                        이고 <InlineMath math="AO=8" />이므로
+                                        피타고라스의 정리에 의하여
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         BC^2
                         +
                         \left(
@@ -18547,44 +18547,44 @@ export default function LineEquationPage() {
                         =
                         8^2
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         BC^2
                         =
                         64-\frac{288}{5}
                         =
                         \frac{32}{5}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         BC
                         =
                         \frac{4\sqrt{10}}5
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 넓이 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 넓이 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    사다리꼴의 넓이
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        사다리꼴의 넓이
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12
                         (AB+OC)\times BC
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac12
                         \left(
@@ -18595,47 +18595,47 @@ export default function LineEquationPage() {
                         \times
                         \frac{4\sqrt{10}}5
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{72}{5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{\frac{72}{5}}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    두 점에서 같은 직선에 내린 수선은 서로 평행합니다.
-                    따라서 먼저 점과 직선 사이의 거리 공식으로{" "}
-                    <InlineMath math="AB,\ OC" />를 구하고,
-                    사다리꼴의 높이 <InlineMath math="BC" />를 구한 뒤
-                    넓이를 계산합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        두 점에서 같은 직선에 내린 수선은 서로 평행합니다.
+                                        따라서 먼저 점과 직선 사이의 거리 공식으로{" "}
+                                        <InlineMath math="AB,\ OC" />를 구하고,
+                                        사다리꼴의 높이 <InlineMath math="BC" />를 구한 뒤
+                                        넓이를 계산합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{점과 직선 사이의 거리}
                         \rightarrow
                         AB,\ OC
@@ -18644,243 +18644,243 @@ export default function LineEquationPage() {
                         \rightarrow
                         \text{사다리꼴의 넓이}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 4 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 4 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 4
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 4
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 좌표평면 위에
-                점 <InlineMath math="A(a,5)\;(a>0)" />과
-                두 점 <InlineMath math="(4,0),\ (0,2)" />를 지나는
-                직선 <InlineMath math="l" />이 있다.
-                직선 <InlineMath math="l" /> 위의 서로 다른 두 점{" "}
-                <InlineMath math="B,\ C" />와 제1사분면 위의 점{" "}
-                <InlineMath math="D" />를 사각형{" "}
-                <InlineMath math="ABCD" />가 정사각형이 되도록 잡는다.
-                정사각형 <InlineMath math="ABCD" />의 넓이가{" "}
-                <InlineMath math="\dfrac{64}{5}" />일 때,{" "}
-                <InlineMath math="a" />의 값을 구하시오.
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    오른쪽 그림과 같이 좌표평면 위에
+                                    점 <InlineMath math="A(a,5)\;(a>0)" />과
+                                    두 점 <InlineMath math="(4,0),\ (0,2)" />를 지나는
+                                    직선 <InlineMath math="l" />이 있다.
+                                    직선 <InlineMath math="l" /> 위의 서로 다른 두 점{" "}
+                                    <InlineMath math="B,\ C" />와 제1사분면 위의 점{" "}
+                                    <InlineMath math="D" />를 사각형{" "}
+                                    <InlineMath math="ABCD" />가 정사각형이 되도록 잡는다.
+                                    정사각형 <InlineMath math="ABCD" />의 넓이가{" "}
+                                    <InlineMath math="\dfrac{64}{5}" />일 때,{" "}
+                                    <InlineMath math="a" />의 값을 구하시오.
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_4.png"
-                alt="직선 l 위에 한 변을 둔 정사각형 ABCD"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_4.png"
+                                    alt="직선 l 위에 한 변을 둔 정사각형 ABCD"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 직선 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 직선 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 직선 <InlineMath math="l" />의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 직선 <InlineMath math="l" />의 방정식
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l" />은
-                    두 점 <InlineMath math="(4,0)" />,{" "}
-                    <InlineMath math="(0,2)" />를 지나므로{" "}
-                    <InlineMath math="x" />절편은 <InlineMath math="4" />,{" "}
-                    <InlineMath math="y" />절편은 <InlineMath math="2" />입니다.
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l" />은
+                                        두 점 <InlineMath math="(4,0)" />,{" "}
+                                        <InlineMath math="(0,2)" />를 지나므로{" "}
+                                        <InlineMath math="x" />절편은 <InlineMath math="4" />,{" "}
+                                        <InlineMath math="y" />절편은 <InlineMath math="2" />입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{x}{4}+\frac{y}{2}=1
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x+2y-4=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 정사각형 한 변 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 정사각형 한 변 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 정사각형의 한 변의 길이
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 정사각형의 한 변의 길이
+                                    </p>
 
-                <p className="leading-8">
-                    정사각형의 한 변의 길이를{" "}
-                    <InlineMath math="s" />라 하면
-                </p>
+                                    <p className="leading-8">
+                                        정사각형의 한 변의 길이를{" "}
+                                        <InlineMath math="s" />라 하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         s^2=\frac{64}{5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    길이는 양수이므로
-                </p>
+                                    <p className="leading-8">
+                                        길이는 양수이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         s=\frac{8}{\sqrt5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 점과 직선 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 점과 직선 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    선분 <InlineMath math="BC" />는 직선{" "}
-                    <InlineMath math="l" /> 위에 있고
-                    사각형 <InlineMath math="ABCD" />는 정사각형이므로
-                </p>
+                                    <p className="leading-8">
+                                        선분 <InlineMath math="BC" />는 직선{" "}
+                                        <InlineMath math="l" /> 위에 있고
+                                        사각형 <InlineMath math="ABCD" />는 정사각형이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB\perp BC
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    따라서 <InlineMath math="AB" />의 길이는
-                    점 <InlineMath math="A(a,5)" />와
-                    직선 <InlineMath math="x+2y-4=0" /> 사이의 거리입니다.
-                </p>
+                                    <p className="leading-8">
+                                        따라서 <InlineMath math="AB" />의 길이는
+                                        점 <InlineMath math="A(a,5)" />와
+                                        직선 <InlineMath math="x+2y-4=0" /> 사이의 거리입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB
                         =
                         \frac{|a+2\cdot5-4|}
                         {\sqrt{1^2+2^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{|a+6|}{\sqrt5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    그런데 <InlineMath math="a>0" />이므로{" "}
-                    <InlineMath math="a+6>0" />입니다.
-                    따라서 절댓값을 그대로 없애면
-                </p>
+                                    <p className="leading-8">
+                                        그런데 <InlineMath math="a>0" />이므로{" "}
+                                        <InlineMath math="a+6>0" />입니다.
+                                        따라서 절댓값을 그대로 없애면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB=\frac{a+6}{\sqrt5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                정사각형의 한 변의 길이는{" "}
-                <InlineMath math="\dfrac{8}{\sqrt5}" />이므로
-            </p>
+                                <p className="leading-8">
+                                    정사각형의 한 변의 길이는{" "}
+                                    <InlineMath math="\dfrac{8}{\sqrt5}" />이므로
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     \frac{a+6}{\sqrt5}
                     =
                     \frac{8}{\sqrt5}
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     a+6=8
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     a=2
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{2}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    정사각형의 넓이에서 한 변의 길이를 먼저 구합니다.
-                    그리고 <InlineMath math="BC" />가 직선{" "}
-                    <InlineMath math="l" /> 위에 있으므로{" "}
-                    <InlineMath math="AB" />는 점{" "}
-                    <InlineMath math="A" />에서 직선{" "}
-                    <InlineMath math="l" />까지의 거리입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        정사각형의 넓이에서 한 변의 길이를 먼저 구합니다.
+                                        그리고 <InlineMath math="BC" />가 직선{" "}
+                                        <InlineMath math="l" /> 위에 있으므로{" "}
+                                        <InlineMath math="AB" />는 점{" "}
+                                        <InlineMath math="A" />에서 직선{" "}
+                                        <InlineMath math="l" />까지의 거리입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{정사각형의 넓이}
                         \rightarrow
                         AB
@@ -18889,231 +18889,231 @@ export default function LineEquationPage() {
                         \rightarrow
                         a
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 5 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 5 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 5
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 5
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            점 <InlineMath math="(0,k)" />에서
-            두 직선{" "}
-            <InlineMath math="x+2y-5=0" />,{" "}
-            <InlineMath math="2x-y-2=0" />에 이르는 거리가
-            같도록 하는 모든 실수 <InlineMath math="k" />의 값의 합을
-            구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                점 <InlineMath math="(0,k)" />에서
+                                두 직선{" "}
+                                <InlineMath math="x+2y-5=0" />,{" "}
+                                <InlineMath math="2x-y-2=0" />에 이르는 거리가
+                                같도록 하는 모든 실수 <InlineMath math="k" />의 값의 합을
+                                구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 첫 번째 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 첫 번째 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 첫 번째 직선까지의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 첫 번째 직선까지의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="(0,k)" />와
-                    직선 <InlineMath math="x+2y-5=0" /> 사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="(0,k)" />와
+                                        직선 <InlineMath math="x+2y-5=0" /> 사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d_1
                         =
                         \frac{|0+2k-5|}
                         {\sqrt{1^2+2^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d_1
                         =
                         \frac{|2k-5|}{\sqrt5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-            {/* 두 번째 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 두 번째 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 두 번째 직선까지의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 두 번째 직선까지의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="(0,k)" />와
-                    직선 <InlineMath math="2x-y-2=0" /> 사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="(0,k)" />와
+                                        직선 <InlineMath math="2x-y-2=0" /> 사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d_2
                         =
                         \frac{|2\cdot0-k-2|}
                         {\sqrt{2^2+(-1)^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d_2
                         =
                         \frac{|-k-2|}{\sqrt5}
                         =
                         \frac{|k+2|}{\sqrt5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 같음 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 같음 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 두 거리가 같은 조건
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 두 거리가 같은 조건
+                                    </p>
 
-                <p className="leading-8">
-                    두 거리가 같으므로
-                </p>
+                                    <p className="leading-8">
+                                        두 거리가 같으므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{|2k-5|}{\sqrt5}
                         =
                         \frac{|k+2|}{\sqrt5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         |2k-5|
                         =
                         |k+2|
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    절댓값이 같으므로
-                </p>
+                                    <p className="leading-8">
+                                        절댓값이 같으므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2k-5=k+2
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    또는
-                </p>
+                                    <p className="leading-8">
+                                        또는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2k-5=-(k+2)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         k=7
                         \qquad\text{또는}\qquad
                         k=1
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서 모든 <InlineMath math="k" />의 값의 합은
-            </p>
+                                <p className="leading-8">
+                                    따라서 모든 <InlineMath math="k" />의 값의 합은
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     7+1=8
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{8}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    <InlineMath math="k" />의 값을 모르므로
-                    거리 공식에 대입하여 나온 식의 부호를 판단할 수 없습니다.
-                    따라서 절댓값을 그대로 유지합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        <InlineMath math="k" />의 값을 모르므로
+                                        거리 공식에 대입하여 나온 식의 부호를 판단할 수 없습니다.
+                                        따라서 절댓값을 그대로 유지합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         |2k-5|=|k+2|
                     `}
-                />
+                                    />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    이후 두 절댓값이 같다는 조건을 이용하여
-                    두 경우로 나누어 <InlineMath math="k" />를 구합니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        이후 두 절댓값이 같다는 조건을 이용하여
+                                        두 경우로 나누어 <InlineMath math="k" />를 구합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{거리 공식}
                         \rightarrow
                         \text{절댓값 유지}
@@ -19122,209 +19122,209 @@ export default function LineEquationPage() {
                         \rightarrow
                         k
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 6 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 6 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 6
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 6
+                        </h3>
 
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            직선 <InlineMath math="x-2y+6=0" />에 수직이고
-            원점으로부터의 거리가{" "}
-            <InlineMath math="\sqrt3" />인 직선 중
-            제1사분면을 지나지 않는 직선의{" "}
-            <InlineMath math="y" />절편을 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                직선 <InlineMath math="x-2y+6=0" />에 수직이고
+                                원점으로부터의 거리가{" "}
+                                <InlineMath math="\sqrt3" />인 직선 중
+                                제1사분면을 지나지 않는 직선의{" "}
+                                <InlineMath math="y" />절편을 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                구하는 직선은
-                직선 <InlineMath math="x-2y+6=0" />에 수직이므로
-                기울기는
-            </p>
+                                <p className="leading-8">
+                                    구하는 직선은
+                                    직선 <InlineMath math="x-2y+6=0" />에 수직이므로
+                                    기울기는
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     -2
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                따라서 직선의 방정식을
-            </p>
+                                <p className="leading-8">
+                                    따라서 직선의 방정식을
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2x+y+c=0
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                라고 둘 수 있습니다.
-            </p>
+                                <p className="leading-8">
+                                    라고 둘 수 있습니다.
+                                </p>
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    원점에서 직선까지의 거리
-                </p>
+                                    <p className="mb-3 font-bold text-white">
+                                        원점에서 직선까지의 거리
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{|c|}
                         {\sqrt{2^2+1^2}}
                         =
                         \sqrt3
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{|c|}{\sqrt5}
                         =
                         \sqrt3
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         |c|
                         =
                         \sqrt{15}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         c=\pm\sqrt{15}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서 가능한 직선은
-            </p>
+                                <p className="leading-8">
+                                    따라서 가능한 직선은
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2x+y+\sqrt{15}=0
                 `}
-            />
+                                />
 
-            <p className="text-center text-gray-400">
-                또는
-            </p>
+                                <p className="text-center text-gray-400">
+                                    또는
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     2x+y-\sqrt{15}=0
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    제1사분면을 지나지 않는 직선
-                </p>
+                                    <p className="mb-3 font-bold text-white">
+                                        제1사분면을 지나지 않는 직선
+                                    </p>
 
-                <p className="leading-8">
-                    직선{" "}
-                    <InlineMath math="2x+y-\sqrt{15}=0" />은
-                </p>
+                                    <p className="leading-8">
+                                        직선{" "}
+                                        <InlineMath math="2x+y-\sqrt{15}=0" />은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=-2x+\sqrt{15}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로{" "}
-                    <InlineMath math="0<x<\dfrac{\sqrt{15}}2" />에서{" "}
-                    <InlineMath math="y>0" />가 되어
-                    제1사분면을 지납니다.
-                </p>
+                                    <p className="leading-8">
+                                        이므로{" "}
+                                        <InlineMath math="0<x<\dfrac{\sqrt{15}}2" />에서{" "}
+                                        <InlineMath math="y>0" />가 되어
+                                        제1사분면을 지납니다.
+                                    </p>
 
-                <p className="leading-8">
-                    따라서 조건을 만족하는 직선은
-                </p>
+                                    <p className="leading-8">
+                                        따라서 조건을 만족하는 직선은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2x+y+\sqrt{15}=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                이 직선의 <InlineMath math="y" />절편은
-            </p>
+                                <p className="leading-8">
+                                    이 직선의 <InlineMath math="y" />절편은
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     y=-\sqrt{15}
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{-\sqrt{15}}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 수직인 직선의 방정식을{" "}
-                    <InlineMath math="2x+y+c=0" />으로 놓습니다.
-                    원점과 직선 사이의 거리 공식을 이용하여{" "}
-                    <InlineMath math="c" />를 구하면 두 개의 직선이 나오고,
-                    마지막에 <strong>제1사분면을 지나지 않는다</strong>는 조건으로
-                    하나를 선택하면 됩니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        먼저 수직인 직선의 방정식을{" "}
+                                        <InlineMath math="2x+y+c=0" />으로 놓습니다.
+                                        원점과 직선 사이의 거리 공식을 이용하여{" "}
+                                        <InlineMath math="c" />를 구하면 두 개의 직선이 나오고,
+                                        마지막에 <strong>제1사분면을 지나지 않는다</strong>는 조건으로
+                                        하나를 선택하면 됩니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{수직}
                         \rightarrow
                         2x+y+c=0
@@ -19335,271 +19335,271 @@ export default function LineEquationPage() {
                         \rightarrow
                         \text{조건으로 선택}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 7 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 7 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 7
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 7
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            두 직선{" "}
-            <InlineMath math="x-y+1=0" />,{" "}
-            <InlineMath math="x-2y+3=0" />의 교점을 지나고
-            원점으로부터 거리가 <InlineMath math="1" />인 직선의 방정식을{" "}
-            <InlineMath math="ax+by+5=0" />이라 할 때,
-            상수 <InlineMath math="a,\ b" />에 대하여{" "}
-            <InlineMath math="a+b" />의 값을 구하시오.
-            (단, <InlineMath math="ab\ne0" />)
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                두 직선{" "}
+                                <InlineMath math="x-y+1=0" />,{" "}
+                                <InlineMath math="x-2y+3=0" />의 교점을 지나고
+                                원점으로부터 거리가 <InlineMath math="1" />인 직선의 방정식을{" "}
+                                <InlineMath math="ax+by+5=0" />이라 할 때,
+                                상수 <InlineMath math="a,\ b" />에 대하여{" "}
+                                <InlineMath math="a+b" />의 값을 구하시오.
+                                (단, <InlineMath math="ab\ne0" />)
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 교점 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 교점 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 두 직선의 교점
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 두 직선의 교점
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \begin{cases}
                         x-y+1=0\\
                         x-2y+3=0
                         \end{cases}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    두 식을 빼면
-                </p>
+                                    <p className="leading-8">
+                                        두 식을 빼면
+                                    </p>
 
-                <BlockMath math="y-2=0" />
+                                    <BlockMath math="y-2=0" />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=2,\qquad x=1
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서 두 직선의 교점은
-                </p>
+                                    <p className="leading-8">
+                                        따라서 두 직선의 교점은
+                                    </p>
 
-                <BlockMath math="(1,2)" />
+                                    <BlockMath math="(1,2)" />
 
-            </div>
+                                </div>
 
-            {/* 교점을 지난다는 조건 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 교점을 지난다는 조건 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 교점을 지난다는 조건
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 교점을 지난다는 조건
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="ax+by+5=0" />이
-                    점 <InlineMath math="(1,2)" />를 지나므로
-                    점을 바로 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="ax+by+5=0" />이
+                                        점 <InlineMath math="(1,2)" />를 지나므로
+                                        점을 바로 대입하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a+2b+5=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a+2b=-5
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 원점과 직선 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 원점과 직선 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    원점 <InlineMath math="(0,0)" />과
-                    직선 <InlineMath math="ax+by+5=0" /> 사이의 거리가{" "}
-                    <InlineMath math="1" />이므로
-                </p>
+                                    <p className="leading-8">
+                                        원점 <InlineMath math="(0,0)" />과
+                                        직선 <InlineMath math="ax+by+5=0" /> 사이의 거리가{" "}
+                                        <InlineMath math="1" />이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{|5|}
                         {\sqrt{a^2+b^2}}
                         =
                         1
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \sqrt{a^2+b^2}=5
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a^2+b^2=25
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 연립 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 연립 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ <InlineMath math="a,\ b" /> 구하기
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ④ <InlineMath math="a,\ b" /> 구하기
+                                    </p>
 
-                <p className="leading-8">
-                    <InlineMath math="a+2b=-5" />에서
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="a+2b=-5" />에서
+                                    </p>
 
-                <BlockMath math="a=-5-2b" />
+                                    <BlockMath math="a=-5-2b" />
 
-                <p className="leading-8">
-                    이를 <InlineMath math="a^2+b^2=25" />에 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        이를 <InlineMath math="a^2+b^2=25" />에 대입하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (-5-2b)^2+b^2=25
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         25+20b+5b^2=25
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         5b(b+4)=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         b=0
                         \quad\text{또는}\quad
                         b=-4
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    그런데 <InlineMath math="ab\ne0" />이므로{" "}
-                    <InlineMath math="b=0" />은 제외합니다.
-                </p>
+                                    <p className="leading-8">
+                                        그런데 <InlineMath math="ab\ne0" />이므로{" "}
+                                        <InlineMath math="b=0" />은 제외합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         b=-4
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이를 <InlineMath math="a+2b=-5" />에 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        이를 <InlineMath math="a+2b=-5" />에 대입하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a-8=-5
                     `}
-                />
+                                    />
 
-                <BlockMath math="a=3" />
+                                    <BlockMath math="a=3" />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서
-            </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     a+b
                     =
                     3+(-4)
                     =
                     -1
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{-1}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 두 직선의 교점을 구하여{" "}
-                    <InlineMath math="ax+by+5=0" />에 대입합니다.
-                    또 원점과 이 직선 사이의 거리가{" "}
-                    <InlineMath math="1" />이라는 조건에
-                    점과 직선 사이의 거리 공식을 적용하면{" "}
-                    <InlineMath math="a,\ b" />에 대한 두 식을 얻을 수 있습니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        먼저 두 직선의 교점을 구하여{" "}
+                                        <InlineMath math="ax+by+5=0" />에 대입합니다.
+                                        또 원점과 이 직선 사이의 거리가{" "}
+                                        <InlineMath math="1" />이라는 조건에
+                                        점과 직선 사이의 거리 공식을 적용하면{" "}
+                                        <InlineMath math="a,\ b" />에 대한 두 식을 얻을 수 있습니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{교점}
                         \rightarrow
                         a+2b=-5
@@ -19608,127 +19608,127 @@ export default function LineEquationPage() {
                         \rightarrow
                         a^2+b^2=25
                     `}
-                />
+                                    />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    마지막에는 조건 <InlineMath math="ab\ne0" />을 이용하여
-                    불필요한 해를 제외합니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        마지막에는 조건 <InlineMath math="ab\ne0" />을 이용하여
+                                        불필요한 해를 제외합니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 8 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 8 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 8
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 8
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            원점과 직선{" "}
-            <InlineMath math="k(x+y)+4x-8=0" /> 사이의 거리는{" "}
-            <InlineMath math="k=a" />일 때 최댓값{" "}
-            <InlineMath math="b" />를 가진다고 한다.
-            두 상수 <InlineMath math="a,\ b" />에 대하여{" "}
-            <InlineMath math="b^2-a^2" />의 값을 구하시오.
-            (단, <InlineMath math="k" />는 실수이다.)
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                원점과 직선{" "}
+                                <InlineMath math="k(x+y)+4x-8=0" /> 사이의 거리는{" "}
+                                <InlineMath math="k=a" />일 때 최댓값{" "}
+                                <InlineMath math="b" />를 가진다고 한다.
+                                두 상수 <InlineMath math="a,\ b" />에 대하여{" "}
+                                <InlineMath math="b^2-a^2" />의 값을 구하시오.
+                                (단, <InlineMath math="k" />는 실수이다.)
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-6 text-gray-300">
+                            <div className="mt-5 space-y-6 text-gray-300">
 
-            {/* 풀이 1 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 풀이 1 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    풀이 1. 점과 직선 사이의 거리 공식 이용
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        풀이 1. 점과 직선 사이의 거리 공식 이용
+                                    </p>
 
-                <p className="leading-8">
-                    주어진 직선을 정리하면
-                </p>
+                                    <p className="leading-8">
+                                        주어진 직선을 정리하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (k+4)x+ky-8=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    원점 <InlineMath math="(0,0)" />과 이 직선 사이의 거리를{" "}
-                    <InlineMath math="d" />라 하면
-                </p>
+                                    <p className="leading-8">
+                                        원점 <InlineMath math="(0,0)" />과 이 직선 사이의 거리를{" "}
+                                        <InlineMath math="d" />라 하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{|-8|}
                         {\sqrt{(k+4)^2+k^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{8}
                         {\sqrt{2k^2+8k+16}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    거리 <InlineMath math="d" />가 최대가 되려면
-                    분모가 최소가 되어야 합니다.
-                </p>
+                                    <p className="leading-8">
+                                        거리 <InlineMath math="d" />가 최대가 되려면
+                                        분모가 최소가 되어야 합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2k^2+8k+16
                         =
                         2\left\{(k+2)^2+4\right\}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서 <InlineMath math="k=-2" />일 때 분모가 최소이므로
-                </p>
+                                    <p className="leading-8">
+                                        따라서 <InlineMath math="k=-2" />일 때 분모가 최소이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a=-2
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    이때 거리의 최댓값은
-                </p>
+                                    <p className="leading-8">
+                                        이때 거리의 최댓값은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         b
                         =
                         \frac{8}
@@ -19738,168 +19738,168 @@ export default function LineEquationPage() {
                         =
                         2\sqrt2
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 풀이 2 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 풀이 2 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 text-xl font-bold text-blue-300">
-                    풀이 2. 직선이 지나는 정점을 이용
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-blue-300">
+                                        풀이 2. 직선이 지나는 정점을 이용
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    주어진 직선을 <InlineMath math="k" />가 있는 부분과
-                    없는 부분으로 보면
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        주어진 직선을 <InlineMath math="k" />가 있는 부분과
+                                        없는 부분으로 보면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         k(x+y)+(4x-8)=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    따라서 이 직선은 <InlineMath math="k" />의 값에 관계없이
-                    두 직선
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        따라서 이 직선은 <InlineMath math="k" />의 값에 관계없이
+                                        두 직선
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x+y=0,
                         \qquad
                         4x-8=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    의 교점을 항상 지납니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        의 교점을 항상 지납니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x=2,\qquad y=-2
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    따라서 모든 직선은 고정점
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        따라서 모든 직선은 고정점
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         P(2,-2)
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    를 중심으로 회전합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        를 중심으로 회전합니다.
+                                    </p>
 
-                <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                                    <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
 
-                    <p className="mb-3 font-bold text-white">
-                        원점과 직선 사이의 거리가 최대가 되는 경우
-                    </p>
+                                        <p className="mb-3 font-bold text-white">
+                                            원점과 직선 사이의 거리가 최대가 되는 경우
+                                        </p>
 
-                    <p className="leading-8 text-gray-300">
-                        점 <InlineMath math="P" />를 지나는 모든 직선 중
-                        원점 <InlineMath math="O" />에서 직선까지의 거리가
-                        가장 큰 경우는
-                        직선이 <InlineMath math="OP" />에
-                        <strong className="text-yellow-300"> 수직일 때</strong>입니다.
-                    </p>
+                                        <p className="leading-8 text-gray-300">
+                                            점 <InlineMath math="P" />를 지나는 모든 직선 중
+                                            원점 <InlineMath math="O" />에서 직선까지의 거리가
+                                            가장 큰 경우는
+                                            직선이 <InlineMath math="OP" />에
+                                            <strong className="text-yellow-300"> 수직일 때</strong>입니다.
+                                        </p>
 
-                    <p className="mt-3 leading-8 text-gray-300">
-                        이때 원점에서 직선까지의 거리는
-                        바로 <InlineMath math="OP" />의 길이가 됩니다.
-                    </p>
+                                        <p className="mt-3 leading-8 text-gray-300">
+                                            이때 원점에서 직선까지의 거리는
+                                            바로 <InlineMath math="OP" />의 길이가 됩니다.
+                                        </p>
 
-                </div>
+                                    </div>
 
-                <p className="leading-8 text-gray-300">
-                    직선 <InlineMath math="OP" />의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        직선 <InlineMath math="OP" />의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{-2-0}{2-0}=-1
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로 이에 수직인 직선의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로 이에 수직인 직선의 기울기는
+                                    </p>
 
-                <BlockMath math="1" />
+                                    <BlockMath math="1" />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    한편 주어진 직선
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        한편 주어진 직선
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (k+4)x+ky-8=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -\frac{k+4}{k}
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -\frac{k+4}{k}=1
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -k-4=k
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         k=-2
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    따라서
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath math="a=-2" />
+                                    <BlockMath math="a=-2" />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    이때 최대거리는 <InlineMath math="OP" />이므로
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이때 최대거리는 <InlineMath math="OP" />이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         b
                         =
                         OP
@@ -19908,78 +19908,78 @@ export default function LineEquationPage() {
                         =
                         2\sqrt2
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 마무리 */}
-            <p className="leading-8">
-                두 풀이에서
-            </p>
+                                {/* 마무리 */}
+                                <p className="leading-8">
+                                    두 풀이에서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     a=-2,
                     \qquad
                     b=2\sqrt2
                 `}
-            />
+                                />
 
-            <p className="leading-8">
-                이므로
-            </p>
+                                <p className="leading-8">
+                                    이므로
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     b^2-a^2
                     =
                     (2\sqrt2)^2-(-2)^2
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     =8-4
                     =4
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{4}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 풀이 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 풀이 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    <InlineMath math="k" />에 따라 움직이는 직선이
-                    항상 같은 점을 지난다면,
-                    그 직선은 그 <strong>정점을 중심으로 회전</strong>합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        <InlineMath math="k" />에 따라 움직이는 직선이
+                                        항상 같은 점을 지난다면,
+                                        그 직선은 그 <strong>정점을 중심으로 회전</strong>합니다.
+                                    </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    정점 <InlineMath math="P" />를 지나는 직선과
-                    원점 <InlineMath math="O" /> 사이의 거리는
-                    직선이 <InlineMath math="OP" />에 수직일 때 가장 크며,
-                    그 최댓값은 <InlineMath math="OP" />입니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        정점 <InlineMath math="P" />를 지나는 직선과
+                                        원점 <InlineMath math="O" /> 사이의 거리는
+                                        직선이 <InlineMath math="OP" />에 수직일 때 가장 크며,
+                                        그 최댓값은 <InlineMath math="OP" />입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{정점 }P
                         \rightarrow
                         \text{직선의 회전}
@@ -19988,86 +19988,86 @@ export default function LineEquationPage() {
                         \rightarrow
                         \text{최대거리}=OP
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 9 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 9 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 9
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 9
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            두 직선{" "}
-            <InlineMath math="x-3y-2=0" />,{" "}
-            <InlineMath math="x+2y+3=0" />의 교점을 지나는 직선과
-            점 <InlineMath math="A(3,-3)" /> 사이의 거리를{" "}
-            <InlineMath math="f(k)" />라 할 때,{" "}
-            <InlineMath math="f(k)" />의 최댓값을 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                두 직선{" "}
+                                <InlineMath math="x-3y-2=0" />,{" "}
+                                <InlineMath math="x+2y+3=0" />의 교점을 지나는 직선과
+                                점 <InlineMath math="A(3,-3)" /> 사이의 거리를{" "}
+                                <InlineMath math="f(k)" />라 할 때,{" "}
+                                <InlineMath math="f(k)" />의 최댓값을 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-6 text-gray-300">
+                            <div className="mt-5 space-y-6 text-gray-300">
 
-            {/* 풀이 1 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 풀이 1 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    풀이 1. 점과 직선 사이의 거리 공식 이용
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        풀이 1. 점과 직선 사이의 거리 공식 이용
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선의 교점을 지나는 직선은
-                </p>
+                                    <p className="leading-8">
+                                        두 직선의 교점을 지나는 직선은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (x-3y-2)+k(x+2y+3)=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    으로 나타낼 수 있습니다.
-                </p>
+                                    <p className="leading-8">
+                                        으로 나타낼 수 있습니다.
+                                    </p>
 
-                <p className="leading-8">
-                    정리하면
-                </p>
+                                    <p className="leading-8">
+                                        정리하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (1+k)x+(2k-3)y+(3k-2)=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(3,-3)" />과 이 직선 사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A(3,-3)" />과 이 직선 사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         f(k)
                         =
                         \frac{
@@ -20076,165 +20076,165 @@ export default function LineEquationPage() {
                         \sqrt{(1+k)^2+(2k-3)^2}
                         }
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    분자를 정리하면
-                </p>
+                                    <p className="leading-8">
+                                        분자를 정리하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         |3+3k-6k+9+3k-2|
                         =
                         10
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         f(k)
                         =
                         \frac{10}
                         {\sqrt{(1+k)^2+(2k-3)^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{10}
                         {\sqrt{5k^2-10k+10}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{10}
                         {\sqrt{5\{(k-1)^2+1\}}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    <InlineMath math="f(k)" />가 최대가 되려면
-                    분모가 최소가 되어야 하므로
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="f(k)" />가 최대가 되려면
+                                        분모가 최소가 되어야 하므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         k=1
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    일 때 최댓값을 가집니다.
-                </p>
+                                    <p className="leading-8">
+                                        일 때 최댓값을 가집니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         f(1)
                         =
                         \frac{10}{\sqrt5}
                         =
                         2\sqrt5
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 풀이 2 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 풀이 2 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 text-xl font-bold text-blue-300">
-                    풀이 2. 교점을 중심으로 회전하는 직선으로 해석
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-blue-300">
+                                        풀이 2. 교점을 중심으로 회전하는 직선으로 해석
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 두 직선의 교점을 구합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        먼저 두 직선의 교점을 구합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \begin{cases}
                         x-3y-2=0\\
                         x+2y+3=0
                         \end{cases}
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    두 식을 빼면
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        두 식을 빼면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -5y-5=0
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=-1
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    따라서
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x=-1
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로 두 직선의 교점은
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로 두 직선의 교점은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         P(-1,-1)
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                                    <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
 
-                    <p className="mb-3 font-bold text-white">
-                        거리가 최대가 되는 직선
-                    </p>
+                                        <p className="mb-3 font-bold text-white">
+                                            거리가 최대가 되는 직선
+                                        </p>
 
-                    <p className="leading-8 text-gray-300">
-                        교점 <InlineMath math="P" />를 지나는 직선을 회전시키면,
-                        점 <InlineMath math="A" />에서 그 직선까지의 거리가
-                        가장 큰 경우는
-                        <strong className="text-yellow-300">
-                            {" "}직선이 <InlineMath math="AP" />에 수직일 때
-                        </strong>
-                        입니다.
-                    </p>
+                                        <p className="leading-8 text-gray-300">
+                                            교점 <InlineMath math="P" />를 지나는 직선을 회전시키면,
+                                            점 <InlineMath math="A" />에서 그 직선까지의 거리가
+                                            가장 큰 경우는
+                                            <strong className="text-yellow-300">
+                                                {" "}직선이 <InlineMath math="AP" />에 수직일 때
+                                            </strong>
+                                            입니다.
+                                        </p>
 
-                    <p className="mt-3 leading-8 text-gray-300">
-                        이때 점 <InlineMath math="A" />에서 직선까지의 거리는
-                        바로 <InlineMath math="AP" />의 길이가 됩니다.
-                    </p>
+                                        <p className="mt-3 leading-8 text-gray-300">
+                                            이때 점 <InlineMath math="A" />에서 직선까지의 거리는
+                                            바로 <InlineMath math="AP" />의 길이가 됩니다.
+                                        </p>
 
-                </div>
+                                    </div>
 
-                <p className="leading-8 text-gray-300">
-                    따라서 최댓값은
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        따라서 최댓값은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AP
                         =
                         \sqrt{
@@ -20242,10 +20242,10 @@ export default function LineEquationPage() {
                         \{-3-(-1)\}^2
                         }
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \sqrt{4^2+(-2)^2}
                         =
@@ -20253,374 +20253,374 @@ export default function LineEquationPage() {
                         =
                         2\sqrt5
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    실제로 <InlineMath math="AP" />의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        실제로 <InlineMath math="AP" />의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{-3-(-1)}{3-(-1)}
                         =
                         -\frac12
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로 이에 수직인 직선의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로 이에 수직인 직선의 기울기는
+                                    </p>
 
-                <BlockMath math="2" />
+                                    <BlockMath math="2" />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    한편
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        한편
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (1+k)x+(2k-3)y+(3k-2)=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    의 기울기는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -\frac{1+k}{2k-3}
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로 최대가 되는 직선에서는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로 최대가 되는 직선에서는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -\frac{1+k}{2k-3}=2
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -1-k=4k-6
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         k=1
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    로 풀이 1의 결과와도 일치합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        로 풀이 1의 결과와도 일치합니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-            {/* 정답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                {/* 정답 */}
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{2\sqrt5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    한 점 <InlineMath math="P" />를 지나는 직선을 움직일 때,
-                    다른 점 <InlineMath math="A" />에서 그 직선까지의 거리는
-                    항상 <InlineMath math="AP" /> 이하입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        한 점 <InlineMath math="P" />를 지나는 직선을 움직일 때,
+                                        다른 점 <InlineMath math="A" />에서 그 직선까지의 거리는
+                                        항상 <InlineMath math="AP" /> 이하입니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{최대거리}=AP
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    그리고 최댓값은
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        그리고 최댓값은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AP\perp\text{직선}
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    일 때 만들어집니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        일 때 만들어집니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 10 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 10 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 10
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 10
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            평행한 두 직선{" "}
-            <InlineMath math="ax-2y+3=0,\quad 3x+(a+5)y-3=0" />
-            사이의 거리를 구하시오.
-            (단, <InlineMath math="a" />는 상수이다.)
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                평행한 두 직선{" "}
+                                <InlineMath math="ax-2y+3=0,\quad 3x+(a+5)y-3=0" />
+                                사이의 거리를 구하시오.
+                                (단, <InlineMath math="a" />는 상수이다.)
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-6 text-gray-300">
+                            <div className="mt-5 space-y-6 text-gray-300">
 
-            {/* 평행조건 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 평행조건 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    ① 평행 조건
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        ① 평행 조건
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선이 평행하므로
-                </p>
+                                    <p className="leading-8">
+                                        두 직선이 평행하므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{a}{3}
                         =
                         \frac{-2}{a+5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a(a+5)=-6
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a^2+5a+6=0
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (a+2)(a+3)=0
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a=-2
                         \quad\text{또는}\quad
                         a=-3
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* a=-2 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* a=-2 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    ② <InlineMath math="a=-2" />인 경우
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        ② <InlineMath math="a=-2" />인 경우
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선은
-                </p>
+                                    <p className="leading-8">
+                                        두 직선은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -2x-2y+3=0
                     `}
-                />
+                                    />
 
-                <p className="text-center text-gray-400">
-                    ,
-                </p>
+                                    <p className="text-center text-gray-400">
+                                        ,
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         3x+3y-3=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    두 번째 식을 <InlineMath math="3" />으로 나누면
-                </p>
+                                    <p className="leading-8">
+                                        두 번째 식을 <InlineMath math="3" />으로 나누면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x+y-1=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    첫 번째 식을 <InlineMath math="-2" />로 나누면
-                </p>
+                                    <p className="leading-8">
+                                        첫 번째 식을 <InlineMath math="-2" />로 나누면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x+y-\frac32=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서 거리는
-                </p>
+                                    <p className="leading-8">
+                                        따라서 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{\left|-\frac32-(-1)\right|}
                         {\sqrt2}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac1{2\sqrt2}
                         =
                         \frac{\sqrt2}{4}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* a=-3 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* a=-3 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    ③ <InlineMath math="a=-3" />인 경우
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        ③ <InlineMath math="a=-3" />인 경우
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선은
-                </p>
+                                    <p className="leading-8">
+                                        두 직선은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -3x-2y+3=0
                     `}
-                />
+                                    />
 
-                <p className="text-center text-gray-400">
-                    ,
-                </p>
+                                    <p className="text-center text-gray-400">
+                                        ,
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         3x+2y-3=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    첫 번째 식에 <InlineMath math="-1" />을 곱하면
-                </p>
+                                    <p className="leading-8">
+                                        첫 번째 식에 <InlineMath math="-1" />을 곱하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         3x+2y-3=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이 되어 두 직선이 일치합니다.
-                </p>
+                                    <p className="leading-8">
+                                        이 되어 두 직선이 일치합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                {/* 답 */}
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서 가능한 거리는
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서 가능한 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{
                         0,\;
                         \frac{\sqrt2}{4}
                         }
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 평행 조건으로{" "}
-                    <InlineMath math="a" />를 구한 뒤,
-                    두 직선의 계수를 같게 만든 다음
-                    평행한 두 직선 사이의 거리 공식을 적용합니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        먼저 평행 조건으로{" "}
+                                        <InlineMath math="a" />를 구한 뒤,
+                                        두 직선의 계수를 같게 만든 다음
+                                        평행한 두 직선 사이의 거리 공식을 적용합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{평행}
                         \rightarrow
                         a
@@ -20629,329 +20629,329 @@ export default function LineEquationPage() {
                         \rightarrow
                         \text{거리 공식}
                     `}
-                />
+                                    />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    특히 <InlineMath math="a=-3" />에서는
-                    두 직선이 완전히 일치하므로
-                    거리도 <InlineMath math="0" />이 된다는 점을 확인해야 합니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        특히 <InlineMath math="a=-3" />에서는
+                                        두 직선이 완전히 일치하므로
+                                        거리도 <InlineMath math="0" />이 된다는 점을 확인해야 합니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 11 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 11 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 11
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 11
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                그림과 같이 좌표평면 위에 직선{" "}
-                <InlineMath math="l_1:x-3y-3=0" />과 평행하고{" "}
-                <InlineMath math="y" />절편이 양수인 직선{" "}
-                <InlineMath math="l_2" />가 있다.
-                직선 <InlineMath math="l_1" />이{" "}
-                <InlineMath math="x" />축, <InlineMath math="y" />축과
-                만나는 점을 각각 <InlineMath math="A,\ B" />라 하고,
-                직선 <InlineMath math="l_2" />가{" "}
-                <InlineMath math="x" />축, <InlineMath math="y" />축과
-                만나는 점을 각각 <InlineMath math="C,\ D" />라 할 때,
-                사각형 <InlineMath math="ADCB" />의 넓이가{" "}
-                <InlineMath math="24" />이다.
-                두 직선 <InlineMath math="l_1" />과{" "}
-                <InlineMath math="l_2" /> 사이의 거리를{" "}
-                <InlineMath math="d" />라 할 때,{" "}
-                <InlineMath math="5d^2" />의 값을 구하시오.
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    그림과 같이 좌표평면 위에 직선{" "}
+                                    <InlineMath math="l_1:x-3y-3=0" />과 평행하고{" "}
+                                    <InlineMath math="y" />절편이 양수인 직선{" "}
+                                    <InlineMath math="l_2" />가 있다.
+                                    직선 <InlineMath math="l_1" />이{" "}
+                                    <InlineMath math="x" />축, <InlineMath math="y" />축과
+                                    만나는 점을 각각 <InlineMath math="A,\ B" />라 하고,
+                                    직선 <InlineMath math="l_2" />가{" "}
+                                    <InlineMath math="x" />축, <InlineMath math="y" />축과
+                                    만나는 점을 각각 <InlineMath math="C,\ D" />라 할 때,
+                                    사각형 <InlineMath math="ADCB" />의 넓이가{" "}
+                                    <InlineMath math="24" />이다.
+                                    두 직선 <InlineMath math="l_1" />과{" "}
+                                    <InlineMath math="l_2" /> 사이의 거리를{" "}
+                                    <InlineMath math="d" />라 할 때,{" "}
+                                    <InlineMath math="5d^2" />의 값을 구하시오.
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_11.png"
-                alt="평행한 두 직선과 사각형 ADCB"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_11.png"
+                                    alt="평행한 두 직선과 사각형 ADCB"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* l2 설정 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* l2 설정 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 평행한 직선 <InlineMath math="l_2" /> 나타내기
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 평행한 직선 <InlineMath math="l_2" /> 나타내기
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l_2" />는{" "}
-                    <InlineMath math="l_1:x-3y-3=0" />과 평행하므로
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l_2" />는{" "}
+                                        <InlineMath math="l_1:x-3y-3=0" />과 평행하므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         l_2:x-3y+c=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    로 둘 수 있습니다.
-                </p>
+                                    <p className="leading-8">
+                                        로 둘 수 있습니다.
+                                    </p>
 
-                <p className="leading-8">
-                    <InlineMath math="l_2" />의{" "}
-                    <InlineMath math="y" />절편이 양수이므로{" "}
-                    <InlineMath math="c>0" />입니다.
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="l_2" />의{" "}
+                                        <InlineMath math="y" />절편이 양수이므로{" "}
+                                        <InlineMath math="c>0" />입니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-            {/* 절편 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 절편 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 네 점의 좌표
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 네 점의 좌표
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l_1:x-3y-3=0" />의 절편은
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l_1:x-3y-3=0" />의 절편은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         A(3,0),\qquad B(0,-1)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l_2:x-3y+c=0" />의 절편은
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l_2:x-3y+c=0" />의 절편은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         C(-c,0),\qquad
                         D\left(0,\frac{c}{3}\right)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-            {/* 넓이 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 넓이 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 사각형 <InlineMath math="ADCB" />의 넓이
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 사각형 <InlineMath math="ADCB" />의 넓이
+                                    </p>
 
-                <p className="leading-8">
-                    대각선 <InlineMath math="AC" />는{" "}
-                    <InlineMath math="x" />축 위에 있으므로
-                </p>
+                                    <p className="leading-8">
+                                        대각선 <InlineMath math="AC" />는{" "}
+                                        <InlineMath math="x" />축 위에 있으므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AC=3+c
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="D" />와{" "}
-                    <InlineMath math="B" />에서{" "}
-                    <InlineMath math="x" />축까지의 거리의 합은
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="D" />와{" "}
+                                        <InlineMath math="B" />에서{" "}
+                                        <InlineMath math="x" />축까지의 거리의 합은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{c}{3}+1
                         =
                         \frac{c+3}{3}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    따라서 사각형 <InlineMath math="ADCB" />의 넓이는
-                </p>
+                                    <p className="leading-8">
+                                        따라서 사각형 <InlineMath math="ADCB" />의 넓이는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12(c+3)
                         \left(\frac{c+3}{3}\right)
                         =
                         \frac{(c+3)^2}{6}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이고, 넓이가 <InlineMath math="24" />이므로
-                </p>
+                                    <p className="leading-8">
+                                        이고, 넓이가 <InlineMath math="24" />이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{(c+3)^2}{6}=24
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (c+3)^2=144
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 평행한 두 직선 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ④ 평행한 두 직선 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선
-                </p>
+                                    <p className="leading-8">
+                                        두 직선
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         x-3y-3=0,
                         \qquad
                         x-3y+c=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    사이의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        사이의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{|c-(-3)|}
                         {\sqrt{1^2+(-3)^2}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    <InlineMath math="c>0" />이므로
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="c>0" />이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{c+3}{\sqrt{10}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d^2
                         =
                         \frac{(c+3)^2}{10}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         5d^2
                         =
                         \frac{(c+3)^2}{2}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    앞에서 <InlineMath math="(c+3)^2=144" />이므로
-                </p>
+                                    <p className="leading-8">
+                                        앞에서 <InlineMath math="(c+3)^2=144" />이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         5d^2
                         =
                         \frac{144}{2}
                         =
                         72
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{72}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    평행한 직선은{" "}
-                    <InlineMath math="x,\ y" />의 계수를 그대로 두고
-                    상수항만 바꾸어 나타냅니다.
-                    사각형의 넓이에서{" "}
-                    <InlineMath math="(c+3)^2" />을 구한 뒤,
-                    평행한 두 직선 사이의 거리 공식에서도 같은{" "}
-                    <InlineMath math="(c+3)^2" />이 나타나는 것을 이용하면{" "}
-                    <InlineMath math="c" />를 직접 구할 필요가 없습니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        평행한 직선은{" "}
+                                        <InlineMath math="x,\ y" />의 계수를 그대로 두고
+                                        상수항만 바꾸어 나타냅니다.
+                                        사각형의 넓이에서{" "}
+                                        <InlineMath math="(c+3)^2" />을 구한 뒤,
+                                        평행한 두 직선 사이의 거리 공식에서도 같은{" "}
+                                        <InlineMath math="(c+3)^2" />이 나타나는 것을 이용하면{" "}
+                                        <InlineMath math="c" />를 직접 구할 필요가 없습니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{넓이}
                         \rightarrow
                         (c+3)^2
@@ -20960,756 +20960,756 @@ export default function LineEquationPage() {
                         \rightarrow
                         5d^2
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 12 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 12 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 12
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 12
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            두 직선{" "}
-            <InlineMath math="3x-4y+7=0" />,{" "}
-            <InlineMath math="4x+3y+a=0" />이 이루는 각을 이등분하는
-            직선이 점 <InlineMath math="(1,2)" />를 지날 때,
-            모든 상수 <InlineMath math="a" />의 값의 합을 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                두 직선{" "}
+                                <InlineMath math="3x-4y+7=0" />,{" "}
+                                <InlineMath math="4x+3y+a=0" />이 이루는 각을 이등분하는
+                                직선이 점 <InlineMath math="(1,2)" />를 지날 때,
+                                모든 상수 <InlineMath math="a" />의 값의 합을 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                각의 이등분선 위의 점은
-                <strong className="text-yellow-300">
-                    {" "}두 직선까지의 거리가 같습니다.
-                </strong>
-            </p>
+                                <p className="leading-8">
+                                    각의 이등분선 위의 점은
+                                    <strong className="text-yellow-300">
+                                        {" "}두 직선까지의 거리가 같습니다.
+                                    </strong>
+                                </p>
 
-            <p className="leading-8">
-                따라서 점 <InlineMath math="(1,2)" />에서
-                두 직선까지의 거리를 같게 놓습니다.
-            </p>
+                                <p className="leading-8">
+                                    따라서 점 <InlineMath math="(1,2)" />에서
+                                    두 직선까지의 거리를 같게 놓습니다.
+                                </p>
 
-            {/* 첫 번째 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 첫 번째 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 첫 번째 직선까지의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 첫 번째 직선까지의 거리
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{
                         |3(1)-4(2)+7|
                         }{
                         \sqrt{3^2+(-4)^2}
                         }
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{|2|}{5}
                         =
                         \frac25
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 두 번째 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 두 번째 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 두 번째 직선까지의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 두 번째 직선까지의 거리
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{
                         |4(1)+3(2)+a|
                         }{
                         \sqrt{4^2+3^2}
                         }
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{|a+10|}{5}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 같음 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 같음 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 두 거리가 같은 조건
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 두 거리가 같은 조건
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac25
                         =
                         \frac{|a+10|}{5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         |a+10|=2
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a+10=2
                         \qquad\text{또는}\qquad
                         a+10=-2
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         a=-8
                         \qquad\text{또는}\qquad
                         a=-12
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서 모든 <InlineMath math="a" />의 값의 합은
-            </p>
+                                <p className="leading-8">
+                                    따라서 모든 <InlineMath math="a" />의 값의 합은
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     -8+(-12)=-20
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{-20}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    두 직선이 이루는 각의 이등분선 위의 점은
-                    두 직선까지의 거리가 같습니다.
-                    따라서 점과 직선 사이의 거리 공식을 각각 작성한 뒤
-                    두 거리를 같게 놓으면 됩니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        두 직선이 이루는 각의 이등분선 위의 점은
+                                        두 직선까지의 거리가 같습니다.
+                                        따라서 점과 직선 사이의 거리 공식을 각각 작성한 뒤
+                                        두 거리를 같게 놓으면 됩니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{각의 이등분선}
                         \rightarrow
                         \text{두 직선까지의 거리 같음}
                     `}
-                />
+                                    />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    이 문제에서는 두 직선의 계수 제곱합이 모두{" "}
-                    <InlineMath math="25" />이므로 분모가 같아져
-                    절댓값만 비교하면 됩니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        이 문제에서는 두 직선의 계수 제곱합이 모두{" "}
+                                        <InlineMath math="25" />이므로 분모가 같아져
+                                        절댓값만 비교하면 됩니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 13 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 13 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 13
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 13
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            세 점{" "}
-            <InlineMath math="A(-2,0),\ B(4,-2),\ C(6,4)" />
-            를 꼭짓점으로 하는 삼각형{" "}
-            <InlineMath math="ABC" />
-            가 있다.
-            이때 점 <InlineMath math="B" />와 삼각형{" "}
-            <InlineMath math="ABC" />의 내심을 지나는 직선의 방정식이{" "}
-            <InlineMath math="ax+y+b=0" />{" "}
-            일 때,{" "}
-            <InlineMath math="a+b" />의 값을 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                세 점{" "}
+                                <InlineMath math="A(-2,0),\ B(4,-2),\ C(6,4)" />
+                                를 꼭짓점으로 하는 삼각형{" "}
+                                <InlineMath math="ABC" />
+                                가 있다.
+                                이때 점 <InlineMath math="B" />와 삼각형{" "}
+                                <InlineMath math="ABC" />의 내심을 지나는 직선의 방정식이{" "}
+                                <InlineMath math="ax+y+b=0" />{" "}
+                                일 때,{" "}
+                                <InlineMath math="a+b" />의 값을 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 변의 방정식 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 변의 방정식 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 점 B에서 만나는 두 변의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 점 B에서 만나는 두 변의 방정식
+                                    </p>
 
-                <BlockMath math="AB:x+3y+2=0" />
+                                    <BlockMath math="AB:x+3y+2=0" />
 
-                <BlockMath math="BC:3x-y-14=0" />
+                                    <BlockMath math="BC:3x-y-14=0" />
 
-            </div>
+                                </div>
 
-            {/* 각의 이등분선 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 각의 이등분선 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 내심은 각의 이등분선 위의 점
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 내심은 각의 이등분선 위의 점
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="B" />와 내심을 지나는 직선은{" "}
-                    <InlineMath math="\angle B" />의 이등분선입니다.
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="B" />와 내심을 지나는 직선은{" "}
+                                        <InlineMath math="\angle B" />의 이등분선입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    각의 이등분선 위의 점은
-                    두 변까지의 거리가 같으므로
-                </p>
+                                    <p className="leading-8">
+                                        각의 이등분선 위의 점은
+                                        두 변까지의 거리가 같으므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     \frac{|x+3y+2|}{\sqrt{10}}
                     =
                     \frac{|3x-y-14|}{\sqrt{10}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    즉
-                </p>
+                                    <p className="leading-8">
+                                        즉
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     |x+3y+2|
                     =
                     |3x-y-14|
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 두 직선 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 두 직선 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 두 각의 이등분선
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 두 각의 이등분선
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     x+3y+2
                     =
                     3x-y-14
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     x-2y-8=0
                     `}
-                />
+                                    />
 
-                <p className="text-center text-gray-400">
-                    또는
-                </p>
+                                    <p className="text-center text-gray-400">
+                                        또는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     x+3y+2
                     =
                     -(3x-y-14)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     2x+y-6=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 선택 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 선택 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 font-bold text-blue-300">
-                    ④ 어느 직선이 내부의 각의 이등분선인가?
-                </p>
+                                    <p className="mb-4 font-bold text-blue-300">
+                                        ④ 어느 직선이 내부의 각의 이등분선인가?
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="B(4,-2)" />를 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="B(4,-2)" />를 대입하면
+                                    </p>
 
-                <BlockMath math="4-2(-2)-8=0" />
+                                    <BlockMath math="4-2(-2)-8=0" />
 
-                <BlockMath math="2(4)+(-2)-6=0" />
+                                    <BlockMath math="2(4)+(-2)-6=0" />
 
-                <p className="leading-8">
-                    두 직선 모두 점 <InlineMath math="B" />를 지나므로
-                    내부와 외부의 각의 이등분선입니다.
-                </p>
+                                    <p className="leading-8">
+                                        두 직선 모두 점 <InlineMath math="B" />를 지나므로
+                                        내부와 외부의 각의 이등분선입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(-2,0)" />를 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A(-2,0)" />를 대입하면
+                                    </p>
 
-                <BlockMath math="x-2y-8=-10" />
+                                    <BlockMath math="x-2y-8=-10" />
 
-                <BlockMath math="2x+y-6=-10" />
+                                    <BlockMath math="2x+y-6=-10" />
 
-                <p className="leading-8">
-                    점 <InlineMath math="C(6,4)" />를 대입하면
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="C(6,4)" />를 대입하면
+                                    </p>
 
-                <BlockMath math="x-2y-8=-10" />
+                                    <BlockMath math="x-2y-8=-10" />
 
-                <BlockMath math="2x+y-6=10" />
+                                    <BlockMath math="2x+y-6=10" />
 
-                <p className="leading-8">
-                    내부의 각의 이등분선은
-                    두 꼭짓점 <InlineMath math="A,C" />가
-                    <strong className="text-yellow-300">
-                        같은 쪽
-                    </strong>
-                    에 있는 직선이므로
-                </p>
+                                    <p className="leading-8">
+                                        내부의 각의 이등분선은
+                                        두 꼭짓점 <InlineMath math="A,C" />가
+                                        <strong className="text-yellow-300">
+                                            같은 쪽
+                                        </strong>
+                                        에 있는 직선이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     2x+y-6=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-            {/* 답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                {/* 답 */}
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="leading-8">
-                    직선을
-                </p>
+                                    <p className="leading-8">
+                                        직선을
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     2x+y-6=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    와 비교하면
-                </p>
+                                    <p className="leading-8">
+                                        와 비교하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     a=2,\qquad b=-6
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     a+b=-4
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                     \boxed{-4}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    내심은 세 각의 이등분선의 교점입니다.
-                    따라서 점 <InlineMath math="B" />와 내심을 잇는 직선은{" "}
-                    <InlineMath math="\angle B" />의 이등분선입니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        내심은 세 각의 이등분선의 교점입니다.
+                                        따라서 점 <InlineMath math="B" />와 내심을 잇는 직선은{" "}
+                                        <InlineMath math="\angle B" />의 이등분선입니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    또한 각의 이등분선은
-                    두 변까지의 거리가 같은 점들의 자취이므로
-                    거리 공식을 이용하여 쉽게 구할 수 있습니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        또한 각의 이등분선은
+                                        두 변까지의 거리가 같은 점들의 자취이므로
+                                        거리 공식을 이용하여 쉽게 구할 수 있습니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 14 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 14 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 14
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 14
+                        </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            세 직선{" "}
-            <InlineMath math="x+2y-6=0" />,{" "}
-            <InlineMath math="2x-y-2=0" />,{" "}
-            <InlineMath math="3x+y-3=0" />
-            으로 둘러싸인 삼각형의 넓이를 구하시오.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                세 직선{" "}
+                                <InlineMath math="x+2y-6=0" />,{" "}
+                                <InlineMath math="2x-y-2=0" />,{" "}
+                                <InlineMath math="3x+y-3=0" />
+                                으로 둘러싸인 삼각형의 넓이를 구하시오.
+                            </p>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-6 text-gray-300">
+                            <div className="mt-5 space-y-6 text-gray-300">
 
-            {/* 교점 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 교점 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    먼저 세 직선의 교점을 구한다
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        먼저 세 직선의 교점을 구한다
+                                    </p>
 
-                <p className="leading-8">
-                    첫 번째와 두 번째 직선의 교점은
-                </p>
+                                    <p className="leading-8">
+                                        첫 번째와 두 번째 직선의 교점은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \begin{cases}
                         x+2y-6=0\\
                         2x-y-2=0
                         \end{cases}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         A(2,2)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    두 번째와 세 번째 직선의 교점은
-                </p>
+                                    <p className="leading-8">
+                                        두 번째와 세 번째 직선의 교점은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \begin{cases}
                         2x-y-2=0\\
                         3x+y-3=0
                         \end{cases}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         B(1,0)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    세 번째와 첫 번째 직선의 교점은
-                </p>
+                                    <p className="leading-8">
+                                        세 번째와 첫 번째 직선의 교점은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \begin{cases}
                         3x+y-3=0\\
                         x+2y-6=0
                         \end{cases}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         C(0,3)
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 풀이 1 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 풀이 1 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 text-xl font-bold text-white">
-                    풀이 1. 점과 직선 사이의 거리 이용
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-white">
+                                        풀이 1. 점과 직선 사이의 거리 이용
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A,\ B" />는 모두 직선
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A,\ B" />는 모두 직선
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2x-y-2=0
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    위에 있으므로 <InlineMath math="AB" />를 밑변으로 잡습니다.
-                </p>
+                                    <p className="leading-8">
+                                        위에 있으므로 <InlineMath math="AB" />를 밑변으로 잡습니다.
+                                    </p>
 
-                <p className="leading-8">
-                    먼저
-                </p>
+                                    <p className="leading-8">
+                                        먼저
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         AB
                         =
                         \sqrt{(2-1)^2+(2-0)^2}
                         =
                         \sqrt5
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    높이는 점 <InlineMath math="C(0,3)" />에서
-                    직선 <InlineMath math="2x-y-2=0" />까지의 거리이므로
-                </p>
+                                    <p className="leading-8">
+                                        높이는 점 <InlineMath math="C(0,3)" />에서
+                                        직선 <InlineMath math="2x-y-2=0" />까지의 거리이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         h
                         =
                         \frac{|2(0)-3-2|}
                         {\sqrt{2^2+(-1)^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac5{\sqrt5}
                         =
                         \sqrt5
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서 삼각형의 넓이는
-                </p>
+                                    <p className="leading-8">
+                                        따라서 삼각형의 넓이는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12\times AB\times h
                         =
                         \frac12\times\sqrt5\times\sqrt5
                         =
                         \frac52
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 풀이 2 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* 풀이 2 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 text-xl font-bold text-blue-300">
-                    풀이 2. 한 꼭짓점을 원점으로 평행이동
-                </p>
+                                    <p className="mb-4 text-xl font-bold text-blue-300">
+                                        풀이 2. 한 꼭짓점을 원점으로 평행이동
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    삼각형 전체를 평행이동해도 넓이는 변하지 않습니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        삼각형 전체를 평행이동해도 넓이는 변하지 않습니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    점 <InlineMath math="B(1,0)" />가 원점으로 오도록
-                    왼쪽으로 <InlineMath math="1" />만큼 평행이동하면
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        점 <InlineMath math="B(1,0)" />가 원점으로 오도록
+                                        왼쪽으로 <InlineMath math="1" />만큼 평행이동하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         B(1,0)\rightarrow O(0,0)
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이고 나머지 두 점은
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이고 나머지 두 점은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         A(2,2)\rightarrow A'(1,2)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         C(0,3)\rightarrow C'(-1,3)
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이 됩니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이 됩니다.
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    한 꼭짓점이 원점인 삼각형의 넓이는
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        한 꼭짓점이 원점인 삼각형의 넓이는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12
                         \left|
                         x_1y_2-x_2y_1
                         \right|
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이므로
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12
                         \left|
                         1\cdot3-(-1)\cdot2
                         \right|
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac12|3+2|
                         =
                         \frac52
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 정답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                {/* 정답 */}
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{\frac52}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    직선으로 둘러싸인 삼각형의 넓이는
-                    세 교점을 구한 뒤 여러 방법으로 계산할 수 있습니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        직선으로 둘러싸인 삼각형의 넓이는
+                                        세 교점을 구한 뒤 여러 방법으로 계산할 수 있습니다.
+                                    </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    한 변이 어떤 직선 위에 있으면
-                    <strong> 점과 직선 사이의 거리</strong>를
-                    높이로 사용하는 것이 편리하고,
-                    좌표가 간단하면 한 꼭짓점을 원점으로 평행이동하여
-                    넓이를 구하는 것도 편리합니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        한 변이 어떤 직선 위에 있으면
+                                        <strong> 점과 직선 사이의 거리</strong>를
+                                        높이로 사용하는 것이 편리하고,
+                                        좌표가 간단하면 한 꼭짓점을 원점으로 평행이동하여
+                                        넓이를 구하는 것도 편리합니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{교점 3개}
                         \rightarrow
                         \begin{cases}
@@ -21717,109 +21717,109 @@ export default function LineEquationPage() {
                         \text{한 점을 원점으로 평행이동}
                         \end{cases}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 15 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 15 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 15
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 15
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                그림과 같이 세 점{" "}
-                <InlineMath math="A(1,6),\ B(3,2),\ C(-2,0)" />을
-                꼭짓점으로 하는 삼각형 <InlineMath math="ABC" />가 있다.
-                변 <InlineMath math="AC" />가 <InlineMath math="y" />축과
-                만나는 점 <InlineMath math="D" />를 지나고
-                삼각형 <InlineMath math="ABC" />의 넓이를 이등분하는
-                직선 <InlineMath math="l" />이 변 <InlineMath math="BC" />와
-                만나는 점을 <InlineMath math="E" />라 할 때,
-                원점에서 직선 <InlineMath math="l" /> 사이의 거리를{" "}
-                <InlineMath math="\dfrac{a\sqrt{149}}{149}" />라 하자.
-                이때 상수 <InlineMath math="a" />의 값을 구하시오.
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    그림과 같이 세 점{" "}
+                                    <InlineMath math="A(1,6),\ B(3,2),\ C(-2,0)" />을
+                                    꼭짓점으로 하는 삼각형 <InlineMath math="ABC" />가 있다.
+                                    변 <InlineMath math="AC" />가 <InlineMath math="y" />축과
+                                    만나는 점 <InlineMath math="D" />를 지나고
+                                    삼각형 <InlineMath math="ABC" />의 넓이를 이등분하는
+                                    직선 <InlineMath math="l" />이 변 <InlineMath math="BC" />와
+                                    만나는 점을 <InlineMath math="E" />라 할 때,
+                                    원점에서 직선 <InlineMath math="l" /> 사이의 거리를{" "}
+                                    <InlineMath math="\dfrac{a\sqrt{149}}{149}" />라 하자.
+                                    이때 상수 <InlineMath math="a" />의 값을 구하시오.
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_15.png"
-                alt="삼각형 ABC의 넓이를 이등분하는 직선 l"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_15.png"
+                                    alt="삼각형 ABC의 넓이를 이등분하는 직선 l"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* D */}
-<div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* D */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-    <p className="mb-4 font-bold text-white">
-        ① 점 <InlineMath math="D" />의 위치
-    </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 점 <InlineMath math="D" />의 위치
+                                    </p>
 
-    <p className="leading-8">
-        점 <InlineMath math="D" />는
-        선분 <InlineMath math="CA" />와{" "}
-        <InlineMath math="y" />축이 만나는 점입니다.
-    </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="D" />는
+                                        선분 <InlineMath math="CA" />와{" "}
+                                        <InlineMath math="y" />축이 만나는 점입니다.
+                                    </p>
 
-    <p className="leading-8">
-        점 <InlineMath math="C(-2,0)" />에서
-        점 <InlineMath math="A(1,6)" />로 갈 때,{" "}
-        <InlineMath math="x" />좌표는
-    </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="C(-2,0)" />에서
+                                        점 <InlineMath math="A(1,6)" />로 갈 때,{" "}
+                                        <InlineMath math="x" />좌표는
+                                    </p>
 
-    <BlockMath
-        math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
             -2 \rightarrow 0 \rightarrow 1
         `}
-    />
+                                    />
 
-    <p className="leading-8">
-        이므로
-    </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-    <BlockMath
-        math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
             CD:DA=2:1
         `}
-    />
+                                    />
 
-    <p className="leading-8">
-        입니다.
-        따라서 점 <InlineMath math="D" />는
-        선분 <InlineMath math="CA" />를{" "}
-        <InlineMath math="2:1" />로 내분하는 점입니다.
-    </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                        따라서 점 <InlineMath math="D" />는
+                                        선분 <InlineMath math="CA" />를{" "}
+                                        <InlineMath math="2:1" />로 내분하는 점입니다.
+                                    </p>
 
-    <BlockMath
-        math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
             D
             =
             \left(
@@ -21827,144 +21827,144 @@ export default function LineEquationPage() {
             \frac{1\cdot0+2\cdot6}{2+1}
             \right)
         `}
-    />
+                                    />
 
-    <BlockMath
-        math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
             D=(0,4)
         `}
-    />
+                                    />
 
-</div>
+                                </div>
 
-            {/* E 위치 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* E 위치 */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 font-bold text-blue-300">
-                    ② 넓이를 이등분하는 점 <InlineMath math="E" />의 위치
-                </p>
+                                    <p className="mb-4 font-bold text-blue-300">
+                                        ② 넓이를 이등분하는 점 <InlineMath math="E" />의 위치
+                                    </p>
 
-                <p className="leading-8">
-                    삼각형 <InlineMath math="CDE" />와
-                    삼각형 <InlineMath math="CBA" />는
-                    점 <InlineMath math="C" />에서 같은 각을 가지므로
-                    넓이의 비는 두 변의 길이의 비의 곱으로 나타낼 수 있습니다.
-                </p>
+                                    <p className="leading-8">
+                                        삼각형 <InlineMath math="CDE" />와
+                                        삼각형 <InlineMath math="CBA" />는
+                                        점 <InlineMath math="C" />에서 같은 각을 가지므로
+                                        넓이의 비는 두 변의 길이의 비의 곱으로 나타낼 수 있습니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{[CDE]}{[CBA]}
                         =
                         \frac{CD}{CA}
                         \cdot
                         \frac{CE}{CB}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l" />이
-                    삼각형의 넓이를 이등분하므로
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l" />이
+                                        삼각형의 넓이를 이등분하므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac12
                         =
                         \frac23
                         \cdot
                         \frac{CE}{CB}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{CE}{CB}=\frac34
                     `}
-                />
+                                    />
 
-                <div className="mt-4 rounded-lg border border-yellow-500/30 bg-yellow-500/5 p-4">
+                                    <div className="mt-4 rounded-lg border border-yellow-500/30 bg-yellow-500/5 p-4">
 
-                    <p className="text-center font-semibold text-yellow-200">
-                        즉, <InlineMath math="E" />는{" "}
-                        <InlineMath math="C" />에서{" "}
-                        <InlineMath math="B" />로{" "}
-                        <InlineMath math="\dfrac34" />만큼 간 점입니다.
-                    </p>
+                                        <p className="text-center font-semibold text-yellow-200">
+                                            즉, <InlineMath math="E" />는{" "}
+                                            <InlineMath math="C" />에서{" "}
+                                            <InlineMath math="B" />로{" "}
+                                            <InlineMath math="\dfrac34" />만큼 간 점입니다.
+                                        </p>
 
-                </div>
+                                    </div>
 
-            </div>
+                                </div>
 
-            {/* E 좌표 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* E 좌표 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 점 <InlineMath math="E" />의 좌표
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ③ 점 <InlineMath math="E" />의 좌표
+                                    </p>
 
-                <p className="leading-8">
-                    점{" "}
-                    <InlineMath math="C(-2,0)" />에서{" "}
-                    <InlineMath math="B(3,2)" />로 가는 변화량은
-                </p>
+                                    <p className="leading-8">
+                                        점{" "}
+                                        <InlineMath math="C(-2,0)" />에서{" "}
+                                        <InlineMath math="B(3,2)" />로 가는 변화량은
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         (5,2)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로 그 <InlineMath math="\dfrac34" />만큼 이동하면
-                </p>
+                                    <p className="leading-8">
+                                        이므로 그 <InlineMath math="\dfrac34" />만큼 이동하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         E
                         =
                         (-2,0)
                         +
                         \frac34(5,2)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         E
                         =
                         \left(
                         \frac74,\frac32
                         \right)
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 직선 l */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 직선 l */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 직선 <InlineMath math="l" />의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ④ 직선 <InlineMath math="l" />의 방정식
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l" />은
-                    두 점{" "}
-                    <InlineMath math="D(0,4)" />와{" "}
-                    <InlineMath math="E\left(\dfrac74,\dfrac32\right)" />를
-                    지납니다.
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="l" />은
+                                        두 점{" "}
+                                        <InlineMath math="D(0,4)" />와{" "}
+                                        <InlineMath math="E\left(\dfrac74,\dfrac32\right)" />를
+                                        지납니다.
+                                    </p>
 
-                <p className="leading-8">
-                    기울기는
-                </p>
+                                    <p className="leading-8">
+                                        기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{
                         \frac32-4
                         }{
@@ -21973,333 +21973,333 @@ export default function LineEquationPage() {
                         =
                         -\frac{10}{7}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y-4=-\frac{10}{7}x
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         10x+7y-28=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ⑤ 원점과 직선 <InlineMath math="l" /> 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ⑤ 원점과 직선 <InlineMath math="l" /> 사이의 거리
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{|10(0)+7(0)-28|}
                         {\sqrt{10^2+7^2}}
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{28}{\sqrt{149}}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    분모를 유리화하면
-                </p>
+                                    <p className="leading-8">
+                                        분모를 유리화하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{28\sqrt{149}}{149}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서
-            </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     a=28
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{28}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    점 <InlineMath math="D" />는 변{" "}
-                    <InlineMath math="AC" />의{" "}
-                    <InlineMath math="\dfrac23" /> 지점에 있습니다.
-                    따라서 넓이를 절반으로 만들기 위해서는
-                    다른 변에서의 비를 이용하여
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        점 <InlineMath math="D" />는 변{" "}
+                                        <InlineMath math="AC" />의{" "}
+                                        <InlineMath math="\dfrac23" /> 지점에 있습니다.
+                                        따라서 넓이를 절반으로 만들기 위해서는
+                                        다른 변에서의 비를 이용하여
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac23
                         \times
                         \frac{CE}{CB}
                         =
                         \frac12
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    로 생각하면 됩니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        로 생각하면 됩니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{CE}{CB}=\frac34
                     `}
-                />
+                                    />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    즉 복잡하게 삼각형의 넓이를 직접 계산하지 않고,
-                    <strong>
-                        {" "}변 위의 위치의 비만으로 넓이를 이등분하는 점을 바로 찾는 것
-                    </strong>
-                    이 이 문제의 핵심입니다.
-                </p>
+                                    <p className="mt-3 leading-8 text-gray-300">
+                                        즉 복잡하게 삼각형의 넓이를 직접 계산하지 않고,
+                                        <strong>
+                                            {" "}변 위의 위치의 비만으로 넓이를 이등분하는 점을 바로 찾는 것
+                                        </strong>
+                                        이 이 문제의 핵심입니다.
+                                    </p>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-{/* 예제 16 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                    {/* 예제 16 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 16
-    </h3>
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 16
+                        </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            {/* 문제 */}
+                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                그림과 같이{" "}
-                <InlineMath math="\overline{AB}=6,\ \overline{AD}=4" />인
-                직사각형 <InlineMath math="ABCD" />가 있다.
-                변 <InlineMath math="AB" />의 중점을 <InlineMath math="M" />,
-                변 <InlineMath math="BC" />의 중점을 <InlineMath math="N" />이라 하고,
-                직사각형 <InlineMath math="ABCD" />를 직선
-                <InlineMath math="MN" />을 접는 선으로 하여 접었을 때
-                점 <InlineMath math="B" />가 접힌 점을 <InlineMath math="E" />라 하자.
-                점 <InlineMath math="D" />와 직선 <InlineMath math="EM" /> 사이의
-                거리를 <InlineMath math="\dfrac{q}{p}" />라 할 때,<br/>
-                <InlineMath math="q-p" />의 값을 구하시오.<br/>
-                (단, 점 <InlineMath math="E" />는 직사각형{" "}
-                <InlineMath math="ABCD" />의 내부에 있다.)
-            </p>
+                                <p className="leading-8 text-gray-300">
+                                    그림과 같이{" "}
+                                    <InlineMath math="\overline{AB}=6,\ \overline{AD}=4" />인
+                                    직사각형 <InlineMath math="ABCD" />가 있다.
+                                    변 <InlineMath math="AB" />의 중점을 <InlineMath math="M" />,
+                                    변 <InlineMath math="BC" />의 중점을 <InlineMath math="N" />이라 하고,
+                                    직사각형 <InlineMath math="ABCD" />를 직선
+                                    <InlineMath math="MN" />을 접는 선으로 하여 접었을 때
+                                    점 <InlineMath math="B" />가 접힌 점을 <InlineMath math="E" />라 하자.
+                                    점 <InlineMath math="D" />와 직선 <InlineMath math="EM" /> 사이의
+                                    거리를 <InlineMath math="\dfrac{q}{p}" />라 할 때,<br />
+                                    <InlineMath math="q-p" />의 값을 구하시오.<br />
+                                    (단, 점 <InlineMath math="E" />는 직사각형{" "}
+                                    <InlineMath math="ABCD" />의 내부에 있다.)
+                                </p>
 
-        </div>
+                            </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            {/* 그림 */}
+                            <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.15_16.png"
-                alt="직사각형 ABCD를 직선 MN을 따라 접은 그림"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                                <img
+                                    src="/images/commonMath2/1.15_16.png"
+                                    alt="직사각형 ABCD를 직선 MN을 따라 접은 그림"
+                                    className="mx-auto w-full max-w-md rounded-lg"
+                                />
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 좌표 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 좌표 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 각 점의 좌표
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ① 각 점의 좌표
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A" />를 원점으로 두면
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A" />를 원점으로 두면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         A(0,0),\quad
                         B(6,0),\quad
                         C(6,4),\quad
                         D(0,4)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    <InlineMath math="M,\ N" />은 각각{" "}
-                    <InlineMath math="AB,\ BC" />의 중점이므로
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="M,\ N" />은 각각{" "}
+                                        <InlineMath math="AB,\ BC" />의 중점이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         M(3,0),\qquad N(6,2)
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* MN */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* MN */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 접는 선 <InlineMath math="MN" />의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ② 접는 선 <InlineMath math="MN" />의 방정식
+                                    </p>
 
-                <p className="leading-8">
-                    두 점 <InlineMath math="M(3,0)" />,{" "}
-                    <InlineMath math="N(6,2)" />를 지나는 직선의 기울기는
-                </p>
+                                    <p className="leading-8">
+                                        두 점 <InlineMath math="M(3,0)" />,{" "}
+                                        <InlineMath math="N(6,2)" />를 지나는 직선의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{2-0}{6-3}=\frac23
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=\frac23(x-3)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         2x-3y-6=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* E */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                {/* E */}
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 font-bold text-blue-300">
-                    ③ 접힌 점 <InlineMath math="E" />의 좌표
-                </p>
+                                    <p className="mb-4 font-bold text-blue-300">
+                                        ③ 접힌 점 <InlineMath math="E" />의 좌표
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="B" />가 점 <InlineMath math="E" />로
-                    접히므로 접는 선 <InlineMath math="MN" />은
-                    선분 <InlineMath math="BE" />의
-                    <strong className="text-yellow-300"> 수직이등분선</strong>입니다.
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="B" />가 점 <InlineMath math="E" />로
+                                        접히므로 접는 선 <InlineMath math="MN" />은
+                                        선분 <InlineMath math="BE" />의
+                                        <strong className="text-yellow-300"> 수직이등분선</strong>입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="MN" />의 기울기가{" "}
-                    <InlineMath math="\dfrac23" />이므로
-                    직선 <InlineMath math="BE" />의 기울기는
-                </p>
+                                    <p className="leading-8">
+                                        직선 <InlineMath math="MN" />의 기울기가{" "}
+                                        <InlineMath math="\dfrac23" />이므로
+                                        직선 <InlineMath math="BE" />의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         -\frac32
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    따라서 점 <InlineMath math="B(6,0)" />를 지나는 직선{" "}
-                    <InlineMath math="BE" />는
-                </p>
+                                    <p className="leading-8">
+                                        따라서 점 <InlineMath math="B(6,0)" />를 지나는 직선{" "}
+                                        <InlineMath math="BE" />는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=-\frac32(x-6)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이고, <InlineMath math="BE" />와{" "}
-                    <InlineMath math="MN" />의 교점을 <InlineMath math="H" />라 하면{" "}
-                    <InlineMath math="H" />는 <InlineMath math="BE" />의 중점입니다.
-                </p>
+                                    <p className="leading-8">
+                                        이고, <InlineMath math="BE" />와{" "}
+                                        <InlineMath math="MN" />의 교점을 <InlineMath math="H" />라 하면{" "}
+                                        <InlineMath math="H" />는 <InlineMath math="BE" />의 중점입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    두 직선을 연립하면
-                </p>
+                                    <p className="leading-8">
+                                        두 직선을 연립하면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         H\left(
                         \frac{66}{13},
                         \frac{18}{13}
                         \right)
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    <InlineMath math="H" />가{" "}
-                    <InlineMath math="BE" />의 중점이므로
-                </p>
+                                    <p className="leading-8">
+                                        <InlineMath math="H" />가{" "}
+                                        <InlineMath math="BE" />의 중점이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         E
                         =
                         \left(
@@ -22307,35 +22307,35 @@ export default function LineEquationPage() {
                         2\cdot\frac{18}{13}
                         \right)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         E\left(
                         \frac{54}{13},
                         \frac{36}{13}
                         \right)
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* EM */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* EM */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 직선 <InlineMath math="EM" />의 방정식
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ④ 직선 <InlineMath math="EM" />의 방정식
+                                    </p>
 
-                <p className="leading-8">
-                    두 점{" "}
-                    <InlineMath math="M(3,0)" />과{" "}
-                    <InlineMath math="E\left(\dfrac{54}{13},\dfrac{36}{13}\right)" />
-                    를 지나는 직선의 기울기는
-                </p>
+                                    <p className="leading-8">
+                                        두 점{" "}
+                                        <InlineMath math="M(3,0)" />과{" "}
+                                        <InlineMath math="E\left(\dfrac{54}{13},\dfrac{36}{13}\right)" />
+                                        를 지나는 직선의 기울기는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \frac{
                         \frac{36}{13}
                         }{
@@ -22344,40 +22344,40 @@ export default function LineEquationPage() {
                         =
                         \frac{12}{5}
                     `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                    <p className="leading-8">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         y=\frac{12}{5}(x-3)
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         12x-5y-36=0
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                {/* 거리 */}
+                                <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ⑤ 점 <InlineMath math="D" />와 직선 <InlineMath math="EM" /> 사이의 거리
-                </p>
+                                    <p className="mb-4 font-bold text-white">
+                                        ⑤ 점 <InlineMath math="D" />와 직선 <InlineMath math="EM" /> 사이의 거리
+                                    </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="D(0,4)" />에서
-                    직선 <InlineMath math="12x-5y-36=0" />까지의 거리는
-                </p>
+                                    <p className="leading-8">
+                                        점 <InlineMath math="D(0,4)" />에서
+                                        직선 <InlineMath math="12x-5y-36=0" />까지의 거리는
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         d
                         =
                         \frac{
@@ -22386,73 +22386,73 @@ export default function LineEquationPage() {
                         \sqrt{12^2+(-5)^2}
                         }
                     `}
-                />
+                                    />
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         =
                         \frac{56}{13}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            <p className="leading-8">
-                따라서
-            </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     p=13,\qquad q=56
                 `}
-            />
+                                />
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                     q-p=56-13=43
                 `}
-            />
+                                />
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \boxed{43}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-            {/* 핵심 */}
-            <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                                {/* 핵심 */}
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="mb-3 font-bold text-yellow-300">
-                    풀이의 핵심
-                </p>
+                                    <p className="mb-3 font-bold text-yellow-300">
+                                        풀이의 핵심
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    도형을 직선 <InlineMath math="MN" />을 따라 접어
-                    점 <InlineMath math="B" />가
-                    점 <InlineMath math="E" />로 이동했다면
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        도형을 직선 <InlineMath math="MN" />을 따라 접어
+                                        점 <InlineMath math="B" />가
+                                        점 <InlineMath math="E" />로 이동했다면
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         MN\perp BE
                     `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이고, 접는 선은 선분 <InlineMath math="BE" />를
-                    정확히 반으로 나눕니다.
-                </p>
+                                    <p className="leading-8 text-gray-300">
+                                        이고, 접는 선은 선분 <InlineMath math="BE" />를
+                                        정확히 반으로 나눕니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
                         \text{접기}
                         \rightarrow
                         \text{수직이등분선}
@@ -22463,91 +22463,91 @@ export default function LineEquationPage() {
                         \rightarrow
                         \text{점과 직선 사이의 거리}
                     `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
-</div>
+                    </div>
 
-    {/* 핵심 정리 */}
-    <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-6">
+                    {/* 핵심 정리 */}
+                    <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-6">
 
-        <h3 className="mb-5 text-2xl font-bold text-yellow-300">
-            핵심 정리
-        </h3>
+                        <h3 className="mb-5 text-2xl font-bold text-yellow-300">
+                            핵심 정리
+                        </h3>
 
-        <div className="space-y-6">
+                        <div className="space-y-6">
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    ① 점과 직선 사이의 거리
-                </p>
+                                <p className="mb-3 font-bold text-white">
+                                    ① 점과 직선 사이의 거리
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         d=
                         \frac{|a\alpha+b\beta+c|}
                         {\sqrt{a^2+b^2}}
                     `}
-                />
+                                />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    <strong>직선의 식을 그대로 옮겨 쓰면서 점을 대입</strong>하고,
-                    절댓값을 씌운 뒤
-                    <InlineMath math="\sqrt{(x\text{계수})^2+(y\text{계수})^2}" />
-                    로 나눕니다.
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    <strong>직선의 식을 그대로 옮겨 쓰면서 점을 대입</strong>하고,
+                                    절댓값을 씌운 뒤
+                                    <InlineMath math="\sqrt{(x\text{계수})^2+(y\text{계수})^2}" />
+                                    로 나눕니다.
+                                </p>
 
-            </div>
+                            </div>
 
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    ② 평행한 두 직선 사이의 거리
-                </p>
+                                <p className="mb-3 font-bold text-white">
+                                    ② 평행한 두 직선 사이의 거리
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
                         d=
                         \frac{|c-c'|}
                         {\sqrt{a^2+b^2}}
                     `}
-                />
+                                />
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    먼저 두 직선의{" "}
-                    <InlineMath math="x,\ y" />의 계수를 똑같이 맞춘 뒤,
-                    <strong> 상수항의 차</strong>를 이용합니다.
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    먼저 두 직선의{" "}
+                                    <InlineMath math="x,\ y" />의 계수를 똑같이 맞춘 뒤,
+                                    <strong> 상수항의 차</strong>를 이용합니다.
+                                </p>
 
-            </div>
+                            </div>
 
-            <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
+                            <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5">
 
-                <p className="font-bold text-emerald-300">
-                    문제를 풀 때
-                </p>
+                                <p className="font-bold text-emerald-300">
+                                    문제를 풀 때
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    증명을 다시 하지 않습니다.
-                    <strong className="text-white">
-                        {" "}두 공식을 정확하게 암기하여 바로 식을 작성합니다.
-                    </strong>
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    증명을 다시 하지 않습니다.
+                                    <strong className="text-white">
+                                        {" "}두 공식을 정확하게 암기하여 바로 식을 작성합니다.
+                                    </strong>
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
-    </div>
+                    </div>
+                </div>
 
-</section>
+            </section>
 
         </>
     )
