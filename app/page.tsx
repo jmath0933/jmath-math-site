@@ -37,6 +37,12 @@ import CircleEquationPage
   from "../components/commonMath2/coordinateGeometry/CircleEquationPage";
  import TransformationPage
   from "../components/commonMath2/coordinateGeometry/TransformationPage";
+import SetAndSubsetPage
+  from "../components/commonMath2/setsAndLogic/SetAndSubsetPage";
+import SetOperationsPage
+  from "../components/commonMath2/setsAndLogic/SetOperationsPage";
+import PropositionPage
+  from "../components/commonMath2/setsAndLogic/PropositionPage";
 
 const curriculum = {
   중1: {
@@ -249,6 +255,30 @@ export default function Home() {
       smallUnit === "도형의 이동"
     ) {
       return <TransformationPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "집합과 명제" &&
+      smallUnit === "집합의 뜻과 포함관계"
+    ) {
+      return <SetAndSubsetPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "집합과 명제" &&
+      smallUnit === "집합의 연산"
+    ) {
+      return <SetOperationsPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "집합과 명제" &&
+      smallUnit === "명제"
+    ) {
+      return <PropositionPage />;
     }
 
     return (

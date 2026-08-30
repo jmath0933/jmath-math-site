@@ -12440,34 +12440,34 @@ f(x+2,-y)=0
                                 className="mx-auto w-full max-w-md rounded-lg"
                             />
                         </div>
-</div>
+                    </div>
 
-                        {/* 선택지 */}
-                        <div className="mt-6 grid gap-4 text-gray-300 md:grid-cols-2">
+                    {/* 선택지 */}
+                    <div className="mt-6 grid gap-4 text-gray-300 md:grid-cols-2">
 
-                            <p>
-                                ① <InlineMath math="g(x,y)=f(x-2,-y)" />
-                            </p>
+                        <p>
+                            ① <InlineMath math="g(x,y)=f(x-2,-y)" />
+                        </p>
 
-                            <p>
-                                ② <InlineMath math="g(x,y)=f(x+3,-y+1)" />
-                            </p>
+                        <p>
+                            ② <InlineMath math="g(x,y)=f(x+3,-y+1)" />
+                        </p>
 
-                            <p>
-                                ③ <InlineMath math="g(x,y)=f(-x,-y+1)" />
-                            </p>
+                        <p>
+                            ③ <InlineMath math="g(x,y)=f(-x,-y+1)" />
+                        </p>
 
-                            <p>
-                                ④ <InlineMath math="g(x,y)=f(-x+1,y+1)" />
-                            </p>
+                        <p>
+                            ④ <InlineMath math="g(x,y)=f(-x+1,y+1)" />
+                        </p>
 
-                            <p>
-                                ⑤ <InlineMath math="g(x,y)=f(-x-2,y+1)" />
-                            </p>
+                        <p>
+                            ⑤ <InlineMath math="g(x,y)=f(-x-2,y+1)" />
+                        </p>
 
-                        </div>
+                    </div>
 
-                    
+
 
 
                     {/* 풀이 */}
@@ -12683,266 +12683,266 @@ f(-x+1,y+1)=0
                 </div>
 
                 {/* 예제 6 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 6
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 6
+                    </h3>
                     <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            방정식 <InlineMath math="f(x,y)=0" />이 나타내는 도형이
-            오른쪽 그림과 같을 때,{" "}
-            <InlineMath math="f(-x+1,-y-1)=0" />이 나타내는
-            도형 위의 점과 원점 사이의 거리의 최댓값은?
-        </p>
-</div>
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                            <p className="leading-8 text-gray-300">
+                                방정식 <InlineMath math="f(x,y)=0" />이 나타내는 도형이
+                                오른쪽 그림과 같을 때,{" "}
+                                <InlineMath math="f(-x+1,-y-1)=0" />이 나타내는
+                                도형 위의 점과 원점 사이의 거리의 최댓값은?
+                            </p>
+                        </div>
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.32_6.png"
-                alt="f(x,y)=0이 나타내는 마름모"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.32_6.png"
+                                alt="f(x,y)=0이 나타내는 마름모"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    {/* 풀이 */}
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                변환된 식{" "}
-                <InlineMath math="f(-x+1,-y-1)=0" />에서
-                먼저 대칭이동을 확인합니다.
-            </p>
+                    </div>
 
 
-            {/* 1단계 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    {/* 풀이 */}
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 대칭이동
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    <InlineMath math="x,\ y" />의 부호가 모두
-                    바뀌어 있으므로 먼저 원점에 대하여 대칭이동한 것으로
-                    생각합니다.
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                변환된 식{" "}
+                                <InlineMath math="f(-x+1,-y-1)=0" />에서
+                                먼저 대칭이동을 확인합니다.
+                            </p>
+
+
+                            {/* 1단계 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    ① 대칭이동
+                                </p>
+
+                                <p className="leading-8">
+                                    <InlineMath math="x,\ y" />의 부호가 모두
+                                    바뀌어 있으므로 먼저 원점에 대하여 대칭이동한 것으로
+                                    생각합니다.
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 f(x,y)=0
 \rightarrow
 f(-x,-y)=0
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* 2단계 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 2단계 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 평행이동
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② 평행이동
+                                </p>
 
-                <p className="leading-8">
-                    변환된 식의 문자를 다음과 같이 정리하면
-                </p>
+                                <p className="leading-8">
+                                    변환된 식의 문자를 다음과 같이 정리하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 -x+1=-(x-1)
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 -y-1=-(y+1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이므로 원점 대칭한 도형을{" "}
-                    <InlineMath math="x" />축의 방향으로{" "}
-                    <InlineMath math="1" />만큼,{" "}
-                    <InlineMath math="y" />축의 방향으로{" "}
-                    <InlineMath math="-1" />만큼 평행이동한 것입니다.
-                </p>
+                                <p className="leading-8">
+                                    이므로 원점 대칭한 도형을{" "}
+                                    <InlineMath math="x" />축의 방향으로{" "}
+                                    <InlineMath math="1" />만큼,{" "}
+                                    <InlineMath math="y" />축의 방향으로{" "}
+                                    <InlineMath math="-1" />만큼 평행이동한 것입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 f(-x,-y)=0
 \rightarrow
 f(-(x-1),-(y+1))=0
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 =
 f(-x+1,-y-1)=0
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* 3단계 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 3단계 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 도형의 꼭짓점 이동
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ③ 도형의 꼭짓점 이동
+                                </p>
 
-                <p className="leading-8">
-                    원래 도형의 네 꼭짓점은
-                </p>
+                                <p className="leading-8">
+                                    원래 도형의 네 꼭짓점은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 (0,0),\quad
 (1,1),\quad
 (2,0),\quad
 (1,-1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    먼저 원점에 대하여 대칭이동하면
-                </p>
+                                <p className="mt-3 leading-8">
+                                    먼저 원점에 대하여 대칭이동하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 (0,0),\quad
 (-1,-1),\quad
 (-2,0),\quad
 (-1,1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이 되고, 다시{" "}
-                    <InlineMath math="x" />축의 방향으로{" "}
-                    <InlineMath math="1" />만큼,{" "}
-                    <InlineMath math="y" />축의 방향으로{" "}
-                    <InlineMath math="-1" />만큼 평행이동하면
-                </p>
+                                <p className="leading-8">
+                                    이 되고, 다시{" "}
+                                    <InlineMath math="x" />축의 방향으로{" "}
+                                    <InlineMath math="1" />만큼,{" "}
+                                    <InlineMath math="y" />축의 방향으로{" "}
+                                    <InlineMath math="-1" />만큼 평행이동하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 (1,-1),\quad
 (0,-2),\quad
 (-1,-1),\quad
 (0,0)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이 됩니다.
-                </p>
+                                <p className="leading-8">
+                                    이 됩니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 4단계 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 4단계 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 원점과의 거리
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ④ 원점과의 거리
+                                </p>
 
-                <p className="leading-8">
-                    이동한 도형에서 원점과 가장 멀리 떨어진 점은{" "}
-                    <InlineMath math="(0,-2)" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    이동한 도형에서 원점과 가장 멀리 떨어진 점은{" "}
+                                    <InlineMath math="(0,-2)" />입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \sqrt{0^2+(-2)^2}=2
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서 원점과 도형 위의 점 사이의 거리의 최댓값은{" "}
-                    <InlineMath math="2" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    따라서 원점과 도형 위의 점 사이의 거리의 최댓값은{" "}
+                                    <InlineMath math="2" />입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 정답 */}
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            {/* 정답 */}
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{2}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* 풀이의 핵심 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 풀이의 핵심 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    <InlineMath math="x,\ y" />의 부호가 모두 바뀌어
-                    있으면 먼저 <strong className="text-white">원점 대칭</strong>을
-                    생각하고, 그다음 식을{" "}
-                    <InlineMath math="x-p,\ y-q" /> 형태로 정리하여
-                    평행이동을 해석합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    <InlineMath math="x,\ y" />의 부호가 모두 바뀌어
+                                    있으면 먼저 <strong className="text-white">원점 대칭</strong>을
+                                    생각하고, 그다음 식을{" "}
+                                    <InlineMath math="x-p,\ y-q" /> 형태로 정리하여
+                                    평행이동을 해석합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 f(x,y)=0
 \xrightarrow{\text{원점 대칭}}
 f(-x,-y)=0
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \xrightarrow{x\text{축으로 }1,\ y\text{축으로 }-1}
 f(-x+1,-y-1)=0
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
                 {/* 핵심 정리 */}
                 <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
@@ -13015,885 +13015,885 @@ y-q\Longleftrightarrow y\text{축으로 }q
             </section>
 
             {/* 1.33 대칭이동을 이용한 선분 길이의 최솟값 */}
-<section className="mb-10 rounded-2xl border border-white/30 p-7">
+            <section className="mb-10 rounded-2xl border border-white/30 p-7">
 
-    <h2 className="mb-2 text-3xl font-bold">
-        1.33 대칭이동을 이용한 선분 길이의 최솟값
-    </h2>
+                <h2 className="mb-2 text-3xl font-bold">
+                    1.33 대칭이동을 이용한 선분 길이의 최솟값
+                </h2>
 
-    <p className="leading-8 text-gray-300">
-        여러 선분의 길이의 합이 가장 작아지는 값을 구할 때에는
-        각 선분의 길이를 하나씩 계산하는 것보다{" "}
-        <b>대칭이동을 이용하여 꺾인 선을 하나의 선분으로 만드는 방법</b>이
-        유용합니다.
-    </p>
+                <p className="leading-8 text-gray-300">
+                    여러 선분의 길이의 합이 가장 작아지는 값을 구할 때에는
+                    각 선분의 길이를 하나씩 계산하는 것보다{" "}
+                    <b>대칭이동을 이용하여 꺾인 선을 하나의 선분으로 만드는 방법</b>이
+                    유용합니다.
+                </p>
 
-    <p className="mt-3 leading-8 text-gray-300">
-        특히 움직이는 점에서 선분이 꺾이는 경우에는
-        그 점이 놓인 직선에 대하여 한쪽의 점을 대칭이동합니다.
-    </p>
+                <p className="mt-3 leading-8 text-gray-300">
+                    특히 움직이는 점에서 선분이 꺾이는 경우에는
+                    그 점이 놓인 직선에 대하여 한쪽의 점을 대칭이동합니다.
+                </p>
 
 
-    <div className="mt-8 space-y-6">
+                <div className="mt-8 space-y-6">
 
-        {/* 1. 한 번 꺾이는 선분 */}
-        <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 1. 한 번 꺾이는 선분 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-            <h3 className="mb-4 text-2xl font-bold">
-                1. 한 번 꺾이는 선분의 최솟값
-            </h3>
+                        <h3 className="mb-4 text-2xl font-bold">
+                            1. 한 번 꺾이는 선분의 최솟값
+                        </h3>
 
-            <p className="leading-8 text-gray-300">
-                점 <InlineMath math="P" />가 한 직선 위를 움직일 때
-            </p>
+                        <p className="leading-8 text-gray-300">
+                            점 <InlineMath math="P" />가 한 직선 위를 움직일 때
+                        </p>
 
-            <BlockMath
-                math={String.raw`
+                        <BlockMath
+                            math={String.raw`
 AP+PB
 `}
-            />
+                        />
 
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 생각해 봅시다.
-            </p>
-
-
-            {/* 원래 그림 */}
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-    <img
-        src="/images/commonMath2/1.33_1.png"
-        alt="한 직선 위의 점 P에서 꺾이는 두 선분 AP와 PB"
-        className="w-full rounded-lg"
-    />
-</div>
+                        <p className="leading-8 text-gray-300">
+                            의 최솟값을 생각해 봅시다.
+                        </p>
 
 
-            <p className="mt-5 leading-8 text-gray-300">
-                <InlineMath math="AP" />와 <InlineMath math="PB" />를
-                각각 거리 공식으로 계산하여 식을 만드는 것이 아니라,
-                꺾인 두 선분을 하나의 선분으로 만들어 보겠습니다.
-            </p>
-
-            <p className="mt-3 leading-8 text-gray-300">
-                점 <InlineMath math="B" />를
-                점 <InlineMath math="P" />가 놓인 직선에 대하여
-                대칭이동한 점을 <InlineMath math="B'" />라 하겠습니다.
-            </p>
+                        {/* 원래 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
+                            <img
+                                src="/images/commonMath2/1.33_1.png"
+                                alt="한 직선 위의 점 P에서 꺾이는 두 선분 AP와 PB"
+                                className="w-full rounded-lg"
+                            />
+                        </div>
 
 
-            {/* 대칭이동 그림 */}
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
+                        <p className="mt-5 leading-8 text-gray-300">
+                            <InlineMath math="AP" />와 <InlineMath math="PB" />를
+                            각각 거리 공식으로 계산하여 식을 만드는 것이 아니라,
+                            꺾인 두 선분을 하나의 선분으로 만들어 보겠습니다.
+                        </p>
 
-                <img
-                    src="/images/commonMath2/1.33_2.png"
-                    alt="점 B를 직선에 대하여 대칭이동하여 B'을 만든 그림"
-                    className="mx-auto w-full max-w-xl rounded-lg"
-                />
-
-            </div>
+                        <p className="mt-3 leading-8 text-gray-300">
+                            점 <InlineMath math="B" />를
+                            점 <InlineMath math="P" />가 놓인 직선에 대하여
+                            대칭이동한 점을 <InlineMath math="B'" />라 하겠습니다.
+                        </p>
 
 
-            <p className="mt-5 leading-8 text-gray-300">
-                대칭이동에 의하여 직선 위의 모든 점은
-                <InlineMath math="B" />와 <InlineMath math="B'" />에서
-                같은 거리에 있으므로
-            </p>
+                        {/* 대칭이동 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
 
-            <BlockMath
-                math={String.raw`
+                            <img
+                                src="/images/commonMath2/1.33_2.png"
+                                alt="점 B를 직선에 대하여 대칭이동하여 B'을 만든 그림"
+                                className="mx-auto w-full max-w-xl rounded-lg"
+                            />
+
+                        </div>
+
+
+                        <p className="mt-5 leading-8 text-gray-300">
+                            대칭이동에 의하여 직선 위의 모든 점은
+                            <InlineMath math="B" />와 <InlineMath math="B'" />에서
+                            같은 거리에 있으므로
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
 PB=PB'
 `}
-            />
+                        />
 
-            <p className="leading-8 text-gray-300">
-                입니다. 따라서
-            </p>
+                        <p className="leading-8 text-gray-300">
+                            입니다. 따라서
+                        </p>
 
-            <BlockMath
-                math={String.raw`
+                        <BlockMath
+                            math={String.raw`
 AP+PB
 =
 AP+PB'
 `}
-            />
+                        />
 
-            <p className="leading-8 text-gray-300">
-                로 바꿀 수 있습니다.
-            </p>
+                        <p className="leading-8 text-gray-300">
+                            로 바꿀 수 있습니다.
+                        </p>
 
 
-            <div className="mt-5 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 선을 편다
-                </p>
+                            <p className="mb-3 font-bold text-blue-300">
+                                꺾인 선을 편다
+                            </p>
 
-                <p className="leading-8 text-gray-300">
-                    점 <InlineMath math="P" />가 움직이면{" "}
-                    <InlineMath math="AP+PB'" />의 길이도 달라집니다.
-                </p>
+                            <p className="leading-8 text-gray-300">
+                                점 <InlineMath math="P" />가 움직이면{" "}
+                                <InlineMath math="AP+PB'" />의 길이도 달라집니다.
+                            </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    이 길이가 가장 짧아지는 것은
-                    세 점 <InlineMath math="A,\ P,\ B'" />가
-                    한 직선 위에 있을 때입니다.
-                </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                이 길이가 가장 짧아지는 것은
+                                세 점 <InlineMath math="A,\ P,\ B'" />가
+                                한 직선 위에 있을 때입니다.
+                            </p>
 
-                <BlockMath
-                    math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PB'
 \ge AB'
 `}
-                />
+                            />
 
-                <p className="leading-8 text-gray-300">
-                    따라서 직선 <InlineMath math="AB'" />와
-                    점 <InlineMath math="P" />가 놓인 직선의 교점이
-                    최소가 되는 점입니다.
-                </p>
+                            <p className="leading-8 text-gray-300">
+                                따라서 직선 <InlineMath math="AB'" />와
+                                점 <InlineMath math="P" />가 놓인 직선의 교점이
+                                최소가 되는 점입니다.
+                            </p>
 
-            </div>
+                        </div>
 
 
-            <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                        <div className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-                <p className="font-bold text-yellow-300">
-                    핵심
-                </p>
+                            <p className="font-bold text-yellow-300">
+                                핵심
+                            </p>
 
-                <BlockMath
-                    math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \boxed{
 \text{꺾이는 점이 놓인 직선에 대하여 대칭이동한다.}
 }
 `}
-                />
+                            />
 
-                <BlockMath
-                    math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \boxed{
 \text{꺾인 선분의 합}
 \rightarrow
 \text{하나의 선분}
 }
 `}
-                />
+                            />
 
-            </div>
+                        </div>
 
-        </div>
+                    </div>
 
 
 
-        {/* 2. 두 번 꺾이는 선분 */}
-<div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                    {/* 2. 두 번 꺾이는 선분 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-    <h3 className="mb-4 text-2xl font-bold">
-        2. 두 번 꺾이는 선분의 최솟값
-    </h3>
+                        <h3 className="mb-4 text-2xl font-bold">
+                            2. 두 번 꺾이는 선분의 최솟값
+                        </h3>
 
-    <p className="leading-8 text-gray-300">
-        이번에는 점 <InlineMath math="P" />와{" "}
-        <InlineMath math="Q" />에서 두 번 꺾이는
-    </p>
+                        <p className="leading-8 text-gray-300">
+                            이번에는 점 <InlineMath math="P" />와{" "}
+                            <InlineMath math="Q" />에서 두 번 꺾이는
+                        </p>
 
-    <BlockMath
-        math={String.raw`
+                        <BlockMath
+                            math={String.raw`
 AP+PQ+QB
 `}
-    />
+                        />
 
-    <p className="leading-8 text-gray-300">
-        의 최솟값을 생각해 봅시다.
-    </p>
-
-
-    {/* 기본 그림 */}
-    <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-
-        <img
-            src="/images/commonMath2/1.33_3.png"
-            alt="두 직선 위의 점 P와 Q에서 두 번 꺾이는 선분"
-            className="w-full rounded-lg"
-        />
-
-    </div>
+                        <p className="leading-8 text-gray-300">
+                            의 최솟값을 생각해 봅시다.
+                        </p>
 
 
-    <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
+                        {/* 기본 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
 
-        <p className="font-bold text-purple-300">
-            생각해 보기
-        </p>
+                            <img
+                                src="/images/commonMath2/1.33_3.png"
+                                alt="두 직선 위의 점 P와 Q에서 두 번 꺾이는 선분"
+                                className="w-full rounded-lg"
+                            />
 
-        <p className="mt-3 leading-8 text-gray-300">
-            한 번 꺾이는 경우에는
-            꺾이는 점이 놓인 직선에 대하여 한쪽의 점을 대칭이동했습니다.
-        </p>
-
-        <p className="mt-3 leading-8 text-gray-300">
-            이번에는 점 <InlineMath math="P" />와{" "}
-            <InlineMath math="Q" />에서 두 번 꺾이므로,
-            두 점이 놓인 직선에 대하여 각각 대칭이동하면 됩니다.
-        </p>
-
-    </div>
+                        </div>
 
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            대칭이동 확인하기
-        </summary>
+                            <p className="font-bold text-purple-300">
+                                생각해 보기
+                            </p>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="mt-3 leading-8 text-gray-300">
+                                한 번 꺾이는 경우에는
+                                꺾이는 점이 놓인 직선에 대하여 한쪽의 점을 대칭이동했습니다.
+                            </p>
 
-            <div className="mx-auto max-w-sm rounded-xl border border-white/10 bg-white p-4">
+                            <p className="mt-3 leading-8 text-gray-300">
+                                이번에는 점 <InlineMath math="P" />와{" "}
+                                <InlineMath math="Q" />에서 두 번 꺾이므로,
+                                두 점이 놓인 직선에 대하여 각각 대칭이동하면 됩니다.
+                            </p>
 
-                <img
-                    src="/images/commonMath2/1.33_4.png"
-                    alt="A와 B를 각각 두 직선에 대하여 대칭이동한 그림"
-                    className="w-full rounded-lg"
-                />
-
-            </div>
+                        </div>
 
 
-            <p className="leading-8">
-                점 <InlineMath math="A" />를
-                점 <InlineMath math="P" />가 놓인 직선에 대하여
-                대칭이동한 점을 <InlineMath math="A'" />라 하고,
-                점 <InlineMath math="B" />를
-                점 <InlineMath math="Q" />가 놓인 직선에 대하여
-                대칭이동한 점을 <InlineMath math="B'" />라 하겠습니다.
-            </p>
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-            <BlockMath
-                math={String.raw`
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                대칭이동 확인하기
+                            </summary>
+
+                            <div className="mt-5 space-y-5 text-gray-300">
+
+                                <div className="mx-auto max-w-sm rounded-xl border border-white/10 bg-white p-4">
+
+                                    <img
+                                        src="/images/commonMath2/1.33_4.png"
+                                        alt="A와 B를 각각 두 직선에 대하여 대칭이동한 그림"
+                                        className="w-full rounded-lg"
+                                    />
+
+                                </div>
+
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A" />를
+                                    점 <InlineMath math="P" />가 놓인 직선에 대하여
+                                    대칭이동한 점을 <InlineMath math="A'" />라 하고,
+                                    점 <InlineMath math="B" />를
+                                    점 <InlineMath math="Q" />가 놓인 직선에 대하여
+                                    대칭이동한 점을 <InlineMath math="B'" />라 하겠습니다.
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 AP=A'P,
 \qquad
 QB=QB'
 `}
-            />
+                                />
 
-            <p className="leading-8">
-                따라서
-            </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-            <BlockMath
-                math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP+PQ+QB
 =
 A'P+PQ+QB'
 `}
-            />
+                                />
 
-            <p className="leading-8">
-                로 바꿀 수 있습니다.
-            </p>
+                                <p className="leading-8">
+                                    로 바꿀 수 있습니다.
+                                </p>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 선을 편다
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        꺾인 선을 편다
+                                    </p>
 
-                <p className="leading-8">
-                    네 점{" "}
-                    <InlineMath math="A',\ P,\ Q,\ B'" />가
-                    한 직선 위에 있을 때
-                    세 선분이 하나의 선분이 되어 길이가 가장 짧아집니다.
-                </p>
+                                    <p className="leading-8">
+                                        네 점{" "}
+                                        <InlineMath math="A',\ P,\ Q,\ B'" />가
+                                        한 직선 위에 있을 때
+                                        세 선분이 하나의 선분이 되어 길이가 가장 짧아집니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
 \boxed{
 \min(AP+PQ+QB)=A'B'
 }
 `}
-                />
+                                    />
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </details>
+                        </details>
 
 
 
-    {/* 도형의 변에서도 같은 원리 */}
-    <div className="mt-8 border-t border-white/10 pt-7">
+                        {/* 도형의 변에서도 같은 원리 */}
+                        <div className="mt-8 border-t border-white/10 pt-7">
 
-        <h4 className="mb-4 text-xl font-bold text-white">
-            도형의 변에서도 같은 원리를 사용할 수 있다
-        </h4>
+                            <h4 className="mb-4 text-xl font-bold text-white">
+                                도형의 변에서도 같은 원리를 사용할 수 있다
+                            </h4>
 
-        <p className="leading-8 text-gray-300">
-            꺾이는 점이 좌표축이나 끝없이 이어진 직선 위에 있을 필요는 없습니다.
-        </p>
+                            <p className="leading-8 text-gray-300">
+                                꺾이는 점이 좌표축이나 끝없이 이어진 직선 위에 있을 필요는 없습니다.
+                            </p>
 
-        <p className="mt-3 leading-8 text-gray-300">
-            다음과 같이 직사각형의 변 위에 점{" "}
-            <InlineMath math="P,\ Q" />가 있는 경우에도
-            같은 방법으로
-        </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                다음과 같이 직사각형의 변 위에 점{" "}
+                                <InlineMath math="P,\ Q" />가 있는 경우에도
+                                같은 방법으로
+                            </p>
 
-        <BlockMath
-            math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PQ+QB
 `}
-        />
+                            />
 
-        <p className="leading-8 text-gray-300">
-            의 최솟값을 구할 수 있습니다.
-        </p>
-
-
-        {/* 직사각형 원본 */}
-        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-
-            <img
-                src="/images/commonMath2/1.33_9.png"
-                alt="직사각형의 두 변 위의 점 P와 Q에서 꺾이는 선분"
-                className="w-full rounded-lg"
-            />
-
-        </div>
+                            <p className="leading-8 text-gray-300">
+                                의 최솟값을 구할 수 있습니다.
+                            </p>
 
 
-        <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
+                            {/* 직사각형 원본 */}
+                            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
 
-            <p className="font-bold text-purple-300">
-                어느 직선에 대하여 대칭이동할까?
-            </p>
+                                <img
+                                    src="/images/commonMath2/1.33_9.png"
+                                    alt="직사각형의 두 변 위의 점 P와 Q에서 꺾이는 선분"
+                                    className="w-full rounded-lg"
+                                />
 
-            <p className="mt-3 leading-8 text-gray-300">
-                점 <InlineMath math="P" />에서 선분이 꺾이므로
-                점 <InlineMath math="P" />가 놓인 직사각형의 왼쪽 변에 대하여
-                점 <InlineMath math="A" />를 대칭이동합니다.
-            </p>
-
-            <p className="mt-3 leading-8 text-gray-300">
-                마찬가지로 점 <InlineMath math="Q" />에서 선분이 꺾이므로
-                점 <InlineMath math="Q" />가 놓인 직사각형의 오른쪽 변에 대하여
-                점 <InlineMath math="B" />를 대칭이동합니다.
-            </p>
-
-        </div>
+                            </div>
 
 
-        <details className="mt-5 rounded-xl border border-white/15 p-5">
+                            <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
 
-            <summary className="cursor-pointer font-semibold text-yellow-300">
-                대칭이동 확인하기
-            </summary>
+                                <p className="font-bold text-purple-300">
+                                    어느 직선에 대하여 대칭이동할까?
+                                </p>
 
-            <div className="mt-5 space-y-5 text-gray-300">
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    점 <InlineMath math="P" />에서 선분이 꺾이므로
+                                    점 <InlineMath math="P" />가 놓인 직사각형의 왼쪽 변에 대하여
+                                    점 <InlineMath math="A" />를 대칭이동합니다.
+                                </p>
 
-                {/* 직사각형 대칭이동 그림 */}
-                <div className="mx-auto max-w-sm rounded-xl border border-white/10 bg-white p-4">
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    마찬가지로 점 <InlineMath math="Q" />에서 선분이 꺾이므로
+                                    점 <InlineMath math="Q" />가 놓인 직사각형의 오른쪽 변에 대하여
+                                    점 <InlineMath math="B" />를 대칭이동합니다.
+                                </p>
 
-                    <img
-                        src="/images/commonMath2/1.33_10.png"
-                        alt="직사각형의 두 변에 대하여 A와 B를 대칭이동한 그림"
-                        className="w-full rounded-lg"
-                    />
-
-                </div>
+                            </div>
 
 
-                <p className="leading-8">
-                    점 <InlineMath math="A" />를
-                    왼쪽 변에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하고,
-                    점 <InlineMath math="B" />를
-                    오른쪽 변에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="B'" />라 하겠습니다.
-                </p>
+                            <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="leading-8">
-                    대칭이동에 의하여
-                </p>
+                                <summary className="cursor-pointer font-semibold text-yellow-300">
+                                    대칭이동 확인하기
+                                </summary>
 
-                <BlockMath
-                    math={String.raw`
+                                <div className="mt-5 space-y-5 text-gray-300">
+
+                                    {/* 직사각형 대칭이동 그림 */}
+                                    <div className="mx-auto max-w-sm rounded-xl border border-white/10 bg-white p-4">
+
+                                        <img
+                                            src="/images/commonMath2/1.33_10.png"
+                                            alt="직사각형의 두 변에 대하여 A와 B를 대칭이동한 그림"
+                                            className="w-full rounded-lg"
+                                        />
+
+                                    </div>
+
+
+                                    <p className="leading-8">
+                                        점 <InlineMath math="A" />를
+                                        왼쪽 변에 대하여 대칭이동한 점을{" "}
+                                        <InlineMath math="A'" />라 하고,
+                                        점 <InlineMath math="B" />를
+                                        오른쪽 변에 대하여 대칭이동한 점을{" "}
+                                        <InlineMath math="B'" />라 하겠습니다.
+                                    </p>
+
+                                    <p className="leading-8">
+                                        대칭이동에 의하여
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
 AP=A'P,
 \qquad
 QB=QB'
 `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                    <p className="leading-8">
+                                        이므로
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
 AP+PQ+QB
 =
 A'P+PQ+QB'
 `}
-                />
+                                    />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                    <p className="leading-8">
+                                        입니다.
+                                    </p>
 
-                <p className="leading-8">
-                    따라서 네 점{" "}
-                    <InlineMath math="A',\ P,\ Q,\ B'" />가
-                    한 직선 위에 있을 때 길이가 가장 짧아집니다.
-                </p>
+                                    <p className="leading-8">
+                                        따라서 네 점{" "}
+                                        <InlineMath math="A',\ P,\ Q,\ B'" />가
+                                        한 직선 위에 있을 때 길이가 가장 짧아집니다.
+                                    </p>
 
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
 \boxed{
 \min(AP+PQ+QB)=A'B'
 }
 `}
-                />
+                                    />
 
 
-                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                    <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                    <p className="mb-3 font-bold text-blue-300">
-                        중요한 점
-                    </p>
+                                        <p className="mb-3 font-bold text-blue-300">
+                                            중요한 점
+                                        </p>
 
-                    <p className="leading-8">
-                        대칭이동의 기준이 반드시{" "}
-                        <InlineMath math="x" />축이나{" "}
-                        <InlineMath math="y" />축일 필요는 없습니다.
-                    </p>
+                                        <p className="leading-8">
+                                            대칭이동의 기준이 반드시{" "}
+                                            <InlineMath math="x" />축이나{" "}
+                                            <InlineMath math="y" />축일 필요는 없습니다.
+                                        </p>
 
-                    <p className="mt-3 leading-8">
-                        도형의 변 위에서 선분이 꺾이는 경우에는
-                        그 <b>변이 놓인 직선</b>에 대하여 대칭이동하면 됩니다.
-                    </p>
+                                        <p className="mt-3 leading-8">
+                                            도형의 변 위에서 선분이 꺾이는 경우에는
+                                            그 <b>변이 놓인 직선</b>에 대하여 대칭이동하면 됩니다.
+                                        </p>
 
-                    <BlockMath
-                        math={String.raw`
+                                        <BlockMath
+                                            math={String.raw`
 \boxed{
 \text{꺾이는 점이 놓인 직선}
 \rightarrow
 \text{대칭이동의 기준}
 }
 `}
-                    />
+                                        />
 
-                </div>
+                                    </div>
 
-            </div>
+                                </div>
 
-        </details>
+                            </details>
 
-    </div>
-
-</div>
-
-
-
-        {/* 3. 부채꼴에서 삼각형 둘레의 최솟값 */}
-        <div className="rounded-xl border border-white/10 bg-white/10 p-6">
-
-            <h3 className="mb-4 text-2xl font-bold">
-                3. 부채꼴에서 삼각형 둘레의 최솟값
-            </h3>
-
-            <p className="leading-8 text-gray-300">
-                부채꼴의 호 위에 점 <InlineMath math="A" />가 있고,
-                두 반지름 위에 각각 점{" "}
-                <InlineMath math="P,\ Q" />가 있다고 하겠습니다.
-            </p>
-
-            <p className="mt-3 leading-8 text-gray-300">
-                삼각형 <InlineMath math="APQ" />의 둘레
-            </p>
-
-            <BlockMath
-                math={String.raw`
-AP+PQ+QA
-`}
-            />
-
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 생각해 봅시다.
-            </p>
-
-
-            {/* 원래 그림 */}
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-
-                <img
-                    src="/images/commonMath2/1.33_5.png"
-                    alt="부채꼴의 호 위의 점 A와 두 반지름 위의 점 P, Q"
-                    className="mx-auto w-full max-w-xl rounded-lg"
-                />
-
-            </div>
-
-
-            <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
-
-                <p className="font-bold text-purple-300">
-                    생각해 보기
-                </p>
-
-                <p className="mt-3 leading-8 text-gray-300">
-                    점 <InlineMath math="A" />는 호 위를 움직입니다.
-                    점 <InlineMath math="A" />의 위치가 달라지면
-                    삼각형 둘레의 최솟값도 달라질까요?
-                </p>
-
-            </div>
-
-
-            <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-                <summary className="cursor-pointer font-semibold text-yellow-300">
-                    대칭이동 확인하기
-                </summary>
-
-                <div className="mt-5 space-y-5 text-gray-300">
-
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-
-                        <img
-                            src="/images/commonMath2/1.33_6.png"
-                            alt="부채꼴의 두 반지름에 대하여 A를 대칭이동한 그림"
-                            className="mx-auto w-full max-w-xl rounded-lg"
-                        />
+                        </div>
 
                     </div>
 
 
-                    <p className="leading-8">
-                        점 <InlineMath math="A" />를
-                        점 <InlineMath math="P" />가 놓인 반지름에 대하여
-                        대칭이동한 점을 <InlineMath math="A'" />라 하고,
-                    </p>
 
-                    <p className="leading-8">
-                        점 <InlineMath math="A" />를
-                        점 <InlineMath math="Q" />가 놓인 반지름에 대하여
-                        대칭이동한 점을 <InlineMath math="A''" />라 하겠습니다.
-                    </p>
+                    {/* 3. 부채꼴에서 삼각형 둘레의 최솟값 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
 
-                    <BlockMath
-                        math={String.raw`
-AP=A'P,
-\qquad
-AQ=A''Q
-`}
-                    />
+                        <h3 className="mb-4 text-2xl font-bold">
+                            3. 부채꼴에서 삼각형 둘레의 최솟값
+                        </h3>
 
-                    <p className="leading-8">
-                        따라서 삼각형의 둘레는
-                    </p>
-
-                    <BlockMath
-                        math={String.raw`
-AP+PQ+QA
-=
-A'P+PQ+QA''
-`}
-                    />
-
-                    <p className="leading-8">
-                        로 바뀝니다.
-                    </p>
-
-                    <p className="leading-8">
-                        세 선분이 하나의 직선 위에 놓일 때 가장 짧으므로
-                    </p>
-
-                    <BlockMath
-                        math={String.raw`
-\boxed{
-\min(AP+PQ+QA)=A'A''
-}
-`}
-                    />
-
-
-                    <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-
-                        <p className="mb-3 font-bold text-blue-300">
-                            점 A의 위치가 달라도 같은 이유
+                        <p className="leading-8 text-gray-300">
+                            부채꼴의 호 위에 점 <InlineMath math="A" />가 있고,
+                            두 반지름 위에 각각 점{" "}
+                            <InlineMath math="P,\ Q" />가 있다고 하겠습니다.
                         </p>
 
-                        <p className="leading-8">
-                            부채꼴의 중심을 <InlineMath math="O" />라 하면
-                            대칭이동에 의하여
+                        <p className="mt-3 leading-8 text-gray-300">
+                            삼각형 <InlineMath math="APQ" />의 둘레
                         </p>
 
                         <BlockMath
                             math={String.raw`
-OA'=OA=OA''
+AP+PQ+QA
 `}
                         />
 
-                        <p className="leading-8">
-                            이고, <InlineMath math="\angle A'OA''" />의 크기도
-                            부채꼴의 중심각에 의하여 일정합니다.
+                        <p className="leading-8 text-gray-300">
+                            의 최솟값을 생각해 봅시다.
                         </p>
 
-                        <p className="mt-3 leading-8">
-                            따라서 점 <InlineMath math="A" />가 호 위의 어느 곳에 있더라도
-                            선분 <InlineMath math="A'A''" />의 길이는 같습니다.
-                        </p>
 
-                    </div>
+                        {/* 원래 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
 
+                            <img
+                                src="/images/commonMath2/1.33_5.png"
+                                alt="부채꼴의 호 위의 점 A와 두 반지름 위의 점 P, Q"
+                                className="mx-auto w-full max-w-xl rounded-lg"
+                            />
 
-                    <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
-
-                        <p className="font-bold text-yellow-300">
-                            결론
-                        </p>
-
-                        <p className="mt-3 leading-8">
-                            부채꼴의 호 위에서 점 <InlineMath math="A" />의 위치가
-                            달라져도 삼각형 <InlineMath math="APQ" />의
-                            최소 둘레는 같습니다.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-        </div>
+                        </div>
 
 
+                        <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/5 p-5">
 
-        {/* 4. 삼각형의 세 변 위의 점 */}
-        <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                            <p className="font-bold text-purple-300">
+                                생각해 보기
+                            </p>
 
-            <h3 className="mb-4 text-2xl font-bold">
-                4. 삼각형의 세 변 위의 점을 이은 삼각형의 둘레의 최솟값
-            </h3>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                점 <InlineMath math="A" />는 호 위를 움직입니다.
+                                점 <InlineMath math="A" />의 위치가 달라지면
+                                삼각형 둘레의 최솟값도 달라질까요?
+                            </p>
 
-            <p className="leading-8 text-gray-300">
-                이번에는 삼각형의 세 변 위에 각각 한 점을 잡고,
-                이 세 점을 연결하여 만든 삼각형의 둘레를
-                가장 작게 만드는 경우를 생각해 봅시다.
-            </p>
-
-
-            {/* 원래 그림 */}
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
-
-                <img
-                    src="/images/commonMath2/1.33_7.png"
-                    alt="삼각형의 세 변 위에 놓인 세 점을 연결한 삼각형"
-                    className="mx-auto w-full max-w-xl rounded-lg"
-                />
-
-            </div>
+                        </div>
 
 
-            <div className="mt-5 rounded-xl border border-red-500/30 bg-red-500/5 p-5">
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="font-bold text-red-300">
-                    세 점을 한꺼번에 움직이지 않는다
-                </p>
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                대칭이동 확인하기
+                            </summary>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    세 점을 모두 움직이면서 바로 최솟값을 찾기는 어렵습니다.
-                </p>
+                            <div className="mt-5 space-y-5 text-gray-300">
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    먼저 한 변 위의 점 <InlineMath math="A" />의 위치를
-                    고정한 뒤, 나머지 두 점{" "}
-                    <InlineMath math="P,\ Q" />에 대하여
-                    둘레의 최솟값을 구합니다.
-                </p>
+                                <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
 
-            </div>
+                                    <img
+                                        src="/images/commonMath2/1.33_6.png"
+                                        alt="부채꼴의 두 반지름에 대하여 A를 대칭이동한 그림"
+                                        className="mx-auto w-full max-w-xl rounded-lg"
+                                    />
 
-
-            {/* 1단계 */}
-            <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
-
-                <p className="mb-3 font-bold text-white">
-                    ① 점 A를 먼저 고정한다
-                </p>
-
-                <p className="leading-8 text-gray-300">
-                    점 <InlineMath math="A" />를 고정하면
-                </p>
-
-                <BlockMath
-                    math={String.raw`
-AP+PQ+QA
-`}
-                />
-
-                <p className="leading-8 text-gray-300">
-                    는 앞에서 살펴본 부채꼴의 경우와 같은 형태가 됩니다.
-                </p>
-
-                <p className="mt-3 leading-8 text-gray-300">
-                    따라서 점 <InlineMath math="A" />를
-                    점 <InlineMath math="P" />와{" "}
-                    <InlineMath math="Q" />가 놓인 두 변에 대하여
-                    각각 대칭이동합니다.
-                </p>
-
-            </div>
+                                </div>
 
 
-            {/* 최종 그림 */}
-            <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
+                                <p className="leading-8">
+                                    점 <InlineMath math="A" />를
+                                    점 <InlineMath math="P" />가 놓인 반지름에 대하여
+                                    대칭이동한 점을 <InlineMath math="A'" />라 하고,
+                                </p>
 
-                <img
-                    src="/images/commonMath2/1.33_8.png"
-                    alt="점 A를 두 변에 대하여 대칭이동하여 삼각형 둘레의 최솟값을 찾는 그림"
-                    className="mx-auto w-full max-w-xl rounded-lg"
-                />
+                                <p className="leading-8">
+                                    점 <InlineMath math="A" />를
+                                    점 <InlineMath math="Q" />가 놓인 반지름에 대하여
+                                    대칭이동한 점을 <InlineMath math="A''" />라 하겠습니다.
+                                </p>
 
-            </div>
-
-
-            {/* 2단계 */}
-            <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
-
-                <p className="mb-3 font-bold text-white">
-                    ② 고정된 A에 대하여 P, Q의 위치를 결정한다
-                </p>
-
-                <p className="leading-8 text-gray-300">
-                    점 <InlineMath math="A" />를
-                    한 변에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />,
-                    다른 변에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A''" />라 하겠습니다.
-                </p>
-
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP=A'P,
 \qquad
 AQ=A''Q
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    이므로
-                </p>
+                                <p className="leading-8">
+                                    따라서 삼각형의 둘레는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP+PQ+QA
 =
 A'P+PQ+QA''
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    로 바뀝니다.
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    따라서 점 <InlineMath math="A" />가 고정되어 있을 때에는
-                    <InlineMath math="A',\ P,\ Q,\ A''" />가
-                    한 직선 위에 있을 때 둘레가 가장 짧습니다.
-                </p>
+                                <p className="leading-8">
+                                    세 선분이 하나의 직선 위에 놓일 때 가장 짧으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \min(AP+PQ+QA)=A'A''
 }
 `}
-                />
-
-            </div>
+                                />
 
 
-            {/* 3단계 */}
-            <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-white">
-                    ③ 이제 A의 위치를 결정한다
-                </p>
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        점 A의 위치가 달라도 같은 이유
+                                    </p>
 
-                <p className="leading-8 text-gray-300">
-                    두 변의 교점을 <InlineMath math="O" />라 하겠습니다.
-                </p>
+                                    <p className="leading-8">
+                                        부채꼴의 중심을 <InlineMath math="O" />라 하면
+                                        대칭이동에 의하여
+                                    </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    대칭이동에 의하여
-                </p>
-
-                <BlockMath
-                    math={String.raw`
+                                    <BlockMath
+                                        math={String.raw`
 OA'=OA=OA''
 `}
-                />
+                                    />
 
-                <p className="leading-8 text-gray-300">
-                    이고, <InlineMath math="\angle A'OA''" />의 크기는
-                    삼각형의 꼭짓점 <InlineMath math="O" />의 각에 의하여
-                    일정합니다.
-                </p>
+                                    <p className="leading-8">
+                                        이고, <InlineMath math="\angle A'OA''" />의 크기도
+                                        부채꼴의 중심각에 의하여 일정합니다.
+                                    </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    따라서 선분 <InlineMath math="A'A''" />의 길이는
-                    <InlineMath math="OA" />가 짧을수록 작아집니다.
-                </p>
+                                    <p className="mt-3 leading-8">
+                                        따라서 점 <InlineMath math="A" />가 호 위의 어느 곳에 있더라도
+                                        선분 <InlineMath math="A'A''" />의 길이는 같습니다.
+                                    </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    점 <InlineMath math="A" />가 놓인 변과
-                    점 <InlineMath math="O" /> 사이의 거리가 가장 짧아지는 것은
-                    <InlineMath math="OA" />가 그 변에 수직일 때입니다.
-                </p>
+                                </div>
 
-                <BlockMath
-                    math={String.raw`
+
+                                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+
+                                    <p className="font-bold text-yellow-300">
+                                        결론
+                                    </p>
+
+                                    <p className="mt-3 leading-8">
+                                        부채꼴의 호 위에서 점 <InlineMath math="A" />의 위치가
+                                        달라져도 삼각형 <InlineMath math="APQ" />의
+                                        최소 둘레는 같습니다.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </details>
+
+                    </div>
+
+
+
+                    {/* 4. 삼각형의 세 변 위의 점 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+
+                        <h3 className="mb-4 text-2xl font-bold">
+                            4. 삼각형의 세 변 위의 점을 이은 삼각형의 둘레의 최솟값
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            이번에는 삼각형의 세 변 위에 각각 한 점을 잡고,
+                            이 세 점을 연결하여 만든 삼각형의 둘레를
+                            가장 작게 만드는 경우를 생각해 봅시다.
+                        </p>
+
+
+                        {/* 원래 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
+
+                            <img
+                                src="/images/commonMath2/1.33_7.png"
+                                alt="삼각형의 세 변 위에 놓인 세 점을 연결한 삼각형"
+                                className="mx-auto w-full max-w-xl rounded-lg"
+                            />
+
+                        </div>
+
+
+                        <div className="mt-5 rounded-xl border border-red-500/30 bg-red-500/5 p-5">
+
+                            <p className="font-bold text-red-300">
+                                세 점을 한꺼번에 움직이지 않는다
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                세 점을 모두 움직이면서 바로 최솟값을 찾기는 어렵습니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                먼저 한 변 위의 점 <InlineMath math="A" />의 위치를
+                                고정한 뒤, 나머지 두 점{" "}
+                                <InlineMath math="P,\ Q" />에 대하여
+                                둘레의 최솟값을 구합니다.
+                            </p>
+
+                        </div>
+
+
+                        {/* 1단계 */}
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+
+                            <p className="mb-3 font-bold text-white">
+                                ① 점 A를 먼저 고정한다
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                점 <InlineMath math="A" />를 고정하면
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+AP+PQ+QA
+`}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                는 앞에서 살펴본 부채꼴의 경우와 같은 형태가 됩니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                따라서 점 <InlineMath math="A" />를
+                                점 <InlineMath math="P" />와{" "}
+                                <InlineMath math="Q" />가 놓인 두 변에 대하여
+                                각각 대칭이동합니다.
+                            </p>
+
+                        </div>
+
+
+                        {/* 최종 그림 */}
+                        <div className="mx-auto mt-5 max-w-sm rounded-xl border border-white/10 bg-white p-4">
+
+                            <img
+                                src="/images/commonMath2/1.33_8.png"
+                                alt="점 A를 두 변에 대하여 대칭이동하여 삼각형 둘레의 최솟값을 찾는 그림"
+                                className="mx-auto w-full max-w-xl rounded-lg"
+                            />
+
+                        </div>
+
+
+                        {/* 2단계 */}
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+
+                            <p className="mb-3 font-bold text-white">
+                                ② 고정된 A에 대하여 P, Q의 위치를 결정한다
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                점 <InlineMath math="A" />를
+                                한 변에 대하여 대칭이동한 점을{" "}
+                                <InlineMath math="A'" />,
+                                다른 변에 대하여 대칭이동한 점을{" "}
+                                <InlineMath math="A''" />라 하겠습니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+AP=A'P,
+\qquad
+AQ=A''Q
+`}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                이므로
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+AP+PQ+QA
+=
+A'P+PQ+QA''
+`}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                입니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                따라서 점 <InlineMath math="A" />가 고정되어 있을 때에는
+                                <InlineMath math="A',\ P,\ Q,\ A''" />가
+                                한 직선 위에 있을 때 둘레가 가장 짧습니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+\boxed{
+\min(AP+PQ+QA)=A'A''
+}
+`}
+                            />
+
+                        </div>
+
+
+                        {/* 3단계 */}
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+
+                            <p className="mb-3 font-bold text-white">
+                                ③ 이제 A의 위치를 결정한다
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                두 변의 교점을 <InlineMath math="O" />라 하겠습니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                대칭이동에 의하여
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+OA'=OA=OA''
+`}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                이고, <InlineMath math="\angle A'OA''" />의 크기는
+                                삼각형의 꼭짓점 <InlineMath math="O" />의 각에 의하여
+                                일정합니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                따라서 선분 <InlineMath math="A'A''" />의 길이는
+                                <InlineMath math="OA" />가 짧을수록 작아집니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                점 <InlineMath math="A" />가 놓인 변과
+                                점 <InlineMath math="O" /> 사이의 거리가 가장 짧아지는 것은
+                                <InlineMath math="OA" />가 그 변에 수직일 때입니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
 \boxed{
 OA\perp \text{점 }A\text{가 놓인 변}
 }
 `}
-                />
+                            />
 
-            </div>
-
-
-            {/* 결론 */}
-            <div className="mt-5 rounded-xl border border-green-500/30 bg-green-500/5 p-5">
-
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
-
-                <p className="mt-3 leading-8 text-gray-300">
-                    점 <InlineMath math="A" />는
-                    꼭짓점 <InlineMath math="O" />에서
-                    맞은편 변에 내린 수선의 발이 됩니다.
-                </p>
-
-                <p className="mt-3 leading-8 text-gray-300">
-                    같은 원리를 다른 꼭짓점에도 적용하면,
-                    최소 둘레를 만드는 세 점은
-                    각 꼭짓점에서 맞은편 변에 내린
-                    수선의 발이 됩니다.
-                </p>
-
-            </div>
+                        </div>
 
 
-            <div className="mt-5 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                        {/* 결론 */}
+                        <div className="mt-5 rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 흐름
-                </p>
+                            <p className="font-bold text-green-300">
+                                따라서
+                            </p>
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="mt-3 leading-8 text-gray-300">
+                                점 <InlineMath math="A" />는
+                                꼭짓점 <InlineMath math="O" />에서
+                                맞은편 변에 내린 수선의 발이 됩니다.
+                            </p>
+
+                            <p className="mt-3 leading-8 text-gray-300">
+                                같은 원리를 다른 꼭짓점에도 적용하면,
+                                최소 둘레를 만드는 세 점은
+                                각 꼭짓점에서 맞은편 변에 내린
+                                수선의 발이 됩니다.
+                            </p>
+
+                        </div>
+
+
+                        <div className="mt-5 rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+
+                            <p className="mb-3 font-bold text-blue-300">
+                                풀이의 흐름
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
 \boxed{
 \begin{array}{c}
 \text{한 점을 먼저 고정}\\
@@ -13906,169 +13906,169 @@ OA\perp \text{점 }A\text{가 놓인 변}
 \end{array}
 }
 `}
-                />
+                            />
 
-            </div>
-
-
-            <div className="mt-5 rounded-xl border border-red-500/30 bg-red-500/5 p-5">
-
-                <p className="font-bold text-red-300">
-                    주의
-                </p>
-
-                <p className="mt-3 leading-8 text-gray-300">
-                    이 결과는 세 수선의 발이 모두 삼각형의 변 위에 놓이는{" "}
-                    <b>예각삼각형</b>에서 생각합니다.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    {/* 예제 1 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
-
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 1
-    </h3>
-
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
-
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 점{" "}
-                <InlineMath math="P(2,6)" />, 점{" "}
-                <InlineMath math="Q(1,3)" />과 직선{" "}
-                <InlineMath math="y=x" /> 위의 점{" "}
-                <InlineMath math="R" />,{" "}
-                <InlineMath math="y" />축 위의 점{" "}
-                <InlineMath math="S" />를 꼭짓점으로 하는
-                사각형 <InlineMath math="PSQR" />의 둘레의 길이의
-                최솟값을 구하시오.
-            </p>
-
-        </div>
-
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
-
-            <img
-                src="/images/commonMath2/1.33_01.png"
-                alt="점 P, Q와 y축 위의 점 S, 직선 y=x 위의 점 R로 이루어진 사각형 PSQR"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
-
-        </div>
-
-    </div>
+                        </div>
 
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                        <div className="mt-5 rounded-xl border border-red-500/30 bg-red-500/5 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                            <p className="font-bold text-red-300">
+                                주의
+                            </p>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                            <p className="mt-3 leading-8 text-gray-300">
+                                이 결과는 세 수선의 발이 모두 삼각형의 변 위에 놓이는{" "}
+                                <b>예각삼각형</b>에서 생각합니다.
+                            </p>
 
-            <p className="leading-8">
-                사각형 <InlineMath math="PSQR" />의 둘레는
-            </p>
+                        </div>
 
-            <BlockMath
-                math={String.raw`
+                    </div>
+
+                </div>
+
+                {/* 예제 1 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
+
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 1
+                    </h3>
+
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 점{" "}
+                                <InlineMath math="P(2,6)" />, 점{" "}
+                                <InlineMath math="Q(1,3)" />과 직선{" "}
+                                <InlineMath math="y=x" /> 위의 점{" "}
+                                <InlineMath math="R" />,{" "}
+                                <InlineMath math="y" />축 위의 점{" "}
+                                <InlineMath math="S" />를 꼭짓점으로 하는
+                                사각형 <InlineMath math="PSQR" />의 둘레의 길이의
+                                최솟값을 구하시오.
+                            </p>
+
+                        </div>
+
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
+
+                            <img
+                                src="/images/commonMath2/1.33_01.png"
+                                alt="점 P, Q와 y축 위의 점 S, 직선 y=x 위의 점 R로 이루어진 사각형 PSQR"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
+
+                        </div>
+
+                    </div>
+
+
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
+
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
+
+                        <div className="mt-5 space-y-5 text-gray-300">
+
+                            <p className="leading-8">
+                                사각형 <InlineMath math="PSQR" />의 둘레는
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
 PS+SQ+QR+RP
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다.
-            </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
-            <p className="leading-8">
-                점 <InlineMath math="S" />는{" "}
-                <InlineMath math="y" />축 위에서 움직이고,
-                점 <InlineMath math="R" />은 직선{" "}
-                <InlineMath math="y=x" /> 위에서 움직이므로
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="S" />는{" "}
+                                <InlineMath math="y" />축 위에서 움직이고,
+                                점 <InlineMath math="R" />은 직선{" "}
+                                <InlineMath math="y=x" /> 위에서 움직이므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 PS+SQ
 \qquad\text{와}\qquad
 QR+RP
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                를 각각 대칭이동을 이용하여 구합니다.
-            </p>
+                            <p className="leading-8">
+                                를 각각 대칭이동을 이용하여 구합니다.
+                            </p>
 
 
-            {/* PS + SQ */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* PS + SQ */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① <InlineMath math="PS+SQ" />의 최솟값
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ① <InlineMath math="PS+SQ" />의 최솟값
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="P(2,6)" />을{" "}
-                    <InlineMath math="y" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="P'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P(2,6)" />을{" "}
+                                    <InlineMath math="y" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="P'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 P'(-2,6)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="S" />가{" "}
-                    <InlineMath math="y" />축 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="S" />가{" "}
+                                    <InlineMath math="y" />축 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 PS=P'S
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고,
-                </p>
+                                <p className="leading-8">
+                                    이고,
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 PS+SQ
 =
 P'S+SQ
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    따라서 세 점{" "}
-                    <InlineMath math="P',\ S,\ Q" />가
-                    한 직선 위에 있을 때 가장 짧으므로
-                    최솟값은 선분 <InlineMath math="P'Q" />의 길이입니다.
-                </p>
+                                <p className="leading-8">
+                                    따라서 세 점{" "}
+                                    <InlineMath math="P',\ S,\ Q" />가
+                                    한 직선 위에 있을 때 가장 짧으므로
+                                    최솟값은 선분 <InlineMath math="P'Q" />의 길이입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 P'Q
 &=
@@ -14079,70 +14079,70 @@ P'Q
 3\sqrt2
 \end{aligned}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* QR + RP */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* QR + RP */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② <InlineMath math="QR+RP" />의 최솟값
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② <InlineMath math="QR+RP" />의 최솟값
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="P(2,6)" />을 직선{" "}
-                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="P''" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P(2,6)" />을 직선{" "}
+                                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="P''" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 P''(6,2)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="R" />이 직선{" "}
-                    <InlineMath math="y=x" /> 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="R" />이 직선{" "}
+                                    <InlineMath math="y=x" /> 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 RP=RP''
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고,
-                </p>
+                                <p className="leading-8">
+                                    이고,
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 QR+RP
 =
 QR+RP''
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    따라서 세 점{" "}
-                    <InlineMath math="Q,\ R,\ P''" />가
-                    한 직선 위에 있을 때 가장 짧으므로
-                    최솟값은 선분 <InlineMath math="QP''" />의 길이입니다.
-                </p>
+                                <p className="leading-8">
+                                    따라서 세 점{" "}
+                                    <InlineMath math="Q,\ R,\ P''" />가
+                                    한 직선 위에 있을 때 가장 짧으므로
+                                    최솟값은 선분 <InlineMath math="QP''" />의 길이입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 QP''
 &=
@@ -14153,52 +14153,52 @@ QP''
 \sqrt{26}
 \end{aligned}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                따라서 사각형 <InlineMath math="PSQR" />의 둘레의 길이의
-                최솟값은
-            </p>
+                            <p className="leading-8">
+                                따라서 사각형 <InlineMath math="PSQR" />의 둘레의 길이의
+                                최솟값은
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 3\sqrt2+\sqrt{26}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{3\sqrt2+\sqrt{26}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    둘레 전체를 한꺼번에 계산하지 않고,
-                    꺾이는 점이 놓인 직선을 기준으로
-                    두 부분을 각각 대칭이동합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    둘레 전체를 한꺼번에 계산하지 않고,
+                                    꺾이는 점이 놓인 직선을 기준으로
+                                    두 부분을 각각 대칭이동합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 PS+SQ
 &\rightarrow P'Q\\[2mm]
@@ -14206,189 +14206,189 @@ QR+RP
 &\rightarrow QP''
 \end{aligned}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 2 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 2 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 2
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 2
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 점{" "}
-                <InlineMath math="A(3,1)" />과 직선{" "}
-                <InlineMath math="y=x" /> 위의 점{" "}
-                <InlineMath math="P" />,{" "}
-                <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="Q" />에 대하여
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 점{" "}
+                                <InlineMath math="A(3,1)" />과 직선{" "}
+                                <InlineMath math="y=x" /> 위의 점{" "}
+                                <InlineMath math="P" />,{" "}
+                                <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="Q" />에 대하여
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PQ+QA
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 구하시오.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                의 최솟값을 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_02.png"
-                alt="점 A와 직선 y=x 위의 점 P, x축 위의 점 Q"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_02.png"
+                                alt="점 A와 직선 y=x 위의 점 P, x축 위의 점 Q"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 점 <InlineMath math="P" />와{" "}
-                <InlineMath math="Q" />에서 두 번 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A" />를
-                점 <InlineMath math="P" />가 놓인 직선{" "}
-                <InlineMath math="y=x" />와
-                점 <InlineMath math="Q" />가 놓인{" "}
-                <InlineMath math="x" />축에 대하여 각각 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 대칭점 구하기 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점 A의 대칭점
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(3,1)" />을 직선{" "}
-                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                선분은 점 <InlineMath math="P" />와{" "}
+                                <InlineMath math="Q" />에서 두 번 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A" />를
+                                점 <InlineMath math="P" />가 놓인 직선{" "}
+                                <InlineMath math="y=x" />와
+                                점 <InlineMath math="Q" />가 놓인{" "}
+                                <InlineMath math="x" />축에 대하여 각각 대칭이동합니다.
+                            </p>
+
+
+                            {/* 대칭점 구하기 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    점 A의 대칭점
+                                </p>
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(3,1)" />을 직선{" "}
+                                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(1,3)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    또 점 <InlineMath math="A(3,1)" />을{" "}
-                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A''" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    또 점 <InlineMath math="A(3,1)" />을{" "}
+                                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A''" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A''(3,-1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                점 <InlineMath math="P" />는 직선{" "}
-                <InlineMath math="y=x" /> 위에 있으므로
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="P" />는 직선{" "}
+                                <InlineMath math="y=x" /> 위에 있으므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP=A'P
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                이고, 점 <InlineMath math="Q" />는{" "}
-                <InlineMath math="x" />축 위에 있으므로
-            </p>
+                            <p className="leading-8">
+                                이고, 점 <InlineMath math="Q" />는{" "}
+                                <InlineMath math="x" />축 위에 있으므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AQ=A''Q
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다. 따라서
-            </p>
+                            <p className="leading-8">
+                                입니다. 따라서
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PQ+QA
 =
 A'P+PQ+QA''
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                로 바꿀 수 있습니다.
-            </p>
-
-
-            {/* 하나의 선분 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 선을 하나의 선분으로
-                </p>
-
-                <p className="leading-8">
-                    네 점{" "}
-                    <InlineMath math="A',\ P,\ Q,\ A''" />가
-                    한 직선 위에 있을 때 길이가 가장 짧습니다.
-                </p>
-
-                <p className="mt-3 leading-8">
-                    따라서 구하는 최솟값은
-                    선분 <InlineMath math="A'A''" />의 길이입니다.
-                </p>
-
-            </div>
+                            <p className="leading-8">
+                                로 바꿀 수 있습니다.
+                            </p>
 
 
-            <BlockMath
-                math={String.raw`
+                            {/* 하나의 선분 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+
+                                <p className="mb-3 font-bold text-blue-300">
+                                    꺾인 선을 하나의 선분으로
+                                </p>
+
+                                <p className="leading-8">
+                                    네 점{" "}
+                                    <InlineMath math="A',\ P,\ Q,\ A''" />가
+                                    한 직선 위에 있을 때 길이가 가장 짧습니다.
+                                </p>
+
+                                <p className="mt-3 leading-8">
+                                    따라서 구하는 최솟값은
+                                    선분 <InlineMath math="A'A''" />의 길이입니다.
+                                </p>
+
+                            </div>
+
+
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 A'A''
 &=
@@ -14401,39 +14401,39 @@ A'A''
 2\sqrt5
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{2\sqrt5}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    같은 점 <InlineMath math="A" />에서 출발한 두 선분이라도
-                    꺾이는 점이 놓인 직선이 서로 다르면,
-                    각각의 직선에 대하여 점{" "}
-                    <InlineMath math="A" />를 대칭이동합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    같은 점 <InlineMath math="A" />에서 출발한 두 선분이라도
+                                    꺾이는 점이 놓인 직선이 서로 다르면,
+                                    각각의 직선에 대하여 점{" "}
+                                    <InlineMath math="A" />를 대칭이동합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A
 \xrightarrow{\,y=x\,}
 A'(1,3),
@@ -14442,195 +14442,195 @@ A
 \xrightarrow{\,x\text{축}\,}
 A''(3,-1)
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    그러면 세 선분의 길이의 합이
-                    하나의 선분 <InlineMath math="A'A''" />의 길이로 바뀝니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    그러면 세 선분의 길이의 합이
+                                    하나의 선분 <InlineMath math="A'A''" />의 길이로 바뀝니다.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 3 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 3 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 3
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 3
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 두 점{" "}
-                <InlineMath math="A(4,3)" />과{" "}
-                <InlineMath math="B(2,-4)" />에 대하여 서로 다른 두 점{" "}
-                <InlineMath math="C,\ D" />가 각각{" "}
-                <InlineMath math="y" />축과 직선{" "}
-                <InlineMath math="y=x" /> 위에 있을 때
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 두 점{" "}
+                                <InlineMath math="A(4,3)" />과{" "}
+                                <InlineMath math="B(2,-4)" />에 대하여 서로 다른 두 점{" "}
+                                <InlineMath math="C,\ D" />가 각각{" "}
+                                <InlineMath math="y" />축과 직선{" "}
+                                <InlineMath math="y=x" /> 위에 있을 때
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AD+DC+CB
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 구하시오.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                의 최솟값을 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_03.png"
-                alt="점 A와 B, y축 위의 점 C와 직선 y=x 위의 점 D"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_03.png"
+                                alt="점 A와 B, y축 위의 점 C와 직선 y=x 위의 점 D"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 점 <InlineMath math="D" />와{" "}
-                <InlineMath math="C" />에서 두 번 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A" />는
-                점 <InlineMath math="D" />가 놓인 직선{" "}
-                <InlineMath math="y=x" />에 대하여 대칭이동하고,
-                점 <InlineMath math="B" />는
-                점 <InlineMath math="C" />가 놓인{" "}
-                <InlineMath math="y" />축에 대하여 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 대칭점 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    대칭점 구하기
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(4,3)" />을 직선{" "}
-                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                선분은 점 <InlineMath math="D" />와{" "}
+                                <InlineMath math="C" />에서 두 번 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A" />는
+                                점 <InlineMath math="D" />가 놓인 직선{" "}
+                                <InlineMath math="y=x" />에 대하여 대칭이동하고,
+                                점 <InlineMath math="B" />는
+                                점 <InlineMath math="C" />가 놓인{" "}
+                                <InlineMath math="y" />축에 대하여 대칭이동합니다.
+                            </p>
+
+
+                            {/* 대칭점 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    대칭점 구하기
+                                </p>
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(4,3)" />을 직선{" "}
+                                    <InlineMath math="y=x" />에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(3,4)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="B(2,-4)" />를{" "}
-                    <InlineMath math="y" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="B'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="B(2,-4)" />를{" "}
+                                    <InlineMath math="y" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="B'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 B'(-2,-4)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                점 <InlineMath math="D" />는 직선{" "}
-                <InlineMath math="y=x" /> 위에 있으므로
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="D" />는 직선{" "}
+                                <InlineMath math="y=x" /> 위에 있으므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AD=A'D
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                이고, 점 <InlineMath math="C" />는{" "}
-                <InlineMath math="y" />축 위에 있으므로
-            </p>
+                            <p className="leading-8">
+                                이고, 점 <InlineMath math="C" />는{" "}
+                                <InlineMath math="y" />축 위에 있으므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 CB=CB'
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다. 따라서
-            </p>
+                            <p className="leading-8">
+                                입니다. 따라서
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AD+DC+CB
 =
 A'D+DC+CB'
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                로 바꿀 수 있습니다.
-            </p>
-
-
-            {/* 최소가 되는 경우 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 선을 하나의 선분으로
-                </p>
-
-                <p className="leading-8">
-                    네 점{" "}
-                    <InlineMath math="A',\ D,\ C,\ B'" />가
-                    한 직선 위에 있을 때 길이가 가장 짧습니다.
-                </p>
-
-                <p className="mt-3 leading-8">
-                    따라서 구하는 최솟값은{" "}
-                    선분 <InlineMath math="A'B'" />의 길이입니다.
-                </p>
-
-            </div>
+                            <p className="leading-8">
+                                로 바꿀 수 있습니다.
+                            </p>
 
 
-            <BlockMath
-                math={String.raw`
+                            {/* 최소가 되는 경우 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+
+                                <p className="mb-3 font-bold text-blue-300">
+                                    꺾인 선을 하나의 선분으로
+                                </p>
+
+                                <p className="leading-8">
+                                    네 점{" "}
+                                    <InlineMath math="A',\ D,\ C,\ B'" />가
+                                    한 직선 위에 있을 때 길이가 가장 짧습니다.
+                                </p>
+
+                                <p className="mt-3 leading-8">
+                                    따라서 구하는 최솟값은{" "}
+                                    선분 <InlineMath math="A'B'" />의 길이입니다.
+                                </p>
+
+                            </div>
+
+
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 A'B'
 &=
@@ -14643,247 +14643,247 @@ A'B'
 \sqrt{89}
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{\sqrt{89}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    양 끝점 <InlineMath math="A,\ B" />를
-                    각각 가까운 꺾이는 점이 놓인 직선에 대하여
-                    대칭이동합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    양 끝점 <InlineMath math="A,\ B" />를
+                                    각각 가까운 꺾이는 점이 놓인 직선에 대하여
+                                    대칭이동합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A(4,3)
 \xrightarrow{\,y=x\,}
 A'(3,4)
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 B(2,-4)
 \xrightarrow{\,y\text{축}\,}
 B'(-2,-4)
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    그러면{" "}
-                    <InlineMath math="AD+DC+CB" />의 최솟값은
-                    하나의 선분 <InlineMath math="A'B'" />의 길이가 됩니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    그러면{" "}
+                                    <InlineMath math="AD+DC+CB" />의 최솟값은
+                                    하나의 선분 <InlineMath math="A'B'" />의 길이가 됩니다.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 4 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 4 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 4
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 4
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                원{" "}
-                <InlineMath math="(x-6)^2+(y+4)^2=4" /> 위의 점{" "}
-                <InlineMath math="P" />와{" "}
-                <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="Q" />가 있다. 점 <InlineMath math="A(0,-4)" />에 대하여
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                원{" "}
+                                <InlineMath math="(x-6)^2+(y+4)^2=4" /> 위의 점{" "}
+                                <InlineMath math="P" />와{" "}
+                                <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="Q" />가 있다. 점 <InlineMath math="A(0,-4)" />에 대하여
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AQ+PQ
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 구하시오.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                의 최솟값을 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_04.png"
-                alt="원 위의 점 P와 x축 위의 점 Q를 지나는 꺾인 선분 AQ와 QP"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_04.png"
+                                alt="원 위의 점 P와 x축 위의 점 Q를 지나는 꺾인 선분 AQ와 QP"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="Q" />에서 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A(0,-4)" />를{" "}
-                <InlineMath math="x" />축에 대하여 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점 A를 대칭이동
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(0,-4)" />를{" "}
-                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                선분은 <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="Q" />에서 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A(0,-4)" />를{" "}
+                                <InlineMath math="x" />축에 대하여 대칭이동합니다.
+                            </p>
+
+
+                            {/* 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    점 A를 대칭이동
+                                </p>
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(0,-4)" />를{" "}
+                                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(0,4)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="Q" />는{" "}
-                    <InlineMath math="x" />축 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="Q" />는{" "}
+                                    <InlineMath math="x" />축 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ=A'Q
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다. 따라서
-                </p>
+                                <p className="leading-8">
+                                    입니다. 따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ+PQ
 =
 A'Q+QP
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    로 바꿀 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    로 바꿀 수 있습니다.
+                                </p>
 
-            </div>
-
-
-            {/* 꺾인 선을 편다 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 선을 하나의 선분으로
-                </p>
-
-                <p className="leading-8">
-                    점 <InlineMath math="P" />가 정해져 있을 때
-                    세 점{" "}
-                    <InlineMath math="A',\ Q,\ P" />가
-                    한 직선 위에 있으면 길이가 가장 짧습니다.
-                </p>
-
-                <p className="mt-3 leading-8">
-                    따라서 <InlineMath math="AQ+PQ" />의 최솟값은
-                    점 <InlineMath math="A'" />에서
-                    주어진 원까지의 가장 짧은 거리와 같습니다.
-                </p>
-
-            </div>
+                            </div>
 
 
-            {/* 원까지의 최단거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 꺾인 선을 편다 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점과 원 사이의 최단거리
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    꺾인 선을 하나의 선분으로
+                                </p>
 
-                <p className="leading-8">
-                    원
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P" />가 정해져 있을 때
+                                    세 점{" "}
+                                    <InlineMath math="A',\ Q,\ P" />가
+                                    한 직선 위에 있으면 길이가 가장 짧습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <p className="mt-3 leading-8">
+                                    따라서 <InlineMath math="AQ+PQ" />의 최솟값은
+                                    점 <InlineMath math="A'" />에서
+                                    주어진 원까지의 가장 짧은 거리와 같습니다.
+                                </p>
+
+                            </div>
+
+
+                            {/* 원까지의 최단거리 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    점과 원 사이의 최단거리
+                                </p>
+
+                                <p className="leading-8">
+                                    원
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 (x-6)^2+(y+4)^2=4
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    의 중심을 <InlineMath math="C" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    의 중심을 <InlineMath math="C" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 C(6,-4),
 \qquad
 r=2
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A'(0,4)" />과
-                    원의 중심 <InlineMath math="C(6,-4)" /> 사이의 거리는
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A'(0,4)" />과
+                                    원의 중심 <InlineMath math="C(6,-4)" /> 사이의 거리는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 A'C
 &=
@@ -14896,234 +14896,234 @@ A'C
 10
 \end{aligned}
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    따라서 점 <InlineMath math="A'" />에서
-                    원 위의 점까지의 가장 짧은 거리는
-                    중심까지의 거리에서 반지름을 뺀
-                </p>
+                                <p className="leading-8">
+                                    따라서 점 <InlineMath math="A'" />에서
+                                    원 위의 점까지의 가장 짧은 거리는
+                                    중심까지의 거리에서 반지름을 뺀
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 10-2=8
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{8}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 점 <InlineMath math="Q" />가 놓인{" "}
-                    <InlineMath math="x" />축에 대하여
-                    점 <InlineMath math="A" />를 대칭이동하여
-                    꺾인 두 선분을 하나의 선분으로 만듭니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    먼저 점 <InlineMath math="Q" />가 놓인{" "}
+                                    <InlineMath math="x" />축에 대하여
+                                    점 <InlineMath math="A" />를 대칭이동하여
+                                    꺾인 두 선분을 하나의 선분으로 만듭니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ+QP
 \rightarrow
 A'P
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    그다음 점 <InlineMath math="P" />가 원 위를 움직이므로
-                    점 <InlineMath math="A'" />에서 원까지의
-                    최단거리를 구하면 됩니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    그다음 점 <InlineMath math="P" />가 원 위를 움직이므로
+                                    점 <InlineMath math="A'" />에서 원까지의
+                                    최단거리를 구하면 됩니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{대칭이동}
 \rightarrow
 \text{점과 원 사이의 최단거리}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 5 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 5 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 5
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 5
+                    </h3>
 
-    {/* 문제 */}
-    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                    {/* 문제 */}
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-        <p className="leading-8 text-gray-300">
-            좌표평면 위에 두 점{" "}
-            <InlineMath math="A(-5,1),\ B(7,4)" />가 있다.{" "}
-            <InlineMath math="BP=2" />인 점{" "}
-            <InlineMath math="P" />와{" "}
-            <InlineMath math="x" />축 위의 점{" "}
-            <InlineMath math="Q" />에 대하여
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            좌표평면 위에 두 점{" "}
+                            <InlineMath math="A(-5,1),\ B(7,4)" />가 있다.{" "}
+                            <InlineMath math="BP=2" />인 점{" "}
+                            <InlineMath math="P" />와{" "}
+                            <InlineMath math="x" />축 위의 점{" "}
+                            <InlineMath math="Q" />에 대하여
+                        </p>
 
-        <BlockMath
-            math={String.raw`
+                        <BlockMath
+                            math={String.raw`
 AQ+QP
 `}
-        />
+                        />
 
-        <p className="leading-8 text-gray-300">
-            의 최솟값을 구하시오.
-        </p>
+                        <p className="leading-8 text-gray-300">
+                            의 최솟값을 구하시오.
+                        </p>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="Q" />에서 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A(-5,1)" />을{" "}
-                <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                <InlineMath math="A'" />라 하겠습니다.
-            </p>
+                    </div>
 
 
-            {/* 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점 A를 대칭이동
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <BlockMath
-                    math={String.raw`
+                        <div className="mt-5 space-y-5 text-gray-300">
+
+                            <p className="leading-8">
+                                선분은 <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="Q" />에서 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A(-5,1)" />을{" "}
+                                <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                <InlineMath math="A'" />라 하겠습니다.
+                            </p>
+
+
+                            {/* 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    점 A를 대칭이동
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(-5,-1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    점 <InlineMath math="Q" />는{" "}
-                    <InlineMath math="x" />축 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="Q" />는{" "}
+                                    <InlineMath math="x" />축 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ=A'Q
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다. 따라서
-                </p>
+                                <p className="leading-8">
+                                    입니다. 따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ+QP
 =
 A'Q+QP
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    로 바꿀 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    로 바꿀 수 있습니다.
+                                </p>
 
-                <p className="leading-8">
-                    세 점 <InlineMath math="A',\ Q,\ P" />가
-                    한 직선 위에 있을 때 가장 짧으므로
-                </p>
+                                <p className="leading-8">
+                                    세 점 <InlineMath math="A',\ Q,\ P" />가
+                                    한 직선 위에 있을 때 가장 짧으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \min(AQ+QP)=A'P
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    가 됩니다.
-                </p>
+                                <p className="leading-8">
+                                    가 됩니다.
+                                </p>
 
-            </div>
-
-
-            {/* P의 조건 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
-
-                <p className="mb-4 font-bold text-white">
-                    점 P가 움직이는 범위
-                </p>
-
-                <p className="leading-8">
-                    조건 <InlineMath math="BP=2" />이므로
-                    점 <InlineMath math="P" />는
-                    점 <InlineMath math="B(7,4)" />를 중심으로 하고
-                    반지름의 길이가 <InlineMath math="2" />인
-                    원 위를 움직입니다.
-                </p>
-
-                <p className="mt-3 leading-8">
-                    따라서 <InlineMath math="A'P" />가 가장 짧아지는 것은
-                    점 <InlineMath math="P" />가
-                    원 위에서 점 <InlineMath math="A'" />에
-                    가장 가까이 있을 때입니다.
-                </p>
-
-            </div>
+                            </div>
 
 
-            {/* 거리 계산 */}
-            <p className="leading-8">
-                먼저 점 <InlineMath math="A'(-5,-1)" />과
-                점 <InlineMath math="B(7,4)" /> 사이의 거리를 구하면
-            </p>
+                            {/* P의 조건 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-            <BlockMath
-                math={String.raw`
+                                <p className="mb-4 font-bold text-white">
+                                    점 P가 움직이는 범위
+                                </p>
+
+                                <p className="leading-8">
+                                    조건 <InlineMath math="BP=2" />이므로
+                                    점 <InlineMath math="P" />는
+                                    점 <InlineMath math="B(7,4)" />를 중심으로 하고
+                                    반지름의 길이가 <InlineMath math="2" />인
+                                    원 위를 움직입니다.
+                                </p>
+
+                                <p className="mt-3 leading-8">
+                                    따라서 <InlineMath math="A'P" />가 가장 짧아지는 것은
+                                    점 <InlineMath math="P" />가
+                                    원 위에서 점 <InlineMath math="A'" />에
+                                    가장 가까이 있을 때입니다.
+                                </p>
+
+                            </div>
+
+
+                            {/* 거리 계산 */}
+                            <p className="leading-8">
+                                먼저 점 <InlineMath math="A'(-5,-1)" />과
+                                점 <InlineMath math="B(7,4)" /> 사이의 거리를 구하면
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 A'B
 &=
@@ -15136,231 +15136,231 @@ A'B
 13
 \end{aligned}
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다.
-            </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
-            <p className="leading-8">
-                점 <InlineMath math="P" />는
-                중심 <InlineMath math="B" />에서 거리{" "}
-                <InlineMath math="2" />인 원 위에 있으므로,
-                점 <InlineMath math="A'" />에서
-                점 <InlineMath math="P" />까지의 가장 짧은 거리는
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="P" />는
+                                중심 <InlineMath math="B" />에서 거리{" "}
+                                <InlineMath math="2" />인 원 위에 있으므로,
+                                점 <InlineMath math="A'" />에서
+                                점 <InlineMath math="P" />까지의 가장 짧은 거리는
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 13-2=11
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다.
-            </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{11}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 <InlineMath math="x" />축 대칭을 이용하여
-                    꺾인 두 선분의 길이의 합을
-                    하나의 선분으로 바꿉니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    먼저 <InlineMath math="x" />축 대칭을 이용하여
+                                    꺾인 두 선분의 길이의 합을
+                                    하나의 선분으로 바꿉니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AQ+QP
 \rightarrow
 A'P
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    그다음 <InlineMath math="BP=2" />를
-                    점 <InlineMath math="B" />를 중심으로 하는
-                    반지름 <InlineMath math="2" />인 원으로 생각하여
-                    점과 원 사이의 최단거리를 구합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    그다음 <InlineMath math="BP=2" />를
+                                    점 <InlineMath math="B" />를 중심으로 하는
+                                    반지름 <InlineMath math="2" />인 원으로 생각하여
+                                    점과 원 사이의 최단거리를 구합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{대칭이동}
 \rightarrow
 \text{점과 원 사이의 최단거리}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 6 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 6 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 6
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 6
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 담으로 둘러싸인
-                직사각형 모양의 평평한 구역이 있다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 담으로 둘러싸인
+                                직사각형 모양의 평평한 구역이 있다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                경비원이 순찰 지점 <InlineMath math="A" />에서 출발하여
-                오른쪽 그림과 같이 담의 두 지점을 지나
-                순찰 지점 <InlineMath math="B" />까지
-                최단거리로 이동할 때, 그 이동거리를 구하시오.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                경비원이 순찰 지점 <InlineMath math="A" />에서 출발하여
+                                오른쪽 그림과 같이 담의 두 지점을 지나
+                                순찰 지점 <InlineMath math="B" />까지
+                                최단거리로 이동할 때, 그 이동거리를 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_06.png"
-                alt="직사각형 모양의 구역에서 담의 두 지점을 지나 A에서 B까지 이동하는 경로"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_06.png"
+                                alt="직사각형 모양의 구역에서 담의 두 지점을 지나 A에서 B까지 이동하는 경로"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                이동 경로는 직사각형의
-                왼쪽 변과 아래쪽 변에서 두 번 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A" />를 왼쪽 변에 대하여,
-                점 <InlineMath math="B" />를 아래쪽 변에 대하여
-                각각 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    두 점을 각각 대칭이동
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    직사각형의 왼쪽 아래 꼭짓점을 원점으로 생각하면
-                    가로의 길이가 <InlineMath math="40" />,
-                    세로의 길이가 <InlineMath math="50" />이므로
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                이동 경로는 직사각형의
+                                왼쪽 변과 아래쪽 변에서 두 번 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A" />를 왼쪽 변에 대하여,
+                                점 <InlineMath math="B" />를 아래쪽 변에 대하여
+                                각각 대칭이동합니다.
+                            </p>
+
+
+                            {/* 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    두 점을 각각 대칭이동
+                                </p>
+
+                                <p className="leading-8">
+                                    직사각형의 왼쪽 아래 꼭짓점을 원점으로 생각하면
+                                    가로의 길이가 <InlineMath math="40" />,
+                                    세로의 길이가 <InlineMath math="50" />이므로
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A=(20,50),\qquad B=(40,10)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    으로 나타낼 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    으로 나타낼 수 있습니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A" />를 왼쪽 변에 대하여
-                    대칭이동한 점을 <InlineMath math="A'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A" />를 왼쪽 변에 대하여
+                                    대칭이동한 점을 <InlineMath math="A'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A'=(-20,50)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고, 점 <InlineMath math="B" />를 아래쪽 변에 대하여
-                    대칭이동한 점을 <InlineMath math="B'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    이고, 점 <InlineMath math="B" />를 아래쪽 변에 대하여
+                                    대칭이동한 점을 <InlineMath math="B'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 B'=(40,-10)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 하나의 선분 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 하나의 선분 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    꺾인 경로를 하나의 선분으로
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    꺾인 경로를 하나의 선분으로
+                                </p>
 
-                <p className="leading-8">
-                    대칭이동하면 두 번 꺾이는 이동거리의 최솟값은
-                    선분 <InlineMath math="A'B'" />의 길이와 같습니다.
-                </p>
+                                <p className="leading-8">
+                                    대칭이동하면 두 번 꺾이는 이동거리의 최솟값은
+                                    선분 <InlineMath math="A'B'" />의 길이와 같습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \text{최단거리}=A'B'
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                두 점 <InlineMath math="A'(-20,50)" />과{" "}
-                <InlineMath math="B'(40,-10)" /> 사이의 거리는
-            </p>
+                            <p className="leading-8">
+                                두 점 <InlineMath math="A'(-20,50)" />과{" "}
+                                <InlineMath math="B'(40,-10)" /> 사이의 거리는
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 A'B'
 &=
@@ -15373,39 +15373,39 @@ A'B'
 60\sqrt2
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{60\sqrt2\text{ m}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    담을 지나는 두 점의 위치를 직접 구할 필요는 없습니다.
-                    꺾이는 점이 놓인 두 변에 대하여
-                    양 끝점 <InlineMath math="A,\ B" />를 각각 대칭이동하면
-                    됩니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    담을 지나는 두 점의 위치를 직접 구할 필요는 없습니다.
+                                    꺾이는 점이 놓인 두 변에 대하여
+                                    양 끝점 <InlineMath math="A,\ B" />를 각각 대칭이동하면
+                                    됩니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{두 번 꺾이는 경로}
 \rightarrow
@@ -15414,222 +15414,222 @@ A'B'
 \text{한 선분의 길이}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 7 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 7 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 7
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 7
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                좌표평면 위에 두 점{" "}
-                <InlineMath math="A(-5,3),\ B(3,2)" />가 있다.{" "}
-                <InlineMath math="x" />축 위의 두 점{" "}
-                <InlineMath math="P,\ Q" />와 직선{" "}
-                <InlineMath math="y=1" /> 위의 점{" "}
-                <InlineMath math="R" />에 대하여
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                좌표평면 위에 두 점{" "}
+                                <InlineMath math="A(-5,3),\ B(3,2)" />가 있다.{" "}
+                                <InlineMath math="x" />축 위의 두 점{" "}
+                                <InlineMath math="P,\ Q" />와 직선{" "}
+                                <InlineMath math="y=1" /> 위의 점{" "}
+                                <InlineMath math="R" />에 대하여
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PR+RQ+QB
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                의 최솟값을 구하시오.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                의 최솟값을 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_07.png"
-                alt="x축 위의 점 P, Q와 직선 y=1 위의 점 R에서 세 번 꺾이는 선분"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_07.png"
+                                alt="x축 위의 점 P, Q와 직선 y=1 위의 점 R에서 세 번 꺾이는 선분"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 점 <InlineMath math="P" />,{" "}
-                <InlineMath math="R" />,{" "}
-                <InlineMath math="Q" />에서 세 번 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 한쪽 끝점 <InlineMath math="A" />를
-                꺾이는 점이 놓인 직선의 순서대로
-                차례로 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 첫 번째 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① x축에 대하여 대칭이동
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(-5,3)" />을{" "}
-                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                선분은 점 <InlineMath math="P" />,{" "}
+                                <InlineMath math="R" />,{" "}
+                                <InlineMath math="Q" />에서 세 번 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 한쪽 끝점 <InlineMath math="A" />를
+                                꺾이는 점이 놓인 직선의 순서대로
+                                차례로 대칭이동합니다.
+                            </p>
+
+
+                            {/* 첫 번째 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    ① x축에 대하여 대칭이동
+                                </p>
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(-5,3)" />을{" "}
+                                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(-5,-3)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    점 <InlineMath math="P" />가{" "}
-                    <InlineMath math="x" />축 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P" />가{" "}
+                                    <InlineMath math="x" />축 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP=A'P
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 두 번째 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 두 번째 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 직선 y=1에 대하여 대칭이동
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② 직선 y=1에 대하여 대칭이동
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A'(-5,-3)" />을
-                    직선 <InlineMath math="y=1" />에 대하여
-                    대칭이동한 점을 <InlineMath math="A''" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A'(-5,-3)" />을
+                                    직선 <InlineMath math="y=1" />에 대하여
+                                    대칭이동한 점을 <InlineMath math="A''" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A''(-5,5)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="R" />은 직선{" "}
-                    <InlineMath math="y=1" /> 위에 있으므로
-                    대칭이동을 이용하여 두 번째 꺾임도 펼 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="R" />은 직선{" "}
+                                    <InlineMath math="y=1" /> 위에 있으므로
+                                    대칭이동을 이용하여 두 번째 꺾임도 펼 수 있습니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 세 번째 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 세 번째 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 다시 x축에 대하여 대칭이동
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ③ 다시 x축에 대하여 대칭이동
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A''(-5,5)" />을
-                    다시 <InlineMath math="x" />축에 대하여
-                    대칭이동한 점을 <InlineMath math="A'''" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A''(-5,5)" />을
+                                    다시 <InlineMath math="x" />축에 대하여
+                                    대칭이동한 점을 <InlineMath math="A'''" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A'''(-5,-5)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 하나의 선분 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 하나의 선분 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    세 번 꺾인 선을 하나의 선분으로
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    세 번 꺾인 선을 하나의 선분으로
+                                </p>
 
-                <p className="leading-8">
-                    대칭이동을 차례로 하면
-                </p>
+                                <p className="leading-8">
+                                    대칭이동을 차례로 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP+PR+RQ+QB
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    의 최솟값은
-                    마지막 대칭점 <InlineMath math="A'''" />와
-                    점 <InlineMath math="B" />를 이은
-                    한 선분의 길이가 됩니다.
-                </p>
+                                <p className="leading-8">
+                                    의 최솟값은
+                                    마지막 대칭점 <InlineMath math="A'''" />와
+                                    점 <InlineMath math="B" />를 이은
+                                    한 선분의 길이가 됩니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \min(AP+PR+RQ+QB)=A'''B
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* 거리 계산 */}
-            <p className="leading-8">
-                두 점 <InlineMath math="A'''(-5,-5)" />와{" "}
-                <InlineMath math="B(3,2)" /> 사이의 거리를 구하면
-            </p>
+                            {/* 거리 계산 */}
+                            <p className="leading-8">
+                                두 점 <InlineMath math="A'''(-5,-5)" />와{" "}
+                                <InlineMath math="B(3,2)" /> 사이의 거리를 구하면
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 A'''B
 &=
@@ -15642,38 +15642,38 @@ A'''B
 \sqrt{113}
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{\sqrt{113}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    꺾이는 점이 여러 개일 때에는
-                    꺾이는 점이 놓인 직선의 순서대로
-                    대칭이동을 반복합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    꺾이는 점이 여러 개일 때에는
+                                    꺾이는 점이 놓인 직선의 순서대로
+                                    대칭이동을 반복합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A(-5,3)
 \xrightarrow{\,x\text{축}\,}
 A'(-5,-3)
@@ -15682,645 +15682,645 @@ A''(-5,5)
 \xrightarrow{\,x\text{축}\,}
 A'''(-5,-5)
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    결국 여러 번 꺾인 선분도
-                    하나의 선분의 길이로 바꾸어 생각할 수 있습니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    결국 여러 번 꺾인 선분도
+                                    하나의 선분의 길이로 바꾸어 생각할 수 있습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{꺾이는 순서대로 대칭이동}
 \rightarrow
 \text{하나의 선분}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 8 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 8 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 8
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 8
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                좌표평면 위에 점{" "}
-                <InlineMath math="A(0,2)" />와 직선{" "}
-                <InlineMath math="l:y=-x+4" />가 있다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                좌표평면 위에 점{" "}
+                                <InlineMath math="A(0,2)" />와 직선{" "}
+                                <InlineMath math="l:y=-x+4" />가 있다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                직선 <InlineMath math="l" /> 위의 제1사분면 위의 점{" "}
-                <InlineMath math="B(a,b)" />와{" "}
-                <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="C" />에 대하여
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                직선 <InlineMath math="l" /> 위의 제1사분면 위의 점{" "}
+                                <InlineMath math="B(a,b)" />와{" "}
+                                <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="C" />에 대하여
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AC+BC
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                의 값이 최소일 때,{" "}
-                <InlineMath math="a^2+b^2" />의 값을 구하시오.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                의 값이 최소일 때,{" "}
+                                <InlineMath math="a^2+b^2" />의 값을 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_08.png"
-                alt="점 A와 직선 l 위의 점 B, x축 위의 점 C"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_08.png"
+                                alt="점 A와 직선 l 위의 점 B, x축 위의 점 C"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                선분은 <InlineMath math="x" />축 위의 점{" "}
-                <InlineMath math="C" />에서 꺾입니다.
-            </p>
-
-            <p className="leading-8">
-                따라서 점 <InlineMath math="A(0,2)" />를{" "}
-                <InlineMath math="x" />축에 대하여 대칭이동합니다.
-            </p>
+                    </div>
 
 
-            {/* 1단계 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 꺾인 두 선분을 하나의 선분으로
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A" />를{" "}
-                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                선분은 <InlineMath math="x" />축 위의 점{" "}
+                                <InlineMath math="C" />에서 꺾입니다.
+                            </p>
+
+                            <p className="leading-8">
+                                따라서 점 <InlineMath math="A(0,2)" />를{" "}
+                                <InlineMath math="x" />축에 대하여 대칭이동합니다.
+                            </p>
+
+
+                            {/* 1단계 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    ① 꺾인 두 선분을 하나의 선분으로
+                                </p>
+
+                                <p className="leading-8">
+                                    점 <InlineMath math="A" />를{" "}
+                                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 A'(0,-2)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="C" />가{" "}
-                    <InlineMath math="x" />축 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="C" />가{" "}
+                                    <InlineMath math="x" />축 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AC=A'C
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고, 따라서
-                </p>
+                                <p className="leading-8">
+                                    이고, 따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AC+BC
 =
 A'C+CB
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    세 점{" "}
-                    <InlineMath math="A',\ C,\ B" />가
-                    한 직선 위에 있을 때 길이가 가장 짧으므로
-                </p>
+                                <p className="leading-8">
+                                    세 점{" "}
+                                    <InlineMath math="A',\ C,\ B" />가
+                                    한 직선 위에 있을 때 길이가 가장 짧으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \min(AC+BC)=A'B
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    가 됩니다.
-                </p>
+                                <p className="leading-8">
+                                    가 됩니다.
+                                </p>
 
-            </div>
-
-
-            {/* 2단계 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
-
-                <p className="mb-3 font-bold text-blue-300">
-                    ② 이제 점 B의 위치를 결정한다
-                </p>
-
-                <p className="leading-8">
-                    점 <InlineMath math="B" />는 직선{" "}
-                    <InlineMath math="l:y=-x+4" /> 위를 움직입니다.
-                </p>
-
-                <p className="mt-3 leading-8">
-                    따라서 <InlineMath math="A'B" />의 길이가
-                    가장 짧아지는 것은
-                    선분 <InlineMath math="A'B" />가
-                    직선 <InlineMath math="l" />에 수직일 때입니다.
-                </p>
-
-            </div>
+                            </div>
 
 
-            {/* B의 좌표 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 2단계 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    점 B의 좌표 구하기
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    ② 이제 점 B의 위치를 결정한다
+                                </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="l:y=-x+4" />의 기울기는{" "}
-                    <InlineMath math="-1" />이므로,
-                    이에 수직인 직선의 기울기는{" "}
-                    <InlineMath math="1" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="B" />는 직선{" "}
+                                    <InlineMath math="l:y=-x+4" /> 위를 움직입니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    점 <InlineMath math="A'(0,-2)" />를 지나고
-                    기울기가 <InlineMath math="1" />인 직선의 방정식은
-                </p>
+                                <p className="mt-3 leading-8">
+                                    따라서 <InlineMath math="A'B" />의 길이가
+                                    가장 짧아지는 것은
+                                    선분 <InlineMath math="A'B" />가
+                                    직선 <InlineMath math="l" />에 수직일 때입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                            </div>
+
+
+                            {/* B의 좌표 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    점 B의 좌표 구하기
+                                </p>
+
+                                <p className="leading-8">
+                                    직선 <InlineMath math="l:y=-x+4" />의 기울기는{" "}
+                                    <InlineMath math="-1" />이므로,
+                                    이에 수직인 직선의 기울기는{" "}
+                                    <InlineMath math="1" />입니다.
+                                </p>
+
+                                <p className="mt-3 leading-8">
+                                    점 <InlineMath math="A'(0,-2)" />를 지나고
+                                    기울기가 <InlineMath math="1" />인 직선의 방정식은
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 y=x-2
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    이 직선과{" "}
-                    <InlineMath math="y=-x+4" />의 교점이
-                    점 <InlineMath math="B" />이므로
-                </p>
+                                <p className="leading-8">
+                                    이 직선과{" "}
+                                    <InlineMath math="y=-x+4" />의 교점이
+                                    점 <InlineMath math="B" />이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x-2=-x+4
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 2x=6
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=3
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=-3+4=1
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                <p className="leading-8">
+                                    이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 B(3,1)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                따라서{" "}
-                <InlineMath math="a=3,\ b=1" />이므로
-            </p>
+                            <p className="leading-8">
+                                따라서{" "}
+                                <InlineMath math="a=3,\ b=1" />이므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 a^2+b^2
 =
 3^2+1^2
 =
 10
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{10}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    먼저 점 <InlineMath math="C" />가 놓인{" "}
-                    <InlineMath math="x" />축에 대하여
-                    점 <InlineMath math="A" />를 대칭이동하여
-                    꺾인 길이를 하나의 선분으로 바꿉니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    먼저 점 <InlineMath math="C" />가 놓인{" "}
+                                    <InlineMath math="x" />축에 대하여
+                                    점 <InlineMath math="A" />를 대칭이동하여
+                                    꺾인 길이를 하나의 선분으로 바꿉니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AC+CB
 \rightarrow
 A'B
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    그다음 점 <InlineMath math="B" />가
-                    직선 <InlineMath math="l" /> 위를 움직이므로,
-                    점과 직선 사이의 거리가 가장 짧아지는
-                    <b> 수선의 발</b>을 찾습니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    그다음 점 <InlineMath math="B" />가
+                                    직선 <InlineMath math="l" /> 위를 움직이므로,
+                                    점과 직선 사이의 거리가 가장 짧아지는
+                                    <b> 수선의 발</b>을 찾습니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{대칭이동}
 \rightarrow
 \text{점과 직선 사이의 최단거리}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 9 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 9 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 9
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 9
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                좌표평면 위에 세 점{" "}
-                <InlineMath math="A(0,1),\ B(0,3),\ C(0,9)" />와
-                직선 <InlineMath math="y=x" /> 위의 두 점{" "}
-                <InlineMath math="P,\ Q" />가 있다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                좌표평면 위에 세 점{" "}
+                                <InlineMath math="A(0,1),\ B(0,3),\ C(0,9)" />와
+                                직선 <InlineMath math="y=x" /> 위의 두 점{" "}
+                                <InlineMath math="P,\ Q" />가 있다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                <InlineMath math="AP+PB+BQ+QC" />의 값이
-                최소가 되도록 하는 두 점{" "}
-                <InlineMath math="P,\ Q" />에 대하여
-                선분 <InlineMath math="PQ" />의 길이를 구하시오.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                <InlineMath math="AP+PB+BQ+QC" />의 값이
+                                최소가 되도록 하는 두 점{" "}
+                                <InlineMath math="P,\ Q" />에 대하여
+                                선분 <InlineMath math="PQ" />의 길이를 구하시오.
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_09.png"
-                alt="y축 위의 세 점 A, B, C와 직선 y=x 위의 두 점 P, Q"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_09.png"
+                                alt="y축 위의 세 점 A, B, C와 직선 y=x 위의 두 점 P, Q"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                주어진 길이의 합을
-            </p>
+                            <p className="leading-8">
+                                주어진 길이의 합을
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AP+PB+BQ+QC
 =
 (AP+PB)+(BQ+QC)
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                로 나누어 생각합니다.
-            </p>
+                            <p className="leading-8">
+                                로 나누어 생각합니다.
+                            </p>
 
-            <p className="leading-8">
-                점 <InlineMath math="P" />는{" "}
-                <InlineMath math="AP+PB" />를 가장 작게 하는 점이고,
-                점 <InlineMath math="Q" />는{" "}
-                <InlineMath math="BQ+QC" />를 가장 작게 하는 점입니다.
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="P" />는{" "}
+                                <InlineMath math="AP+PB" />를 가장 작게 하는 점이고,
+                                점 <InlineMath math="Q" />는{" "}
+                                <InlineMath math="BQ+QC" />를 가장 작게 하는 점입니다.
+                            </p>
 
 
-            {/* P 구하기 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* P 구하기 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 점 P의 위치
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ① 점 P의 위치
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(0,1)" />을
-                    직선 <InlineMath math="y=x" />에 대하여
-                    대칭이동한 점을 <InlineMath math="A'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(0,1)" />을
+                                    직선 <InlineMath math="y=x" />에 대하여
+                                    대칭이동한 점을 <InlineMath math="A'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A'(1,0)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="P" />가
-                    직선 <InlineMath math="y=x" /> 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P" />가
+                                    직선 <InlineMath math="y=x" /> 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP=A'P
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다. 따라서
-                </p>
+                                <p className="leading-8">
+                                    입니다. 따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AP+PB=A'P+PB
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    가 가장 작아지려면 세 점{" "}
-                    <InlineMath math="A',\ P,\ B" />가
-                    한 직선 위에 있어야 합니다.
-                </p>
+                                <p className="leading-8">
+                                    가 가장 작아지려면 세 점{" "}
+                                    <InlineMath math="A',\ P,\ B" />가
+                                    한 직선 위에 있어야 합니다.
+                                </p>
 
-                <p className="leading-8">
-                    두 점 <InlineMath math="A'(1,0)" />과{" "}
-                    <InlineMath math="B(0,3)" />을 지나는 직선의 방정식은
-                </p>
+                                <p className="leading-8">
+                                    두 점 <InlineMath math="A'(1,0)" />과{" "}
+                                    <InlineMath math="B(0,3)" />을 지나는 직선의 방정식은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=-3x+3
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="P" />는
-                    이 직선과 <InlineMath math="y=x" />의 교점이므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="P" />는
+                                    이 직선과 <InlineMath math="y=x" />의 교점이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=-3x+3
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 4x=3
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=y=\frac34
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 P\left(\frac34,\frac34\right)
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* Q 구하기 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* Q 구하기 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 점 Q의 위치
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② 점 Q의 위치
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="C(0,9)" />를
-                    직선 <InlineMath math="y=x" />에 대하여
-                    대칭이동한 점을 <InlineMath math="C'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="C(0,9)" />를
+                                    직선 <InlineMath math="y=x" />에 대하여
+                                    대칭이동한 점을 <InlineMath math="C'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 C'(9,0)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="Q" />가
-                    직선 <InlineMath math="y=x" /> 위에 있으므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="Q" />가
+                                    직선 <InlineMath math="y=x" /> 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 QC=QC'
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다. 따라서
-                </p>
+                                <p className="leading-8">
+                                    입니다. 따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 BQ+QC=BQ+QC'
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    가 가장 작아지려면 세 점{" "}
-                    <InlineMath math="B,\ Q,\ C'" />가
-                    한 직선 위에 있어야 합니다.
-                </p>
+                                <p className="leading-8">
+                                    가 가장 작아지려면 세 점{" "}
+                                    <InlineMath math="B,\ Q,\ C'" />가
+                                    한 직선 위에 있어야 합니다.
+                                </p>
 
-                <p className="leading-8">
-                    두 점 <InlineMath math="B(0,3)" />과{" "}
-                    <InlineMath math="C'(9,0)" />을 지나는 직선의 방정식은
-                </p>
+                                <p className="leading-8">
+                                    두 점 <InlineMath math="B(0,3)" />과{" "}
+                                    <InlineMath math="C'(9,0)" />을 지나는 직선의 방정식은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=-\frac13x+3
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="Q" />는
-                    이 직선과 <InlineMath math="y=x" />의 교점이므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="Q" />는
+                                    이 직선과 <InlineMath math="y=x" />의 교점이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=-\frac13x+3
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \frac43x=3
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=y=\frac94
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 Q\left(\frac94,\frac94\right)
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            {/* PQ */}
-            <p className="leading-8">
-                이제 두 점
-            </p>
+                            {/* PQ */}
+                            <p className="leading-8">
+                                이제 두 점
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 P\left(\frac34,\frac34\right),
 \qquad
 Q\left(\frac94,\frac94\right)
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                사이의 거리를 구하면
-            </p>
+                            <p className="leading-8">
+                                사이의 거리를 구하면
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 PQ
 &=
@@ -16341,55 +16341,55 @@ PQ
 \frac{3\sqrt2}{2}
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{\frac{3\sqrt2}{2}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    네 선분을 한꺼번에 처리하지 않고,
-                    움직이는 점 <InlineMath math="P,\ Q" />가
-                    서로 독립되어 있다는 것을 이용하여
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    네 선분을 한꺼번에 처리하지 않고,
+                                    움직이는 점 <InlineMath math="P,\ Q" />가
+                                    서로 독립되어 있다는 것을 이용하여
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 (AP+PB)+(BQ+QC)
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    로 나눕니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    로 나눕니다.
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    각각 대칭이동을 이용하여
-                    최소가 되는 점 <InlineMath math="P,\ Q" />의
-                    위치를 먼저 구한 뒤,
-                    마지막에 <InlineMath math="PQ" />의 길이를 구합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    각각 대칭이동을 이용하여
+                                    최소가 되는 점 <InlineMath math="P,\ Q" />의
+                                    위치를 먼저 구한 뒤,
+                                    마지막에 <InlineMath math="PQ" />의 길이를 구합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{길이의 합을 분리}
 \rightarrow
@@ -16398,222 +16398,222 @@ PQ
 P,\ Q\text{ 결정}
 }
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 10 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 10 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 10
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 10
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 폭이{" "}
-                <InlineMath math="10\text{ m}" />인 직선 도로를 사이에 두고
-                두 기업 <InlineMath math="A,\ B" />가 위치하고 있다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 폭이{" "}
+                                <InlineMath math="10\text{ m}" />인 직선 도로를 사이에 두고
+                                두 기업 <InlineMath math="A,\ B" />가 위치하고 있다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                기업 <InlineMath math="A,\ B" />에서 도로의 경계선까지의
-                거리는 각각{" "}
-                <InlineMath math="10\text{ m},\ 5\text{ m}" />이고,
-                두 기업 <InlineMath math="A,\ B" /> 사이의 거리가{" "}
-                <InlineMath math="5\sqrt{41}\text{ m}" />이다.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                기업 <InlineMath math="A,\ B" />에서 도로의 경계선까지의
+                                거리는 각각{" "}
+                                <InlineMath math="10\text{ m},\ 5\text{ m}" />이고,
+                                두 기업 <InlineMath math="A,\ B" /> 사이의 거리가{" "}
+                                <InlineMath math="5\sqrt{41}\text{ m}" />이다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                기업 <InlineMath math="A" />에서 기업{" "}
-                <InlineMath math="B" />까지의 이동하는 거리가 최소이면서
-                도로에 수직이 되도록 도로 위에 횡단보도를 만들 때,
-                기업 <InlineMath math="A" />에서 이 횡단보도를 거쳐
-                기업 <InlineMath math="B" />로 이동하는 거리의
-                최솟값을 구하시오.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                기업 <InlineMath math="A" />에서 기업{" "}
+                                <InlineMath math="B" />까지의 이동하는 거리가 최소이면서
+                                도로에 수직이 되도록 도로 위에 횡단보도를 만들 때,
+                                기업 <InlineMath math="A" />에서 이 횡단보도를 거쳐
+                                기업 <InlineMath math="B" />로 이동하는 거리의
+                                최솟값을 구하시오.
+                            </p>
 
-            <p className="mt-3 text-sm leading-7 text-gray-400">
-                (단, 고도와 횡단보도의 폭은 무시한다.)
-            </p>
+                            <p className="mt-3 text-sm leading-7 text-gray-400">
+                                (단, 고도와 횡단보도의 폭은 무시한다.)
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_010.png"
-                alt="폭이 10m인 도로를 사이에 둔 기업 A와 B의 최단 이동 경로"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_010.png"
+                                alt="폭이 10m인 도로를 사이에 둔 기업 A와 B의 최단 이동 경로"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-            {/* 1. 수평 방향 거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 1. 수평 방향 거리 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 도로와 평행한 방향의 거리
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ① 도로와 평행한 방향의 거리
+                                </p>
 
-                <p className="leading-8">
-                    기업 <InlineMath math="A" />에서
-                    기업 <InlineMath math="B" />까지의
-                    도로에 수직인 방향의 전체 거리는
-                </p>
+                                <p className="leading-8">
+                                    기업 <InlineMath math="A" />에서
+                                    기업 <InlineMath math="B" />까지의
+                                    도로에 수직인 방향의 전체 거리는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 10+10+5=25
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    두 기업 사이의 도로와 평행한 방향의 거리를{" "}
-                    <InlineMath math="d" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    두 기업 사이의 도로와 평행한 방향의 거리를{" "}
+                                    <InlineMath math="d" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 d^2+25^2=(5\sqrt{41})^2
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 d^2+625&=1025\\
 d^2&=400\\
 d&=20
 \end{aligned}
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서 두 기업의 도로와 평행한 방향의 거리는{" "}
-                    <InlineMath math="20\text{ m}" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    따라서 두 기업의 도로와 평행한 방향의 거리는{" "}
+                                    <InlineMath math="20\text{ m}" />입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 2. 고정된 횡단보도 길이 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 2. 고정된 횡단보도 길이 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    ② 횡단보도의 길이는 고정
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    ② 횡단보도의 길이는 고정
+                                </p>
 
-                <p className="leading-8">
-                    횡단보도는 도로에 수직이고
-                    도로의 폭이 <InlineMath math="10\text{ m}" />이므로,
-                    횡단보도를 어디에 만들더라도
-                    도로를 건너는 거리는 항상
-                </p>
+                                <p className="leading-8">
+                                    횡단보도는 도로에 수직이고
+                                    도로의 폭이 <InlineMath math="10\text{ m}" />이므로,
+                                    횡단보도를 어디에 만들더라도
+                                    도로를 건너는 거리는 항상
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 10\text{ m}
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    따라서 전체 이동거리에서
-                    이 <InlineMath math="10\text{ m}" />는
-                    고정된 길이로 따로 생각할 수 있습니다.
-                </p>
+                                <p className="mt-3 leading-8">
+                                    따라서 전체 이동거리에서
+                                    이 <InlineMath math="10\text{ m}" />는
+                                    고정된 길이로 따로 생각할 수 있습니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 3. 도로 밖의 두 경로 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 3. 도로 밖의 두 경로 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ③ 도로 밖에서 이동하는 거리
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ③ 도로 밖에서 이동하는 거리
+                                </p>
 
-                <p className="leading-8">
-                    도로를 제외하면 기업 <InlineMath math="A" />에서
-                    도로까지의 거리는 <InlineMath math="10\text{ m}" />,
-                    기업 <InlineMath math="B" />에서 도로까지의 거리는{" "}
-                    <InlineMath math="5\text{ m}" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    도로를 제외하면 기업 <InlineMath math="A" />에서
+                                    도로까지의 거리는 <InlineMath math="10\text{ m}" />,
+                                    기업 <InlineMath math="B" />에서 도로까지의 거리는{" "}
+                                    <InlineMath math="5\text{ m}" />입니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    따라서 두 경로를 대칭이동하여 하나의 선분으로 펴면,
-                    수직 방향의 길이는
-                </p>
+                                <p className="mt-3 leading-8">
+                                    따라서 두 경로를 대칭이동하여 하나의 선분으로 펴면,
+                                    수직 방향의 길이는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 10+5=15
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고, 도로와 평행한 방향의 길이는 앞에서 구한
-                </p>
+                                <p className="leading-8">
+                                    이고, 도로와 평행한 방향의 길이는 앞에서 구한
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 20
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 4. 대칭이동 후 최단거리 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 4. 대칭이동 후 최단거리 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 대칭이동하여 하나의 선분으로
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ④ 대칭이동하여 하나의 선분으로
+                                </p>
 
-                <p className="leading-8">
-                    도로 밖의 두 이동 경로를 대칭이동하여 펴면
-                    가로의 길이가 <InlineMath math="20" />,
-                    세로의 길이가 <InlineMath math="15" />인
-                    직각삼각형의 빗변이 됩니다.
-                </p>
+                                <p className="leading-8">
+                                    도로 밖의 두 이동 경로를 대칭이동하여 펴면
+                                    가로의 길이가 <InlineMath math="20" />,
+                                    세로의 길이가 <InlineMath math="15" />인
+                                    직각삼각형의 빗변이 됩니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 \text{도로 밖의 최단거리}
 &=
@@ -16626,64 +16626,64 @@ d&=20
 25
 \end{aligned}
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서 도로 밖에서 이동하는 거리의 최솟값은{" "}
-                    <InlineMath math="25\text{ m}" />입니다.
-                </p>
+                                <p className="leading-8">
+                                    따라서 도로 밖에서 이동하는 거리의 최솟값은{" "}
+                                    <InlineMath math="25\text{ m}" />입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 전체 이동거리 */}
-            <p className="leading-8">
-                여기에 횡단보도를 건너는 고정된 거리{" "}
-                <InlineMath math="10\text{ m}" />를 더하면
-            </p>
+                            {/* 전체 이동거리 */}
+                            <p className="leading-8">
+                                여기에 횡단보도를 건너는 고정된 거리{" "}
+                                <InlineMath math="10\text{ m}" />를 더하면
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 25+10=35
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{35\text{ m}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    횡단보도는 도로에 수직이므로
-                    도로를 건너는 <InlineMath math="10\text{ m}" />는
-                    위치와 관계없이 일정합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    횡단보도는 도로에 수직이므로
+                                    도로를 건너는 <InlineMath math="10\text{ m}" />는
+                                    위치와 관계없이 일정합니다.
+                                </p>
 
-                <p className="mt-3 leading-8 text-gray-300">
-                    따라서 먼저 이 고정된 길이를 제외하고,
-                    도로 밖의 두 경로만 대칭이동하여
-                    하나의 선분으로 만듭니다.
-                </p>
+                                <p className="mt-3 leading-8 text-gray-300">
+                                    따라서 먼저 이 고정된 길이를 제외하고,
+                                    도로 밖의 두 경로만 대칭이동하여
+                                    하나의 선분으로 만듭니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \begin{array}{c}
 \text{도로 밖의 수직 거리 }10+5=15\\
@@ -16691,273 +16691,273 @@ d&=20
 \end{array}
 }
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \sqrt{20^2+15^2}+10
 =
 25+10
 =
 35
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 11 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 11 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 11
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 11
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이{" "}
-                <InlineMath math="AB=2\sqrt2,\ BC=3,\ CA=\sqrt5" />인
-                삼각형 <InlineMath math="ABC" />에 대하여
-                세 선분 <InlineMath math="AB,\ BC,\ CA" /> 위의 점을
-                각각 <InlineMath math="D,\ E,\ F" />라 하자.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이{" "}
+                                <InlineMath math="AB=2\sqrt2,\ BC=3,\ CA=\sqrt5" />인
+                                삼각형 <InlineMath math="ABC" />에 대하여
+                                세 선분 <InlineMath math="AB,\ BC,\ CA" /> 위의 점을
+                                각각 <InlineMath math="D,\ E,\ F" />라 하자.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                삼각형 <InlineMath math="DEF" />의 둘레의 길이의
-                최솟값이
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                삼각형 <InlineMath math="DEF" />의 둘레의 길이의
+                                최솟값이
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \frac{q}{p}\sqrt{10}
 `}
-            />
+                            />
 
-            <p className="leading-8 text-gray-300">
-                일 때, <InlineMath math="p+q" />의 값을 구하시오.
-                (단, <InlineMath math="p,\ q" />는 서로소인 자연수이다.)
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                일 때, <InlineMath math="p+q" />의 값을 구하시오.
+                                (단, <InlineMath math="p,\ q" />는 서로소인 자연수이다.)
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_011.png"
-                alt="삼각형 ABC의 세 변 위의 점 D, E, F를 이은 삼각형"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_011.png"
+                                alt="삼각형 ABC의 세 변 위의 점 D, E, F를 이은 삼각형"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
-
-
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
-
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
-
-        <div className="mt-5 space-y-5 text-gray-300">
-
-            <p className="leading-8">
-                삼각형의 세 변 위에 한 점씩 잡아 만든 삼각형의
-                둘레가 최소가 되려면,
-                세 점은 각 꼭짓점에서 맞은편 변에 내린
-                수선의 발이 됩니다.
-            </p>
+                    </div>
 
 
-            {/* 좌표 설정 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 삼각형을 좌표평면에 놓기
-                </p>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-                <p className="leading-8">
-                    계산을 쉽게 하기 위하여
-                </p>
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-                <BlockMath
-                    math={String.raw`
+                            <p className="leading-8">
+                                삼각형의 세 변 위에 한 점씩 잡아 만든 삼각형의
+                                둘레가 최소가 되려면,
+                                세 점은 각 꼭짓점에서 맞은편 변에 내린
+                                수선의 발이 됩니다.
+                            </p>
+
+
+                            {/* 좌표 설정 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+
+                                <p className="mb-4 font-bold text-white">
+                                    ① 삼각형을 좌표평면에 놓기
+                                </p>
+
+                                <p className="leading-8">
+                                    계산을 쉽게 하기 위하여
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
 B=(0,0),\qquad C=(3,0)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    으로 놓겠습니다.
-                </p>
+                                <p className="leading-8">
+                                    으로 놓겠습니다.
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A=(x,y)" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A=(x,y)" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x^2+y^2=8
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 (x-3)^2+y^2=5
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    두 식을 빼면
-                </p>
+                                <p className="leading-8">
+                                    두 식을 빼면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=2
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이고,
-                </p>
+                                <p className="leading-8">
+                                    이고,
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=2
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    로 잡을 수 있으므로
-                </p>
+                                <p className="leading-8">
+                                    로 잡을 수 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A=(2,2)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 수선의 발 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 수선의 발 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 세 수선의 발 구하기
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② 세 수선의 발 구하기
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="E" />는
-                    점 <InlineMath math="A" />에서
-                    선분 <InlineMath math="BC" />에 내린 수선의 발이므로
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="E" />는
+                                    점 <InlineMath math="A" />에서
+                                    선분 <InlineMath math="BC" />에 내린 수선의 발이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 E=(2,0)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    직선 <InlineMath math="AB" />의 방정식은
-                </p>
+                                <p className="leading-8">
+                                    직선 <InlineMath math="AB" />의 방정식은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=x
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이므로 점 <InlineMath math="C(3,0)" />에서
-                    이 직선에 내린 수선의 발은
-                </p>
+                                <p className="leading-8">
+                                    이므로 점 <InlineMath math="C(3,0)" />에서
+                                    이 직선에 내린 수선의 발은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 D\left(\frac32,\frac32\right)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    또 직선 <InlineMath math="CA" />에
-                    점 <InlineMath math="B" />에서 내린 수선의 발은
-                </p>
+                                <p className="leading-8">
+                                    또 직선 <InlineMath math="CA" />에
+                                    점 <InlineMath math="B" />에서 내린 수선의 발은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 F\left(\frac{12}{5},\frac65\right)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 둘레 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 둘레 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    ③ 삼각형 DEF의 둘레
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    ③ 삼각형 DEF의 둘레
+                                </p>
 
-                <p className="leading-8">
-                    세 변의 길이를 구하면
-                </p>
+                                <p className="leading-8">
+                                    세 변의 길이를 구하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 DE=\frac{\sqrt{10}}2
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 EF=\frac{2\sqrt{10}}5
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 FD=\frac{3\sqrt{10}}{10}
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    따라서 둘레의 최솟값은
-                </p>
+                                <p className="leading-8">
+                                    따라서 둘레의 최솟값은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \begin{aligned}
 DE+EF+FD
 &=
@@ -16970,438 +16970,438 @@ DE+EF+FD
 \frac65\sqrt{10}
 \end{aligned}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <p className="leading-8">
-                문제에서 최솟값이
-            </p>
+                            <p className="leading-8">
+                                문제에서 최솟값이
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \frac{q}{p}\sqrt{10}
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                이므로
-            </p>
+                            <p className="leading-8">
+                                이므로
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 p=5,\qquad q=6
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다.
-            </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{p+q=11}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    예각삼각형의 세 변 위에 한 점씩 잡아
-                    만든 삼각형의 둘레가 최소가 되는 경우에는,
-                    세 점이 각 꼭짓점에서 맞은편 변에 내린
-                    수선의 발이 됩니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    예각삼각형의 세 변 위에 한 점씩 잡아
+                                    만든 삼각형의 둘레가 최소가 되는 경우에는,
+                                    세 점이 각 꼭짓점에서 맞은편 변에 내린
+                                    수선의 발이 됩니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 \text{최소 둘레}
 \rightarrow
 \text{세 수선의 발}
 }
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    이 문제에서는 최소가 되는 위치를 다시 찾을 필요 없이,
-                    그 세 점의 좌표를 구한 뒤 둘레를 계산하면 됩니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    이 문제에서는 최소가 되는 위치를 다시 찾을 필요 없이,
+                                    그 세 점의 좌표를 구한 뒤 둘레를 계산하면 됩니다.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-{/* 예제 12 */}
-<div className="mt-8 rounded-xl bg-black/40 p-5">
+                {/* 예제 12 */}
+                <div className="mt-8 rounded-xl bg-black/40 p-5">
 
-    <h3 className="mb-4 text-xl font-bold text-white">
-        예제 12
-    </h3>
+                    <h3 className="mb-4 text-xl font-bold text-white">
+                        예제 12
+                    </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                    <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
 
-        {/* 문제 */}
-        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
 
-            <p className="leading-8 text-gray-300">
-                오른쪽 그림과 같이 두 직선 도로{" "}
-                <InlineMath math="l" />과 <InlineMath math="m" />이
-                이루는 각의 크기는 <InlineMath math="45^\circ" />이고,
-                정류소 <InlineMath math="A" />는 두 도로가 만나는 점{" "}
-                <InlineMath math="O" />로부터 동쪽으로{" "}
-                <InlineMath math="4\text{ km}" />, 북쪽으로{" "}
-                <InlineMath math="2\text{ km}" /> 떨어진 지점에 있다.
-            </p>
+                            <p className="leading-8 text-gray-300">
+                                오른쪽 그림과 같이 두 직선 도로{" "}
+                                <InlineMath math="l" />과 <InlineMath math="m" />이
+                                이루는 각의 크기는 <InlineMath math="45^\circ" />이고,
+                                정류소 <InlineMath math="A" />는 두 도로가 만나는 점{" "}
+                                <InlineMath math="O" />로부터 동쪽으로{" "}
+                                <InlineMath math="4\text{ km}" />, 북쪽으로{" "}
+                                <InlineMath math="2\text{ km}" /> 떨어진 지점에 있다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                정류소 <InlineMath math="A" />를 출발하여
-                도로 <InlineMath math="l" /> 위의 정류소{" "}
-                <InlineMath math="B" />와 도로{" "}
-                <InlineMath math="m" /> 위의 정류소{" "}
-                <InlineMath math="C" />를 차례로 지나
-                정류소 <InlineMath math="A" />로 돌아오도록 도로를 만들려고 한다.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                정류소 <InlineMath math="A" />를 출발하여
+                                도로 <InlineMath math="l" /> 위의 정류소{" "}
+                                <InlineMath math="B" />와 도로{" "}
+                                <InlineMath math="m" /> 위의 정류소{" "}
+                                <InlineMath math="C" />를 차례로 지나
+                                정류소 <InlineMath math="A" />로 돌아오도록 도로를 만들려고 한다.
+                            </p>
 
-            <p className="mt-3 leading-8 text-gray-300">
-                만드는 도로의 길이가 최소가 되도록
-                정류소 <InlineMath math="B,\ C" />를 정할 때,
-                두 정류소 <InlineMath math="B,\ C" /> 사이의 거리를 구하시오.
-            </p>
+                            <p className="mt-3 leading-8 text-gray-300">
+                                만드는 도로의 길이가 최소가 되도록
+                                정류소 <InlineMath math="B,\ C" />를 정할 때,
+                                두 정류소 <InlineMath math="B,\ C" /> 사이의 거리를 구하시오.
+                            </p>
 
-            <p className="mt-3 text-sm leading-7 text-gray-400">
-                (단, 도로의 폭은 무시하며 모든 지점과 도로는 같은 평면 위에 있다.)
-            </p>
+                            <p className="mt-3 text-sm leading-7 text-gray-400">
+                                (단, 도로의 폭은 무시하며 모든 지점과 도로는 같은 평면 위에 있다.)
+                            </p>
 
-        </div>
+                        </div>
 
-        {/* 그림 */}
-        <div className="rounded-xl border border-white/10 bg-white p-4">
+                        {/* 그림 */}
+                        <div className="rounded-xl border border-white/10 bg-white p-4">
 
-            <img
-                src="/images/commonMath2/1.33_012.png"
-                alt="45도로 만나는 두 도로 l, m과 정류소 A, B, C"
-                className="mx-auto w-full max-w-md rounded-lg"
-            />
+                            <img
+                                src="/images/commonMath2/1.33_012.png"
+                                alt="45도로 만나는 두 도로 l, m과 정류소 A, B, C"
+                                className="mx-auto w-full max-w-md rounded-lg"
+                            />
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <details className="mt-5 rounded-xl border border-white/15 p-5">
+                    <details className="mt-5 rounded-xl border border-white/15 p-5">
 
-        <summary className="cursor-pointer font-semibold text-yellow-300">
-            풀이 보기
-        </summary>
+                        <summary className="cursor-pointer font-semibold text-yellow-300">
+                            풀이 보기
+                        </summary>
 
-        <div className="mt-5 space-y-5 text-gray-300">
+                        <div className="mt-5 space-y-5 text-gray-300">
 
-            <p className="leading-8">
-                정류소 <InlineMath math="A" />에서 출발하여{" "}
-                <InlineMath math="B,\ C" />를 지나 다시{" "}
-                <InlineMath math="A" />로 돌아오므로
-                만들어지는 도로의 전체 길이는
-            </p>
+                            <p className="leading-8">
+                                정류소 <InlineMath math="A" />에서 출발하여{" "}
+                                <InlineMath math="B,\ C" />를 지나 다시{" "}
+                                <InlineMath math="A" />로 돌아오므로
+                                만들어지는 도로의 전체 길이는
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 AB+BC+CA
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                입니다.
-            </p>
+                            <p className="leading-8">
+                                입니다.
+                            </p>
 
-            <p className="leading-8">
-                점 <InlineMath math="B" />와{" "}
-                <InlineMath math="C" />에서 두 번 꺾이므로,
-                점 <InlineMath math="A" />를 두 도로에 대하여
-                각각 대칭이동합니다.
-            </p>
+                            <p className="leading-8">
+                                점 <InlineMath math="B" />와{" "}
+                                <InlineMath math="C" />에서 두 번 꺾이므로,
+                                점 <InlineMath math="A" />를 두 도로에 대하여
+                                각각 대칭이동합니다.
+                            </p>
 
 
-            {/* 좌표 설정 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 좌표 설정 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ① 좌표를 정한다
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ① 좌표를 정한다
+                                </p>
 
-                <p className="leading-8">
-                    두 도로의 교점 <InlineMath math="O" />를 원점으로 하고,
-                    도로 <InlineMath math="l" />을{" "}
-                    <InlineMath math="x" />축으로 놓겠습니다.
-                </p>
+                                <p className="leading-8">
+                                    두 도로의 교점 <InlineMath math="O" />를 원점으로 하고,
+                                    도로 <InlineMath math="l" />을{" "}
+                                    <InlineMath math="x" />축으로 놓겠습니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    두 도로가 이루는 각이{" "}
-                    <InlineMath math="45^\circ" />이므로
-                    도로 <InlineMath math="m" />의 방정식은
-                </p>
+                                <p className="mt-3 leading-8">
+                                    두 도로가 이루는 각이{" "}
+                                    <InlineMath math="45^\circ" />이므로
+                                    도로 <InlineMath math="m" />의 방정식은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 m:y=x
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    로 둘 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    로 둘 수 있습니다.
+                                </p>
 
-                <p className="leading-8">
-                    정류소 <InlineMath math="A" />는
-                    점 <InlineMath math="O" />에서 동쪽으로{" "}
-                    <InlineMath math="4" />, 북쪽으로{" "}
-                    <InlineMath math="2" /> 떨어져 있으므로
-                </p>
+                                <p className="leading-8">
+                                    정류소 <InlineMath math="A" />는
+                                    점 <InlineMath math="O" />에서 동쪽으로{" "}
+                                    <InlineMath math="4" />, 북쪽으로{" "}
+                                    <InlineMath math="2" /> 떨어져 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A(4,2)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 대칭이동 */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 대칭이동 */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ② 점 A를 두 도로에 대하여 대칭이동
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ② 점 A를 두 도로에 대하여 대칭이동
+                                </p>
 
-                <p className="leading-8">
-                    점 <InlineMath math="A(4,2)" />를
-                    도로 <InlineMath math="l" />, 즉{" "}
-                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
-                    <InlineMath math="A'" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    점 <InlineMath math="A(4,2)" />를
+                                    도로 <InlineMath math="l" />, 즉{" "}
+                                    <InlineMath math="x" />축에 대하여 대칭이동한 점을{" "}
+                                    <InlineMath math="A'" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A'(4,-2)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    또 점 <InlineMath math="A(4,2)" />를
-                    직선 <InlineMath math="m:y=x" />에 대하여
-                    대칭이동한 점을 <InlineMath math="A''" />라 하면
-                </p>
+                                <p className="leading-8">
+                                    또 점 <InlineMath math="A(4,2)" />를
+                                    직선 <InlineMath math="m:y=x" />에 대하여
+                                    대칭이동한 점을 <InlineMath math="A''" />라 하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A''(2,4)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-                <p className="leading-8">
-                    대칭이동에 의하여
-                </p>
+                                <p className="leading-8">
+                                    대칭이동에 의하여
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AB=A'B,
 \qquad
 AC=A''C
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이므로
-                </p>
+                                <p className="leading-8">
+                                    이므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 AB+BC+CA
 =
 A'B+BC+CA''
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    로 바꿀 수 있습니다.
-                </p>
+                                <p className="leading-8">
+                                    로 바꿀 수 있습니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 최소 조건 */}
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            {/* 최소 조건 */}
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    ③ 꺾인 선을 하나의 선분으로
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    ③ 꺾인 선을 하나의 선분으로
+                                </p>
 
-                <p className="leading-8">
-                    네 점{" "}
-                    <InlineMath math="A',\ B,\ C,\ A''" />가
-                    한 직선 위에 있을 때
-                </p>
+                                <p className="leading-8">
+                                    네 점{" "}
+                                    <InlineMath math="A',\ B,\ C,\ A''" />가
+                                    한 직선 위에 있을 때
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A'B+BC+CA''
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    의 길이가 가장 짧아집니다.
-                </p>
+                                <p className="leading-8">
+                                    의 길이가 가장 짧아집니다.
+                                </p>
 
-                <p className="mt-3 leading-8">
-                    따라서 최소가 되는 점{" "}
-                    <InlineMath math="B,\ C" />는
-                    직선 <InlineMath math="A'A''" />와
-                    두 도로 <InlineMath math="l,\ m" />의 교점입니다.
-                </p>
+                                <p className="mt-3 leading-8">
+                                    따라서 최소가 되는 점{" "}
+                                    <InlineMath math="B,\ C" />는
+                                    직선 <InlineMath math="A'A''" />와
+                                    두 도로 <InlineMath math="l,\ m" />의 교점입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* 직선 A'A'' */}
-            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                            {/* 직선 A'A'' */}
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
 
-                <p className="mb-4 font-bold text-white">
-                    ④ 점 B, C의 좌표
-                </p>
+                                <p className="mb-4 font-bold text-white">
+                                    ④ 점 B, C의 좌표
+                                </p>
 
-                <p className="leading-8">
-                    두 점{" "}
-                    <InlineMath math="A'(4,-2)" />와{" "}
-                    <InlineMath math="A''(2,4)" />를 지나는 직선의 기울기는
-                </p>
+                                <p className="leading-8">
+                                    두 점{" "}
+                                    <InlineMath math="A'(4,-2)" />와{" "}
+                                    <InlineMath math="A''(2,4)" />를 지나는 직선의 기울기는
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \frac{4-(-2)}{2-4}
 =
 -3
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    이므로 직선 <InlineMath math="A'A''" />의 방정식은
-                </p>
+                                <p className="leading-8">
+                                    이므로 직선 <InlineMath math="A'A''" />의 방정식은
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 y=-3x+10
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
 
-                <p className="mt-5 leading-8">
-                    점 <InlineMath math="B" />는
-                    <InlineMath math="x" />축 위에 있으므로{" "}
-                    <InlineMath math="y=0" />을 대입하면
-                </p>
+                                <p className="mt-5 leading-8">
+                                    점 <InlineMath math="B" />는
+                                    <InlineMath math="x" />축 위에 있으므로{" "}
+                                    <InlineMath math="y=0" />을 대입하면
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 0=-3x+10
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 B\left(\frac{10}{3},0\right)
 `}
-                />
+                                />
 
 
-                <p className="mt-5 leading-8">
-                    점 <InlineMath math="C" />는 직선{" "}
-                    <InlineMath math="y=x" /> 위에 있으므로
-                </p>
+                                <p className="mt-5 leading-8">
+                                    점 <InlineMath math="C" />는 직선{" "}
+                                    <InlineMath math="y=x" /> 위에 있으므로
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=-3x+10
 `}
-                />
+                                />
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 x=\frac52
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    따라서
-                </p>
+                                <p className="leading-8">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 C\left(\frac52,\frac52\right)
 `}
-                />
+                                />
 
-                <p className="leading-8">
-                    입니다.
-                </p>
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
 
-            </div>
+                            </div>
 
 
-            {/* BC */}
-            <p className="leading-8">
-                이제 두 점
-            </p>
+                            {/* BC */}
+                            <p className="leading-8">
+                                이제 두 점
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 B\left(\frac{10}{3},0\right),
 \qquad
 C\left(\frac52,\frac52\right)
 `}
-            />
+                            />
 
-            <p className="leading-8">
-                사이의 거리를 구하면
-            </p>
+                            <p className="leading-8">
+                                사이의 거리를 구하면
+                            </p>
 
-            <BlockMath
-                math={String.raw`
+                            <BlockMath
+                                math={String.raw`
 \begin{aligned}
 BC
 &=
@@ -17428,39 +17428,39 @@ BC
 \frac{5\sqrt{10}}6
 \end{aligned}
 `}
-            />
+                            />
 
 
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
 
-                <p className="font-bold text-green-300">
-                    따라서
-                </p>
+                                <p className="font-bold text-green-300">
+                                    따라서
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{\frac{5\sqrt{10}}6\text{ km}}
 `}
-                />
+                                />
 
-            </div>
+                            </div>
 
 
-            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
 
-                <p className="mb-3 font-bold text-blue-300">
-                    풀이의 핵심
-                </p>
+                                <p className="mb-3 font-bold text-blue-300">
+                                    풀이의 핵심
+                                </p>
 
-                <p className="leading-8 text-gray-300">
-                    도로 <InlineMath math="l,\ m" /> 위에서
-                    각각 한 번씩 꺾이므로,
-                    같은 출발점 <InlineMath math="A" />를
-                    두 도로에 대하여 각각 대칭이동합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    도로 <InlineMath math="l,\ m" /> 위에서
+                                    각각 한 번씩 꺾이므로,
+                                    같은 출발점 <InlineMath math="A" />를
+                                    두 도로에 대하여 각각 대칭이동합니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 A
 \xrightarrow{\,l\,}
 A',
@@ -17469,59 +17469,59 @@ A
 \xrightarrow{\,m\,}
 A''
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    최소일 때 대칭점과 두 정류소가
-                    하나의 직선 위에 놓입니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    최소일 때 대칭점과 두 정류소가
+                                    하나의 직선 위에 놓입니다.
+                                </p>
 
-                <BlockMath
-                    math={String.raw`
+                                <BlockMath
+                                    math={String.raw`
 \boxed{
 A',\ B,\ C,\ A''
 \text{가 한 직선 위}
 }
 `}
-                />
+                                />
 
-                <p className="leading-8 text-gray-300">
-                    문제에서 요구한 것은 전체 도로의 최소 길이가 아니라
-                    그때의 <InlineMath math="BC" />이므로,
-                    최소 조건으로 <InlineMath math="B,\ C" />의
-                    위치를 먼저 결정한 뒤 <InlineMath math="BC" />를 구합니다.
-                </p>
+                                <p className="leading-8 text-gray-300">
+                                    문제에서 요구한 것은 전체 도로의 최소 길이가 아니라
+                                    그때의 <InlineMath math="BC" />이므로,
+                                    최소 조건으로 <InlineMath math="B,\ C" />의
+                                    위치를 먼저 결정한 뒤 <InlineMath math="BC" />를 구합니다.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </details>
+                    </details>
 
-</div>
+                </div>
 
-    {/* 핵심 정리 */}
-    <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+                {/* 핵심 정리 */}
+                <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
-        <h3 className="mb-4 text-xl font-bold text-yellow-300">
-            핵심 정리
-        </h3>
+                    <h3 className="mb-4 text-xl font-bold text-yellow-300">
+                        핵심 정리
+                    </h3>
 
-        <div className="space-y-4 text-gray-300">
+                    <div className="space-y-4 text-gray-300">
 
-            <p className="leading-8">
-                • 선분 길이의 합의 최솟값은
-                각 선분의 길이를 따로 계산하기보다
-                대칭이동을 이용하여 구한다.
-            </p>
+                        <p className="leading-8">
+                            • 선분 길이의 합의 최솟값은
+                            각 선분의 길이를 따로 계산하기보다
+                            대칭이동을 이용하여 구한다.
+                        </p>
 
-            <p className="leading-8">
-                • 일반적으로{" "}
-                <b>꺾이는 점이 놓인 직선에 대하여 대칭이동</b>한다.
-            </p>
+                        <p className="leading-8">
+                            • 일반적으로{" "}
+                            <b>꺾이는 점이 놓인 직선에 대하여 대칭이동</b>한다.
+                        </p>
 
-            <BlockMath
-                math={String.raw`
+                        <BlockMath
+                            math={String.raw`
 \boxed{
 \text{꺾인 선분}
 \rightarrow
@@ -17530,31 +17530,31 @@ A',\ B,\ C,\ A''
 \text{하나의 선분}
 }
 `}
-            />
+                        />
 
-            <p className="leading-8">
-                • 한 번 꺾이면 한 번 대칭이동하고,
-                두 번 꺾이면 각각의 직선에 대하여 대칭이동한다.
-            </p>
+                        <p className="leading-8">
+                            • 한 번 꺾이면 한 번 대칭이동하고,
+                            두 번 꺾이면 각각의 직선에 대하여 대칭이동한다.
+                        </p>
 
-            <p className="leading-8">
-                • 부채꼴에서는 호 위의 점의 위치가 달라져도
-                두 대칭점 사이의 길이가 일정하므로
-                최소 둘레도 일정하다.
-            </p>
+                        <p className="leading-8">
+                            • 부채꼴에서는 호 위의 점의 위치가 달라져도
+                            두 대칭점 사이의 길이가 일정하므로
+                            최소 둘레도 일정하다.
+                        </p>
 
-            <p className="leading-8">
-                • 삼각형의 세 변 위의 점을 이은 삼각형의
-                둘레를 최소로 할 때에는
-                한 점을 먼저 고정하여 나머지 두 점에 대한
-                최솟값을 구한 뒤, 고정한 점의 위치를 결정한다.
-            </p>
+                        <p className="leading-8">
+                            • 삼각형의 세 변 위의 점을 이은 삼각형의
+                            둘레를 최소로 할 때에는
+                            한 점을 먼저 고정하여 나머지 두 점에 대한
+                            최솟값을 구한 뒤, 고정한 점의 위치를 결정한다.
+                        </p>
 
-        </div>
+                    </div>
 
-    </div>
+                </div>
 
-</section>
+            </section>
         </>
     )
 };
