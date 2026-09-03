@@ -43,7 +43,8 @@ import SetOperationsPage
   from "../components/commonMath2/setsAndLogic/SetOperationsPage";
 import PropositionPage
   from "../components/commonMath2/setsAndLogic/PropositionPage";
-
+import AbsoluteInequalityPage
+  from "../components/commonMath2/setsAndLogic/AbsoluteInequalityPage";
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -63,7 +64,7 @@ const curriculum = {
   },
   공통수학2: {
     "도형의 방정식": ["평면좌표", "직선의 방정식", "원의 방정식", "도형의 이동"],
-    "집합과 명제": ["집합의 뜻과 포함관계", "집합의 연산", "명제"],
+    "집합과 명제": ["집합의 뜻과 포함관계", "집합의 연산", "명제", "절대부등식"],
     함수: ["함수", "유리함수", "무리함수"],
   },
   대수: {
@@ -279,6 +280,14 @@ export default function Home() {
       smallUnit === "명제"
     ) {
       return <PropositionPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "집합과 명제" &&
+      smallUnit === "절대부등식"
+    ) {
+      return <AbsoluteInequalityPage />;
     }
 
     return (
