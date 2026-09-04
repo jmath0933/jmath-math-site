@@ -881,7 +881,7 @@ export default function InequalityPropertiesPage() {
                             <BlockMath math="=\left(a-\frac12b\right)^2+\left(\text{①}\right)" />
 
                             <p className="leading-8 text-gray-300">
-                                <InlineMath math="a-\frac12b" />, <InlineMath math="b" />는 <InlineMath math="\left(\text{②}\right)" />이므로
+                                <InlineMath math="\displaystyle a-\frac12b" />, <InlineMath math="b" />는 <InlineMath math="\left(\text{②}\right)" />이므로
                             </p>
 
                             <BlockMath math="\left(a-\frac12b\right)^2\ge0,\qquad \left(\text{①}\right)\ge0" />
@@ -920,7 +920,7 @@ export default function InequalityPropertiesPage() {
                             <hr className="border-white/10" />
 
                             <p>
-                                <InlineMath math="a-\frac12b" />와 <InlineMath math="b" />는 모두 실수이므로,
+                                <InlineMath math="\displaystyle a-\frac12b" />와 <InlineMath math="b" />는 모두 실수이므로,
                                 그 제곱은 항상 <InlineMath math="0" /> 이상입니다.
                             </p>
 
@@ -1470,11 +1470,11 @@ export default function InequalityPropertiesPage() {
 
                     <p className="mt-4 leading-8 text-gray-300">
                         (1)&nbsp;<InlineMath math="xy" />
-                    </p>
+                    </p><br/>
 
                     <p className="leading-8 text-gray-300">
                         (2)&nbsp;<InlineMath math="\dfrac{x}{y}" />
-                    </p>
+                    </p><br/>
 
                     <details className="rounded-xl border border-white/15 p-5">
                         <summary className="cursor-pointer font-semibold text-yellow-300">

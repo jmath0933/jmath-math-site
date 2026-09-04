@@ -8002,11 +8002,11 @@ export default function QuadraticEquationAndFunctionPage() {
                                 </p>
 
                                 <div className="mt-5 grid grid-cols-1 gap-2 text-gray-300 sm:grid-cols-2">
-                                    <p>① <InlineMath math="\frac{2\alpha+\beta}{3}" /></p>
-                                    <p>② <InlineMath math="\frac{\alpha+2\beta}{3}" /></p>
-                                    <p>③ <InlineMath math="\frac{2\alpha+\beta}{2}" /></p>
-                                    <p>④ <InlineMath math="\frac{\alpha+2\beta}{2}" /></p>
-                                    <p>⑤ <InlineMath math="\frac{\alpha+\beta}{2}" /></p>
+                                    <p>① <InlineMath math="\displaystyle \frac{2\alpha+\beta}{3}" /></p>
+                                    <p>② <InlineMath math="\displaystyle \frac{\alpha+2\beta}{3}" /></p>
+                                    <p>③ <InlineMath math="\displaystyle \frac{2\alpha+\beta}{2}" /></p>
+                                    <p>④ <InlineMath math="\displaystyle \frac{\alpha+2\beta}{2}" /></p>
+                                    <p>⑤ <InlineMath math="\displaystyle \frac{\alpha+\beta}{2}" /></p>
                                 </div>
                             </div>
 

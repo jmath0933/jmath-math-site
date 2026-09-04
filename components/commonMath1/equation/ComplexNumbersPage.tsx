@@ -851,7 +851,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        실수 <InlineMath math="x,y" />에 대하여 <InlineMath math="|x-y|+(y-2)i=5x-2-3xi" />가 성립할 때, <InlineMath math="x+y=\frac{q}{p}" />라 하자.
+                        실수 <InlineMath math="x,y" />에 대하여 <InlineMath math="|x-y|+(y-2)i=5x-2-3xi" />가 성립할 때, <InlineMath math="\displaystyle x+y=\frac{q}{p}" />라 하자.
                         이때 <InlineMath math="p+q" />의 값을 구하여라.
                     </p>
 
@@ -914,7 +914,7 @@ export default function ComplexNumbersPage() {
                             <BlockMath math="=\frac{10}{9}" />
 
                             <p>
-                                <InlineMath math="x+y=\frac{q}{p}" />이므로 <InlineMath math="q=10,\ p=9" />입니다.
+                                <InlineMath math="\displaystyle x+y=\frac{q}{p}" />이므로 <InlineMath math="q=10,\ p=9" />입니다.
                             </p>
 
                             <BlockMath math="p+q=19" />
@@ -3383,7 +3383,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        <InlineMath math="\left(\frac{1+i}{\sqrt2}\right)^2+\left(\frac{1+i}{\sqrt2}\right)^4+\left(\frac{1+i}{\sqrt2}\right)^6+\left(\frac{1+i}{\sqrt2}\right)^8" />
+                        <InlineMath math="\displaystyle \left(\frac{1+i}{\sqrt2}\right)^2+\left(\frac{1+i}{\sqrt2}\right)^4+\left(\frac{1+i}{\sqrt2}\right)^6+\left(\frac{1+i}{\sqrt2}\right)^8" />
                         을 간단히 하여라.
                     </p>
 
@@ -3424,7 +3424,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        <InlineMath math="f(x)=x^{2010}+\frac1{x^{2010}}" />일 때, <InlineMath math="f\left(\frac{1+i}{\sqrt2}\right)+f\left(\frac{1-i}{\sqrt2}\right)" />
+                        <InlineMath math="\displaystyle f(x)=x^{2010}+\frac1{x^{2010}}" />일 때, <InlineMath math="\displaystyle f\left(\frac{1+i}{\sqrt2}\right)+f\left(\frac{1-i}{\sqrt2}\right)" />
                         의 값을 구하여라.
                     </p>
 
@@ -3487,7 +3487,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="\left(\frac{1+i}{\sqrt2}\right)^n=i" />
+                        <InlineMath math="\left(\displaystyle \frac{1+i}{\sqrt2}\right)^n=i" />
                         를 만족하는 두 자리의 자연수 <InlineMath math="n" /> 중 가장 큰 값을 구하여라.
                     </p>
 
@@ -3506,13 +3506,13 @@ export default function ComplexNumbersPage() {
 
                             <BlockMath math="\left(\frac{1+i}{\sqrt2}\right)^n=i" />
 
-                            <BlockMath math="\Longrightarrow i^{n/2}=i" />
+                            <BlockMath math="\Longrightarrow i^{\frac n 2}=i" />
 
                             <p>
                                 따라서
                             </p>
 
-                            <BlockMath math="i^{n/2-1}=1" />
+                            <BlockMath math="i^{\frac n 2 -1}=1" />
 
                             <p>
                                 이다.
@@ -3600,7 +3600,7 @@ export default function ComplexNumbersPage() {
                     </h3>
 
                     <p className="leading-8 text-gray-300">
-                        <InlineMath math="f(x)=\left(\frac{1-x}{1+x}\right)^{99}" />
+                        <InlineMath math="f(x)=\left(\displaystyle \frac{1-x}{1+x}\right)^{99}" />
                         일 때,
                     </p>
 
@@ -4351,7 +4351,7 @@ export default function ComplexNumbersPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 6</h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        <InlineMath math="a,b" />는 실수이고 <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />일 때, <InlineMath math="\sqrt{(a-b)^2}-\sqrt{b^2}+2|a|" />를 간단히 하여라.
+                        <InlineMath math="a,b" />는 실수이고 <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />일 때, <InlineMath math="\sqrt{(a-b)^2}-\sqrt{b^2}+2|a|" />를 간단히 하여라.
                     </p>
 
                     <details className="rounded-xl border border-white/15 p-5">
@@ -4361,7 +4361,7 @@ export default function ComplexNumbersPage() {
 
                         <div className="mt-5 space-y-5 text-gray-300">
                             <p>
-                                <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />이므로
+                                <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />이므로
                             </p>
 
                             <BlockMath math="a\ge0,\quad b<0" />
@@ -4395,7 +4395,7 @@ export default function ComplexNumbersPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 7</h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        실수 <InlineMath math="x" />가 <InlineMath math="\frac{\sqrt{x+2}}{\sqrt{x}}=-\sqrt{\frac{x+2}{x}}" />
+                        실수 <InlineMath math="x" />가 <InlineMath math="\displaystyle \frac{\sqrt{x+2}}{\sqrt{x}}=-\sqrt{\frac{x+2}{x}}" />
                         를 만족할 때, <InlineMath math="|x|+\sqrt{(x+2)^2}" />을 간단히 하여라.
                     </p>
 
@@ -4406,7 +4406,7 @@ export default function ComplexNumbersPage() {
 
                         <div className="mt-5 space-y-5 text-gray-300">
                             <p>
-                                <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />가 성립하려면
+                                <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />가 성립하려면
                             </p>
 
                             <BlockMath math="a\ge0,\quad b<0" />
@@ -4446,7 +4446,7 @@ export default function ComplexNumbersPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 8</h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        0이 아닌 두 실수 <InlineMath math="a,b" />가 <InlineMath math="\frac{\sqrt a}{\sqrt b}+\sqrt{\frac ab}=0" />
+                        0이 아닌 두 실수 <InlineMath math="a,b" />가 <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}+\sqrt{\frac ab}=0" />
                         을 만족할 때, <InlineMath math="\sqrt{a^2}+\sqrt{b^2}+\sqrt{(a-b)^2}" />을 간단히 하여라.
                     </p>
 
@@ -4503,7 +4503,7 @@ export default function ComplexNumbersPage() {
                     <h3 className="mb-4 text-xl font-bold text-white">예제 9</h3>
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        0이 아닌 두 실수 <InlineMath math="a,b" />에 대하여 <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />
+                        0이 아닌 두 실수 <InlineMath math="a,b" />에 대하여 <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />
                         일 때, <InlineMath math="\sqrt{(a-2b)^2}+|3b|" />을 간단히 하여라.
                     </p>
 
@@ -4514,7 +4514,7 @@ export default function ComplexNumbersPage() {
 
                         <div className="mt-5 space-y-5 text-gray-300">
                             <p>
-                                <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />이고 <InlineMath math="a,b" />가 0이 아니므로
+                                <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />이고 <InlineMath math="a,b" />가 0이 아니므로
                             </p>
 
                             <BlockMath math="a>0,\quad b<0" />
@@ -4618,7 +4618,7 @@ export default function ComplexNumbersPage() {
                             <BlockMath math="\frac{\sqrt{3-x}}{\sqrt{-2-x}}=-\sqrt{\frac{3-x}{-2-x}}" />
 
                             <p>
-                                이는 <InlineMath math="\frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />의 꼴입니다.
+                                이는 <InlineMath math="\displaystyle \frac{\sqrt a}{\sqrt b}=-\sqrt{\frac ab}" />의 꼴입니다.
                             </p>
 
                             <BlockMath math="a=3-x,\quad b=-2-x" />

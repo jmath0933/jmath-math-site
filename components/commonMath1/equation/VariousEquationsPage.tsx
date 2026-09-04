@@ -347,7 +347,7 @@ export default function QuadraticEquationAndFunctionPage() {
                             <BlockMath math="x^3-7x+6=0" />
 
                             <p className="leading-8 text-gray-300">
-                                특별한 구조가 보이지 않으면 <InlineMath math="\pm\frac{\text{상수항의 약수}}{\text{최고차항의 계수의 약수}}" />
+                                특별한 구조가 보이지 않으면 <InlineMath math="\displaystyle \pm\frac{\text{상수항의 약수}}{\text{최고차항의 계수의 약수}}" />
                                 를 대입합니다.
                             </p>
 
@@ -959,7 +959,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                                 <p>
                                     따라서 이 방정식은 실근을 갖지 않습니다.
-                                </p>
+                                </p><br/>
 
                                 <p>
                                     그러므로 두 실근 <InlineMath math="\alpha,\ \beta" />는 <InlineMath math="x^2+6x+1=0" />의 두 근입니다.
@@ -987,7 +987,7 @@ export default function QuadraticEquationAndFunctionPage() {
                     <BlockMath math="2x^4-3x^3-x^2-3x+2=0" />
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        의 해를 <InlineMath math="\alpha" />라 할 때, <InlineMath math="\alpha+\frac1\alpha" />의 값을 구하여라.
+                        의 해를 <InlineMath math="\alpha" />라 할 때, <InlineMath math="\displaystyle \alpha+\frac1\alpha" />의 값을 구하여라.
                     </p>
 
                     <details className="rounded-xl border border-white/15 p-5">
@@ -1039,16 +1039,16 @@ export default function QuadraticEquationAndFunctionPage() {
 
                             <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
                                 <h4 className="mb-3 font-bold text-green-300">
-                                    <InlineMath math="\alpha+\frac1\alpha" />의 값 구하기
+                                    <InlineMath math="\displaystyle \alpha+\frac1\alpha" />의 값 구하기
                                 </h4>
 
                                 <p>
                                     각 이차방정식의 상수항이 <InlineMath math="1" />이므로 <InlineMath math="x\ne0" />입니다.
                                     따라서 양변을 <InlineMath math="x" />로 나눌 수 있습니다.
-                                </p>
+                                </p><br/>
 
                                 <p>
-                                    먼저
+                                    먼저{" "}
                                     <InlineMath math="x^2+x+1=0" />에서
                                 </p>
 
@@ -1061,17 +1061,17 @@ export default function QuadraticEquationAndFunctionPage() {
                                 <hr className="border-white/10" />
 
                                 <p>
-                                    다음으로 <InlineMath math="x^2-\frac52x+1=0" />에서
+                                    다음으로 <InlineMath math="\displaystyle x^2-\frac52x+1=0" />에서
                                 </p>
 
-                                <BlockMath math="\frac{x^2-\frac52x+1}{x}=0" />
+                                <BlockMath math="\displaystyle \frac{x^2-\displaystyle \frac52x+1}{x}=0" />
 
                                 <BlockMath math="x-\frac52+\frac1x=0" />
 
                                 <BlockMath math="x+\frac1x=\frac52" />
 
                                 <p>
-                                    그러므로 <InlineMath math="\alpha+\frac1\alpha" />의 값은
+                                    그러므로 <InlineMath math="\displaystyle \alpha+\frac1\alpha" />의 값은
                                 </p>
 
                                 <BlockMath math="-1\quad\text{또는}\quad \frac52" />
@@ -1145,7 +1145,7 @@ export default function QuadraticEquationAndFunctionPage() {
                                 <BlockMath math="2\left(x^2+\frac1{x^2}\right)-5\left(x+\frac1x\right)+1=0" />
 
                                 <p>
-                                    <InlineMath math="t=x+\frac1x" />라고 놓으면
+                                    <InlineMath math="\displaystyle t=x+\frac1x" />라고 놓으면
                                 </p>
 
                                 <BlockMath math="x^2+\frac1{x^2}=t^2-2" />
@@ -1177,7 +1177,7 @@ export default function QuadraticEquationAndFunctionPage() {
                                 <hr className="border-white/10" />
 
                                 <p>
-                                    ② <InlineMath math="t=-\frac12" />일 때
+                                    ② <InlineMath math="\displaystyle t=-\frac12" />일 때
                                 </p>
 
                                 <BlockMath math="x+\frac1x=-\frac12" />
@@ -2066,7 +2066,7 @@ export default function QuadraticEquationAndFunctionPage() {
                     <BlockMath math="x^3+3x-1=0" />
 
                     <p className="mb-4 leading-8 text-gray-300">
-                        의 세 근을 <InlineMath math="\alpha,\ \beta,\ \gamma" />라 할 때, <InlineMath math="\frac{\alpha+\beta}{\gamma^2},\ \frac{\beta+\gamma}{\alpha^2},\ \frac{\gamma+\alpha}{\beta^2}" />
+                        의 세 근을 <InlineMath math="\alpha,\ \beta,\ \gamma" />라 할 때, <InlineMath math="\displaystyle \frac{\alpha+\beta}{\gamma^2},\ \frac{\beta+\gamma}{\alpha^2},\ \frac{\gamma+\alpha}{\beta^2}" />
                         를 세 근으로 하는 삼차방정식을 구하여라.
                     </p>
 
@@ -2074,7 +2074,7 @@ export default function QuadraticEquationAndFunctionPage() {
                         <summary className="cursor-pointer font-semibold text-yellow-300">
                             풀이 보기
                         </summary>
-
+<br/>
                         <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
                             <h4 className="mb-3 font-bold text-blue-300">
                                 풀이 1 : 각각의 계수를 구하기
@@ -2133,7 +2133,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                             <BlockMath math="x^3-(-3)x^2+0x-(-1)=0" />
                             <BlockMath math="x^3+3x^2+1=0" />
-                        </div>
+                        </div><br/>
 
                         <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
                             <h4 className="mb-3 font-bold text-green-300">
@@ -2158,7 +2158,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                             <p>
                                 의 세 근이 <InlineMath math="\alpha,\ \beta,\ \gamma" />
-                                일 때, <InlineMath math="-\frac1\alpha,\ -\frac1\beta,\ -\frac1\gamma" />
+                                일 때, <InlineMath math="\displaystyle -\frac1\alpha,\ -\frac1\beta,\ -\frac1\gamma" />
                                 를 세 근으로 하는 삼차방정식은
                             </p>
 
@@ -2190,7 +2190,7 @@ export default function QuadraticEquationAndFunctionPage() {
                             </p>
 
                             <BlockMath math="x^3+3x^2+1=0" />
-                        </div>
+                        </div><br/>
 
                         <p className="font-semibold text-white">
                             따라서 정답은 ② <InlineMath math="x^3+3x^2+1=0" />
@@ -2376,7 +2376,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                 <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-6">
                     <h3 className="mb-5 text-xl font-bold text-yellow-300">
-                        정리
+                        핵심 정리
                     </h3>
 
                     <p className="mb-5 leading-8 text-gray-300">
@@ -2407,14 +2407,14 @@ export default function QuadraticEquationAndFunctionPage() {
 
                         <div className="rounded-xl bg-black/30 p-4">
                             <p className="mb-2 font-semibold text-gray-200">
-                                세 근이 <InlineMath math="\frac1\alpha,\ \frac1\beta,\ \frac1\gamma" />인 경우
+                                세 근이 <InlineMath math="\displaystyle \frac1\alpha,\ \frac1\beta,\ \frac1\gamma" />인 경우
                             </p>
                             <BlockMath math="dx^3+cx^2+bx+a=0" />
                         </div>
 
                         <div className="rounded-xl bg-black/30 p-4">
                             <p className="mb-2 font-semibold text-gray-200">
-                                세 근이 <InlineMath math="-\frac1\alpha,\ -\frac1\beta,\ -\frac1\gamma" />인 경우
+                                세 근이 <InlineMath math="\displaystyle -\frac1\alpha,\ -\frac1\beta,\ -\frac1\gamma" />인 경우
                             </p>
                             <BlockMath math="dx^3-cx^2+bx-a=0" />
                         </div>
@@ -4679,7 +4679,7 @@ export default function QuadraticEquationAndFunctionPage() {
                         </p>
 
                         <div className="space-y-3 text-gray-300">
-                            <p>ㄱ. <InlineMath math="\omega+\frac1{\omega}=-1" /></p>
+                            <p>ㄱ. <InlineMath math="\displaystyle \omega+\frac1{\omega}=-1" /></p>
 
                             <p>ㄴ. <InlineMath math="\omega^2" />도 <InlineMath math="x^3-1=0" />의 근이다.</p>
 
@@ -4687,7 +4687,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                             <p>ㄹ. <InlineMath math="\omega^2=\overline{\omega}" /></p>
 
-                            <p>ㅁ. <InlineMath math="\overline{\omega}=\frac1{\omega}" /></p>
+                            <p>ㅁ. <InlineMath math="\displaystyle \overline{\omega}=\frac1{\omega}" /></p>
                         </div>
                     </div>
 
@@ -4765,7 +4765,7 @@ export default function QuadraticEquationAndFunctionPage() {
 
                         <div className="grid gap-3 text-gray-300 sm:grid-cols-2">
                             <p>ㄱ. <InlineMath math="\alpha+\overline{\alpha}=-1" /></p>
-                            <p>ㄴ. <InlineMath math="\overline{\alpha}=\frac1\alpha" /></p>
+                            <p>ㄴ. <InlineMath math="\displaystyle \overline{\alpha}=\frac1\alpha" /></p>
                             <p>ㄷ. <InlineMath math="\alpha^2+\alpha+1=0" /></p>
                             <p>ㄹ. <InlineMath math="\alpha^2=\overline{\alpha}" /></p>
                         </div>

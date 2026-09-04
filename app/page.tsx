@@ -45,6 +45,8 @@ import PropositionPage
   from "../components/commonMath2/setsAndLogic/PropositionPage";
 import AbsoluteInequalityPage
   from "../components/commonMath2/setsAndLogic/AbsoluteInequalityPage";
+import FunctionBasicsPage
+  from "../components/commonMath2/function/FunctionBasicsPage";  
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -288,6 +290,14 @@ export default function Home() {
       smallUnit === "절대부등식"
     ) {
       return <AbsoluteInequalityPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "함수" &&
+      smallUnit === "함수"
+    ) {
+      return <FunctionBasicsPage />;
     }
 
     return (

@@ -1144,11 +1144,11 @@ function QuadraticGraphTypeExplorer() {
 
     return (
 
-        <div className="space-y-8">
+        <div className="space-y-6">
 
             {/* 11개 그래프 */}
 
-            <div className="overflow-x-auto pb-3">
+            <div className="overflow-x-auto pb-2">
                 <div className="flex min-w-max items-end gap-1">
                     {graphTypes.map((graph) => {
                         const isMatched =
@@ -1190,7 +1190,7 @@ function QuadraticGraphTypeExplorer() {
 
             {/* 그래프 클릭시 */}
 
-            <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5">
+            <div className="rounded-xl border border-white/15 bg-white/[0.03] p-4">
                 {selectedGraph === null ? (
                     <p className="text-center text-gray-500">
                         그래프를 클릭하면 계수의 조건이 표시됩니다.
@@ -1211,7 +1211,7 @@ function QuadraticGraphTypeExplorer() {
 
             {/* 절대부등식 버튼 */}
 
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-1.5 lg:grid-cols-4">
 
                 {Object.entries(conditionInfo).map(
                     ([key, value]) => {
@@ -1241,7 +1241,7 @@ function QuadraticGraphTypeExplorer() {
                         rounded-xl
                         border
                         border-white/15
-                        p-5
+                        p-3
                         min-h-[130px]
                         "
 
