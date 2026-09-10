@@ -47,6 +47,8 @@ import AbsoluteInequalityPage
   from "../components/commonMath2/setsAndLogic/AbsoluteInequalityPage";
 import FunctionBasicsPage
   from "../components/commonMath2/function/FunctionBasicsPage";  
+import CompositeAndInverseFunctionPage
+  from "../components/commonMath2/function/CompositeAndInverseFunctionPage";  
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -67,7 +69,7 @@ const curriculum = {
   공통수학2: {
     "도형의 방정식": ["평면좌표", "직선의 방정식", "원의 방정식", "도형의 이동"],
     "집합과 명제": ["집합의 뜻과 포함관계", "집합의 연산", "명제", "절대부등식"],
-    함수: ["함수", "유리함수", "무리함수"],
+    함수: ["함수", "합성함수와 역함수", "유리함수", "무리함수"],
   },
   대수: {
     "준비 중": ["준비 중"],
@@ -298,6 +300,14 @@ export default function Home() {
       smallUnit === "함수"
     ) {
       return <FunctionBasicsPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "함수" &&
+      smallUnit === "합성함수와 역함수"
+    ) {
+      return <CompositeAndInverseFunctionPage />;
     }
 
     return (
