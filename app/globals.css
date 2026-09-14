@@ -24,3 +24,79 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes compositeSourcePulse {
+    0% {
+        opacity: 0.45;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes compositeOuterTransfer {
+    0% {
+        stroke-dasharray: 1 1;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+
+    70% {
+        stroke-dasharray: 1 1;
+        stroke-dashoffset: 1;
+        opacity: 1;
+    }
+
+    71% {
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dasharray: 1 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+}
+
+@keyframes compositeResultDraw {
+    0% {
+        stroke-dasharray: 1 1;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dasharray: 1 1;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+.composite-source-active {
+    animation: compositeSourcePulse 1.1s ease forwards;
+}
+
+.composite-outer-transfer {
+    stroke-dasharray: 1 1;
+    stroke-dashoffset: 0;
+    animation: compositeOuterTransfer 1.6s linear forwards;
+}
+
+.composite-result-draw {
+    stroke-dasharray: 1 1;
+    stroke-dashoffset: 1;
+    opacity: 0;
+
+    animation: compositeResultDraw 1.1s linear 1.6s both;
+}
+
+.composite-result-delay {
+    animation-delay: 1.25s;
+}

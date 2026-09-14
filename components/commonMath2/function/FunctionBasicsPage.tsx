@@ -9234,7 +9234,7 @@ export default function FunctionBasicsPage() {
                     {/* 예시 1 */}
                     <div className="rounded-xl border border-white/10 bg-white/10 p-6">
                         <h3 className="mb-4 text-2xl font-bold">
-                            예시 1
+                            예시 
                         </h3>
 
                         <p className="leading-8 text-gray-200">

@@ -49,6 +49,9 @@ import FunctionBasicsPage
   from "../components/commonMath2/function/FunctionBasicsPage";  
 import CompositeAndInverseFunctionPage
   from "../components/commonMath2/function/CompositeAndInverseFunctionPage";  
+import RationalFunctionPage
+  from "../components/commonMath2/function/RationalFunctionPage"; 
+
 const curriculum = {
   중1: {
     "준비 중": ["준비 중"],
@@ -308,6 +311,14 @@ export default function Home() {
       smallUnit === "합성함수와 역함수"
     ) {
       return <CompositeAndInverseFunctionPage />;
+    }
+
+    if (
+      subject === "공통수학2" &&
+      bigUnit === "함수" &&
+      smallUnit === "유리함수"
+    ) {
+      return <RationalFunctionPage />;
     }
 
     return (
