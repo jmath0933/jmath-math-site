@@ -3274,7 +3274,7 @@ export default function CompositeAndInverseFunctionPage() {
                     </div>
 
                     {/* 예제 11 */}
-                    <div className="mt-8 rounded-xl bg-black/40 p-5">
+                    <div className="mt-8 rounded-xl bg-black/40 p-3">
                         <h3 className="mb-4 text-xl font-bold text-white">예제 11</h3>
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
@@ -3311,8 +3311,7 @@ export default function CompositeAndInverseFunctionPage() {
 
                                     <p className="leading-8 text-gray-200">
                                         를 만족시킬 때,{" "}
-                                        <InlineMath math="(g\circ f)(2)+g(b)" />의 값을
-                                        구하시오.
+                                        <InlineMath math="(g\circ f)(2)+g(b)" />의 값을 구하시오.
                                     </p>
                                 </div>
 
@@ -18739,6 +18738,333 @@ export default function CompositeAndInverseFunctionPage() {
                         </details>
                     </div>
 
+                    {/* 예제 15 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 15
+                        </h3>
+
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <p className="leading-8 text-gray-300">
+                                함수 <InlineMath math="f(x)" />가
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                f\left(\frac{x-1}{x+1}\right)=2x
+            `}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                를 만족할 때, <InlineMath math="f(x)" />의 역함수{" "}
+                                <InlineMath math="f^{-1}(x)" />를 구하여라.
+                            </p>
+                        </div>
+
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
+
+                            <div className="mt-5 space-y-5 text-gray-300">
+                                <p className="leading-8">
+                                    역함수에서는 함수의 입력과 출력이 서로 바뀝니다.
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f(a)=b
+                    \quad\Longleftrightarrow\quad
+                    f^{-1}(b)=a
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    주어진 식
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f\left(\frac{x-1}{x+1}\right)=2x
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    에서 입력은{" "}
+                                    <InlineMath math="\dfrac{x-1}{x+1}" />이고
+                                    출력은 <InlineMath math="2x" />이므로
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f^{-1}(2x)=\frac{x-1}{x+1}
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
+
+                                <p className="leading-8">
+                                    <InlineMath math="2x=t" />라고 하면{" "}
+                                    <InlineMath math="x=\dfrac{t}{2}" />이므로
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    \begin{aligned}
+                    f^{-1}(t)
+                    &=
+                    \frac{\frac{t}{2}-1}{\frac{t}{2}+1}\\[6pt]
+                    &=
+                    \frac{t-2}{t+2}
+                    \end{aligned}
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    따라서 <InlineMath math="t" />를 다시{" "}
+                                    <InlineMath math="x" />로 나타내면
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f^{-1}(x)=\frac{x-2}{x+2}
+                `}
+                                />
+
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        \boxed{
+                            f^{-1}(x)=\frac{x-2}{x+2}
+                        }
+                    `}
+                                    />
+                                </div>
+
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
+
+                                    <p className="leading-8 text-gray-300">
+                                        역함수에서는 함수의 입력과 출력이 서로 바뀝니다.
+                                        따라서 다음 관계를 바로 읽을 수 있어야 합니다.
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        f(A)=B
+                        \quad\Longleftrightarrow\quad
+                        f^{-1}(B)=A
+                    `}
+                                    />
+
+                                    <p className="leading-8 text-gray-300">
+                                        이 문제에서는 <InlineMath math="f(x)" />를 먼저
+                                        구할 필요 없이, 주어진 식의 입력과 출력을 서로
+                                        바꾸어 역함수를 바로 구할 수 있습니다.
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        f\left(\frac{x-1}{x+1}\right)=2x
+                        \rightarrow
+                        f^{-1}(2x)=\frac{x-1}{x+1}
+                    `}
+                                    />
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    {/* 예제 16 */}
+                    <div className="mt-8 rounded-xl bg-black/40 p-5">
+                        <h3 className="mb-4 text-xl font-bold text-white">
+                            예제 16
+                        </h3>
+
+                        {/* 문제 */}
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <p className="leading-8 text-gray-300">
+                                함수 <InlineMath math="f(x)" />의 역함수를{" "}
+                                <InlineMath math="g(x)" />라고 하자.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                f\left(
+                    2g(x)+\frac{x}{x-1}
+                \right)=x
+            `}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                일 때, <InlineMath math="f(3)" />의 값을 구하여라.
+                            </p>
+                        </div>
+
+                        <details className="mt-5 rounded-xl border border-white/15 p-5">
+                            <summary className="cursor-pointer font-semibold text-yellow-300">
+                                풀이 보기
+                            </summary>
+
+                            <div className="mt-5 space-y-5 text-gray-300">
+                                <p className="leading-8">
+                                    <InlineMath math="g" />는 <InlineMath math="f" />의
+                                    역함수이므로
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f(A)=x
+                    \quad\Longleftrightarrow\quad
+                    A=g(x)
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
+
+                                <p className="leading-8">
+                                    따라서 주어진 식
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f\left(
+                        2g(x)+\frac{x}{x-1}
+                    \right)=x
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    에서
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    2g(x)+\frac{x}{x-1}=g(x)
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    이므로
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    \begin{aligned}
+                    g(x)
+                    &=-\frac{x}{x-1}\\[4pt]
+                    &=\frac{x}{1-x}
+                    \end{aligned}
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    입니다.
+                                </p>
+
+                                <p className="leading-8">
+                                    <InlineMath math="f(3)" />의 값을 구하려면 역함수의
+                                    관계에 의해 <InlineMath math="g(x)=3" />이 되는{" "}
+                                    <InlineMath math="x" />를 구하면 됩니다.
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    \frac{x}{1-x}=3
+                `}
+                                />
+
+                                <BlockMath
+                                    math={String.raw`
+                    \begin{aligned}
+                    x&=3(1-x)\\
+                    4x&=3\\
+                    x&=\frac34
+                    \end{aligned}
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    즉
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    g\left(\frac34\right)=3
+                `}
+                                />
+
+                                <p className="leading-8">
+                                    이므로 역함수의 관계에 의해
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                    f(3)=\frac34
+                `}
+                                />
+
+                                <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                                    <p className="font-bold text-green-300">
+                                        따라서
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        \boxed{\frac34}
+                    `}
+                                    />
+                                </div>
+
+                                <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                                    <p className="mb-3 font-bold text-blue-300">
+                                        풀이의 핵심
+                                    </p>
+
+                                    <p className="leading-8 text-gray-300">
+                                        <InlineMath math="g=f^{-1}" />이므로 다음 관계를
+                                        바로 읽을 수 있어야 합니다.
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        f(A)=x
+                        \quad\Longleftrightarrow\quad
+                        A=g(x)
+                `}
+                                    />
+
+                                    <p className="leading-8 text-gray-300">
+                                        먼저 이 관계를 이용하여 <InlineMath math="g(x)" />를
+                                        구합니다. 그다음 <InlineMath math="f(3)" />을
+                                        구하는 것은 역으로 <InlineMath math="g(x)=3" />이
+                                        되는 <InlineMath math="x" />를 찾는 것과 같습니다.
+                                    </p>
+
+                                    <BlockMath
+                                        math={String.raw`
+                        g(x)=3
+                        \quad\Longleftrightarrow\quad
+                        f(3)=x
+                    `}
+                                    />
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+
                     {/* 핵심 정리 */}
                     <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
 
@@ -21915,6 +22241,1102 @@ export default function CompositeAndInverseFunctionPage() {
                                 <InlineMath math="y=f^{-1}(x)" />와{" "}
                                 <InlineMath math="y=x" />의 교점이 같습니다.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 3.15 우함수와 기함수, 합성함수의 증감 */}
+            <section className="mb-10 rounded-2xl border border-white/30 p-7">
+                <h2 className="mb-2 text-3xl font-bold">
+                    3.15 우함수와 기함수, 합성함수의 증감
+                </h2>
+
+                <p className="leading-8 text-gray-300">
+                    함수에 <InlineMath math="-x" />를 대입했을 때 나타나는 관계를
+                    이용하면 함수의 대칭성을 판단할 수 있습니다.
+                    또한 우함수와 기함수의 연산과 합성, 증가함수와 감소함수의
+                    합성에는 일정한 규칙이 있습니다.
+                </p>
+
+                <div className="mt-8 space-y-6">
+                    {/* 1. 우함수 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            1. 우함수
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            함수 <InlineMath math="f" />에 대하여
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    f(-x)=f(x)
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            가 성립하면 함수 <InlineMath math="f" />를{" "}
+                            <strong className="text-white">우함수</strong>라고 합니다.
+                        </p>
+
+                        <p className="mt-4 leading-8 text-gray-300">
+                            <InlineMath math="0" />을 기준으로 왼쪽으로{" "}
+                            <InlineMath math="x" />만큼 떨어진 곳과 오른쪽으로{" "}
+                            <InlineMath math="x" />만큼 떨어진 곳의 함숫값이 같습니다.
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    f(-x)=f(x)
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            따라서 우함수의 그래프는{" "}
+                            <strong className="text-white">
+                                <InlineMath math="y" />축에 대하여 대칭
+                            </strong>
+                            입니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-blue-400/30 bg-blue-400/5 p-5">
+                            <p className="mb-3 font-bold text-blue-300">
+                                대표적인 우함수
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        y=x^2,\qquad
+                        y=x^4,\qquad
+                        y=|x|,\qquad
+                        y=c
+                    `}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                특히 다항함수에서는 짝수 차수의 항과 상수항으로만
+                                이루어진 함수가 우함수입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 2. 기함수 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            2. 기함수
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            함수 <InlineMath math="f" />에 대하여
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    f(-x)=-f(x)
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            가 성립하면 함수 <InlineMath math="f" />를{" "}
+                            <strong className="text-white">기함수</strong>라고 합니다.
+                        </p>
+
+                        <p className="mt-4 leading-8 text-gray-300">
+                            이 식은
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    f(-x)+f(x)=0
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            으로 나타낼 수 있습니다. 즉{" "}
+                            <InlineMath math="0" />을 기준으로 왼쪽과 오른쪽으로
+                            같은 거리만큼 떨어진 두 곳의 함숫값의 합이{" "}
+                            <InlineMath math="0" />입니다.
+                        </p>
+
+                        <p className="mt-4 leading-8 text-gray-300">
+                            따라서 기함수의 그래프는{" "}
+                            <strong className="text-white">
+                                원점에 대하여 대칭
+                            </strong>
+                            입니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-rose-400/30 bg-rose-400/5 p-5">
+                            <p className="mb-3 font-bold text-rose-300">
+                                대표적인 기함수
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        y=x,\qquad
+                        y=x^3,\qquad
+                        y=x^5
+                    `}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                특히 다항함수에서는 홀수 차수의 항으로만
+                                이루어진 함수가 기함수입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 3. 우함수와 기함수의 판정 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            3. 우함수와 기함수의 판정
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            함수가 우함수인지 기함수인지 판단하려면{" "}
+                            <strong className="text-white">
+                                <InlineMath math="x" /> 대신 <InlineMath math="-x" />를
+                                대입
+                            </strong>
+                            합니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        f(-x)=f(x)
+                        &\quad\Rightarrow\quad
+                        \text{우함수}\\[6pt]
+                        f(-x)=-f(x)
+                        &\quad\Rightarrow\quad
+                        \text{기함수}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+
+                        <p className="mt-5 leading-8 text-gray-300">
+                            두 관계가 모두 성립하지 않으면 우함수도 기함수도
+                            아닙니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-yellow-400/30 bg-yellow-400/5 p-5">
+                            <p className="mb-3 font-bold text-yellow-300">
+                                주의
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                함수의 최고차항의 차수만 보고 우함수와 기함수를
+                                판단하면 안 됩니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        x^2+x,\qquad x^3+1
+                    `}
+                            />
+
+                            <p className="leading-8 text-gray-300">
+                                과 같은 함수는 각각 이차함수, 삼차함수이지만
+                                우함수와 기함수가 아닙니다. <br />
+                                항상{" "}<InlineMath math="f(-x)" />를 이용하여 판단합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 4. 우함수와 기함수의 연산 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            4. 우함수와 기함수의 연산
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            우함수와 기함수를 더하거나 빼면 다음과 같습니다.
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    \begin{aligned}
+                    \text{우함수}\pm\text{우함수}
+                    &=
+                    \text{우함수}\\[6pt]
+                    \text{기함수}\pm\text{기함수}
+                    &=
+                    \text{기함수}
+                    \end{aligned}
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            우함수와 기함수의 합이나 차는 일반적으로 우함수도
+                            기함수도 아닙니다.
+                        </p>
+
+                        <p className="mt-5 leading-8 text-gray-300">
+                            두 함수를 곱하면 다음과 같습니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        \text{우함수}\times\text{우함수}
+                        &=\text{우함수}\\[6pt]
+                        \text{우함수}\times\text{기함수}
+                        &=\text{기함수}\\[6pt]
+                        \text{기함수}\times\text{우함수}
+                        &=\text{기함수}\\[6pt]
+                        \text{기함수}\times\text{기함수}
+                        &=\text{우함수}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+
+                        <div className="mt-5 rounded-xl border border-emerald-400/30 bg-emerald-400/5 p-5">
+                            <p className="mb-3 font-bold text-emerald-300">
+                                간단하게 생각하기
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                우함수는 <InlineMath math="x^2" />, 기함수는{" "}
+                                <InlineMath math="x" />라고 생각하면 결과를 쉽게
+                                판단할 수 있습니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        x^2\cdot x^2&=x^4
+                        &&\Rightarrow\text{우함수}\\
+                        x^2\cdot x&=x^3
+                        &&\Rightarrow\text{기함수}\\
+                        x\cdot x&=x^2
+                        &&\Rightarrow\text{우함수}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+                    </div>
+
+                    {/* 5. 우함수와 기함수의 합성 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            5. 우함수와 기함수의 합성
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            합성함수가 정의된다고 할 때 우함수와 기함수를
+                            합성하면 다음과 같습니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        \text{우함수}\circ\text{우함수}
+                        &=\text{우함수}\\[6pt]
+                        \text{우함수}\circ\text{기함수}
+                        &=\text{우함수}\\[6pt]
+                        \text{기함수}\circ\text{우함수}
+                        &=\text{우함수}\\[6pt]
+                        \text{기함수}\circ\text{기함수}
+                        &=\text{기함수}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+
+                        <p className="mt-5 leading-8 text-gray-300">
+                            이 결과도 우함수를 <InlineMath math="x^2" />,
+                            기함수를 <InlineMath math="x" />로 생각하면 쉽게
+                            확인할 수 있습니다.
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    \begin{aligned}
+                    x^2\circ x^2
+                    &=(x^2)^2=x^4
+                    &&\Rightarrow\text{우함수}\\[4pt]
+                    x^2\circ x
+                    &=x^2
+                    &&\Rightarrow\text{우함수}\\[4pt]
+                    x\circ x^2
+                    &=x^2
+                    &&\Rightarrow\text{우함수}\\[4pt]
+                    x\circ x
+                    &=x
+                    &&\Rightarrow\text{기함수}
+                    \end{aligned}
+                `}
+                        />
+
+                        <div className="mt-5 rounded-xl border border-yellow-400/30 bg-yellow-400/5 p-5">
+                            <p className="mb-3 font-bold text-yellow-300">
+                                곱셈과 합성을 구분
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                우함수와 기함수의{" "}
+                                <strong className="text-white">곱셈</strong>과{" "}
+                                <strong className="text-white">합성</strong>은
+                                결과가 서로 다릅니다. 어떤 연산을 하고 있는지
+                                먼저 확인해야 합니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        \text{우}\times\text{기}=\text{기},
+                        \qquad
+                        \text{우}\circ\text{기}=\text{우}
+                    `}
+                            />
+                        </div>
+                    </div>
+
+                    {/* 6. 증가함수와 감소함수 */}
+<div className="rounded-xl border border-white/10 bg-white/10 p-6">
+    <h3 className="mb-4 text-2xl font-bold">
+        6. 증가함수와 감소함수
+    </h3>
+
+    <p className="leading-8 text-gray-300">
+        함수에서 <InlineMath math="x" />의 값이 증가할 때
+        함숫값이 어떻게 변하는지에 따라 증가함수와 감소함수로
+        구분할 수 있습니다.
+    </p>
+
+    <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+        <p className="mb-4 font-bold text-white">
+            증가함수
+        </p>
+
+        <p className="leading-8 text-gray-300">
+            <InlineMath math="x_1<x_2" />일 때 항상
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                f(x_1)<f(x_2)
+            `}
+        />
+
+        <p className="leading-8 text-gray-300">
+            이면 <InlineMath math="f(x)" />를 증가함수라고 합니다.
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                x_1<x_2
+                \quad\Longrightarrow\quad
+                f(x_1)<f(x_2)
+            `}
+        />
+
+        <p className="leading-8 text-gray-300">
+            즉 입력값의 대소관계와 함숫값의 대소관계가
+            <strong className="text-white"> 같은 방향</strong>입니다.
+        </p>
+    </div>
+
+    <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+        <p className="mb-4 font-bold text-white">
+            감소함수
+        </p>
+
+        <p className="leading-8 text-gray-300">
+            <InlineMath math="x_1<x_2" />일 때 항상
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                f(x_1)>f(x_2)
+            `}
+        />
+
+        <p className="leading-8 text-gray-300">
+            이면 <InlineMath math="f(x)" />를 감소함수라고 합니다.
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                x_1<x_2
+                \quad\Longrightarrow\quad
+                f(x_1)>f(x_2)
+            `}
+        />
+
+        <p className="leading-8 text-gray-300">
+            즉 입력값의 대소관계와 함숫값의 대소관계가
+            <strong className="text-white"> 반대 방향</strong>입니다.
+        </p>
+    </div>
+
+    <div className="mt-5 rounded-xl border border-emerald-400/30 bg-emerald-400/5 p-5">
+        <p className="mb-3 font-bold text-emerald-300">
+            간단하게 생각하기
+        </p>
+
+        <p className="leading-8 text-gray-300">
+            증가함수는 <InlineMath math="y=x" />,
+            감소함수는 <InlineMath math="y=-x" />를
+            대표적으로 생각하면 됩니다.
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                \begin{aligned}
+                y=x
+                &:\quad x\uparrow\ \Longrightarrow\ y\uparrow
+                &&\text{증가}\\[6pt]
+                y=-x
+                &:\quad x\uparrow\ \Longrightarrow\ y\downarrow
+                &&\text{감소}
+                \end{aligned}
+            `}
+        />
+    </div>
+
+    <div className="mt-5 rounded-xl border border-yellow-400/30 bg-yellow-400/5 p-5">
+        <p className="mb-3 font-bold text-yellow-300">
+            함숫값을 비교할 때
+        </p>
+
+        <p className="leading-8 text-gray-300">
+            증가함수에서는 함숫값의 대소관계와 입력값의
+            대소관계가 같고, 감소함수에서는 반대입니다.
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                \begin{aligned}
+                \text{증가함수}\quad
+                f(A)<f(B)
+                &\quad\Longleftrightarrow\quad A<B\\[8pt]
+                \text{감소함수}\quad
+                f(A)<f(B)
+                &\quad\Longleftrightarrow\quad A>B
+                \end{aligned}
+            `}
+        />
+    </div>
+</div>
+
+                    {/* 7. 합성함수의 증감 */}
+                    <div className="rounded-xl border border-white/10 bg-white/10 p-6">
+                        <h3 className="mb-4 text-2xl font-bold">
+                            7. 합성함수의 증감
+                        </h3>
+
+                        <p className="leading-8 text-gray-300">
+                            증가함수와 감소함수를 합성할 때에는 각 함수가
+                            값의 변화 방향을 유지하는지 또는 반대로 바꾸는지를
+                            생각하면 됩니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        \text{증가}\circ\text{증가}
+                        &=\text{증가}\\[6pt]
+                        \text{증가}\circ\text{감소}
+                        &=\text{감소}\\[6pt]
+                        \text{감소}\circ\text{증가}
+                        &=\text{감소}\\[6pt]
+                        \text{감소}\circ\text{감소}
+                        &=\text{증가}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+
+                        <p className="mt-5 leading-8 text-gray-300">
+                            특히 감소함수는 값의 변화 방향을 한 번 반대로
+                            바꾼다고 생각할 수 있습니다.
+                        </p>
+
+                        <BlockMath
+                            math={String.raw`
+                    \text{감소}\circ\text{감소}
+                    \quad:\quad
+                    \uparrow\ \longrightarrow\ \downarrow
+                    \ \longrightarrow\ \uparrow
+                `}
+                        />
+
+                        <p className="leading-8 text-gray-300">
+                            따라서 감소함수를 두 번 거치면 방향이 두 번 바뀌어
+                            다시 증가하게 됩니다.
+                        </p>
+
+                        <div className="mt-5 rounded-xl border border-emerald-400/30 bg-emerald-400/5 p-5">
+                            <p className="mb-3 font-bold text-emerald-300">
+                                간단하게 생각하기
+                            </p>
+
+                            <p className="leading-8 text-gray-300">
+                                증가함수는 <InlineMath math="y=x" />,
+                                감소함수는 <InlineMath math="y=-x" />라고
+                                생각하면 결과를 쉽게 판단할 수 있습니다.
+                            </p>
+
+                            <BlockMath
+                                math={String.raw`
+                        \begin{aligned}
+                        x\circ x&=x
+                        &&\Rightarrow\text{증가}\\[4pt]
+                        x\circ(-x)&=-x
+                        &&\Rightarrow\text{감소}\\[4pt]
+                        (-x)\circ x&=-x
+                        &&\Rightarrow\text{감소}\\[4pt]
+                        (-x)\circ(-x)&=x
+                        &&\Rightarrow\text{증가}
+                        \end{aligned}
+                    `}
+                            />
+                        </div>
+                    </div>
+
+                    {/* 예제 1 */}
+<div className="mt-8 rounded-xl bg-black/40 p-5">
+    <h3 className="mb-4 text-xl font-bold text-white">
+        예제 1
+    </h3>
+
+    {/* 문제 */}
+    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+        <p className="leading-8 text-gray-300">
+            함수 <InlineMath math="f(x)" />는 우함수, 함수{" "}
+            <InlineMath math="g(x)" />는 기함수일 때, 다음 중
+            우함수만으로 짝지어진 것을 구하여라.
+        </p>
+
+        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <p className="text-gray-300">
+                    ㄱ. <InlineMath math="f(g(x))" />
+                </p>
+                <p className="text-gray-300">
+                    ㄴ. <InlineMath math="g(f(x))" />
+                </p>
+                <p className="text-gray-300">
+                    ㄷ. <InlineMath math="f(f(x))" />
+                </p>
+                <p className="text-gray-300">
+                    ㄹ. <InlineMath math="g(g(x))" />
+                </p>
+                <p className="text-gray-300">
+                    ㅁ. <InlineMath math="f(x)\cdot g(x)" />
+                </p>
+            </div>
+        </div>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="text-gray-300">① ㄱ, ㄴ</p>
+            <p className="text-gray-300">② ㄱ, ㄷ, ㅁ</p>
+            <p className="text-gray-300">③ ㄴ, ㄷ, ㄹ</p>
+            <p className="text-gray-300">④ ㄱ, ㄴ, ㄷ</p>
+            <p className="text-gray-300">⑤ ㄱ, ㄴ, ㄷ, ㅁ</p>
+        </div>
+    </div>
+
+    <details className="mt-5 rounded-xl border border-white/15 p-5">
+        <summary className="cursor-pointer font-semibold text-yellow-300">
+            풀이 보기
+        </summary>
+
+        <div className="mt-5 space-y-5 text-gray-300">
+            <p className="leading-8">
+                우함수는 <InlineMath math="x^2" />, 기함수는{" "}
+                <InlineMath math="x" />라고 생각하여 합성의 결과를
+                판단할 수 있습니다.
+            </p>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    ㄱ. <InlineMath math="f(g(x))" />
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{우}\circ\text{기}
+                        =
+                        \text{우}
+                    `}
+                />
+
+                <p className="leading-8">
+                    따라서 <InlineMath math="f(g(x))" />는 우함수입니다.
+                </p>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    ㄴ. <InlineMath math="g(f(x))" />
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{기}\circ\text{우}
+                        =
+                        \text{우}
+                    `}
+                />
+
+                <p className="leading-8">
+                    따라서 <InlineMath math="g(f(x))" />는 우함수입니다.
+                </p>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    ㄷ. <InlineMath math="f(f(x))" />
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{우}\circ\text{우}
+                        =
+                        \text{우}
+                    `}
+                />
+
+                <p className="leading-8">
+                    따라서 <InlineMath math="f(f(x))" />는 우함수입니다.
+                </p>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    ㄹ. <InlineMath math="g(g(x))" />
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{기}\circ\text{기}
+                        =
+                        \text{기}
+                    `}
+                />
+
+                <p className="leading-8">
+                    따라서 <InlineMath math="g(g(x))" />는 기함수입니다.
+                </p>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    ㅁ. <InlineMath math="f(x)\cdot g(x)" />
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{우}\times\text{기}
+                        =
+                        \text{기}
+                    `}
+                />
+
+                <p className="leading-8">
+                    따라서 <InlineMath math="f(x)g(x)" />는 기함수입니다.
+                </p>
+            </div>
+
+            <p className="leading-8">
+                그러므로 우함수인 것은 ㄱ, ㄴ, ㄷ입니다.
+            </p>
+
+            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                <p className="font-bold text-green-300">
+                    따라서
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        {\text{④ ㄱ, ㄴ, ㄷ}}
+                    `}
+                />
+            </div>
+
+            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                <p className="mb-3 font-bold text-blue-300">
+                    풀이의 핵심
+                </p>
+
+                <p className="leading-8 text-gray-300">
+                    합성과 곱셈을 구분하여 판단해야 합니다.
+                    합성에서는 우함수를 <InlineMath math="x^2" />,
+                    기함수를 <InlineMath math="x" />로 생각하면
+                    결과를 쉽게 확인할 수 있습니다.
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \begin{aligned}
+                        \text{우}\circ\text{우}&=\text{우}\\
+                        \text{우}\circ\text{기}&=\text{우}\\
+                        \text{기}\circ\text{우}&=\text{우}\\
+                        \text{기}\circ\text{기}&=\text{기}
+                        \end{aligned}
+                    `}
+                />
+
+                <p className="leading-8 text-gray-300">
+                    반면 곱셈에서는
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \text{우}\times\text{기}=\text{기}
+                    `}
+                />
+
+                <p className="leading-8 text-gray-300">
+                    이므로 같은 우함수와 기함수라도{" "}
+                    <strong className="text-white">
+                        합성인지 곱셈인지 먼저 확인
+                    </strong>
+                    해야 합니다.
+                </p>
+            </div>
+        </div>
+    </details>
+</div>
+
+{/* 예제 2 */}
+<div className="mt-8 rounded-xl bg-black/40 p-5">
+    <h3 className="mb-4 text-xl font-bold text-white">
+        예제 2
+    </h3>
+
+    {/* 문제 */}
+    <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+        <p className="leading-8 text-gray-300">
+            실수 전체의 집합에서 정의된 함수{" "}
+            <InlineMath math="f(x)" />가 다음 조건을 만족한다.
+        </p>
+
+        <div className="mt-5 rounded-xl border border-white/10 bg-black/20 p-5">
+            <p className="leading-8 text-gray-300">
+                (가) <InlineMath math="f(x)" />는 기함수이다.
+            </p>
+
+            <p className="mt-2 leading-8 text-gray-300">
+                (나) <InlineMath math="f(x)" />는 감소함수이다.
+            </p>
+        </div>
+
+        <p className="mt-5 leading-8 text-gray-300">
+            부등식
+        </p>
+
+        <BlockMath
+            math={String.raw`
+                f(1-x)+f(1-x^2)<0
+            `}
+        />
+
+        <p className="leading-8 text-gray-300">
+            을 풀어라.
+        </p>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="text-gray-300">
+                ① <InlineMath math="-2<x<1" />
+            </p>
+            <p className="text-gray-300">
+                ② <InlineMath math="x<-2,\ x>1" />
+            </p>
+            <p className="text-gray-300">
+                ③ <InlineMath math="x<0,\ x>1" />
+            </p>
+            <p className="text-gray-300">
+                ④ <InlineMath math="0<x<1" />
+            </p>
+            <p className="text-gray-300">
+                ⑤ <InlineMath math="-2<x<0" />
+            </p>
+        </div>
+    </div>
+
+    <details className="mt-5 rounded-xl border border-white/15 p-5">
+        <summary className="cursor-pointer font-semibold text-yellow-300">
+            풀이 보기
+        </summary>
+
+        <div className="mt-5 space-y-5 text-gray-300">
+            <p className="leading-8">
+                <InlineMath math="f(x)" />는 기함수이므로
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    f(-x)=-f(x)
+                `}
+            />
+
+            <p className="leading-8">
+                입니다.
+            </p>
+
+            <p className="leading-8">
+                <InlineMath math="1-x=-(x-1)" />이므로
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    f(1-x)
+                    =
+                    f(-(x-1))
+                    =
+                    -f(x-1)
+                `}
+            />
+
+            <p className="leading-8">
+                입니다. 따라서 주어진 부등식은
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    -f(x-1)+f(1-x^2)<0
+                `}
+            />
+
+            <p className="leading-8">
+                이고, 정리하면
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    f(1-x^2)<f(x-1)
+                `}
+            />
+
+            <p className="leading-8">
+                입니다.
+            </p>
+
+            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                <p className="mb-4 font-bold text-white">
+                    감소함수의 성질 이용
+                </p>
+
+                <p className="leading-8">
+                    <InlineMath math="f(x)" />는 감소함수이므로
+                    함숫값의 대소관계와 입력값의 대소관계는
+                    반대입니다.
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        f(1-x^2)<f(x-1)
+                        \quad\Longrightarrow\quad
+                        1-x^2>x-1
+                    `}
+                />
+            </div>
+
+            <p className="leading-8">
+                부등식을 정리하면
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    \begin{aligned}
+                    1-x^2&>x-1\\
+                    x^2+x-2&<0\\
+                    (x+2)(x-1)&<0
+                    \end{aligned}
+                `}
+            />
+
+            <p className="leading-8">
+                따라서
+            </p>
+
+            <BlockMath
+                math={String.raw`
+                    -2<x<1
+                `}
+            />
+
+            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-5">
+                <p className="font-bold text-green-300">
+                    따라서
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        \boxed{\text{① }-2<x<1}
+                    `}
+                />
+            </div>
+
+            <div className="rounded-xl border border-blue-500/30 bg-blue-500/5 p-5">
+                <p className="mb-3 font-bold text-blue-300">
+                    풀이의 핵심
+                </p>
+
+                <p className="leading-8 text-gray-300">
+                    먼저 기함수의 성질을 이용하여 두 함숫값을
+                    비교하는 형태로 바꿉니다.
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        f(-x)=-f(x)
+                    `}
+                />
+
+                <BlockMath
+                    math={String.raw`
+                        f(1-x)+f(1-x^2)<0
+                        \rightarrow
+                        f(1-x^2)<f(x-1)
+                    `}
+                />
+
+                <p className="leading-8 text-gray-300">
+                    그다음 감소함수에서는{" "}
+                    <strong className="text-white">
+                        함숫값의 대소관계와 입력값의 대소관계가 반대
+                    </strong>
+                    라는 것을 이용합니다.
+                </p>
+
+                <BlockMath
+                    math={String.raw`
+                        f(A)<f(B)
+                        \quad\Longrightarrow\quad
+                        A>B
+                        \qquad
+                        (\text{감소함수})
+                    `}
+                />
+
+                <p className="leading-8 text-gray-300">
+                    즉 이 문제는 함수의 식을 구하는 문제가 아니라{" "}
+                    <strong className="text-white">
+                        기함수의 성질로 식을 바꾸고, 감소함수의 성질로
+                        함숫값의 비교를 입력값의 비교로 바꾸는 문제
+                    </strong>
+                    입니다.
+                </p>
+            </div>
+        </div>
+    </details>
+</div>
+
+                    {/* 핵심 정리 */}
+                    <div className="mt-8 rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-5">
+
+                        <h3 className="mb-4 text-xl font-bold text-yellow-300">
+                            핵심 정리
+                        </h3>
+
+                        <div className="space-y-6">
+                            <div>
+                                <p className="mb-3 font-bold text-white">
+                                    1. 우함수와 기함수
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                            \begin{aligned}
+                            f(-x)=f(x)
+                            &\iff
+                            \text{우함수}
+                            \iff
+                            y\text{축 대칭}\\[6pt]
+                            f(-x)=-f(x)
+                            &\iff
+                            \text{기함수}
+                            \iff
+                            \text{원점 대칭}
+                            \end{aligned}
+                        `}
+                                />
+                            </div>
+
+                            <div>
+                                <p className="mb-3 font-bold text-white">
+                                    2. 우함수와 기함수의 곱
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                            \begin{aligned}
+                            \text{우}\times\text{우}&=\text{우}\\
+                            \text{우}\times\text{기}&=\text{기}\\
+                            \text{기}\times\text{우}&=\text{기}\\
+                            \text{기}\times\text{기}&=\text{우}
+                            \end{aligned}
+                        `}
+                                />
+                            </div>
+
+                            <div>
+                                <p className="mb-3 font-bold text-white">
+                                    3. 우함수와 기함수의 합성
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                            \begin{aligned}
+                            \text{우}\circ\text{우}&=\text{우}\\
+                            \text{우}\circ\text{기}&=\text{우}\\
+                            \text{기}\circ\text{우}&=\text{우}\\
+                            \text{기}\circ\text{기}&=\text{기}
+                            \end{aligned}
+                        `}
+                                />
+                            </div>
+
+                            <div>
+                                <p className="mb-3 font-bold text-white">
+                                    4. 합성함수의 증감
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                            \begin{aligned}
+                            \text{증가}\circ\text{증가}&=\text{증가}\\
+                            \text{증가}\circ\text{감소}&=\text{감소}\\
+                            \text{감소}\circ\text{증가}&=\text{감소}\\
+                            \text{감소}\circ\text{감소}&=\text{증가}
+                            \end{aligned}
+                        `}
+                                />
+                            </div>
+
+                            <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+                                <p className="mb-3 font-bold text-white">
+                                    기억하기
+                                </p>
+
+                                <BlockMath
+                                    math={String.raw`
+                            \boxed{
+                            \text{우}:x^2,\quad
+                            \text{기}:x,\quad
+                            \text{증가}:x,\quad
+                            \text{감소}:-x
+                            }
+                        `}
+                                />
+
+                                <p className="leading-8 text-gray-300">
+                                    결과가 기억나지 않을 때에는 대표적인 함수를
+                                    이용하여 직접 합성하거나 곱해 보면 규칙을
+                                    다시 만들어낼 수 있습니다.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
